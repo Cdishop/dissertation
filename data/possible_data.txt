@@ -1,0 +1,82 @@
+Data sources for ocb opportunity random walk
+
+# testing for random walks
+
+http://www.turingfinance.com/testing-the-efficient-market-hypothesis-with-r/
+
+This was one of the criticisms towards these tests, since they "break from tradition": if we "suspect" the existence of a unit root (𝜌=1 instead of, say, 𝜌=0.99), then the established approach would be to set as the null hypothesis the "trend-stationarity" hypothesis, and then attempt to reject it at the conventional significance levels (the latter reflecting an attempt to "preserve" the null, by keeping the Type I error low, i.e. by keeping low the probability of false rejection of the null).
+
+The most well known test of this second approach (where the null hypothesis is the absence of a unit root), is the Kwiatkowski, Phillips, Schmidt and Shin (1992) one (KPSS).
+
+The current consensus appears to be that a researcher should use both approaches, and see whether they agree in their conclusions. Namely, if the (A)DF test cannot reject its null, while the KPSS rejects its null, the data provide evidence in two different ways that the series has a unit root/ is a Random Walk.
+
+sharecite
+
+# what counts
+
+Interpersonal: praise or encourage others; make others feel welcome; show concern for others; mentor newcomers into a role. 
+
+Task: volunteer for additional work; go out of your way to provide suggestions; accommodate extra work when others make unplanned errors; adjust own work schedule to meet the constraints of others; frequently take time away from own duties to ensure others fulfill their responsibilities. 
+
+Organization: attend events that are not required but help the company image; express loyalty to the company in front of non-employees; use products created by the company in a way that demonstrates pride.
+
+
+
+
+
+# knitr questions and comments
+
+https://yihui.org/knitr/#comment-772482001
+
+See bottom. People asking questions or commenting with praise. 
+
+# knitr bug reports
+
+https://github.com/yihui/knitr/issues
+
+# psych meta enhancements, bugs
+
+https://github.com/psychmeta/psychmeta/issues?q=is%3Aopen+is%3Aissue
+
+A list of open issues
+A list of closed issues
+
+# psych meta email
+
+To report a bug or other issue, tell us about it on GitHub or email issues@psychmeta.com. For more general questions and inquiries about the package, reach out to us via Twitter or email psychmeta@psychmeta.com.
+
+# Lunesu Lean-Kanban Approach
+
+Paper
+https://iris.unica.it/retrieve/handle/11584/266245/344644/Lunesu_PhD_Thesis.pdf
+Data
+https://github.com/Derek-Jones/ESEUR-code-data/blob/master/survival/Lunesu_PhD.R
+Book description (find figure 11.75)
+http://www.knosof.co.uk/ESEUR/ESEUR-draft.pdf#page=334&zoom=100,262,4
+
+
+A study by Lunesu1042 investigated the maintenance activities of a large software company; between 2005 and 2010 there were 5,854 issues. The response time for an issue (i.e., the time between an issue being opened to it being closed) depends on the rate issues are reported and the resources available to handle issues.
+
+Extra resources were added to handle the growing number of issues (after around 400 days) and the number of issues reported decreased after around 800 days (it is not known whether this resulted in issue handling resources being decreased, or the same level of resources applied to fewer issues). The level of resources used to resolve issues cannot be included in a model, because this information is not available.
+
+Figure 11.75 shows cumulative number of issues reported and closed, over time (upper); the
+lower plot shows the survival curve for issues reported in the first 400 days, reported between 400 and 800 days and reported after 800 days. As expected, the extra resources added after 400 days reduced open issue survival times, but the reduction in reported issues after 800 days does not appear to have had much impact on survival rates (perhaps because it is easier to move existing staff to other work, than to add new staff).
+
+
+# SIOP events
+
+Go to siop website
+Compile all events that you could attend as an IO psychologist
+
+
+# USD alumni association events
+
+https://toreronetwork.sandiego.edu/s/1374/hybrid/index.aspx?sid=1374&gid=2&pgid=544
+
+
+# MSU students
+
+Pool of graduate students that you could mentor
+
+
+

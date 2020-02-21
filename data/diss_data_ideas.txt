@@ -1,0 +1,102 @@
+# academics with stats packages
+
+(1) Yves Rosseel lavaan
+
+Github issues
+
+https://github.com/yrosseel/lavaan/issues?q=is%3Aopen+is%3Aissue
+
+(2) Richard McElreath
+
+rethinking course and book
+https://github.com/rmcelreath/rethinking/issues
+
+(3) Sacha Epskamp
+
+His psychonetrics has no issues. But other "less well known things" have many.
+- perhaps those are his side things. 
+
+https://github.com/SachaEpskamp?tab=repositories
+
+**
+genetics researchers with software
+eye tracking with software
+
+
+# forumn type things
+
+
+(1) lavaan questions forumn
+
+(Terrence Jorgensen often responds)
+
+https://groups.google.com/forum/#!forum/lavaan
+
+
+(2) psych methods discussion group
+
+https://www.facebook.com/groups/853552931365745/
+
+(3) psychological dynamics
+
+https://www.facebook.com/groups/PsychologicalDynamics/
+
+(4) R users psychology
+
+https://www.facebook.com/groups/346735129027556/
+
+
+# people on github
+
+
+(1) holtzy
+
+graph gallary 9 open 2 closed
+data to viz 12 open 6 closed
+r graph gallary 8 open 3 closed
+epuRate 2 open 4 closed
+teaching 1 open
+pimp rmd 2 open, 2 closed
+genMap 2 open, 1 closed
+
+
+(2) a software to shorten web links
+
+https://github.com/thedevs-network/kutt/issues
+
+the developers
+https://github.com/orgs/thedevs-network/people
+
+
+(3) a graduate student creating a chinese deep learning intro in python
+
+https://github.com/ShusenTang/Dive-into-DL-PyTorch/issues
+
+
+(4) the hacker's browser
+
+a guy who seems to develop software for a living
+
+https://github.com/philc/vimium/issues
+
+
+
+
+
+# other
+
+
+(1) When your collaborators publish a paper?
+
+https://holtzy.github.io/Google-Scholar-Network/
+
+Find a prolific researcher.
+Identify top 5 collaborators. 
+Count pubs of those 5 collaborators year to year that do not include the prolific person.
+
+Jerome Busemeyer
+Martin Nowak
+
+
+
+

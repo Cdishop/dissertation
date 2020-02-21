@@ -1,0 +1,142 @@
+1) sustained ocbs
+
+Organizational citizenship behaviors (OCBs), or behaviors that go beyond the basic actions required to perform a task such as helping, praising, volunteering for additional work, or speaking highly of the company, are increasingly emphasized in the organizational sciences. They are described as providing the "social glue" and enabling the "social machinery that drives the organization" (someone p 9), and they relate to outcomes such as climate and cohesion (cite). Researchers, as well as consultants, managers, and employees, are interested in knowing why people differ on this behavior, and in particular why someone might have sustained, superior levels of OCBs over time.
+
+(sustained ocb people are awesome. they are called "extra milers" by Li, Zhao, Walter, Zhang, & Yu)
+(good soldier syndrome; method, lepak, shipp, boswell, 2017)
+
+Prior explanations. 
+
+We offer an alternative process model, one that does not rely on individual differences or cognitive biases, to explain sustained, superior levels of OCBs. The mechansim, instead, uses the idea of accumulation, or assembling components to an existing stock as an employee moves through time. To say that an employee accumulates is to mean that he or she is confronted with opportunities or resources over time and that each successive case compiles or is added into his or her existing pool. We show that whenever help requests or opportunities accumulate, then superior, sustained citizenship behaviors by one employee compared to others is not only a possibility but is the most likely case -- it is to be expected. Even when two people have the same level of trust toward others, empathy, or prosocial values, one will have continual, superior helping due to the underlying accumulation process. Moreover, this result occurs even when the mechanism is identical for every employee. In other words, we show that vastly different observed citizenship does not depend on a unique causal diagram for every employee. The fundamental process -- accumulation -- is the same, but the manifest complexity leading some individuals to have greater citizenship than others occurs due to the unique gradient one experiences across time. Such an alternative explanation does not necessarily challenge existing ideas, but it has the potential to change our understanding of what generates sustained, superior behavior.
+
+Later
+- unnaccounted for process (trends, discontinuous growth, emergence). Accumulation is a big idea that we are missing.
+- star behavior. Connects to it. If you put the process on  help itself, you get a new explanation of star perfomers. 
+
+Why I like it
+- reviewers are ocb people. This is new to them. If we lead with stars, those are process people that have heard this. 
+- brent scott as dissertation member
+
+
+2) star behavior
+
+
+The nature of sustained, superior behavior has recently captured the attention of many organizational scientists. Some employees consistently act so as to remain above and beyond their contemporaries, they are outliers time and time again. This idea is particularly pervasive in the areas of employee performance and citizenship, where individuals that demonstrate repeated, top performance are called "stars" and the best citizens are known as "good soldiers" or "extra milers." Star performers are important to their firms because they produce a majority of the relevant output. Similarly, extra milers have the potential to influence team performance and establish any number of social benefits among an organization. What causes sustained, superior behavior?
+
+Although the consequences of outlier behavior usually take precedent (star cite; Zheng, Zhao, Liu, Li, 2019), some ideas do exist on the antecedents or mechanisms producing star performers and good soldiers. 
+- explanations related to dispositions
+- explanations related to situations
+- dynamic and process explanations
+
+We offer an alternative. 
+
+
+
+Issues
+- now the focus is sustained, superior behaviors. Now I'm just copying Denrell.
+- intro with two DVs feels weird.
+- with ocb lead, I get ocb reviewers, who definitely haven't heard of this stuff
+- with star behavior lead, I potentially get strategy person who has heard this stuff
+- At some point in the paper, I have to switch between help as the outcome versus help as the resource. To me, it feels more natural if the entire paper is "help as the outcome" but then the implications section has a huge piece on, "what is help is the accumulating resource?"
+
+
+
+3) comlexity from accumulation, not the dgp
+
+Imagine two software engineers that have equivalent tasks -- to write code -- and that work at equivalent companies. Neither requires help to perform well, but if either receives help then her performance, her code output, improves. If both receive help by the same mechanism, the same causal diagram governs whether and how they receive help and the extent to which it improves their performance, will the two manifest identical performance? Similarly, consider two prosocial employees that provide advice to others when they receive requests to do so. Both are identical in personality and motive, and both occupy identical positions. If both receive requests by the same mechanism, will they help others at identical levels?
+
+Our inuition says yes to these situations, but our intuitions are notoriously wrong (prospect), particularly with respect to process explanations (cronin). In this paper, we introduce a process that has important implications for the two areas identified above: citizenship and performance. Explanations of these phenomenon include many aspects, such as disposition and situation  aspects, and more recently dynamic and process theories (cites). A missing but fundamental process, though, is that of accumulation: the idea of assembling components to an existing stock as an employee moves through time. Understanding accumulation provides a new explanation to performance and citizenship. 
+
+
+
+
+
+# sections
+
+1) accumulation process
+
+random walks
+other areas in science where they happen
+math
+in expectation, it's zero
+but over any particular time, the most probable outcome is a sustained superior (Didn't explain this to Rick well because what is "sustained" isn't the random walk resource, it's the outcome, what the resource generates).
+
+2) ocbs
+
+importance
+theory on aggregating across people and time
+good soldiers and extra milers
+antecedents
+
+3) star performers
+
+importance and implications for orgs
+domains where studied
+mechanisms producing star performers
+
+4) process explanations
+
+trend, discontinuous growth, dynamics
+accumulation is an area we are missing
+
+
+5) simulation
+
+what happens under various random walk situations?
+see denrell, different values of k, length, b, change it to a white noise process
+math theory stuff
+
+6) data
+
+ocb lead: opportunities follow a random walk. Requests follow a random walk
+star behavior lead: help follow a random walk. Resources follow a random walk.
+
+what are some domains where I can find this kind of data?
+
+
+(a) show that help related things follow a random walk accumulation pattern
+
+- government asking apple or facebook for user data
+- help requests sent on a resource thing (lavaan help email; facebook posts on psych methods; software websites that receive help requests)
+- volunteer help request (email; ...other source?)
+
+
+Enron people receiving emails asking for help or for meetings or for advice or for volunteers
+http://www.enron-mail.com/email/skilling-j/inbox/An_opportunity_to_contribute_to_Global_IP_Carriers.html
+https://www.pythonforengineers.com/analysing-the-enron-email-corpus/
+
+My own emails
+volunteer for additional work
+- daisy asked me to do predictive validity day after we spoke about "time" dissertation
+- daisy asked for class subs when her mother was injured
+- brent donnalen asked me to serve on dean search committtee
+- ann marie asked for people to have lunch with mo wang
+- ann marie asked for people to have lunch with quinetta
+- NSF sinem thing
+
+opportunities to praise
+- thoughts on papers
+
+
+
+
+# random walk process
+
+Some opportunities have natural end or closing points. So they get removed from the stock.
+
+
+
+
+(b) show that when two entities have a random walk accumulation pattern, one will demonstrate sustained "help"
+
+
+# rick's thoughts
+
+first paper:
+- not that "individual differences" or "dispotision" are wrong. But you haven't proven me wrong
+- look up leanord medlow
+- simulation: must vary the parameters that must vary. "it depends". Not just one simulation of a random walk and showing 35%. Must have subcomponents. WHat if there is drift?
+- actual data on whether help requests follow a random walk
+
+
+
