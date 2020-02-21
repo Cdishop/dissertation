@@ -11,19 +11,109 @@ https://github.com/yrosseel/lavaan/issues?q=is%3Aopen+is%3Aissue
 rethinking course and book
 https://github.com/rmcelreath/rethinking/issues
 
-(3) Sacha Epskamp
+(3) a graduate student creating a chinese deep learning intro in python
 
-His psychonetrics has no issues. But other "less well known things" have many.
-- perhaps those are his side things. 
+https://github.com/ShusenTang/Dive-into-DL-PyTorch/issues
 
-https://github.com/SachaEpskamp?tab=repositories
+(4) bayesian stats package by statistics professor
 
-**
-genetics researchers with software
-eye tracking with software
+https://github.com/merliseclyde/BAS/issues?q=is%3Aissue+is%3Aclosed
+
+(5) genetics r tools by Grunwald dude at Oregon State
+
+https://github.com/grunwaldlab/poppr/issues
+
+(6) genetics stuff by Associate professor at Imperiel College
+
+https://github.com/thibautjombart/adegenet/issues
+
+(7) phylogenetic analysis in R by Senior Scientist at TU Graz
+
+https://github.com/KlausVigo/phangorn/issues
+
+(8) phylogenetic trees
+
+https://github.com/liamrevell/phytools/issues
+
+(9) software thing by assistant professor of engineering
+
+https://github.com/mauricioaniche/repodriller/issues
 
 
-# forumn type things
+
+
+
+
+
+
+
+# non academics with repos
+
+(1) the hacker's browser
+
+a guy who seems to develop software for a living
+
+https://github.com/philc/vimium/issues
+
+(2) face recognition
+
+Software development consultant dude
+
+https://github.com/ageitgey/face_recognition/issues
+
+(3) httpie https helper
+
+Jakub Roztocil, software engineer
+
+https://github.com/jakubroztocil/httpie/issues
+
+(4) senior software developer at booking.com, but created thefuck 
+
+https://github.com/nvbn/thefuck/issues
+
+(5) data scientist at Strong Analytics in Chicago - eye tracking
+
+https://github.com/jwdink/eyetrackingR/issues?page=3&q=is%3Aissue+is%3Aclosed
+
+(6) modeling financial data in R, Josh Ulrich, software engineer
+
+https://github.com/joshuaulrich/quantmod/issues
+
+
+
+
+
+
+
+
+# github groups
+
+
+(1) a software to shorten web links
+
+https://github.com/thedevs-network/kutt/issues
+
+the developers
+https://github.com/orgs/thedevs-network/people
+
+(2) pandas
+
+https://github.com/pandas-dev/pandas
+
+(3) data.table in R
+
+https://github.com/Rdatatable/data.table/issues
+
+(4) devtool and roxygen people
+
+https://github.com/r-lib
+
+
+
+
+
+
+# forumns
 
 
 (1) lavaan questions forumn
@@ -60,24 +150,6 @@ pimp rmd 2 open, 2 closed
 genMap 2 open, 1 closed
 
 
-(2) a software to shorten web links
-
-https://github.com/thedevs-network/kutt/issues
-
-the developers
-https://github.com/orgs/thedevs-network/people
-
-
-(3) a graduate student creating a chinese deep learning intro in python
-
-https://github.com/ShusenTang/Dive-into-DL-PyTorch/issues
-
-
-(4) the hacker's browser
-
-a guy who seems to develop software for a living
-
-https://github.com/philc/vimium/issues
 
 
 

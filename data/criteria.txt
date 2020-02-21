@@ -1,0 +1,37 @@
+# What am I trying to show?
+
+Opportunities follow a random walk.
+
+
+
+
+(a) data on opportunities over time
+
+- where to look
+- how hard is it to scrape?
+- what am I actually scraping?
+- how many walks do I need?
+- how many time points?
+
+
+(b) how do you know it is actually an opportunity?
+
+- nature of the person where the data comes from (academics)
+++ if academic, then issues are not part of formal rewards
+
+- definition
+- SME sorting: read email, sort it into respect OCB dimension
+- participant questionnaire: read definition of OCB, read data source. Agree or disagree that the data source captures OCBs?
+
+
+(c) assuming that people actually respond to the opportunity
+
+How to deal with this attack
+- yes, that's my assumption
+- quotes about OCBs are "responses to..."
+- data on people actually responding
+
+I'm selecting for people with long issue histories. There are people that create packages with no issues.
+- Sacha Eskcamp
+- Jim Albert https://github.com/bayesball
+- Josh Hubbard eye tracking https://github.com/jashubbard/itrackR

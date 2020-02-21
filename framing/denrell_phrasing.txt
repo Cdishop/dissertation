@@ -82,6 +82,3 @@ persistent differences in profitability rankings.
 
 So, the underlying idea is a random walk. But his real life example is an accumulation on something that must increase. How do you test it?
 
-## unit root tests
-
-https://freakonometrics.hypotheses.org/12729

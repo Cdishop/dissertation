@@ -1,0 +1,7 @@
+## unit root tests
+
+https://freakonometrics.hypotheses.org/12729
+
+# state space modeling
+
+http://www.quantdevel.com/public/StateSpaceModels/index.pdf
