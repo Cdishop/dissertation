@@ -1,0 +1,19 @@
+# web scraping in R
+
+https://github.com/ubcecon/web-scraping-with-R
+
+https://github.com/yusuzech/r-web-scraping-cheat-sheet
+
+# github scraping
+
+## with java (gets issues)
+
+https://github.com/Arcais/github-issue-scraper
+
+https://github.com/nelsonic/github-scraper
+
+## with go (not sure if it gets issues)
+
+https://github.com/dmmcquay/scrape
+
+

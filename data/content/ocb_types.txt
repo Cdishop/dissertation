@@ -1,14 +1,5 @@
 Data sources for ocb opportunity random walk
 
-# testing for random walks
-
-http://www.turingfinance.com/testing-the-efficient-market-hypothesis-with-r/
-
-This was one of the criticisms towards these tests, since they "break from tradition": if we "suspect" the existence of a unit root (𝜌=1 instead of, say, 𝜌=0.99), then the established approach would be to set as the null hypothesis the "trend-stationarity" hypothesis, and then attempt to reject it at the conventional significance levels (the latter reflecting an attempt to "preserve" the null, by keeping the Type I error low, i.e. by keeping low the probability of false rejection of the null).
-
-The most well known test of this second approach (where the null hypothesis is the absence of a unit root), is the Kwiatkowski, Phillips, Schmidt and Shin (1992) one (KPSS).
-
-The current consensus appears to be that a researcher should use both approaches, and see whether they agree in their conclusions. Namely, if the (A)DF test cannot reject its null, while the KPSS rejects its null, the data provide evidence in two different ways that the series has a unit root/ is a Random Walk.
 
 sharecite
 

@@ -136,20 +136,6 @@ https://www.facebook.com/groups/PsychologicalDynamics/
 https://www.facebook.com/groups/346735129027556/
 
 
-# people on github
-
-
-(1) holtzy
-
-graph gallary 9 open 2 closed
-data to viz 12 open 6 closed
-r graph gallary 8 open 3 closed
-epuRate 2 open 4 closed
-teaching 1 open
-pimp rmd 2 open, 2 closed
-genMap 2 open, 1 closed
-
-
 
 
 
@@ -170,5 +156,17 @@ Jerome Busemeyer
 Martin Nowak
 
 
+(2) own emails
+
+"OCB opportunities folder"
+
+
+(3) Enron emails
+
+http://www.enron-mail.com/email/skilling-j/inbox/An_opportunity_to_contribute_to_Global_IP_Carriers.html
+https://www.pythonforengineers.com/analysing-the-enron-email-corpus/
+
+
+(4) PhD student pool at MSU for last 20 years
 
 
