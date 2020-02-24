@@ -46,7 +46,6 @@ https://github.com/mauricioaniche/repodriller/issues
 
 
 
-
 # non academics with repos
 
 (1) the hacker's browser
@@ -79,7 +78,34 @@ https://github.com/jwdink/eyetrackingR/issues?page=3&q=is%3Aissue+is%3Aclosed
 
 https://github.com/joshuaulrich/quantmod/issues
 
+(7) vim pull requests
 
+tooby. 
+- most popular vim plug ins
+- not his job, but he likes to assist
+
+(8) richard harris
+
+svelte
+- employed by wall street journal
+- graphics person
+- but ended up writing a package to remove java script on front end
+- way outside what he is paid to do
+
+(9) mike bostocks (author of D3)
+
+he was employed by wall street journal or new york times
+- D3 not part of job desription
+- hired to be computer visual guy
+- not hired to write a package
+
+(10) Elm written by Evan C
+
+https://github.com/evancz
+
+Evan Czaplicki
+- NoRedINk is his job
+- built elm while he was employed, eventually that became his job
 
 
 
