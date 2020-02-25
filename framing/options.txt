@@ -1,0 +1,101 @@
+
+1) simpler alternative
+
+OCBs are important. Why do people have sustained OCBs?
+
+Prior Explanations.
+
+Simpler alternative: opportunities and accumulation.
+
+2) respond to a call
+
+p. 495 ocb handbook
+- little attention on how requests for help interplay with help itself to inform organizational performance
+
+3) randomness gets you sustained
+
+Imagine two software engineers that have equivalent tasks -- to write code -- and that work at equivalent companies. Neither requires help to perform well, but if either receives help then her performance, her code output, improves. If both receive help by the same mechanism, the same causal diagram governs whether and how they receive help and the extent to which it improves their performance, will the two manifest identical performance? Similarly, consider two prosocial employees that provide advice to others when they receive requests to do so. Both are identical in personality and motive, and both occupy identical positions. If these two individuals receive requests by the same mechanism, will they help others at identical levels?
+
+Our inuition says yes to these situations, but our intuitions are notoriously wrong (prospect), particularly with respect to process explanations (cronin). In this paper, we introduce a process that has important implications for the two areas identified above: citizenship and performance. Explanations of these phenomenon include many aspects, such as disposition and situation  aspects, and more recently dynamic and process theories (cites). A missing but fundamental process, though, is that of accumulation: the idea of assembling components to an existing stock as an employee moves through time. Understanding accumulation provides a new explanation to performance and citizenship.
+
+Most observers fail to understand that many stochastic processes readily yield long streaks of seemingly exceptional outcomes that are simple byproducts of chance. 
+
+Even if there is no systematic variation in opportunities, observed OCBs can exhibit pronounced longitudinal autocorrelation, which can look very much like a sustained run of excellence. 
+
+
+4) intuitive to go to motives
+
+Imagine I tell you about my colleague who always volunteers for additional work and assists others, he or she demonstrates sustained, superior levels of OCBs. 
+- Then you ask my why that person demonstrates such exceptional behavior.
+- Intuitively, I give a response about her disposition (fundamental attribution error)
+- her motives, her personality
+- that's where we naturally go for explaining the behavior of people close to us
+
+- we discount the situation. I want to show that our belief about the connection between personal characteristics and sustained OCBs could be an illusion. 
+- there is an opportunity random walk that you did not account for
+
+
+5) how long must a person exhibit star OCB to rule out chance?
+
+Understanding the causes of sustained superior OCBs is central to both organizational science research and the way that management and psychology are taught in colleges. 
+
+Understanding why some people exhibit exceptional behaviors time and time again is one of the primary goals of research in organizational behavior. Studies that examine successful people to uncover putative secrets are very popular, both in the academic and popular literature. 
+
+
+6) managers identify social capital
+
+Managers need to be able to identify whether long-run, excellent employee behavior is due to dispositions or chance. 
+
+All prior studies have identified disposition components. We identify a chance component.
+
+
+
+
+7) social capital into potential capital
+
+We have notions of social capital
+
+I create theory on potential capital
+
+
+
+
+8) bandura chance events
+
+Bandura's notion of chance events was social (a group of people fortuitiously meeeting who would have otherwise not).
+
+I extend this idea to situations. Circumstances, notifications that people may not have experienced elsewhere.
+
+
+
+
+
+
+
+# other intersting ideas
+
+(a) tournament like quality
+
+My core proposition
+- random opportunity accumulation process is likely to generate sustained OCBs
+
+follows directly if perceptions of excellent OCBs follows strict inequality (>) rather than levels -- if managers perceive them like a tournament quality.
+- "Ricky had more OCBs than Susie"
+- not, "Rick OCBs were 7", "Susie OCBs were 2"
+
+When greater opportunities creates a cutoff of "superior" rather than a greater value, the mechanism is extra likely to occur. 
+
+So, when managers think of OCBs...do they think of cutoffs or levels?
+
+
+
+(b) probability of opportunity causing help
+
+I am assuming that opportunities cause help. But my model still works if opportunities only probabalistically cause help. 
+- simulate
+- 0.8 opportunities cause help
+- 0.1 opportunities cause help
+- how does that effect sustained excellence?
+- similar to (a)
+
+
