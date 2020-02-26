@@ -1,0 +1,39 @@
+# hook
+
+## contributions
+
+## transition
+
+# OCB 
+
+# Extra Milers & Good Soldiers
+
+# Alternative: random walks on opportunities
+
+# Opportunities
+
+# Random Walks
+
+# Statement
+
+Goal is to show that OCB opportunities follow a random walk. 
+
+If so,
+- an alternative exists, contrary to prior explanations
+- chance has not been ruled out
+- researchers have identified spurious effects
+- managers are focusing on the wrong things. They want OCBs...
+++ if OCBs are due to personality and motive, that means find the right person
+++ if OCBs are due to a random process on opportunities, that means identify opportunities
+
+# Method
+
+## study 1 Data
+
+Show that OCB opportunities follow a random walk under various circumstances
+
+## study 2 Simulations...what are the implications of various characteristics?
+
+random walk vs white noise (denrell)
+probability of causing ocb
+trend vs no trend
