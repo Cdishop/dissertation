@@ -1,0 +1,107 @@
+# we naturally think dispositions
+
+Imagine a colleague 
+our intuitions say
+
+as does most of our research, which has focused almost exclusively on...
+
+but we know that chance can produce what looks like long-run, exceptional behavior. Chance explanations have not been ruled out, so when
+
+the purpose of this paper is to show that 
+the requests she receives, or the prompts for assistance, follow a random pattern.
+
+# the purpose is to show that opportunities follow a random walk
+
+opportunities follow a random process
+this random process has known characteristics: it can produce what looks like exceptional, long-run behavior.
+
+most of our research has identified 
+
+# just paper
+
+Organizational citizenship behaviors (OCBs), or prosocial acts such as assisting others, volunteering for additional work, or speaking highly of the company, are increasingly emphasized in the organizational sciences (Dalal & Carpenter, 2018). Leaders put OCBs on equal footing to task performance when asked about the merits of different behaviors within their teams (Podsakoff, MacKenzie, & Podsakoff, 2018), and researchers have gone so far as to describe OCBs as the key social aspect driving organizational success (Bellairs & Halbesleben, 2018). Researchers, as well as consultants, managers, and employees, are interested in knowing why people differ on this behavior, and in particular why someone might have sustained, superior levels of OCBs over time.
+
+Employees that exhibit sustained, high-levels of OCBs have been labeled as "extra-milers" or "good citizens" in the literature (cites), and researchers have identified a number of predictors of this behavior -- many of which are unique characteristics about the employee. For instance, 
+- motives
+- personality
+- cognitive
+A number of variables that predict within-person variance in OCBs have also been examined, but again most are unique characteristics about the employee. 
+- affect
+- justice perceptions
+- exhaustion
+- depletion
+
+
+We offer an alternative, perhaps simpler, model to explain sustained, superior levels of OCBs – one that does not rely on individual characteristics such as motives, attributions, personality, or depletion. The mechanism, instead, uses (a) opportunities, or signals that an act of assistance can be performed, and (b) accumulation, or the notion of assembling components to an existing stock as an employee moves through time. To say that an employee accumulates opportunities is to mean that he or she is confronted with requests, notifications, or prompts that signal to him or her that an act of help can be performed, and each of these successive cases then compiles into his or her existing pool. We show that whenever help requests accumulate, then superior, sustained citizenship behaviors by one employee compared to others is not only a possibility but is the most likely case – it is to be expected. Even when two people have the same level of trust toward others, empathy, or prosocial values, one will have continual, superior helping due to the underlying accumulation process. Moreover, this result occurs even when the mechanism is identical for every employee. In other words, we show that vastly different observed citizenship does not depend on a unique causal diagram for every employee. The fundamental process – accumulation – is the same, but the manifest complexity leading some individuals to have greater citizenship than others occurs due to the unique gradient one experiences across time. Such an alternative explanation does not necessarily challenge existing ideas, but it has the potential to change our understanding of what generates sustained, superior behavior.
+
+
+contributions
+
+Apart from this first contribution, an alternative, parsimonious explanation regarding sustained, superior citizenship, additional contributions of this paper are as follows.
+
+First, we provide managers with a variable to monitor so that they don't get dooped. 
+If they take our literature at face value, then they should assess individual characteristics.
+But this manager has not accounted for differences in help requests and the extent to which these requests follow a random process. 
+Therefore, he or she cannot rule out chance -- she has misattributed the cause of superior OCBs. 
+Any performance evaluation or promotion recommendation she provides -- which are identified outcomes of OCBs -- is given for the wrong reason. The employee behavior was not due to disposition, it was due to chance.
+
+1) managers need to be able to identify whether long-run, excellent employee behavior is due to dispositions or chance.
+
+all prior studies have identified dispositions. we identify chance.
+
+If a manager focuses on dispositions and acts accordingly, he or she has been fooled and wastes resources because chance was the effect. This individual in fact was no more compassionate or benevolent. 
+
+
+
+Second, we answer recent calls for a better understanding of dynamics in the citizenship literature (dishop et al., cronin). Dishop et al., argue that, although it is now common for researchers to assess patterns in longitudinal data, many of the current approaches miss several fundamental concepts of dynamics -- the notion of accumulation being one. We examine this principle here by assessing the extent to which help requests follow a random walk and therefore add more knowledge about citizenship dynamics to our literature. 
+
+
+Third, we extend the OCB literature by examining the nature of help requests. 
+ 
+
+When researchers discuss employee citizenship in handbooks (cite), theory (cites), or in empirical articles that originally introduced the concept (cites), they focus almost exclusively on help itself -- types, measures, predictors, outcomes, and its similarity to other constructs. But many types of helping are, by definition, tied to a request or prompt. For instance, author and author define
+and author and author define
+
+These behaviors are called affiliative citizenship, meaning that ...
+Although there are other types (challenge, which refers to) the focus of this paper as the interest is on prompots or opportunities  -- and some authors have suggested that affiliative is all that should matter. 
+
+Currently, we have much research on helping but little on the nature of prompts. Our understanding of citizenship, therefore, is incomplete in that we have focused exclusively on one aspect of the definition of citizenship - the act - and not the other - the prompt. 
+
+Prompts are a key aspect to this behavior, but we have a limited understanding of their nature.
+- to provide an example
+- handbook predictors
+- all individual characteristics
+- exception is the chapter on social networks by bass
+- exception is the multi level chapter. but even then, "non individual" things include stuff like HR practices and the power structure at the company.
+
+
+
+
+
+
+
+
+Fourth, we challenge an assumption about what causes long-run, exceptional citizenship. To appreciate our stance, it is useful to describe a study by Bolino, Hsiung, Harvey, and LePine (2015). These authors examine within-person variance in OCBs, depletion, and motives, and correlate the constructs over time. They motivate their study by arguing that prior research has assumed that people have stable motives and so "good soldiers," or employees that demonstrate supreme OCB levels compared to their peers, will always be good. They argue that this idea is unfounded and then demonstrate that motives do show systematic within-person variance, and that they predict OCBs. What these authors imply is that long-run behavior is unlikely when there is systematic variance in the variables that are assumed to cause OCBs. Said differently, when the causes are unstable (motives), the outcome must be unstable (OCB). This idea, though, contradicts what we know about stochastic processes, particularly the notion that no systematic variance in the cause is required to produce what looks like long-run stability (cite). If the cause has no systematic variance, it is still possible (and in some cases extremely likely) that the response process does contain systematic variance in the form of long streaks of exceptional citizenship. Our paper, therefore, repositions how we think about long-run citizenship behavior.
+
+No systematic variance in the cause can produce what looks like systematic variance in the outcome. 
+
+
+within person and levels
+- incorrect assumption that two ideas cannot be true at the same time
+- good soldiers: sustained, ocbs compared to peers
+- I go and demonstrate that OCBs fluctuate within persons, so I must have demonstrated good soldeirs to be wrong.
+- no, you can have both fluctuating ocbs and that persons ocbs could be fluctuating around a higher set point than her peers. It's a good soldier, and she demonstrates high ocbs. 
+
+
+
+Finally, this research generates new avenues; it points to unexplored scientific and applied questions that could lead to a flurry of additional work. These questions are unpacked at the end of the paper. 
+
+
+
+
+
+
+
+
+the goal of this paper is to articulate
+- we focus just on affiliative ocbs, calls to act. not voice and not challenge oriented.
