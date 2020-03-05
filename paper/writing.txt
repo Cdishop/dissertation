@@ -1,5 +1,5 @@
 
-Imagine a close colleague that always agrees to volunteer for additional work when asked to do so. What causes her to act this way? Our intuition says that the cause must be something unique about her, a motive, personality trait, disposition, or her momentary enthusiasm. So it is with our research as well: the literature on correlates of why someone responds with help has focused almost exclusively on individual characteristics, such as affect, motives, attributions, justice or leadership perceptions, personality, and exhaustion. But this emphasis contradicts what we know about random processes, namely that long-run streaks of behavior can be by byproducts of chance. Because chance explanations have not been ruled out, statements about the necessity for organizations to monitor, evaluate, and influence individual characteristics to improve employee helping may be overblown. Moreover, a manager who reads this literature and then assumes that individual characteristics cause helping is more likely to falsely attribute good character to her employees when she witnesses helping, leading to performance evaluations and reward recommendations that are, perhaps, biased. The purpose of this paper is to find evidence of randomness in the requests that employees receive asking them for assistance. If we identify chance, then researchers, managers, and consultants must account for it if they truly want to know whether something unique about the individual, rather than something random about the situation, led to exceptional, long-run helping. In the organizational literature, helping or providing assistance to colleagues is referred to as organizational citizenship. 
+Imagine a close colleague that frequently agrees to volunteer for additional work when asked to do so. What causes her to act this way? Our intuition says that the cause must be something unique about her, a motive, personality trait, disposition, or her momentary enthusiasm. So it is with our research: the literature on correlates of why someone responds with help has focused almost exclusively on individual characteristics, such as affect, motives, attributions, justice or leadership perceptions, personality, and exhaustion. But this emphasis contradicts what we know about random processes, namely that long-run streaks of behavior can be by byproducts of chance. Because chance explanations have not been ruled out, statements about the necessity for organizations to monitor, evaluate, and influence individual characteristics to improve employee helping may be overblown. Moreover, a manager who reads this literature and then assumes that individual characteristics cause helping is more likely to falsely attribute good character to her employees when she witnesses helping, leading to performance evaluations and reward recommendations that are, perhaps, biased. The purpose of this paper is to find evidence of randomness in the requests that employees receive asking them for assistance. If we identify chance, then researchers, managers, and consultants must account for it if they truly want to know whether something unique about the individual, rather than something random about the situation, led to exceptional, long-run helping. In the organizational literature, helping or providing assistance to colleagues is referred to as organizational citizenship. 
 
 Organizational citizenship behaviors (OCBs), or prosocial acts such as assisting others, volunteering for additional work, or speaking highly of the company, are increasingly emphasized in the organizational sciences (Dalal & Carpenter, 2018). Leaders put OCBs on equal footing to task performance when asked about the merits of different behaviors within their teams (Podsakoff, MacKenzie, & Podsakoff, 2018), and researchers have gone so far as to describe OCBs as the key social aspect driving organizational success (Bateman & Crant, 1993). Researchers, as well as consultants, managers, and employees, are interested in knowing why people differ on this behavior, and in particular why someone might have sustained, superior levels of OCBs over time.
 
@@ -9,7 +9,7 @@ Studies have also identified predictors of within-person OCB variance, but again
 
 We offer an alternative, perhaps simpler, model to explain sustained, superior levels of OCBs – one that does not rely on individual characteristics such as motives, attributions, personality, or fairness perceptions. The mechanism, instead, uses (a) opportunities, or signals that an act of assistance can be performed, and (b) chance accumulation, or the notion of randomly assembling components to an existing stock as an employee moves through time. To say that an employee randomly accumulates opportunities is to mean that he or she is confronted with requests, notifications, or prompts that signal to him or her that an act of help can be performed, and each of these successive cases then compiles into his or her existing pool. We show that whenever help requests follow a random accumulation process, then superior, sustained citizenship behaviors by one employee compared to others is not only a possibility but is the most likely case – it is to be expected. Even when two people have the same level of trust toward others, empathy, or prosocial values, one will have continual, superior helping due to the underlying, random accumulation.  Moreover, this result occurs even when the mechanism is identical for every employee. In other words, we show that vastly different observed citizenship does not depend on a unique causal diagram for every employee. The fundamental process – accumulation – is the same, but the manifest complexity leading some individuals to have greater citizenship than others occurs due to the unique gradient one experiences across time. Such an alternative explanation does not necessarily challenge existing ideas, but it has the potential to change our understanding of what generates sustained, superior behavior.
 
-Apart from this first contribution, an alternative, parsimonious explanation regarding sustained, superior citizenship, additional contributions of this paper are as follows. First, we provide information to managers that can help them avoid misattributing causes of citizenship. If a manager were to take our literature at face value, then she should assess individual characteristics to monitor, predict, and manage helping behaviors. But such actions do not account for differences in help requests and the extent to which these requests follow a random process. Therefore, she cannot rule out chance when she witnesses sustained, high levels of OCBs and will potentially misattribute its cause to personality or motives. Any performance or promotion recommendation that she then provides -- which are identified outcomes of OCBs -- are given for the wrong reason. The employee behavior was not due to disposition, but chance opportunities. 
+Apart from this first contribution, an alternative, parsimonious explanation regarding sustained, superior citizenship, additional contributions of this paper are as follows. First, we provide information to managers that can help them avoid misattributing causes of citizenship. If a manager were to take our literature at face value, then she should assess individual characteristics to monitor, predict, and manage helping behaviors. But such actions do not account for differences in help requests and the extent to which these requests follow a random process. Therefore, she cannot rule out chance when she witnesses sustained, high levels of OCBs and will potentially misattribute its cause to personality or motives. Any performance or promotion recommendation that she then provides -- which are outcomes of OCBs -- are given for the wrong reason. The employee behavior was not due to disposition, but chance opportunities. 
 
 Second, we answer recent calls for a better understanding of dynamics in the citizenship literature (dishop et al., cronin). Dishop et al., argue that, although it is now common for researchers to assess patterns in longitudinal data, many of the current approaches miss several fundamental concepts of dynamics -- the notion of accumulation being one. We examine this principle here by assessing the extent to which help requests follow a random walk and therefore add more knowledge about citizenship dynamics to our literature. 
 
@@ -20,136 +20,40 @@ Third, we extend the OCB literature by examining the nature of help requests. Wh
 Fourth, we challenge an assumption about what creates long-run, exceptional citizenship. To appreciate our stance, it is useful to describe a study by Bolino, Hsiung, Harvey, and LePine (2015). These authors examine within-person variance in OCBs, depletion, and motives, and correlate the constructs over time. They motivate their study by arguing that prior research has assumed that people have stable motives and so "good soldiers," or employees that demonstrate supreme OCB levels compared to their peers, will always be good. They argue that this idea is unfounded and then demonstrate that motives do show systematic within-person variance, and that they predict OCBs. What these authors imply is that long-run behavior is unlikely when there is systematic variance in the variables that are assumed to cause OCBs. Said differently, when the causes are unstable (motives), the outcome must be unstable (OCB). This idea, though, contradicts what we know about stochastic processes, particularly the notion that no systematic variance in the cause is required to produce what looks like long-run stability in the outcome (cite). If the cause has no systematic variance, it is still possible (and in some cases extremely likely) that the response process does contain systematic variance in the form of long streaks of exceptional citizenship. Our paper, therefore, repositions how we think about long-run citizenship behavior.
 
 
-Finally, this research generates new avenues; it points to unexplored scientific and applied questions that could lead to a flurry of additional work. These questions are unpacked at the end of the paper. The goal of this paper is to describe an alternative, chance model of long-run citizenship that incorporates opportunities and accumulation. Below, we describe OCB background and theory, the notion of extra milers/good soldiers, our alternative explanation for this effect...
+Finally, this research generates new avenues; it points to unexplored scientific and applied questions that could lead to a flurry of additional work. These questions are unpacked at the end of the paper. The goal of this paper is to describe an alternative, chance model of long-run citizenship that incorporates opportunities and accumulation. Below, we describe OCB background and theory, the notion of extra milers/good soldiers, our alternative explanation for this effect, and explore evidence that opportunities do follow a random accumulation process. 
 
 
+# Organizational Citizenship Behaviors (OCBs)
 
+The idea that there are employee behaviors beyond what we typically consider as job or task performance but that still promote individual and collective success has been around for decades. Researchers from psychology, management, education, human resources, organizational behavior, and sociology have different terms for this behavior, and different aspects that they emphasize, but in the organizational literature this behavior has come to be known as organizational citizenship. OCB is "individual behavior that is discretionary, not directly or explicitly recognized by the formal reward system, and that in the aggregate promotes the effective functioning of the organization" (1988: 4). It has been described as a behavior that “lubricates” the social machinery of the organization, thereby facilitating its effective functioning (Bolino, Turnley, & Blood- good, 2002; Organ et al., 2006; P. M. Podsakoff & MacKenzie, 1997). Related terms that have now become less popular in the literature include organizational spontaneity (George & Brief, 1992), extra-role behavior (Van Dyne & LePine, 1998), and contextual performance (Motowidlo & Van Scotter, 1994).
 
-# OCB Theory & history
+Citizenship has consequences for both individuals and collectives. Employees demonstrating greater OCBs earn higher supervisor performance evaluations (e.g., MacKenzie, Podsakoff, & Fetter, 1991, 1993; Motowidlo & Van Scotter, 1994) and more awards and promotion recommendations (e.g., Van Scotter, Motowidlo, & Cross, 2000). Meta-analytic results suggest that individuals who consistently engage in OCB are less likely to express intentions to leave, to voluntarily quit, and to be absent from work (Podsakoff, Whiting, Podsakoff, & Blume, 2009). For collectives, greater levels of OCBs relate to higher performance quality, performance quantity, and customer satisfaction (Ehrhart & Naumann, 2004; Podsakoff, MacKenzie, Paine, & Bachrach, 2000), and some studies suggest that organizations competing in changing environments are especially dependent on good citizens because the goodwill and social capital they foster are a source of competitive advantage (Bolino, Turnley, & Bloodgood, 2002; Leana & Van Buren, 1999; Nahapiet & Ghoshal, 1998). There are also studies documenting the negative consequences of OCBs, which include reduced in-role performance, lower self-esteem from the receiver, depletion and exhaustion, role overload, and feelings of resentment among peers (cites). That said, several researchers claim that OCBs should be thought of as a positive act, which is highlighted in the following quotes:
 
-(0) definitions, similar terms
+"There is considerable support in the literature for the idea that citizenship behavior at work is a positive thing"
 
-Over the past quarter-century, organizational scholars have been paying increased attention to “work behavior that is in some way beyond the reach of traditional measures of job performance but holds promise for long-term organizational suc- cess” (Van Dyne, Graham, & Dienesch, 1994: 765; see also Koys, 2001; Podsakoff & MacKenzie, 1997). Such behavior, described by various authors as or- ganizational citizenship behavior (Organ, 1988; Or- gan & Ryan, 1995; Smith, Organ, & Near, 1983), prosocial behavior at work (George, 1991), organi- zational spontaneity (George & Brief, 1992), extra- role behavior (Van Dyne & LePine, 1998), and con- textual performance (Motowidlo & Van Scotter, 1994).
+"Theory and practice should acknowledge the sizable role good citizens play...because organizations rely on their continued investments"
 
-In 1983 Bateman and Organ introduced the construct of organizational citizenship behavior (OCB), drawing upon concepts of suprarole be- havior advanced by Katz and Kahn (1966). Organ describes OCB as "individual behavior that is discretionary, not directly or explicitly recog- nized by the formal reward system, and that in the aggregate promotes the effective function- ing of the organization" (1988: 4). Since its intro- duction, the topic has received a great deal of research attention. 
+Researchers typically pursue one of three broad ways to classify OCBs. Initially, OCB included two dimensions: altruism, or helping directed at a person after an eliciting stimulus; and generlized compliance, or an impersonal sense of conscientiousness. These two dimensions were later deconstructed into altriusm (respond to opportunities to help a coworker), courtesy (respond to a request for information with kindness), conscientioueness (on time, following rules, etc.), civic virtue (concern for and commitment to organization), and sportsmanship (tolerate less than ideal circumstances while maintaining a positive outlook). Other researchers classify OCBs either as affiliative or challenging. Affiliative behaviors are acts such as helping and responding to requests for information with courtesy in which the actor supports existing company processes. Challenging behaviors are acts such as voicing problems and initiating change in which the actor changes his or her circumstances. Finally, OCBs are also distinguished by whether they benefit individuals (OCB-I; helping, assisting, encouraging) or the organization (OCB-O; promoting the company to others). 
 
+In this paper, we refer to affialiative OCBs whenever we use the terms citizenship, helping, acts of assistance, or OCB. This focus is necessary and appropriate for the following reasons. First, Li and Author spend an entire chapter describing the differences between affiliative (helping) and challenging (voicing) OCBs and argue that helping should be thought of as the core manifestation of citizenship because it (a) aligns with what most people mean when they study cooperation in the broader sciences, (b) is based on different evolutionary pressures than behaviors such as voicing concerns or actively changing circumstances, and (c) leads to construct contamination of unnecessary confusion if coupled with change-oriented behaviors. Second, Van Dyne et al., (1995) suggested that "the conceptual definition and subsequent operationalizations of OCBs should focus on citizenship behavior that is affiliative...and should not include challenging" (p. 274). Third, helping is the core dimension discussed in the original paper exploring the dimensionality of OCBs (smith, near) and within Organ's theoretical writing about the construct (organ cites). Finally, and perhaps most importantly, it aligns with the purpose of this study, which is to explore the random nature of prompts for help. For all of these reasons, this paper couches itself within the affiliative space of the construct.
 
-Most commonly, OCB is considered intentional, discretionary behavior that exceeds minimum requirements of the job and reinforces the social and psychological work environment (Organ, 1997) This can include be- haviors directed toward individuals or the orga- nization, such as assisting and cooperating with others, helping new employees learn about and become oriented to the organization, attending voluntary work functions, and speaking up to make recommendations and encourage others to get involved (LePine & Van Dyne, 2001; Van Dyne & LePine, 1998). Compared to task performance, OCB is less likely to be considered an enforceable job requirement and (although the subject of some debate; cf. Borman & Motowidlo, 1997) is less likely to be confidently linked to receipt of sys- tematic formal rewards (Bateman & Organ, 1983; Bergeron, 2007; Organ, 1997).
+# Sustained, Long-Run Citizenship
 
-Citizenship describes efforts by em- ployees to take initiative to contribute in ways that are not formally required by the organization (C. A. Smith, Organ, & Near, 1983).
+Recently, researchers have shown an increasing interest in employees that repeatedly exhibit greater OCBs compared to their peers. Li et al., 2015, for instance, studied manufacturing teams in China and examined the influence of team members that demonstrated high-frequency OCBs on team processes and effectiveness. The term these researchers used to describe an employee who consistently helps more than his or her peers was an "extra miler." They identified the "extra miler" on each team by taking the person with the maximum helping behaviors as rated by his or her team members. The authors found that extra milers were important for team monitoring and backup behaviors. 
 
-More than 4 decades have passed since researchers proposed that employees can advance group, organizational, and personal effec- tiveness by engaging in citizenship behaviors such as helping coworkers, protecting the organization, making constructive sug- gestions, developing oneself, and spreading goodwill (Katz, 1964; Katz & Kahn, 1966).
+Method, Lepak, Shipp, and Boswell (2017) describe a similar phenomenon in a theory paper explaining how employees make sense of life events and its implications for OCB. They state, 
 
+One topic of particular interest in the OCB literature is the concept of “good citizens” —- employees who tend to engage in high levels of OCB (Bateman & Organ, 1983; Bolino, 1999; Bolino, Hsiung, Harvey, & LePine, in press; Li, Zhao, Walter, Zhang, & Yu, 2015; Organ, 1988; Vigoda- Gadot, 2006). Research suggests that good citizens characteristically perform OCB because of such factors as personality traits, including agreeableness, prosocial orientation and values, and proactive personality (Bateman & Crant, 1993; Grant, 2008; Meglino & Korsgaard, 2004; Penner, Midili, & Kegelmeyer, 1997; Schwartz & Bardi, 2001).
 
+So, OCBs are high frequency
+repeatedly greater than peers
+- say that in six different ways
 
-A related stream was work by Borman and Motowidlo (1993) and Motowidlo and Van Scotter (1994) on contextual performance. Individuals contribute to org effectiveness by doing things that are not main task functions but are important because they shape the organizational and social "context" that supports task activities. Thus, contextual performance (like OCB), includes such contributions as volunteereing for extra-job activities, helping others, and upholding workplace rules and procedures regardless of personal inconvenience. Borman and Motowidlo suggest that such contributions have a generalized value and significance that cuts across different jobs and work organizations, whereas task performance varies from job to job.
+What are the predictors?
+- notice some listed in the method quote
+- also some from the opening 
 
-For Borman and Motowidlo, the distinction between contextual and task (in-role) performance is both theoretically and practically important because they are probably determine by different antecedents. TSAs predict task performance, whereas dispositions influence contextual. For Organ and Ryan, they give as much emphasis to attitudes as personality in determining OCB.
-
-- "The major difference is that we would give as much emphasis to attitudinal as to personality factors in determining OCB." (p. 776).
-
-(01) classifications and types
-
-A better classification from Bellairs and Halbesleben (2018)
-
-- ocb is discretionary behavior that is not formally rewarded, does not have embedded rewards or punishment, and that is assumed to promote org effectiveness and performance
-
-early work organized ocb into five areas:
-
-- altruism: one helping another on work tasks
-
-- courtesy: preventing problems at work, especially with coworkers
-
-- conscientiousness: on time, following rules, going beyond minimal requirements
-
-- civic virtue: concern for and commitment to org
-
-- sportsmanship: tolerate less than ideal circumstances and inconveniences while maintaining a positive outlook and not complaining.
-
-some studies classify ocbs as affiliative or challenging
-
-- affiliative: support existing processes (help, courtesy, work hard)
-
-- challenging: change circumstances (voice problems, initiate change, improve processes)
-
-others classify ocbs as o or i
-
-- o = behaviors that benefit org
-
-- i = behaviors that benefit individuals
-
-
-
-
-- OCB is a behavioral construct that reflects the degree to which an individual acts to enhance functioning of org
-
-1) respond to opportunities to help a coworker
-
-2) respond to a request for information with courtesy
-
-3) attend extra meeting
-
-4) be a good sport when things do not go well
-
-5) accomplish work with extra diligence and care
-
-
-
-
-
-(b) Li handbook chapter
-
-In his seminal book, The Functions of the Executive, which is a pivotal basis for Organ's original work on the conceptualization of OCB (Organ et al., 2011), Barnard (1938) raised the importance of the "willingness of persons to contribute efforts to the cooperative system" (P. 83). The emphasis was essentially on cooperation (rather than change-oriented behaviors). Thus, the original conceptualization of OCB centererd on the willignness to cooperate. Related to this, Organ (*1988) originally conceptualized citizenship behavior as altruistic and prosocial in nature, and as such, helping/altruism was on of the two factors in the original OCB research (Smith, Organ, & Near, 1983). Third, in their influential paper, Van Dyne et al., (1995) provided the following suggestion to future OCB research: "The conceptual definition and subsequent operationalizations of OCBs should focus on citizenship behavior that is affiliative and promotive [e.g., helping] and should not include challenging/prohibitive, challenging/promotive, or affiliative/prohibitive behaviors " (p. 274). Fourth, Organ has repreatedly argued that OCB is important for the smooth functioning of the organization; in contract, proactivity can often have disruptive effects in organizations. In our view, expanding the definition of a construct (e.g., encompassing change-oreinted behaviors as part of OCB) may result in unnecessary confusion and less clarity to the very nature of the construct. Based on the aforementioned reasoning, we decided to concentrate on helping as the core manifestation of OCB. In this chapter, by OCB we mean affiliative citizenship behaviors (i.e., helping) that may enhance the smooth functioning of thte organization, if not otherwise noted. 
-
-pgs. 57 & 58
-
-
-
-(c) theory
-
-The relationship between OCB and job attitudes is rooted in social exchange theory-that is, em- ployees engage in OCBs in order to reciprocate the actions of their organizations. The second rationale holds that OCBs reflect an individual's predisposition to be helpful, cooperative, or con- scientious.
-
-
-
-(d) related to outcomes
-
-related to outcomes
-- mimic bolino and others, perhaps related to outcomes through social capital
-
-
-Citizenship researchers argue that OCBs are critical to organizational functioning (Bateman & Organ, 1983; Organ, 1988)-an assertion based largely on the work of Katz, who suggested that "an organization which depends solely upon its blueprints of prescribed behavior is a fragile social system" (1964: 132).However, in contrast to the numerous studies exploring the antecedents of OCB, there is a paucity of research examining the outcomes of citizenship behaviors in organi- zations (Organ & Ryan, 1995).
-
-
-
- Researchers have generally focused on how OCB is beneficial for both em- ployees and organizations. Employees go beyond the call of duty by helping and mentoring coworkers, getting involved and keeping well informed about the organization, speaking up and encourag- ing others, volunteering to take on additional responsibilities, and so forth, and they are evaluated more favorably by their supervi- sors for doing so (Bateman & Organ, 1983; Whiting, Podsakoff, & Pierce, 2008).
-
-
-Organizations also benefit from OCB because such behavior contributes to the development of social capital and “lubricates” the social machinery of the organization, thereby facilitating its effective functioning (Bolino, Turnley, & Blood- good, 2002; Organ et al., 2006; P. M. Podsakoff & MacKenzie, 1997). Consistent with these ideas, empirical studies have found that OCB is associated with indicators of team and organization effectiveness, such as sales performance, productivity, product quality, and customer service ratings (see N. P. Podsakoff, Whit- ing, Podsakoff, & Blume, 2009, for a meta-analysis). In sum, there is considerable support in the literature for the idea that citizenship behavior at work is a positive thing (Organ et al., 2006).
-
-
-
-At collective levels, groups and organizations with employees who engage in high levels of citi- zenship achieve higher performance quality, performance quantity, and customer satisfaction (Ehrhart & Naumann, 2004; Podsakoff, MacKenzie, Paine, & Bachrach, 2000). At the individual level, employees who engage in citizenship by taking initiative to con- tribute to other people and the organization earn higher supervisor performance evaluations (e.g., MacKenzie, Podsakoff, & Fetter, 1991, 1993; Motowidlo & Van Scotter, 1994) and more awards and promotions (e.g., Van Scotter, Motowidlo, & Cross, 2000).
-
-
-Although good citizens may seemingly represent a relatively small proportion of the workforce (Bolino, 1999), the potentially low base rate belies how vital they are to organizational success. Indeed, MA results demonstrate that individuals who consistently engage in OCB are less likely to express intentions to leave, to voluntarily quit, and to be absent from work (Podsakoff, Whiting, Podsakoff, & Blume, 2009). Studies also suggest that organizations competing in dynamic environments are especially dependent on good citizens because the goodwill and social capital they foster are a source of competitive advantage (Bolino, Turnley, & Bloodgood, 2002; Leana & Van Buren, 1999; Nahapiet & Ghoshal, 1998). Thus, theory and practice should acknowledge the sizable role good citizens play, because their unique histories, knowledge, abilities, and performance generate disproportaionate influence on their colleagues and organizations and because organizations rely on their continued investments (Li et al., 2015).
-
-
-
-# Transition
-
-Recently, lots of interest in sustained citizenship.
-
-# Extra Milers & Good Soldiers
-
-Describe extra milers study.
-
-Describe good soldiers study.
-
-
-
-One topic of particular interest in the OCB literature is the concept of “good citizens”— employees who tend to engage in high levels of OCB (Bateman & Organ, 1983; Bolino, 1999; Bolino, Hsiung, Harvey, & LePine, in press; Li, Zhao, Walter, Zhang, & Yu, 2015; Organ, 1988; Vigoda- Gadot, 2006). Research suggests that good citizens characteristically perform OCB because of such factors as personality traits, including agree- ableness, prosocial orientation and values, and proactive personality (Bateman & Crant, 1993; Grant, 2008; Meglino & Korsgaard, 2004; Penner, Midili, & Kegelmeyer, 1997; Schwartz & Bardi, 2001).
-
-
+We examine an alternative: long-run behavior could be a byproduct of chance. 
 
 
 
@@ -164,6 +68,10 @@ There is an alternative: long run behavior can be a byproduct of chance.
 - accumulation
 
 # Opportunities
+
+also smith, near, 1983
+- helping in response to prompt was the original, crucial part of OCBs
+- "One type of citizenship behvaior, altruism, emerges as a class of helping behaviors aimed directly at specific persons. The eliciting stimului appear to be situational, that is, someone has a problem, needs assistance, or requests a service" (p. 661).
 
 
 # Transition
