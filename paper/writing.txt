@@ -1,5 +1,5 @@
 
-Imagine a close colleague that frequently agrees to volunteer for additional work when asked to do so. What causes her to act this way? Our intuition says that the cause must be something unique about her, a motive, personality trait, disposition, or her momentary enthusiasm. So it is with our research: the literature on correlates of why someone responds with help has focused almost exclusively on individual characteristics, such as affect, motives, attributions, justice or leadership perceptions, personality, and vigor. But this emphasis contradicts what we know about random processes, namely that long-run streaks of behavior can be by byproducts of chance. Because chance explanations have not been ruled out, statements about the necessity for organizations to monitor, evaluate, and influence individual characteristics to improve employee helping may be overblown. Moreover, a manager who reads this literature and then assumes that individual characteristics cause helping is more likely to falsely attribute good character to her employees when she witnesses helping, leading to performance evaluations and reward recommendations that are, perhaps, biased. The purpose of this paper is to find evidence of randomness in the requests that employees receive asking them for assistance. If we identify chance, then researchers, managers, and consultants must account for it if they truly want to know whether something unique about the individual, rather than something random about the situation, led to exceptional, long-run helping. In the organizational literature, helping or providing assistance to colleagues is referred to as organizational citizenship. 
+Imagine a close colleague that frequently agrees to volunteer for additional work when asked to do so. What causes her to act this way? Our intuition says that the cause must be something unique about her, a motive, personality trait, disposition, or her momentary enthusiasm. So it is with our research: the literature on correlates of why someone responds with help has focused almost exclusively on individual characteristics, such as affect, motives, attributions, justice or leadership perceptions, personality, and vigor. But this emphasis contradicts what we know about random processes, namely that long-run streaks of behavior can be by byproducts of chance. Because chance explanations have not been ruled out, statements about the necessity for organizations to monitor, evaluate, and influence individual characteristics to improve employee helping may be overblown. Moreover, a manager who reads this literature and then assumes that individual characteristics cause helping is more likely to falsely attribute good character to her employees when she witnesses it, leading to performance evaluations and reward recommendations that are, perhaps, biased. The purpose of this paper is to find evidence of randomness in the requests that employees receive asking them for assistance. If we identify chance, then researchers, managers, and consultants must account for it if they truly want to know whether something unique about the individual, rather than something random about the situation, led to exceptional, long-run helping. In the organizational literature, helping or providing assistance to colleagues is referred to as organizational citizenship. 
 
 Organizational citizenship behaviors (OCBs), or prosocial acts such as assisting others, volunteering for additional work, or speaking highly of the company, are increasingly emphasized in the organizational sciences (Dalal & Carpenter, 2018). Leaders put OCBs on equal footing to task performance when asked about the merits of different behaviors within their teams (Podsakoff, MacKenzie, & Podsakoff, 2018), and researchers have gone so far as to describe OCBs as the key social aspect driving organizational success (Bateman & Crant, 1993). Researchers, as well as consultants, managers, and employees, are interested in knowing why people differ on this behavior, and in particular why someone might have sustained, superior levels of OCBs over time.
 
@@ -7,7 +7,7 @@ Employees that exhibit sustained, high-levels of OCBs are labeled "extra-milers"
 
 Studies have also identified predictors of within-person OCB variance, but again many of these are individual characteristics. Antecedents include positive affect (dalal, lam, weiss, welch, hulin; glomb, bhave, miner, wall), job satisfaction (illies, scott, judge), social comparisons and beliefs in a just world (spence, ferris, brown, heller), core self evaluations and future orientation (wu, Parker), engagement (christian, eisenkraft, dapadia; barnes, ghumann, scott), and perceptions of justice or supervisor support (matta, sabey, scott, lin; schreurs, van emmerik, gunter, germeys).
 
-We offer an alternative, perhaps simpler, model to explain sustained, superior levels of OCBs – one that does not rely on individual characteristics such as motives, attributions, personality, or fairness perceptions. The mechanism, instead, uses (a) opportunities, or signals that an act of assistance can be performed, and (b) chance accumulation, or the notion of randomly assembling components to an existing stock as an employee moves through time. To say that an employee randomly accumulates opportunities is to mean that he or she is confronted with requests, notifications, or prompts that signal to him or her that an act of help can be performed, and each of these successive cases then compiles into his or her existing pool. We show that whenever help requests follow a random accumulation process, then superior, sustained citizenship behaviors by one employee compared to others is not only a possibility but is the most likely case – it is to be expected. Even when two people have the same level of trust toward others, empathy, or prosocial values, one will have continual, superior helping due to the underlying, random accumulation.  Moreover, this result occurs even when the mechanism is identical for every employee. In other words, we show that vastly different observed citizenship does not depend on a unique causal diagram for every employee. The fundamental process – accumulation – is the same, but the manifest complexity leading some individuals to have greater citizenship than others occurs due to the unique gradient one experiences across time. Such an alternative explanation does not necessarily challenge existing ideas, but it has the potential to change our understanding of what generates sustained, superior behavior.
+We offer an alternative, perhaps simpler, model to explain sustained, superior levels of OCBs – one that does not rely on individual characteristics such as motives, attributions, personality, or fairness perceptions. The mechanism, instead, uses (a) opportunities, or signals that an act of assistance can be performed, and (b) chance accumulation, or the notion of randomly assembling components to an existing stock as an employee moves through time. To say that an employee randomly accumulates opportunities is to mean that he or she is confronted with requests, notifications, or prompts that signal to him or her that an act of help can be performed, and each of these successive cases then compiles into his or her existing pool. We show that whenever help requests follow a random accumulation process, then superior, sustained citizenship behaviors by one employee compared to others is not only a possibility but in some cases it is the most likely outcome -- it is to be expected. Even when two people have the same level of trust toward others, empathy, or prosocial values, one may have continual, superior helping due to the underlying, random accumulation.  Moreover, this result occurs even when the mechanism is identical for every employee. In other words, we show that vastly different observed citizenship does not depend on a unique causal diagram for every employee. The fundamental process – accumulation – is the same, but the manifest complexity leading some individuals to have greater citizenship than others occurs due to the unique gradient one experiences across time. Such an alternative explanation does not necessarily challenge existing ideas, but it has the potential to change our understanding of what generates sustained, superior behavior.
 
 Apart from this first contribution, an alternative, parsimonious explanation regarding sustained, superior citizenship, additional contributions of this paper are as follows. First, we provide information to managers that can help them avoid misattributing causes of citizenship. If a manager were to take our literature at face value, then she should assess individual characteristics to monitor, predict, and manage helping behaviors. But such actions do not account for differences in help requests and the extent to which these requests follow a random process. Therefore, she cannot rule out chance when she witnesses sustained, high levels of OCBs and will potentially misattribute its cause to personality or motives. Any performance or promotion recommendation that she then provides -- which are outcomes of OCBs -- are given for the wrong reason. The employee behavior was not due to disposition, but chance opportunities. 
 
@@ -17,7 +17,9 @@ Third, we extend the OCB literature by examining the nature of help requests. Wh
 
 Fourth, we challenge an assumption about what creates long-run, exceptional citizenship. To appreciate our stance, it is useful to describe a study by Bolino, Hsiung, Harvey, and LePine (2015). These authors examine within-person variance in OCBs, depletion, and motives, and correlate the constructs over time. They motivate their study by arguing that prior research has assumed that people have stable motives and so "good soldiers," or employees that demonstrate supreme OCB levels compared to their peers, will always be good. They argue that this idea is unfounded and then demonstrate that motives do show systematic within-person variance, and that they predict OCBs. What these authors imply is that long-run behavior is unlikely when there is systematic variance in the variables that are assumed to cause OCBs. Said differently, when the causes are unstable (motives), the outcome must be unstable (OCB). This idea, though, contradicts what we know about stochastic processes, particularly the notion that no systematic variance in the cause is required to produce what looks like long-run stability in the outcome (cite). If the cause has no systematic variance, it is still possible (and in some cases extremely likely) that the response process does contain systematic variance in the form of long streaks of exceptional citizenship. Our paper, therefore, repositions how we think about long-run citizenship behavior.
 
-Finally, this research generates new avenues; it points to unexplored scientific and applied questions that could lead to a flurry of additional work. These questions are unpacked at the end of the paper. The goal of this paper is to describe an alternative, chance model of long-run citizenship that incorporates opportunities and accumulation. Below, we describe OCB background and theory, the notion of extra milers/good soldiers, our alternative explanation for this effect, and explore evidence that opportunities follow a random accumulation process. 
+Finally, this research generates new avenues; it points to unexplored scientific and applied questions that could lead to a flurry of additional work. These questions are unpacked at the end of the paper. 
+
+The goal of this paper is to describe an alternative, chance model of long-run citizenship that incorporates opportunities and accumulation. Below, we describe OCB background and theory, the notion of extra milers/good soldiers, and then present our alternative explanation with two studies. In study one, we suggest and find evidence that help requests follow a random accumulation process. Specifically, we draw from probability theory and contend that, in some cases, patterns of help requests unfold according to a stochastic process and we find evidence across several data sources that help requests can be modeled as random walks. In study two, we take our results from study one -- that help requests follow a random walk -- as a starting point and then use simulations to determine how different types of random walks lead to various forms of long-run behavior. Stated simply, study two reveals the parameters and assumptions required for random walks to produce long-run OCBs. 
 
 # Organizational Citizenship Behaviors (OCBs)
 
@@ -47,40 +49,142 @@ What accounts for long-run citizenship? OCB antecedents were described earlier i
 
 # Prompts & Opportunities
 
-A prompt/request/opportunity is a signal to an employee that an act of help can be performed, and this idea was an important element in the early OCB literature. In their cornerstone paper describing its dimensions, Smith, AUTHOR, Near (1983) state that helping occurs after necessary stimuli, or signals that "appear to be situational, that is, someone has a problem, needs assistance, or requests a service" (p. 661). Despite this initial emphasis, Ehrhart points out that there has been little follow-up research on the nature of requests and how they inform what we know about OCBs. That said, there is ample theory elsewhere that describes opportunities more broadly as they reflect aspects of the situation or environment in which an agent is conducting his or her behavior -- we draw from this literature to guide our discussion. 
+A prompt/request/opportunity is a signal to an employee that an act of help can be performed, and this idea was an important element in the early OCB literature. In their cornerstone paper describing its dimensions, Smith, AUTHOR, Near (1983) state that helping occurs after a stimuli, or a signal that "appears to be situational, that is, someone has a problem, needs assistance, or requests a service" (p. 661). Despite this initial emphasis, Ehrhart points out that there has been little follow-up research on the nature of requests and how they inform what we know about OCBs. That said, there is ample theory elsewhere that describes opportunities more broadly as they reflect aspects of the situation or environment in which an agent is conducting his or her behavior -- we draw from this literature to guide our discussion. 
 
 Many researchers across several scientific disciplines have described the nature of situations and environments. Within this broad area, two ways to think about the environment are relevant for our purposes. The first is as a platform, space, or zone which holds distributed goal-relevant objects. This perspective is consistent with much of Herbert Simon's writing that emphasized the importance of context for understanding human behavior. Across a number of papers, theories, and normative models [@simon_what_1992; @simon_rational_1956] Simon argues that to understand the complex behavior of an agent it is first necessary to understand how goal-relevant objects are distributed around it. Applied to the current paper, this notion embodies the idea that to understand OCBs it is necessary to know how opportunities to assist are distributed about an employee. To make his writing clear, Simon usually described how objects were distributed in space, meaning that an agent was located in a matrix and the distribution was over cells. Here, we extend that idea to a distribution over time. Not only do employees receive help requests from different colleagues, they also receive requests at different moments in time, and requests happen repeatedly as an employee moves from moment to moment. This distribution over time would reflect the average number of requests the employee would expect to receive at any moment, alongisde the expected variability in requests. 
 
 The second perspective on the environment is as a shock or disturbance that makes opportunities come and go. Random stimuli occur and these factors impinge upon actors, allowing some behaviors and constraining others. This idea is consistent with the notion of shocks in the unfolding model of employee turnover in which discrete events thwart some opportunities and create others [@lee_alternative_1994], to events in affective events theory in which random stimuli cause changes in employee emotion and behavior [@beal_episodic_2005], and to the environment in Dishop's goal sampling theory [@dishop_simple_2019] in which actors are only able to approach goals made available by the situation at any moment in time. @blumberg1982missing define opportunities as "the particular configuration of the field of forces surrounding a person and his or her task that enables or constrains that person's task performance and that are beyond the person's direct control" (p. 565), and @stewart2007exploring demonstrated that even skilled and motivated workers cannot engage in performance facilitating behavior when their actions are constrained by the environment. 
 
-Across all of these perspectives, the core idea is that there are opportunities scattered about the environment that come and go. The particular form of opportunity that we examine in this study includes a help request: a prompt or signal or notification to an employee that an act of assistance can be performed. Consider a few examples: A Professor receives an email from a colleague asking if she can substitute teach an undergraduate course; A manager announces that volunteers are needed for an upcoming assignment; A blogger tells his writing collaborator that she is welcome to review and edit his post if she pleases; A statistician witnesses a question posted on a forumn about a statistical model relevant to her expertise; A software engineer receives a pull request; An academic receives a note from a graduate student asking for a friendly review of his paper. Moreover, any single agent may experience repeated prompts over the course of a week. On Monday, a Professor may receive an email asking for assistance teaching a class. On Tuesday, she receives two more emails about optional meetings in her department (attending optional meetings is one commonly studied manifestation of OCB). On Wednesday, a former graduate student that is now faculty member at a different school asks for a letter of recommendation. On some days the Professor has a large stock of help requests, whereas on other days she has few, if any. The crux of this paper is that we expect these helping prompts to follow a specific mathematical form, which we specify below.
+Across all of these perspectives, the core idea is that there are opportunities scattered about the environment that come and go. The particular form of opportunity that we examine in this study includes a help request: a prompt or signal or notification to an employee that an act of assistance can be performed. Consider a few examples: A Professor receives an email from a colleague asking if she can substitute for an undergraduate course; A manager announces that volunteers are needed for an upcoming assignment; A blogger tells his writing collaborator that she is welcome to review and edit his post if she pleases; A statistician witnesses a question posted on a forumn about a statistical model relevant to her expertise; A software engineer receives a pull request; An academic receives a note from a graduate student asking for a friendly review of his paper. Moreover, any single agent may experience repeated prompts over the course of a week. On Monday, a Professor may receive an email asking for assistance teaching a class. On Tuesday, she receives two more emails about optional meetings in her department (attending optional meetings is one commonly studied manifestation of OCB). On Wednesday, a former graduate student, who is now a faculty member at a different school, asks for a letter of recommendation. On some days the Professor has a large stock of help requests, whereas on other days she has few, if any. The crux of this paper is that we expect these helping prompts to follow a specific mathematical form, which we specify below.
 
 # Accumulating Requests As a Random Walk
 
-what mathematical form?
-- number of help requests, that's the variable we are tracking
-- can't be negative
-- can be zero
-- fills up
-- help requests can go away
-- help requests can come
-- if a help request happens on Monday and the colleague needs help by Friday, then it stays
-- it has intertia
-- it has self-similarity
-- it is dynamic
-- it is a stock
+To explain patterns in help requests over time, we draw from probability theory. For some employees, the pattern by which they receive help requests may mimic a fundamental mathematical process. To see how, consider the following heuristic. First, the state we are tracking is the number of help requests than an employee receives over time, with greater values indicating more notifications. Second, this state can be viewed as a dynamic stock, meaning that the employee has a pool or store of help requests -- three, for example -- and this number is self-similar over time such that it carries over from day to day. If the employee receives two help requests today, this number is added to the store of help requests that she had yesterday, creating a total that moves forward into tomorrow. Similarly, when help requests are removed from the pool -- which could occur, for instance, after she provides help and the request is resolved or when a deadline passes and help is no longer required -- then it decreases by whatever amount was withdrawn. But removing a request does not force the pool to zero. Instead, whatever amount is removed is subtracted from the total in such a way that the pool has inertia/memory -- the amount changes from where it was at the immediately prior time point, it does not arbitrarily swing to zero. This pattern, one in which an employee handles a dynamic stock of help requests such that prompts are added or removed while the stock retains inertia, mirrors a common and simple stochastic process: a random walk. 
 
-does it follow a chance process? does it follow a random walk?
+A random walk is a basic concept from probability theory. Models of random walks have been used in many scientific disciplines including physics biology  pharmacology  economics  sociology  chemistry and psychology, helping to understand diverse phenomenon such as memory search, foraging behavior, cooperation, markets, financial, etc.
 
 
-how does an employee get confronted with help requests over time?
-how do requests for help unfold over time
-help requests accumulate
-we suggest that they accumulate according to a stochastic process
+A random walk is defined as.
+yt = yt-1 + b + et
+
+where Yt is the current value of Y, Yt-1 is the value at t - 1, B is a constant known as drift, and et is a series with a mean zero and constant variance sigma squared e. This first equation reveals that random walks contain inertia or self-similarity, which is consistent with our heuristic of helping prompts above. Although drift and error are involved, the core aspect to a random walk as represented in equation 1 is that the value of Y at a given time point is a function of its value at the immediately prior time point. 
+
+Another key aspect of random walks is that they incorporate accumulation, which is more readily apparanet in an alternative but equivalent form:
+Yt = Y0 + Bt + sum(error)
+
+where Y0 is the initial value of Y, Bt is a deterministic trend component, and sum(error) represents an accumulation of error. This second equation reveals that random walks capture the notion of accumulating, or adding values to a store/pool over time, which was the second component to our heuristic of help requests. 
+
+In the same way that logic can be excavated from a verbal theory to gain traction about some phenomenon, the notion of a random walk can be drawn from probability theory to better understand the nature of help requests. Specifically, we suggest that help requests follow a random walk, such that they demonstrate self-similarity and have the characteristic of accumulating over time.
+
+$h1$
+- Help requests follow a random walk.
+
+In study one, we examine a number of data sources to evaluate whether we can find evidence that help requests follow a random walk. 
+
+# Study 1
+
+Archival data was used to assess our hypothesis. We scraped the data from several different sources on the Internet, each capturing the idea of a help request in a slightly different way.  
+
+The goal is to get many time points.
+random walk tests require many time points
+favored data sources where large T is an option, much more so than large N
 
 
-Over time, the employee sometimes has has a stock of help requests, and each successive prompt compiles into ther pool. 
+
+### github writing
+
+github
+- is a version control system mainly used for software
+- a website that allows you to store your code on the cloud that uses version control powered by git.
+- it is a website that allows anyone with code to store, modify, and collaborate on programs by uploading them to the website.
+- build personal projects, support their businesses, and work together on open source technologies
+- github is a website used mainly by software developers to store their projects and network with like minded people
+- github is a code sharing and publishing service, or a social networking site for programmers
+- github is an open source website that uses version control to manage and store revisions of projects. Although it's mostly used for code, it can also be used for other types of files such as Word documents.
+- github is a repository hosting service, but it adds many of its own features. 
+
+issues
+- place where people can report bugs, request features, or ask questions
+
+## Data Sources
+
+(a) Issues on GitHub Repositories - Non-Academic
+
+The first data source comes from GitHub repositories created by software developers. GitHub is an open source website that allows users to store, manage, share, and collaborate on projects (repositories) and, although most use it for code, it can also be used for other types of documents such as Word files. The website contains a variety of features that facilitate transparency, collaboration, and networking on projects, such as version control, the ability to comment on and request edits to other user's projects, and personal pages that exhibit a given user's track-record of work. The data that we collected are known as repository "issues." When a focal individual posts a repository/project, other users can then download and use the code that he created. If other users want to ask questions about the code, request features, or report bugs, they can then create an issue on the focal individual's post. The focal individual is then notified that an issue has been placed. 
+
+The data we collected were issues posted to single repositories, and we collected data on four different software developers. That is, a single software developer has a respository that he or she maintains, and over time his or her repository has collected issues. All of the issues, from when the project first began until the most recent comment, were collected and time-stamped. This process was then repeated for another three software developers in different industries working on unrelated projects. 
+
+One of the repositories is source code for a functional computer language built to create web applications. Another is a compiler to convert declarative components into JavaScript. The third is an app which corrects console commands. The fourth is a facial recognition application programming interface. Three of the four software developers work full time for a given company, whereas the fourth is an external consulting developer. 
+
+For these four data sources, help requests were operationalized as issues. Data were collected on the date that the issue was posted, when, if ever, it was resolved, and the content of the issue. 
+
+## more writing about OCB?
+
+These projects were not part of the developer's core job duties. They cannot represent task performance because they are not part of anyone's formal job description.
+
+Why do they represent OCB?
+
+What is a limitation?
+- the requests could come from people outside of the company.
 
 
-The crux of this paper is that we expect helping prompts over time to follow a specific mathematical form. Specifically, we contend that requests may follow a random accumulation process in the form of a random walk. 
+(b) Issues on GitHub Repositories - Academic
+
+The second data source also came from issues on GitHub respositories, but this time we used projects posted by academics. 
+
+
+
+## Data Sources
+
+help request was operationalized as ...
+
+what is the state being tracked?
+what comes in, and what goes out?
+why does it represent an opportunity to help?
+
+
+1) Core Data Source: Issues on GitHub Repositories
+
+(a) academics with statistical packages
+
+(b) freelance software engineers 
+
+2) Alternative Data Sources:
+
+(a) first authors own emails
+
+(b) PhD student pool at various programs
+
+
+## Analysis
+
+## Results
+
+## Study 1 Discussion
+
+we found
+
+Study one gives us evidence that help requests can follow a random walk, but we have to extrapolate that to understand the implications of random walks for sustained, long-run citizenship.
+
+how do different characteristics lead to various long-run outcomes?
+if we vary the parameters of the random walk, what does that do to the exent to which it produces extra milers?
+
+
+
+## what should we vary?
+
+1) probability that help request produces help
+
+
+2) drift
+
+
+3) self similarity
+
+
+
+# Conclusion
+
+Cooperative behavior in the workplace has captured the attention of both scientists and practitioners as it can have both positive and negative consequences for individuals and collectives. Recently, researchers have set out to exlain what leads to sustained, long-run helping, a phenomenon captured by such phrases as "extra miler" and "good soldier." A majority of the antecedents examined so far are individual characteristics, such as affect, personality, motives, and fairness perceptions. 
+
 
