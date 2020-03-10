@@ -19,13 +19,13 @@ Fourth, we challenge an assumption about what creates long-run, exceptional citi
 
 Finally, this research generates new avenues; it points to unexplored scientific and applied questions that could lead to a flurry of additional work. These questions are unpacked at the end of the paper. 
 
-The goal of this paper is to describe an alternative, chance model of long-run citizenship that incorporates opportunities and accumulation. Below, we describe OCB background and theory, the notion of extra milers/good soldiers, and then present our alternative explanation with two studies. In study one, we suggest and find evidence that help requests follow a random accumulation process. Specifically, we draw from probability theory and contend that, in some cases, patterns of help requests unfold according to a stochastic process and we find evidence across several data sources that help requests can be modeled as random walks. In study two, we take our results from study one -- that help requests follow a random walk -- as a starting point and then use simulations to determine how different types of random walks lead to various forms of long-run behavior. Stated simply, study two reveals the parameters and assumptions required for random walks to produce long-run OCBs. 
+The goal of this paper is to describe an alternative, chance model of long-run citizenship that incorporates opportunities and accumulation. Below, we describe OCB background and theory, the notion of extra milers/good soldiers, and then present our alternative explanation with two studies. In study one, we propose and find evidence that help requests follow a random accumulation process. Specifically, we draw from probability theory and suggest that, in some cases, patterns of help requests unfold according to a stochastic process which can be modeled as random walks. In study two, we take our results from study one -- that help requests follow a random walk -- as a starting point and then use simulations to determine how different types of random walks lead to various forms of long-run behavior. Stated simply, study two reveals the parameters and assumptions required for random walks to produce long-run OCBs. 
 
 # Organizational Citizenship Behaviors (OCBs)
 
 The idea that there are employee behaviors beyond what we typically consider as job or task performance but that still promote individual and collective success has been around for decades. Researchers from psychology, management, education, human resources, organizational behavior, and sociology have different terms for this behavior, and different aspects that they emphasize, but in the organizational literature this behavior has come to be known as organizational citizenship. OCB is "individual behavior that is discretionary, not directly or explicitly recognized by the formal reward system, and that in the aggregate promotes the effective functioning of the organization" (1988: 4). It has been described as a behavior that “lubricates” the social machinery of the organization, thereby facilitating its effective functioning (Bolino, Turnley, & Blood- good, 2002; Organ et al., 2006; P. M. Podsakoff & MacKenzie, 1997). Related terms that are now less popular include organizational spontaneity (George & Brief, 1992), extra-role behavior (Van Dyne & LePine, 1998), and contextual performance (Motowidlo & Van Scotter, 1994).
 
-Citizenship has consequences for both individuals and collectives. Employees demonstrating greater OCBs earn higher supervisor performance evaluations (e.g., MacKenzie, Podsakoff, & Fetter, 1991, 1993; Motowidlo & Van Scotter, 1994) and more awards and promotion recommendations (e.g., Van Scotter, Motowidlo, & Cross, 2000). Meta-analytic results suggest that individuals who consistently engage in OCB are less likely to express intentions to leave, to voluntarily quit, and to be absent from work (Podsakoff, Whiting, Podsakoff, & Blume, 2009). For collectives, greater levels of OCBs relate to higher performance quality, performance quantity, and customer satisfaction (Ehrhart & Naumann, 2004; Podsakoff, MacKenzie, Paine, & Bachrach, 2000), and some studies suggest that organizations competing in changing environments are especially dependent on good citizens because the goodwill and social capital they foster are a source of competitive advantage (Bolino, Turnley, & Bloodgood, 2002; Leana & Van Buren, 1999; Nahapiet & Ghoshal, 1998). There are also studies documenting the negative consequences of OCBs, which include reduced in-role performance, depletion and exhaustion, role overload, and feelings of resentment among peers (cites). That said, several researchers claim that OCBs should be thought of as a positive act, which is highlighted in the following quotes:
+Citizenship has consequences for both individuals and collectives. Employees demonstrating greater OCBs earn higher supervisor performance evaluations (e.g., MacKenzie, Podsakoff, & Fetter, 1991, 1993; Motowidlo & Van Scotter, 1994) and more promotion recommendations (e.g., Van Scotter, Motowidlo, & Cross, 2000). Meta-analytic results suggest that individuals who consistently engage in OCB are less likely to express intentions to leave, to voluntarily quit, and to be absent from work (Podsakoff, Whiting, Podsakoff, & Blume, 2009). For collectives, greater levels of OCBs relate to higher performance quality, performance quantity, and customer satisfaction (Ehrhart & Naumann, 2004; Podsakoff, MacKenzie, Paine, & Bachrach, 2000), and some studies suggest that organizations competing in changing environments are especially dependent on good citizens because the goodwill and social capital they foster are a source of competitive advantage (Bolino, Turnley, & Bloodgood, 2002; Leana & Van Buren, 1999; Nahapiet & Ghoshal, 1998). There are also studies documenting the negative consequences of OCBs, which include reduced in-role performance, depletion and exhaustion, role overload, and feelings of resentment among peers (cites). That said, several researchers claim that OCBs should be thought of as a positive act, which is highlighted in the following quotes:
 
 "There is considerable support in the literature for the idea that citizenship behavior at work is a positive thing"
 
@@ -33,7 +33,7 @@ Citizenship has consequences for both individuals and collectives. Employees dem
 
 Researchers typically pursue one of three broad ways to classify OCBs. Initially, OCB included two dimensions: altruism, or helping directed at a person after an eliciting stimulus; and generlized compliance, or an impersonal sense of conscientiousness. These two dimensions were later deconstructed into altriusm (responding to opportunities to assist a coworker), courtesy (responding with kindness), conscientioueness (on time, following rules, etc.), civic virtue (concern for the organization), and sportsmanship (tolerate less than ideal circumstances while maintaining a positive outlook). Other researchers classify OCBs either as affiliative or challenging. Affiliative behaviors are acts such as helping or responding with courtesy in which the actor supports existing company processes. Challenging behaviors are acts such as voicing problems or initiating change in which the actor adjusts his or her circumstances. Finally, OCBs are also distinguished by whether they benefit individuals (OCB-I; helping, assisting, encouraging) or the organization (OCB-O; promoting the company to others). 
 
-In this paper, we refer to affialiative OCBs whenever we use the terms citizenship, helping, acts of assistance, or OCB. This focus is necessary and appropriate for the following reasons. First, Li and Author spend an entire chapter describing the differences between affiliative (helping) and challenging (voicing) OCBs and argue that helping should be thought of as the core manifestation of citizenship because it (a) aligns with what most people mean when they study cooperation in the broader sciences, (b) is based on different evolutionary pressures than behaviors such as voicing concerns or actively changing circumstances, and (c) leads to construct contamination and unnecessary confusion if coupled with change-oriented behaviors. Second, Van Dyne et al., (1995) suggested that "the conceptual definition and subsequent operationalizations of OCBs should focus on citizenship behavior that is affiliative...and should not include challenging" (p. 274). Third, helping is the core dimension discussed in the original paper exploring the dimensionality of OCBs (smith, near) and within Organ's theoretical writing about the construct (organ cites). Finally, and perhaps most importantly, it aligns with the purpose of this study, which is to explore the random nature of prompts for help. For all of these reasons, this paper couches itself within the affiliative space of the construct.
+In this paper, we refer to affialiative OCBs whenever we use the terms citizenship, helping, acts of assistance, or OCB. This focus is necessary and appropriate for the following reasons. First, Li and Author spend an entire chapter describing the differences between affiliative (helping) and challenging (voicing) OCBs and argue that helping should be thought of as the core manifestation of citizenship because it (a) aligns with what most people mean when they study cooperation in the broader sciences, (b) is based on different evolutionary pressures than behaviors such as voicing concerns or actively changing circumstances, and (c) leads to construct contamination and unnecessary confusion if coupled with change-oriented behaviors. Second, Van Dyne et al., (1995) suggest that "the conceptual definition and subsequent operationalizations of OCBs should focus on citizenship behavior that is affiliative...and should not include challenging" (p. 274). Third, helping is the core dimension discussed in the original paper exploring the dimensionality of OCBs (smith, near) and within Organ's theoretical writing about the construct (organ cites). Finally, and perhaps most importantly, it aligns with the purpose of this study, which is to explore the random nature of prompts for help. For all of these reasons, this paper couches itself within the affiliative space of the construct.
 
 # Sustained, Long-Run Citizenship
 
@@ -59,7 +59,7 @@ Across all of these perspectives, the core idea is that there are opportunities 
 
 # Accumulating Requests As a Random Walk
 
-To explain patterns in help requests over time, we draw from probability theory. For some employees, the pattern by which they receive help requests may mimic a fundamental mathematical process. To see how, consider the following heuristic. First, the state we are tracking is the number of help requests than an employee receives over time, with greater values indicating more notifications. Second, this state can be viewed as a dynamic stock, meaning that the employee has a pool or store of help requests -- three, for example -- and this number is self-similar over time such that it carries over from day to day. If the employee receives two help requests today, this number is added to the store of help requests that she had yesterday, creating a total that moves forward into tomorrow. Similarly, when help requests are removed from the pool -- which could occur, for instance, after she provides help and the request is resolved or when a deadline passes and help is no longer required -- then it decreases by whatever amount was withdrawn. But removing a request does not force the pool to zero. Instead, whatever amount is removed is subtracted from the total in such a way that the pool has inertia/memory -- the amount changes from where it was at the immediately prior time point, it does not arbitrarily swing to zero. This pattern, one in which an employee handles a dynamic stock of help requests such that prompts are added or removed while the stock retains inertia, mirrors a common and simple stochastic process: a random walk. 
+To explain patterns in help requests over time, we draw from probability theory. For some employees, the pattern by which they receive help requests may mimic a fundamental mathematical process. To see how, consider the following heuristic. First, the state we are tracking is the number of help requests than an employee receives over time, with greater values indicating more notifications. Second, this state can be viewed as a dynamic stock, meaning that the employee has a pool or store of help requests -- three, for example -- and this number is self-similar over time such that it carries over from day to day. If the employee receives two help requests today, this number is added to the store of help requests that she had yesterday, creating a total that moves forward into tomorrow. Similarly, when help requests are removed from the pool -- which could occur, for instance, after she provides help and the request is resolved or when a deadline passes and help is no longer required -- then it decreases by whatever amount was withdrawn. But removing a request does not drive the pool to zero. Instead, whatever amount is removed is subtracted from the total in such a way that the pool has inertia/memory -- the amount changes from where it was at the immediately prior time point, it does not arbitrarily swing to zero. This pattern, one in which an employee handles a dynamic stock of help requests such that prompts are added or removed while the stock retains inertia, mirrors a common and simple stochastic process: a random walk. 
 
 A random walk is a basic concept from probability theory. Models of random walks have been used in many scientific disciplines including physics biology  pharmacology  economics  sociology  chemistry and psychology, helping to understand diverse phenomenon such as memory search, foraging behavior, cooperation, markets, financial, etc.
 
@@ -83,13 +83,7 @@ In study one, we examine a number of data sources to evaluate whether we can fin
 
 # Study 1
 
-Archival data was used to assess our hypothesis. We scraped the data from several different sources on the Internet, each capturing the idea of a help request in a slightly different way.  
-
-The goal is to get many time points.
-random walk tests require many time points
-favored data sources where large T is an option, much more so than large N
-
-
+Archival data was used to assess our hypothesis. We scraped the data from several different sources on the Internet, each capturing the idea of a help request in a slightly different way. Testing for random walks requires time-series data with many time points ($t$), therefore we searched for data sets that favored large $t$ and could be used to capture notifications for help. 
 
 ### github writing
 
@@ -112,35 +106,38 @@ issues
 
 The first data source comes from GitHub repositories created by software developers. GitHub is an open source website that allows users to store, manage, share, and collaborate on projects (repositories) and, although most use it for code, it can also be used for other types of documents such as Word files. The website contains a variety of features that facilitate transparency, collaboration, and networking on projects, such as version control, the ability to comment on and request edits to other user's projects, and personal pages that exhibit a given user's track-record of work. The data that we collected are known as repository "issues." When a focal individual posts a repository/project, other users can then download and use the code that he created. If other users want to ask questions about the code, request features, or report bugs, they can then create an issue on the focal individual's post. The focal individual is then notified that an issue has been placed. 
 
-The data we collected were issues posted to single repositories, and we collected data on four different software developers. That is, a single software developer has a respository that he or she maintains, and over time his or her repository has collected issues. All of the issues, from when the project first began until the most recent comment, were collected and time-stamped. This process was then repeated for another three software developers in different industries working on unrelated projects. 
+The data we collected were issues posted to single repositories, and we collected data on four different software developers. That is, a single software developer had a respository that he or she maintained, and over time his or her repository collected issues. All of the issues, from when the project first began until the most recent comment, were collected and time-stamped. This process was then repeated for another three software developers in different industries working on unrelated projects. 
 
-One of the repositories is source code for a functional computer language built to create web applications. Another is a compiler to convert declarative components into JavaScript. The third is an app which corrects console commands. The fourth is a facial recognition application programming interface. Three of the four software developers work full time for a given company, whereas the fourth is an external consulting developer. 
+One of the repositories was source code for a functional computer language built to create web applications. Another was a compiler to convert declarative components into JavaScript. The third was an application which corrects console commands. The fourth was a facial recognition application programming interface. Three of the four software developers work full time for a given company, whereas the fourth is an external consultant.
 
-For these four data sources, help requests were operationalized as issues. Data were collected on the date that the issue was posted, when, if ever, it was resolved, and the content of the issue. 
+For these four data sources, help requests were operationalized as issues. Data were collected on (a) the date that the issue was posted, (b) when it was resolved, if ever, and (c) the content of the issue. 
 
-## more writing about OCB?
+Definition of affiliative OCB
 
-These projects were not part of the developer's core job duties. They cannot represent task performance because they are not part of anyone's formal job description.
+common items of affiliative OCB
 
-Why do they represent OCB?
+This data source is posisitive because it captures helping prompts that are definitely not part of someone’s formal job description. 
 
-What is a limitation?
-- the requests could come from people outside of the company.
+The limitation of this data source is that requests could come from outside the organization. Is that an issue?
+
+In these github data sources, people act to enhance the functioning of a collective, but the collective is broader than just a single organization. 
+- perhaps that’s ocb, perhaps it isn’t.
 
 
 (b) Issues on GitHub Repositories - Academic
 
-The second data source also came from issues on GitHub respositories, but this time we used projects posted by academics. 
+The second data source also came from issues on GitHub respositories, but this time we used repositories posted by academics. 
+
+The positive of this data source is that it captures help requests that are definitely part of someone’s formal job duties (especially in academia).
+
+The limitation of this data source is that prompts can come from people who are not direct colleagues.
+- but they are in a sense…they are colleagues in the sense that they want to use the package
+- is there any definition that says you have to help people within the same company?
+
 
 
 
 ## Data Sources
-
-help request was operationalized as ...
-
-what is the state being tracked?
-what comes in, and what goes out?
-why does it represent an opportunity to help?
 
 
 1) Core Data Source: Issues on GitHub Repositories
@@ -153,7 +150,15 @@ why does it represent an opportunity to help?
 
 (a) first authors own emails
 
+The positive of this data source is it very closely aligns with measures of OCBs.
+
+The limitation is that we can only capture one.
+
 (b) PhD student pool at various programs
+
+The limitation of this data source is that it is fairly abstract. 
+
+
 
 
 ## Analysis
