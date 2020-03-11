@@ -1,7 +1,7 @@
 
 Imagine a close colleague that frequently agrees to volunteer for additional work when asked to do so. What causes her to act this way? Our intuition says that the cause must be something unique about her, a motive, personality trait, disposition, or her momentary enthusiasm. So it is with our research: the literature on correlates of why someone responds with help has focused almost exclusively on individual characteristics, such as affect, motives, attributions, justice or leadership perceptions, personality, and vigor. But this emphasis contradicts what we know about random processes, namely that long-run streaks of behavior can be by byproducts of chance. Because chance explanations have not been ruled out, statements about the necessity for organizations to monitor, evaluate, and influence individual characteristics to improve employee helping may be overblown. Moreover, a manager who reads this literature and then assumes that individual characteristics cause helping is more likely to falsely attribute good character to her employees when she witnesses it, leading to performance evaluations and reward recommendations that are, perhaps, biased. The purpose of this paper is to find evidence of randomness in the requests that employees receive asking them for assistance. If we identify chance, then researchers, managers, and consultants must account for it if they truly want to know whether something unique about the individual, rather than something random about the situation, led to exceptional, long-run helping. In the organizational literature, helping or providing assistance to colleagues is referred to as organizational citizenship. 
 
-Organizational citizenship behaviors (OCBs), or prosocial acts such as assisting others, volunteering for additional work, or speaking highly of the company, are increasingly emphasized in the organizational sciences (Dalal & Carpenter, 2018). Leaders put OCBs on equal footing to task performance when asked about the merits of different behaviors within their teams (Podsakoff, MacKenzie, & Podsakoff, 2018), and researchers have gone so far as to describe OCBs as the key social aspect driving organizational success (Bateman & Crant, 1993). Researchers, as well as consultants, managers, and employees, are interested in knowing why people differ on this behavior, and in particular why someone might have sustained, superior levels of OCBs over time.
+Organizational citizenship behaviors (OCBs), or cooperative acts such as assisting others, volunteering for additional work, or speaking highly of the company, are increasingly emphasized in the organizational sciences (Dalal & Carpenter, 2018). Leaders put OCBs on equal footing to task performance when asked about the merits of different behaviors within their teams (Podsakoff, MacKenzie, & Podsakoff, 2018), and researchers have gone so far as to describe OCBs as the key social aspect driving organizational success (Bateman & Crant, 1993). Researchers, as well as consultants, managers, and employees, are interested in knowing why people differ on this behavior, and in particular why someone might have sustained, superior levels of OCBs over time.
 
 Employees that exhibit sustained, high-levels of OCBs are labeled "extra-milers" or "good citizens" in the literature (cites), and researchers have identified a number of predictors of this behavior -- many of which are individual characteristics. These include prosocial motivation and personality (grant, 2008; penner, midili, kegelmey), impression management motives (grant & Mayer, 2009), one's propensity to be concerned for others (Meglino & Korsgaard), job satisfaction, perceived fairness, and organizational commitment (Organ & ryan, 1995), perceptions of trust (handbook moorman), fit (handbook kristof brown), leader fairness (piccolo), and interaction quality with colleagues (Bolino, Hsiung, Harvey, & Lepine), how employees appraise pressures to perform and goals (Welsh, Baer; mitchell, greenbaum, vogel), their level of engagement (Wang, Law, Zhang, & Liang, 2019) and mindfullness (hafenbrack, cameron, spreitzer, zhang, noval), and perceptions of ostracism (Ferris, Fatimah, Yan, Liang). Indeed, Bolino 1999, Bolino et al., 2012 state that there is a consensus that OCBs stem from dispositions, motivation, and fairness perceptions. 
 
@@ -19,7 +19,7 @@ Fourth, we challenge an assumption about what creates long-run, exceptional citi
 
 Finally, this research generates new avenues; it points to unexplored scientific and applied questions that could lead to a flurry of additional work. These questions are unpacked at the end of the paper. 
 
-The goal of this paper is to describe an alternative, chance model of long-run citizenship that incorporates opportunities and accumulation. Below, we describe OCB background and theory, the notion of extra milers/good soldiers, and then present our alternative explanation with two studies. In study one, we propose and find evidence that help requests follow a random accumulation process. Specifically, we draw from probability theory and suggest that, in some cases, patterns of help requests unfold according to a stochastic process which can be modeled as random walks. In study two, we take our results from study one -- that help requests follow a random walk -- as a starting point and then use simulations to determine how different types of random walks lead to various forms of long-run behavior. Stated simply, study two reveals the parameters and assumptions required for random walks to produce long-run OCBs. 
+The goal of this paper is to describe an alternative, chance model of long-run citizenship that incorporates opportunities and accumulation. Below, we describe OCB background and theory, the notion of extra milers/good soldiers, and then present our alternative explanation with two studies. In study one, we propose and find evidence that help requests follow a random accumulation process. Specifically, we draw from probability theory and suggest that, in some cases, patterns of help requests follow random walks. In study two, we use this initial finding as a starting point -- that help requests can be modeled as random walks -- and then apply simulations to determine how different types of random walks lead to various forms of long-run behavior. Stated simply, study two reveals the parameters and assumptions required for random walks to produce long-run OCBs. 
 
 # Organizational Citizenship Behaviors (OCBs)
 
@@ -55,11 +55,11 @@ Many researchers across several scientific disciplines have described the nature
 
 The second perspective on the environment is as a shock or disturbance that makes opportunities come and go. Random stimuli occur and these factors impinge upon actors, allowing some behaviors and constraining others. This idea is consistent with the notion of shocks in the unfolding model of employee turnover in which discrete events thwart some opportunities and create others [@lee_alternative_1994], to events in affective events theory in which random stimuli cause changes in employee emotion and behavior [@beal_episodic_2005], and to the environment in Dishop's goal sampling theory [@dishop_simple_2019] in which actors are only able to approach goals made available by the situation at any moment in time. @blumberg1982missing define opportunities as "the particular configuration of the field of forces surrounding a person and his or her task that enables or constrains that person's task performance and that are beyond the person's direct control" (p. 565), and @stewart2007exploring demonstrated that even skilled and motivated workers cannot engage in performance facilitating behavior when their actions are constrained by the environment. 
 
-Across all of these perspectives, the core idea is that there are opportunities scattered about the environment that come and go. The particular form of opportunity that we examine in this study includes a help request: a prompt or signal or notification to an employee that an act of assistance can be performed. Consider a few examples: A Professor receives an email from a colleague asking if she can substitute for an undergraduate course; A manager announces that volunteers are needed for an upcoming assignment; A blogger tells his writing collaborator that she is welcome to review and edit his post if she pleases; A statistician witnesses a question posted on a forumn about a statistical model relevant to her expertise; A software engineer receives a pull request; An academic receives a note from a graduate student asking for a friendly review of his paper. Moreover, any single agent may experience repeated prompts over the course of a week. On Monday, a Professor may receive an email asking for assistance teaching a class. On Tuesday, she receives two more emails about optional meetings in her department (attending optional meetings is one commonly studied manifestation of OCB). On Wednesday, a former graduate student, who is now a faculty member at a different school, asks for a letter of recommendation. On some days the Professor has a large stock of help requests, whereas on other days she has few, if any. The crux of this paper is that we expect these helping prompts to follow a specific mathematical form, which we specify below.
+Across all of these perspectives, the core idea is that there are opportunities scattered about the environment that come and go. The particular form of opportunity that we examine in this study is a help request: a prompt or signal or notification to an employee that an act of assistance can be performed. Consider a few examples: A Professor receives an email from a colleague asking if she can substitute for an undergraduate course; A manager announces that volunteers are needed for an upcoming assignment; A blogger tells his writing collaborator that she is welcome to review and edit his post if she pleases; A statistician witnesses a question posted on a forumn about a statistical model relevant to her expertise; A software engineer receives a pull request; An academic receives a note from a graduate student asking for a friendly review of his paper. Moreover, any single agent may experience repeated prompts over the course of a week. On Monday, a Professor may receive an email asking for assistance teaching a class. On Tuesday, she receives two more emails about optional meetings in her department (attending optional meetings is one commonly studied manifestation of OCB). On Wednesday, a former graduate student, who is now a faculty member at a different school, asks for a letter of recommendation. On some days, the Professor has a large stock of help requests, whereas on others she has few, if any. The crux of this paper is that we expect these helping prompts to follow a specific mathematical form, which we specify below.
 
 # Accumulating Requests As a Random Walk
 
-To explain patterns in help requests over time, we draw from probability theory. For some employees, the pattern by which they receive help requests may mimic a fundamental mathematical process. To see how, consider the following heuristic. First, the state we are tracking is the number of help requests than an employee receives over time, with greater values indicating more notifications. Second, this state can be viewed as a dynamic stock, meaning that the employee has a pool or store of help requests -- three, for example -- and this number is self-similar over time such that it carries over from day to day. If the employee receives two help requests today, this number is added to the store of help requests that she had yesterday, creating a total that moves forward into tomorrow. Similarly, when help requests are removed from the pool -- which could occur, for instance, after she provides help and the request is resolved or when a deadline passes and help is no longer required -- then it decreases by whatever amount was withdrawn. But removing a request does not drive the pool to zero. Instead, whatever amount is removed is subtracted from the total in such a way that the pool has inertia/memory -- the amount changes from where it was at the immediately prior time point, it does not arbitrarily swing to zero. This pattern, one in which an employee handles a dynamic stock of help requests such that prompts are added or removed while the stock retains inertia, mirrors a common and simple stochastic process: a random walk. 
+To explain patterns in help requests over time, we draw from probability theory. For some employees, the pattern by which they receive help requests may mimic a fundamental mathematical process. To see how, consider the following heuristic. First, the state we are tracking is the number of help requests than an employee receives over time, with greater values indicating more notifications. Second, this state can be viewed as a dynamic stock, meaning that the employee has a pool or store of help requests -- three, for example -- and this number is self-similar over time such that it carries over from day to day. If the employee receives two help requests today, this number is added to the store of help requests that she had yesterday, creating a total that moves forward into tomorrow. Similarly, when help requests are removed from the pool -- which could occur, for instance, after she or someone else provides help and the request is resolved or when a deadline passes and help is no longer required -- then it decreases by whatever amount was withdrawn. But removing a request does not drive the pool to zero. Instead, whatever amount was removed is subtracted from the total in such a way that the pool has inertia/memory -- the amount changes from where it was at the immediately prior time point, it does not arbitrarily swing to zero. This pattern, one in which an employee handles a dynamic stock of help requests such that prompts are added or removed while the stock retains inertia, mimics a common and simple stochastic process: a random walk. 
 
 A random walk is a basic concept from probability theory. Models of random walks have been used in many scientific disciplines including physics biology  pharmacology  economics  sociology  chemistry and psychology, helping to understand diverse phenomenon such as memory search, foraging behavior, cooperation, markets, financial, etc.
 
@@ -79,55 +79,37 @@ In the same way that logic can be excavated from a verbal theory to gain tractio
 $h1$
 - Help requests follow a random walk.
 
-In study one, we examine a number of data sources to evaluate whether we can find evidence that help requests follow a random walk. 
+In study one, we examine a number of data sources to evaluate whether we can find evidence that help requests follow this stochastic process. 
 
 # Study 1
 
-Archival data was used to assess our hypothesis. We scraped the data from several different sources on the Internet, each capturing the idea of a help request in a slightly different way. Testing for random walks requires time-series data with many time points ($t$), therefore we searched for platforms that would contain data with large $t$ and could be used to capture notifications for help. 
+Archival data was used to assess our hypothesis. We scraped data from several different sources on the Internet, each capturing the idea of a help request in a slightly different way. Testing for random walks requires time-series data with many time points ($t$), therefore we searched for platforms that contained data with large $t$ and that could be used to capture notifications for help. 
 
 ## Data Sources
 
-(a) Issues on GitHub Repositories - Non-Academic
+(1) Issues on GitHub Repositories - Non-Academic
 
-Data were collected from GitHub repositories created by software developers. GitHub is an open source website that allows users to store, manage, share, and collaborate on projects (repositories) and, although most use it for code, it can also be used for other types of documents such as Word files. The website contains a variety of features that facilitate transparency, collaboration, and networking on projects, such as version control, the ability to comment on and request edits to other user's projects, and personal pages that exhibit a given user's track-record of work. The data that we collected are known as repository "issues." When a focal individual posts a repository/project, other users can then download and use the code that he created. If other users want to ask questions about the code, request features, or report bugs, they can then create an issue on the focal individual's post. The focal individual is then notified that an issue has been placed. 
+The first set of data was collected from GitHub repositories created by software developers. GitHub is an open source website that allows users to store, manage, share, and collaborate on projects (repositories) and, although most use it for code, it can also be used for other types of documents such as Word files. The website contains a variety of features that facilitate transparency, collaboration, and networking on projects, such as version control, the ability to comment on and request edits to other user's projects, and personal pages that exhibit a given user's track-record of work. The data that we collected are known as repository "issues." When a focal individual posts a repository/project, other users can then download and use the code that he created. If other users want to ask questions about the code, request features, or report bugs, they can then create an issue on the focal individual's post. The focal individual is then notified that an issue has been placed. 
 
-The data we collected were issues posted to single repositories, and we collected data on four different software developers. That is, a single software developer had a respository that he or she maintained, and over time his or her repository collected issues. All of the issues, from when the project first began until the most recent comment, were collected and time-stamped. This process was then repeated for another three software developers in different industries working on unrelated projects. 
+The data we collected were issues posted to single repositories, and we collected data on four different software developers. That is, a single software developer had a respository that he or she maintained, and over time his or her repository collected issues. All of the issues, from when the project first began until the most recent comment, were collected and time-stamped. This process was then repeated for another three software developers working in different industries on unrelated projects. 
 
 One of the repositories was source code for a functional computer language built to create web applications. Another was a compiler to convert declarative components into JavaScript. The third was an application which corrects console commands. The fourth was a facial recognition application programming interface. Three of the four software developers work full time for a given company, whereas the fourth is an external consultant.
 
-For these four data sources, help opportunities were operationalized as issues. Data were collected on (a) the date that the issue was posted, (b) when it was resolved, if ever, and (c) the content of the issue. 
+For each data set, help opportunities were operationalized as issues. Data were collected on (a) the date that the issue was posted, (b) when it was resolved, if ever, and (c) the content of the issue. 
 
-Definition of affiliative OCB
+(2) Issues on GitHub Repositories - Academic
 
-common items of affiliative OCB
-
-This data source is posisitive because it captures helping prompts that are definitely not part of someone’s formal job description. 
-
-The limitation of this data source is that requests could come from outside the organization. Is that an issue?
-
-In these github data sources, people act to enhance the functioning of a collective, but the collective is broader than just a single organization. 
-- perhaps that’s ocb, perhaps it isn’t.
-
-
-(b) Issues on GitHub Repositories - Academic
-
-The second set of data was also based on GitHub repositories, but this time we used repositories posted by academics. University faculty often use GitHub as a version control system when writing documents, as a platform to share, monitor, and adjust any applications or tools that they develop, and as a resource for data science tools. We focused on the individual repositories of four academics, each a faculty member at a different university.
+The second set of data was also based on GitHub repositories, but this time we used repositories posted by academics. University faculty often use GitHub as a version control system when writing documents, as a platform to share, monitor, and adjust any applications or tools that they develop, and as a resource for downloading data science tools. We focused on the individual repositories of four academics, each a faculty member at a different university.
 
 One of the repositories was an R package for structural equations modeling. Another was the source code and package for a popular Bayesian analysis textbook. The third was an R package for multivariate analysis of genetic markers, and the fourth was a package for population genetics. As before, help opportunities were operationalized as issues and we collected (a) the time the issue was placed, (b) when, if ever, it was resolved, and (c) the content of the issue. 
 
 
-
-
-The limitation of this data source is that prompts can come from people who are not direct colleagues.
-- but they are in a sense…they are colleagues in the sense that they want to use the package
-- is there any definition that says you have to help people within the same company?
-
 ### Potential Data Sources
 
 
-(c) first author own emails
+(3) first author own emails
 
-The third set of data was a series of emails received by the first author. From October, 2019 to August, 2020, the first author saved any emails from colleagues at the same University that seemed relevant to the notion of helping opportunities. This process was not systematic on the front end: the author stored emails based on his own discretion, storing only those emails that appeared relevant as they were received. We tried to make the process more systematic on the back end: after collecting all of the emails and removing any identifying information, 300 undergraduate students underwent a sorting procedure in which they classified the emails as helping opportunities or irrelevant. We describe this process in more detail below. 
+The third set of data was a series of emails received by the first author. From October, 2019 to August, 2020, the first author saved any emails from colleagues that seemed relevant to the notion of helping opportunities. This process was not systematic on the front end: the author stored emails based on his own discretion, storing only those emails that appeared relevant as they were received. We tried to make the process more systematic on the back end: after collecting all of the emails and removing any identifying information, 300 undergraduate students underwent a sorting procedure in which they classified the emails either as helping opportunities or as irrelevant. We describe this process in more detail below. 
 
 Three hundred undergraduates at a large Midwestern university were recruited to take part in a classification study, which participants completed online. After giving consent, the participants were provided with a definition of helping opportunities and several example items used in prior empirical research. The items included:
 
@@ -135,77 +117,71 @@ item1
 item2
 item3
 
-They were then presented with the content of a single email, asked to read it, and then were told to determine if the content was consistent with a helping opportunity or not. Participants rated each email with a bipolar scale including "yes" or "no." Agreement indices were collected.
+They were then presented with the content of a single email, asked to read it, and then were told to determine if the content was consistent with a helping opportunity or not. Participants rated each email with a bipolar scale including "yes" or "no." Agreement indices were collected. In this data set, help opportunities were operationalized as emails that raters agreed represented requests for citizenship. 
+
+(4) student pools
+
+Our fourth angle on help opportunities came from graduate student pools. We tracked the number of graduate students per year from the years 1999 to 2019 at three different graduate programs. One was a Political Science program located in the Northeast, another was an Organizational Psychology department located in the Midwest, and the third program was in Accounting and located in the Southwest. In this data set, a help opportunity was operationalized as an active graduate student -- someone who could be mentored by a faculty -- and we collected data on the number of active graduate students per year for each department. 
+
+(5) forumn questions
+
+Finally, we also collected data from an online forumn. "Psychological Dynamics" is a Facebook group which provides users with a platform to share and discuss news, publications, tools, and other aspects related to psychological research. The community draws researchers from all over the world, and posts are created every day. In this data set, help opportunities were operationlized as a post, and posts were collected daily from September, 2018 to September, 2019.
 
 
-help opportunity was operationalized as...
-
-(d) student pools
-
-Our fourth angle on help opportunities came from graduate student pools. For three different programs across the U.S., the number of graduate students per year was collected. One program was in Political Science and was located in the Northeast, another was in Organizational Psychology and was located in the Midwest, and the third was in Accounting and was located in the Southwest. For each program, the number of students per year across a 20 year time span was collected, and a help opportunity was operationalized as a student. 
-
-(e) Forumn questions
-
-Finally, we also collected data within an online forumn. "Psychological Dynamics" is a Facebook group which provides users with a platform to share and discuss news, publications, tools, and other aspects related to psychological research. The community draws researchers from all over the world, and posts are created every day. In this data set, help opportunities were operationlized as a post, and posts were collected daily from September, 2018 to September, 2019.
-
-
-
-
-
-
-
-
-
-## Data Sources
-
-
-1) Core Data Source: Issues on GitHub Repositories
-
-(a) academics with statistical packages
-
-(b) freelance software engineers 
-
-2) Alternative Data Sources:
-
-(a) first authors own emails
-
-The positive of this data source is it very closely aligns with measures of OCBs.
-
-The limitation is that we can only capture one.
-
-(b) PhD student pool at various programs
-
-The limitation of this data source is that it is fairly abstract. 
-
-
+We collected data across diverse platforms for several reasons. First, we wanted to ensure that are results were not unique to a given domain. Just as Aguinis and colleagues demonstrated performance power curves in different settings, our goal was to demonstrate random walks across various settings. Second, there are different types of random walks, such as those with drift versus those without. The implications of different forms of random walks will be explored much more in study two, but for the purposes of this analysis it was necessary to get a descriptive sense of how similar the random walks were across each domain. Finally, we collected a number of data sources because each has its own unique limitation. Our hope was that we could learn something about help requests in general by taking a broad view across all of the data, even though each has its own unique error. The set as a whole can tell us something about help requests, even if each has a slight weakness. 
 
 ## Analysis
 
-All data are in the form of time-series such that a single unit is represented over successive time points. In total, there are 13 data sets: 8 from the GitHub repositories, 1 from the first author's emails, an additional 3 from the PhD student pools, and 1 from the public forumn. Each of these time-series represents the stock of help opportunities over time, such that greater values indicate more helping opportunities and lower values indicate fewer helping opportunities. For each data set, hypothesis one is evaluated by assessing whether the series contains a unit root. We use two unit root tests to evaluate our hypothsis. The first, the augmented Dickey-Fuller (ADF) test, is the most widely used statistic to evaluate the presence of random walks in time-series data. The null hypothesis of this test is that the data are generated from a random walk, so when the ADF test cannot reject its null our hypothesis is retained. The are also unit root tests in which the null hypothesis is instead the absence of a unit root, and the most well-known test of this second type is the Kwiatkowski, Phillips, Schmidt, and Shin (1992) statistic (KPSS). Stated simply, if the ADF test cannot reject its null while the KPSS test can, then the data provide evidence in two ways that the series follows a random walk. 
+All data are structured as time-series such that a single unit is represented over successive time points. In total, there are 13 data sets: 8 from the GitHub repositories, 1 from the first author's emails, an additional 3 from the PhD student pools, and 1 from the public forumn. Each of these time-series represents the stock of help opportunities over time, such that greater values indicate more helping opportunities and lower values indicate fewer helping opportunities. For each data set, hypothesis one is evaluated by assessing whether the series contains a unit root. We use two unit root tests to evaluate our hypothesis. The first, the augmented Dickey-Fuller (ADF) test, is the most widely used statistic to evaluate the presence of random walks in time-series data. The null hypothesis of this test is that the data are generated from a random walk, so when the ADF test cannot reject its null our hypothesis is retained. There are also unit root tests in which the null hypothesis is instead the absence of a unit root, and the most well-known test of this second type is the Kwiatkowski, Phillips, Schmidt, and Shin (1992) statistic (KPSS). Both tests were administered to evaluate our hypothesis. Stated simply, if the ADF test cannot reject its null while the KPSS test can, then the data provide evidence in two ways that the series follows a random walk. 
 
 ## Results
+
+[Fill after data collection].
 
 ## Study 1 Discussion
 
 Study one demonstrated that, at least in some cases, help opportunities can be modeled as random walks. Time-series data were collected from multiple sources, and each series represented an accumulating pattern of help opportunities over time. For 12 out of the 13 data sources, both unit root tests provided evidence that the series was consistent with a random walk. In the last data set, which consisted of X, only the ADF test returned evidence that a random walk was present. Identifying random patterns in help requests was the first step toward our chance model of long-run citizenship. We take this evidence -- that help opportunities follow a random walk -- as a starting point for our next study.
 
-
 ## Study 2
 
-Our second study reveals the ways in which random walks may produce different forms of long-run citizenship. Its purpose is to document the pattern of long-run citizenship that emerges from different types of random walks. Given that we identified random walks in study one, if we vary their parameters or our assumptions about the connection between opportunities and acts of help, how does that change the extent to which they produce extra milers? We approach this question by using simulations, which allow us to witness the effects of varying crucial paramters in systematic ways. The simulations are structured around three key research questions. 
+Our second study reveals the ways in which random walks may produce different forms of long-run citizenship. Its purpose is to document patterns of long-run citizenship that emerge from different types of random walks. Given that we identified random walks in study one, the next step is to assess how varying the parameters of random walks, as well as our assumptions about the connection between opportunities and acts of help, changes the extent to which they produce extra milers. We pursue this study by using simulations, which allow us to witness the effects of varying crucial paramters in systematic ways. First, it is necessary to articulate again the idea of extra milers and long-run citizenship. 
+
+There are two phrases in the litarture that researchers have used to describe long-run citizenship: good soldiers and extra milers. Methot et al., (2017) state that good soldiers are people who characteristically engage in higher levels of OCB relative to their colleagues. They are people who provide more help, relative to others, in "characteristic" ways. Similarly, Li et al., (2016) operationalized extra milers as employees who provided the most (as rated by team members) OCBs at a given time point, even though their theoretical definition of extra milers were those that had this maximum score across repeated time points. How would these ideas manifest? What is implied in how the researchers describe, study, and label this phenomoneon -- which we refer to here as long-run citizenship -- is that some employees perform more OCBs than their peers and this effect has some form of consistency. At time $t$, the individual performs more OCBs than her colleagues, she does so again at time t + 1, again at t + 2, and this pattern continues until t + n, n being any future time point in which she is outdone by a colleague. The value of $n$ that determines whether a person is labeled as an extra miler or not remains unspecified, as does the number of consecutive "wins" required. Said differently, it is unclear for how long someone must sit as the top citizen to be considered an extra miler, and it is also unclear whether the streaks must be consecutive or if someone who is frequently a top citizen but never the top citizen for more than two time points in a row merits the label. Our interest is not in providing a definition or argument about what truly counts and does not count as an extra miler. We are also not interested in how employees or managers perceive repeated acts of help, and how their perceptions are influenced by any number of variables. Our interest, instead, is on what kinds of streaks emerge given different random walk parameters and different assumptions about the relationship between opportunities and OCBs. What types of streaks, or consecutive "wins" by one colleague compared to another with respect to their helping behavior, do we witness under different random walks? Our research is the start to creating benchmarks that can be used in later research to determine what is really required to label something as exceptional. 
+
+Again, the purpose of study two was to assess patterns in long-run citizenship, or the extent to which one individual provides greater help compared to others across consecutive time points, based on different parameters applied to help requests. We use simulations for this study, and the computer models are structured around three research questions:
 
 RQ1
 What are the patterns in long-run citizenship as the probability that a helping opportunity causes an act of help changes from 0 to 1?
 
-Research question 1 is designed to address a fundamental assumption of this paper: that an opportunity is one aspect leading to an act of OCB. 
+Research question 1 was designed to address a fundamental assumption of this paper: that an opportunity is one aspect leading to an act of OCB. Our simulations evaluated variations on this assumption, with 0 meaning that opportunities had no effect on whether the agent provides assistance, 0.5 referring to a 50% probability that an agent provides help on a given request, and 1 meaning that an opportunity always causes an act. 
 
-RQ2
+RQ1
 What are the patterns in long-run citizenship as the drift parameter on helping opportunities changes from 0 to 1?
 
-RQ3
+Research question 1 was designed to address how random walks with trend change the results. A trend or drift term is an essential property of random walks, although not all random walks have drift. Drift, or trend, refers to whether the random walk moves systematically in the positive or negative direction over time, despite moving stochastically at each time step. Random walks without drift, conversely, move randomly from moment to moment and do not show positive or negative trend, unless cut short off expectation. Both types of random walks were identified in study one (see plots), so it is necessary to evaluate how this characteristic of random walks informs our results.
+
+RQ2
 What are the patterns in long-run citizenship as the autoregressive parameter on helping opportunities changes from 0 to 1?
 
+One fundamental characteristic of random walks is that they have strong autoregressive effects. As this effect drives toward zero, the trajectory approaches a white noise process, which is another fundamental stochastic process. We examine this feature because changing it removes the core aspect of what it means for help requests to follow a random walk, so it should have a large effect on the results. 
 
+RQ3
+What are the patterns in long-run citizenship as the number of employees receiving help opportunities as random walks increases from 2 to 200?
+
+Research question 3 was designed to assess long-run citizenship patterns depend on the size of the collective. Nearly all studies in the organizational literature are multiple unit, meaning that they examine their effects across multiple people, teams, departments, or companies. This effect was therefore important to examine given the collective nature of our field. 
+
+## Simulation heuristic
+
+The simulation was designed to build off prior research (cites)
+
+denrell mimic. rand mimic
+random walk on requests. person with highest requests is the greatest helper. 
+if both have same number of requests, they tie.
+
+## evaluation
+
+R 
+100 replicates
 
 
 
