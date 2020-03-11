@@ -83,34 +83,19 @@ In study one, we examine a number of data sources to evaluate whether we can fin
 
 # Study 1
 
-Archival data was used to assess our hypothesis. We scraped the data from several different sources on the Internet, each capturing the idea of a help request in a slightly different way. Testing for random walks requires time-series data with many time points ($t$), therefore we searched for data sets that favored large $t$ and could be used to capture notifications for help. 
-
-### github writing
-
-github
-- is a version control system mainly used for software
-- a website that allows you to store your code on the cloud that uses version control powered by git.
-- it is a website that allows anyone with code to store, modify, and collaborate on programs by uploading them to the website.
-- build personal projects, support their businesses, and work together on open source technologies
-- github is a website used mainly by software developers to store their projects and network with like minded people
-- github is a code sharing and publishing service, or a social networking site for programmers
-- github is an open source website that uses version control to manage and store revisions of projects. Although it's mostly used for code, it can also be used for other types of files such as Word documents.
-- github is a repository hosting service, but it adds many of its own features. 
-
-issues
-- place where people can report bugs, request features, or ask questions
+Archival data was used to assess our hypothesis. We scraped the data from several different sources on the Internet, each capturing the idea of a help request in a slightly different way. Testing for random walks requires time-series data with many time points ($t$), therefore we searched for platforms that would contain data with large $t$ and could be used to capture notifications for help. 
 
 ## Data Sources
 
 (a) Issues on GitHub Repositories - Non-Academic
 
-The first data source comes from GitHub repositories created by software developers. GitHub is an open source website that allows users to store, manage, share, and collaborate on projects (repositories) and, although most use it for code, it can also be used for other types of documents such as Word files. The website contains a variety of features that facilitate transparency, collaboration, and networking on projects, such as version control, the ability to comment on and request edits to other user's projects, and personal pages that exhibit a given user's track-record of work. The data that we collected are known as repository "issues." When a focal individual posts a repository/project, other users can then download and use the code that he created. If other users want to ask questions about the code, request features, or report bugs, they can then create an issue on the focal individual's post. The focal individual is then notified that an issue has been placed. 
+Data were collected from GitHub repositories created by software developers. GitHub is an open source website that allows users to store, manage, share, and collaborate on projects (repositories) and, although most use it for code, it can also be used for other types of documents such as Word files. The website contains a variety of features that facilitate transparency, collaboration, and networking on projects, such as version control, the ability to comment on and request edits to other user's projects, and personal pages that exhibit a given user's track-record of work. The data that we collected are known as repository "issues." When a focal individual posts a repository/project, other users can then download and use the code that he created. If other users want to ask questions about the code, request features, or report bugs, they can then create an issue on the focal individual's post. The focal individual is then notified that an issue has been placed. 
 
 The data we collected were issues posted to single repositories, and we collected data on four different software developers. That is, a single software developer had a respository that he or she maintained, and over time his or her repository collected issues. All of the issues, from when the project first began until the most recent comment, were collected and time-stamped. This process was then repeated for another three software developers in different industries working on unrelated projects. 
 
 One of the repositories was source code for a functional computer language built to create web applications. Another was a compiler to convert declarative components into JavaScript. The third was an application which corrects console commands. The fourth was a facial recognition application programming interface. Three of the four software developers work full time for a given company, whereas the fourth is an external consultant.
 
-For these four data sources, help requests were operationalized as issues. Data were collected on (a) the date that the issue was posted, (b) when it was resolved, if ever, and (c) the content of the issue. 
+For these four data sources, help opportunities were operationalized as issues. Data were collected on (a) the date that the issue was posted, (b) when it was resolved, if ever, and (c) the content of the issue. 
 
 Definition of affiliative OCB
 
@@ -126,13 +111,47 @@ In these github data sources, people act to enhance the functioning of a collect
 
 (b) Issues on GitHub Repositories - Academic
 
-The second data source also came from issues on GitHub respositories, but this time we used repositories posted by academics. 
+The second set of data was also based on GitHub repositories, but this time we used repositories posted by academics. University faculty often use GitHub as a version control system when writing documents, as a platform to share, monitor, and adjust any applications or tools that they develop, and as a resource for data science tools. We focused on the individual repositories of four academics, each a faculty member at a different university.
 
-The positive of this data source is that it captures help requests that are definitely part of someone’s formal job duties (especially in academia).
+One of the repositories was an R package for structural equations modeling. Another was the source code and package for a popular Bayesian analysis textbook. The third was an R package for multivariate analysis of genetic markers, and the fourth was a package for population genetics. As before, help opportunities were operationalized as issues and we collected (a) the time the issue was placed, (b) when, if ever, it was resolved, and (c) the content of the issue. 
+
+
+
 
 The limitation of this data source is that prompts can come from people who are not direct colleagues.
 - but they are in a sense…they are colleagues in the sense that they want to use the package
 - is there any definition that says you have to help people within the same company?
+
+### Potential Data Sources
+
+
+(c) first author own emails
+
+The third set of data was a series of emails received by the first author. From October, 2019 to August, 2020, the first author saved any emails from colleagues at the same University that seemed relevant to the notion of helping opportunities. This process was not systematic on the front end: the author stored emails based on his own discretion, storing only those emails that appeared relevant as they were received. We tried to make the process more systematic on the back end: after collecting all of the emails and removing any identifying information, 300 undergraduate students underwent a sorting procedure in which they classified the emails as helping opportunities or irrelevant. We describe this process in more detail below. 
+
+Three hundred undergraduates at a large Midwestern university were recruited to take part in a classification study, which participants completed online. After giving consent, the participants were provided with a definition of helping opportunities and several example items used in prior empirical research. The items included:
+
+item1
+item2
+item3
+
+They were then presented with the content of a single email, asked to read it, and then were told to determine if the content was consistent with a helping opportunity or not. Participants rated each email with a bipolar scale including "yes" or "no." Agreement indices were collected.
+
+
+help opportunity was operationalized as...
+
+(d) student pools
+
+Our fourth angle on help opportunities came from graduate student pools. For three different programs across the U.S., the number of graduate students per year was collected. One program was in Political Science and was located in the Northeast, another was in Organizational Psychology and was located in the Midwest, and the third was in Accounting and was located in the Southwest. For each program, the number of students per year across a 20 year time span was collected, and a help opportunity was operationalized as a student. 
+
+(e) Forumn questions
+
+Finally, we also collected data within an online forumn. "Psychological Dynamics" is a Facebook group which provides users with a platform to share and discuss news, publications, tools, and other aspects related to psychological research. The community draws researchers from all over the world, and posts are created every day. In this data set, help opportunities were operationlized as a post, and posts were collected daily from September, 2018 to September, 2019.
+
+
+
+
+
 
 
 
@@ -160,33 +179,37 @@ The limitation of this data source is that it is fairly abstract.
 
 
 
-
 ## Analysis
+
+All data are in the form of time-series such that a single unit is represented over successive time points. In total, there are 13 data sets: 8 from the GitHub repositories, 1 from the first author's emails, an additional 3 from the PhD student pools, and 1 from the public forumn. Each of these time-series represents the stock of help opportunities over time, such that greater values indicate more helping opportunities and lower values indicate fewer helping opportunities. For each data set, hypothesis one is evaluated by assessing whether the series contains a unit root. We use two unit root tests to evaluate our hypothsis. The first, the augmented Dickey-Fuller (ADF) test, is the most widely used statistic to evaluate the presence of random walks in time-series data. The null hypothesis of this test is that the data are generated from a random walk, so when the ADF test cannot reject its null our hypothesis is retained. The are also unit root tests in which the null hypothesis is instead the absence of a unit root, and the most well-known test of this second type is the Kwiatkowski, Phillips, Schmidt, and Shin (1992) statistic (KPSS). Stated simply, if the ADF test cannot reject its null while the KPSS test can, then the data provide evidence in two ways that the series follows a random walk. 
 
 ## Results
 
 ## Study 1 Discussion
 
-we found
-
-Study one gives us evidence that help requests can follow a random walk, but we have to extrapolate that to understand the implications of random walks for sustained, long-run citizenship.
-
-how do different characteristics lead to various long-run outcomes?
-if we vary the parameters of the random walk, what does that do to the exent to which it produces extra milers?
+Study one demonstrated that, at least in some cases, help opportunities can be modeled as random walks. Time-series data were collected from multiple sources, and each series represented an accumulating pattern of help opportunities over time. For 12 out of the 13 data sources, both unit root tests provided evidence that the series was consistent with a random walk. In the last data set, which consisted of X, only the ADF test returned evidence that a random walk was present. Identifying random patterns in help requests was the first step toward our chance model of long-run citizenship. We take this evidence -- that help opportunities follow a random walk -- as a starting point for our next study.
 
 
+## Study 2
 
-## what should we vary?
+Our second study reveals the ways in which random walks may produce different forms of long-run citizenship. Its purpose is to document the pattern of long-run citizenship that emerges from different types of random walks. Given that we identified random walks in study one, if we vary their parameters or our assumptions about the connection between opportunities and acts of help, how does that change the extent to which they produce extra milers? We approach this question by using simulations, which allow us to witness the effects of varying crucial paramters in systematic ways. The simulations are structured around three key research questions. 
 
-1) probability that help request produces help
+RQ1
+What are the patterns in long-run citizenship as the probability that a helping opportunity causes an act of help changes from 0 to 1?
+
+Research question 1 is designed to address a fundamental assumption of this paper: that an opportunity is one aspect leading to an act of OCB. 
+
+RQ2
+What are the patterns in long-run citizenship as the drift parameter on helping opportunities changes from 0 to 1?
+
+RQ3
+What are the patterns in long-run citizenship as the autoregressive parameter on helping opportunities changes from 0 to 1?
 
 
-2) drift
 
 
-3) self similarity
 
-
+for all of these. the key is form of long-run citizenship. by that, we mean the extent to which one individual repeatedly 
 
 # Conclusion
 

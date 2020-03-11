@@ -44,6 +44,15 @@ https://github.com/mauricioaniche/repodriller/issues
 
 
 
+Writing about
+- https://github.com/yrosseel/lavaan/issues?q=is%3Aopen+is%3Aissue
+- https://github.com/rmcelreath/rethinking/issues
+- https://github.com/thibautjombart/adegenet/issues
+- https://github.com/grunwaldlab/poppr/issues
+
+
+
+
 
 
 # non academics with repos
@@ -108,6 +117,8 @@ Evan Czaplicki
 - built elm while he was employed, eventually that became his job
 
 
+
+
 Writing about
 - https://github.com/sveltejs/svelte
 - https://github.com/elm/compiler
@@ -139,6 +150,8 @@ https://github.com/Rdatatable/data.table/issues
 (4) devtool and roxygen people
 
 https://github.com/r-lib
+
+
 
 
 
