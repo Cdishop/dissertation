@@ -1,0 +1,20 @@
+(a)
+
+Definition of affiliative OCB
+
+common items of affiliative OCB
+
+This data source is posisitive because it captures helping prompts that are definitely not part of someone’s formal job description. 
+
+The limitation of this data source is that requests could come from outside the organization. Is that an issue?
+
+In these github data sources, people act to enhance the functioning of a collective, but the collective is broader than just a single organization. 
+- perhaps that’s ocb, perhaps it isn’t.
+
+
+(b)
+
+
+The limitation of this data source is that prompts can come from people who are not direct colleagues.
+- but they are in a sense…they are colleagues in the sense that they want to use the package
+- is there any definition that says you have to help people within the same company?
