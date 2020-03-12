@@ -1,0 +1,80 @@
+---
+
+# https://crsh.github.io/papaja_man/index.html
+
+title             : "Thinking Longitudinal: A Framework for Scientific Inferences with Temporal Data"
+shorttitle        : "LONGITUDINAL INFERENCES"
+
+author: 
+  - name          : "Christopher R. Dishop"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "316 Physics Road, Psychology Building, Room 348, East Lansing, MI, 48823"
+    email         : "dishopch@msu.edu"
+  - name          : "Michael T. Braun"
+    affiliation   : "2"    
+  - name          : "Goran Kuljanin"
+    affiliation   : "3"
+  - name          : "Richard P. DeShon"
+    affiliation   : "1"
+    
+affiliation:
+  - id            : "1"
+    institution   : "Michigan State University"
+  - id            : "2"
+    institution   : "University of South Florida"
+  - id            : "3"
+    institution   : "DePaul University"
+
+
+author_note: |
+  This article is currently in press for the Handbook of Temporal Dynamic Organizational Behavior. It can be cited as:
+  
+  Dishop, C. R., Braun, M. T., Kuljanin, G., & DeShon, R. P. (In press). Thinking Longitudinal: A Framework for Scientific Inferences with Temporal Data. In Griep, Y. Hansen, S. D., Vantilborgh, T., & Hofmans, J. (Ed.), Handbook of Temporal Dynamic Organizational Behavior. Edward Elgar Publishing.
+
+abstract: |
+  In this manuscript we explore how to think about patterns contained in longitudinal or panel data structures. Organizational scientists recognize that psychological phenomena and processes unfold over time and, to better understand them, organizational researchers increasingly work with longitudinal data and explore inferences within those data structures. Longitudinal inferences may focus on any number of fundamental patterns, including construct trajectories, relationships between constructs, or dynamics. Although the diversity of longitudinal inferences provides a wide foundation for garnering knowledge in any given area, it also makes it difficult for researchers to know the set of inferences they may explore with longitudinal data, which statistical models to use given their questions, and how to situate their specific inquiries within the broader set of longitudinal inferences. Moreover, the diversity of statistical models that can be applied to longitudinal data requires that researchers understand how one inference category differs from another. 
+  
+keywords          : "longitudinal inferences, between-unit, growth, trends, dynamics, relationships over time, processes"
+#wordcount         : "149"
+
+bibliography      : ["refs.bib"]
+nocite: '@deshon_multivariate_2012; @xu_deshon_dishop; @zyphura; @zyphurb'
+
+figsintext        : no
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+lineno            : yes
+
+lang              : "english"
+class             : "man"
+output            : papaja::apa6_pdf
+---
+
+```{r load_packages, include = FALSE}
+library("papaja")
+```
+
+```{r analysis_preferences}
+# Seed for random number generation
+set.seed(42)
+```
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.path = 'figures/', echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+
+```{r child = 'diss.Rmd'}
+```
+
+\newpage
+
+# References
+```{r create_references, echo = F}
+r_refs(file = "refs.bib")
+```
+
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}

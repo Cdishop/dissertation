@@ -1,0 +1,1450 @@
+\documentclass[english,,man]{apa6}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Thinking Longitudinal: A Framework for Scientific Inferences with Temporal Data},
+            pdfauthor={Christopher R. Dishop, Michael T. Braun, Goran Kuljanin, \& Richard P. DeShon},
+            pdfkeywords={longitudinal inferences, between-unit, growth, trends, dynamics,
+relationships over time, processes},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[shorthands=off,main=english]{babel}
+\else
+  \usepackage{polyglossia}
+  \setmainlanguage[]{english}
+\fi
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+
+  \title{Thinking Longitudinal: A Framework for Scientific Inferences with
+Temporal Data}
+    \author{Christopher R. Dishop\textsuperscript{1}, Michael T.
+Braun\textsuperscript{2}, Goran Kuljanin\textsuperscript{3}, \& Richard
+P. DeShon\textsuperscript{1}}
+    \date{}
+  
+\shorttitle{LONGITUDINAL INFERENCES}
+\affiliation{
+\vspace{0.5cm}
+\textsuperscript{1} Michigan State University\\\textsuperscript{2} University of South Florida\\\textsuperscript{3} DePaul University}
+\keywords{longitudinal inferences, between-unit, growth, trends, dynamics, relationships over time, processes}
+\usepackage{csquotes}
+\usepackage{upgreek}
+\captionsetup{font=singlespacing,justification=justified}
+
+\usepackage{longtable}
+\usepackage{lscape}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage[flushleft]{threeparttable}
+\usepackage{threeparttablex}
+
+\newenvironment{lltable}{\begin{landscape}\begin{center}\begin{ThreePartTable}}{\end{ThreePartTable}\end{center}\end{landscape}}
+
+\makeatletter
+\newcommand\LastLTentrywidth{1em}
+\newlength\longtablewidth
+\setlength{\longtablewidth}{1in}
+\newcommand{\getlongtablewidth}{\begingroup \ifcsname LT@\roman{LT@tables}\endcsname \global\longtablewidth=0pt \renewcommand{\LT@entry}[2]{\global\advance\longtablewidth by ##2\relax\gdef\LastLTentrywidth{##2}}\@nameuse{LT@\roman{LT@tables}} \fi \endgroup}
+
+
+\DeclareDelayedFloatFlavor{ThreePartTable}{table}
+\DeclareDelayedFloatFlavor{lltable}{table}
+\DeclareDelayedFloatFlavor*{longtable}{table}
+\makeatletter
+\renewcommand{\efloat@iwrite}[1]{\immediate\expandafter\protected@write\csname efloat@post#1\endcsname{}}
+\makeatother
+\usepackage{lineno}
+
+\linenumbers
+
+\authornote{This article is currently in press for the
+Handbook of Temporal Dynamic Organizational Behavior. It can be cited
+as:
+
+Dishop, C. R., Braun, M. T., Kuljanin, G., \& DeShon, R. P. (In press).
+Thinking Longitudinal: A Framework for Scientific Inferences with
+Temporal Data. In Griep, Y. Hansen, S. D., Vantilborgh, T., \& Hofmans,
+J. (Ed.), Handbook of Temporal Dynamic Organizational Behavior. Edward
+Elgar Publishing.
+
+Correspondence concerning this article should be addressed to
+Christopher R. Dishop, 316 Physics Road, Psychology Building, Room 348,
+East Lansing, MI, 48823. E-mail:
+\href{mailto:dishopch@msu.edu}{\nolinkurl{dishopch@msu.edu}}}
+
+\abstract{
+In this manuscript we explore how to think about patterns contained in
+longitudinal or panel data structures. Organizational scientists
+recognize that psychological phenomena and processes unfold over time
+and, to better understand them, organizational researchers increasingly
+work with longitudinal data and explore inferences within those data
+structures. Longitudinal inferences may focus on any number of
+fundamental patterns, including construct trajectories, relationships
+between constructs, or dynamics. Although the diversity of longitudinal
+inferences provides a wide foundation for garnering knowledge in any
+given area, it also makes it difficult for researchers to know the set
+of inferences they may explore with longitudinal data, which statistical
+models to use given their questions, and how to situate their specific
+inquiries within the broader set of longitudinal inferences. Moreover,
+the diversity of statistical models that can be applied to longitudinal
+data requires that researchers understand how one inference category
+differs from another.
+
+
+}
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{proposition}{Proposition}[section]
+\theoremstyle{definition}
+\newtheorem{example}{Example}[section]
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[section]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{solution}{Solution}
+\begin{document}
+\maketitle
+
+Imagine a close colleague that frequently agrees to volunteer for
+additional work when asked to do so. What causes her to act this way?
+Our intuition says that the cause must be something unique about her, a
+motive, personality trait, disposition, or her momentary enthusiasm. So
+it is with our research: the literature on correlates of why someone
+responds with help has focused almost exclusively on individual
+characteristics, such as affect, motives, attributions, justice or
+leadership perceptions, personality, and vigor. But this emphasis
+contradicts what we know about random processes, namely that long-run
+streaks of behavior can be by byproducts of chance. Because chance
+explanations have not been ruled out, statements about the necessity for
+organizations to monitor, evaluate, and influence individual
+characteristics to improve employee helping may be overblown. Moreover,
+a manager who reads this literature and then assumes that individual
+characteristics cause helping is more likely to falsely attribute good
+character to her employees when she witnesses it, leading to performance
+evaluations and reward recommendations that are, perhaps, biased. The
+purpose of this paper is to find evidence of randomness in the requests
+that employees receive asking them for assistance. If we identify
+chance, then researchers, managers, and consultants must account for it
+if they truly want to know whether something unique about the
+individual, rather than something random about the situation, led to
+exceptional, long-run helping. In the organizational literature, helping
+or providing assistance to colleagues is referred to as organizational
+citizenship.
+
+Organizational citizenship behaviors (OCBs), or cooperative acts such as
+assisting others, volunteering for additional work, or speaking highly
+of the company, are increasingly emphasized in the organizational
+sciences (HANDBOOK; dalal). Leaders put OCBs on equal footing to task
+performance when asked about the merits of different behaviors within
+their teams (Podsakoff, MacKenzie, \& Podsakoff, 2018), and researchers
+have gone so far as to describe OCBs as the key social aspect driving
+organizational success (Bateman \& Organ, 1983). Researchers, as well as
+consultants, managers, and employees, are interested in knowing why
+people differ on this behavior, and in particular why someone might have
+sustained, superior levels of OCBs over time.
+
+Employees that exhibit sustained, high-levels of OCBs are labeled
+\enquote{extra-milers} or \enquote{good citizens} in the literature (Li,
+Zhao, Walter, Zhang, \& Yu, 2015; Methot, Lepak, Shipp, \& Boswell,
+2017), and researchers have identified a number of predictors of this
+behavior -- many of which are individual characteristics. These include
+prosocial motivation and personality (Grant, 2008; Penner, Midili, \&
+Kegelmeyer, 1997), impression management motives (Grant \& Mayer, 2009),
+one's propensity to be concerned for others (Meglino \& Korsgaard,
+2004), job satisfaction, perceived fairness, and organizational
+commitment (Organ \& Ryan, 1995), perceptions of trust (HANDBOOK;
+moorman, fit (HANDBOOK; kristof brown), leader fairness (HANDBOOK;
+piccolo), and interaction quality with colleagues (Bolino, Hsiung,
+Harvey, \& LePine, 2015), how employees appraise pressures to perform
+and goals (Mitchell, Greenbaum, Vogel, Mawritz, \& Keating, 2019), their
+level of engagement and mindfullness (Hafenbrack et al., 2019; Wang,
+Law, Zhang, Li, \& Liang, 2019), and their perceptions of ostracism
+(Lance Ferris et al., 2019). Indeed, Bolino (1999) and Bolino, Turnley,
+and Bloodgood (2002) state that there is a consensus that OCBs stem from
+dispositions, motivation, and fairness perceptions.
+
+Studies have also identified predictors of within-person OCB variance,
+but again many of these are individual characteristics. Antecedents
+include positive affect (Dalal, Lam, Weiss, Welch, \& Hulin, 2009;
+Glomb, Bhave, Miner, \& Wall, 2011), job satisfaction (Ilies, Scott, \&
+Judge, 2006), social comparisons and beliefs in a just world (Spence,
+Ferris, Brown, \& Heller, 2011), core self evaluations and future
+orientation (Wu \& Parker, 2012), engagement (Christian, Eisenkraft, \&
+Kapadia, 2015), and perceptions of justice or supervisor support (Matta,
+Sabey, Scott, Lin, \& Koopman, 2020; Schreurs, Hetty van Emmerik,
+Günter, \& Germeys, 2012).
+
+We offer an alternative, perhaps simpler, model to explain sustained,
+superior levels of OCBs -- one that does not rely on individual
+characteristics such as motives, attributions, personality, or fairness
+perceptions. The mechanism, instead, uses (a) opportunities, or signals
+that an act of assistance can be performed, and (b) chance accumulation,
+or the notion of randomly assembling components to an existing stock as
+an employee moves through time. To say that an employee randomly
+accumulates opportunities is to mean that he or she is confronted with
+requests, notifications, or prompts that signal to him or her that an
+act of help can be performed, and each of these successive cases then
+compiles into his or her existing pool. We show that whenever help
+requests follow a random accumulation process, then superior, sustained
+citizenship behaviors by one employee compared to others is not only a
+possibility but in some cases it is the most likely outcome -- it is to
+be expected. Even when two people have the same level of trust toward
+others, empathy, or prosocial values, one may have continual, superior
+helping due to the underlying, random accumulation. Moreover, this
+result occurs even when the mechanism is identical for every employee.
+In other words, we show that vastly different observed citizenship does
+not depend on a unique causal diagram for every employee. The
+fundamental process -- accumulation -- is the same, but the manifest
+complexity leading some individuals to have greater citizenship than
+others occurs due to the unique gradient one experiences across time.
+Such an alternative explanation does not necessarily challenge existing
+ideas, but it has the potential to change our understanding of what
+generates sustained, superior behavior.
+
+Apart from this first contribution, an alternative, parsimonious
+explanation regarding sustained, superior citizenship, additional
+contributions of this paper are as follows. First, we provide
+information to managers that can help them avoid misattributing causes
+of citizenship. If a manager were to take our literature at face value,
+then she should assess individual characteristics to monitor, predict,
+and manage helping behaviors. But such actions do not account for
+differences in help requests and the extent to which these requests
+follow a random process. Therefore, she cannot rule out chance when she
+witnesses sustained, high levels of OCBs and will potentially
+misattribute its cause to personality or motives. Any performance or
+promotion recommendation that she then provides -- which are outcomes of
+OCBs -- are given for the wrong reason. The employee behavior was not
+due to disposition, but chance opportunities.
+
+Second, we answer recent calls for a better understanding of dynamics in
+the citizenship literature (DYNAMICS; dishop et al., DYNAMICS; cronin).
+DYNAMICS; Dishop et al., argue that, although it is now common for
+researchers to assess patterns in longitudinal data, many of the current
+approaches miss several fundamental concepts of dynamics -- the notion
+of accumulation being one. We examine this principle here by assessing
+the extent to which help requests follow a random walk and therefore add
+more knowledge about citizenship dynamics to our literature.
+
+Third, we extend the OCB literature by examining the nature of help
+requests. When researchers discuss employee citizenship in handbooks
+(Podsakoff et al., 2018), theory (Bolino, Harvey, \& Bachrach, 2012;
+Organ, 1988), or in empirical articles (Gabriel, Koopman, Rosen, \&
+Johnson, 2018; Koopman, Lanaj, \& Scott, 2016), they focus almost
+exclusively on help itself -- types, measures, predictors, outcomes, and
+its similarity to other constructs. But help is often, sometimes by
+definition, tied to a request or prompt. For instance, in their chapter
+distinguishing OCBs from engagement, Newton and LePine (HANDBOOK; 2018)
+suggest that citizenship is a response to an opportunity -- an act that
+follows a prompt for extra work or a request for information. Similarly,
+in their chapter distinguishing OCBs from proactive behavior, Li, Frese,
+and Haider (HANDBOOK; 2018) state that, whereas proactive behavior
+reflects an employee volunteering help without a prompt, OCBs are
+actions that occur after a plea for assistance. Not all OCBs are
+reactions to prompts (e.g., López-Domı'nguez, Enache, Sallan, \& Simo,
+2013), but requests are part of the definition of at least one major
+type of citizenship -- a type which some authors (Li et al., 2018) have
+argued should take the forefront of OCB research. Currently, we have
+many studies on helping but little on the nature of prompts. Our
+understanding of citizenship, therefore, is incomplete in that we have
+focused exclusively on one aspect of the definition of citizenship
+(i.e., the act), and not the other (i.e., the prompt).
+
+Fourth, we challenge an assumption about what creates long-run,
+exceptional citizenship. To appreciate our stance, it is useful to
+describe a study by Bolino et al. (2015). These authors examine
+within-person variance in OCBs, depletion, and motives, and correlate
+the constructs over time. They motivate their study by arguing that
+prior research has assumed that people have stable motives and so
+\enquote{good soldiers,} or employees that demonstrate supreme OCB
+levels compared to their peers, will always be good. They argue that
+this idea is unfounded and then demonstrate that motives do show
+systematic within-person variance, and that they predict OCBs. What
+these authors imply is that long-run behavior is unlikely when there is
+systematic variance in the variables that are assumed to cause OCBs.
+Said differently, when the causes are unstable (motives), the outcome
+must be unstable (OCB). This idea, though, contradicts what we know
+about stochastic processes, particularly the notion that no systematic
+variance in the cause is required to produce what looks like long-run
+stability in the outcome (Polson \& Scott, 2012). If the cause has no
+systematic variance, it is still possible (and in some cases extremely
+likely) that the response process does contain systematic variance in
+the form of long streaks of exceptional citizenship. Our paper,
+therefore, repositions how we think about long-run citizenship behavior.
+
+Finally, this research generates new avenues; it points to unexplored
+scientific and applied questions that could lead to a flurry of
+additional work. These questions are unpacked at the end of the paper.
+
+The goal of this paper is to describe an alternative, chance model of
+long-run citizenship that incorporates opportunities and accumulation.
+Below, we describe OCB background and theory, the notion of extra
+milers/good soldiers, and then present our alternative explanation with
+two studies. In study one, we propose and find evidence that help
+requests follow a random accumulation process. Specifically, we draw
+from probability theory and suggest that, in some cases, patterns of
+help requests follow random walks. In study two, we use this initial
+finding as a starting point -- that help requests can be modeled as
+random walks -- and then apply simulations to determine how different
+types of random walks lead to various forms of long-run behavior. Stated
+simply, study two reveals the parameters and assumptions required for
+random walks to produce long-run OCBs.
+
+\hypertarget{organizational-citizenship-behaviors-ocbs}{%
+\section{Organizational Citizenship Behaviors
+(OCBs)}\label{organizational-citizenship-behaviors-ocbs}}
+
+The idea that there are employee behaviors beyond what we typically
+consider as job or task performance but that still promote individual
+and collective success has been around for decades. Researchers from
+psychology, management, education, human resources, organizational
+behavior, and sociology have different terms for this behavior, and
+different aspects that they emphasize, but in the organizational
+literature this behavior has come to be known as organizational
+citizenship. OCB is \enquote{individual behavior that is discretionary,
+not directly or explicitly recognized by the formal reward system, and
+that in the aggregate promotes the effective functioning of the
+organization} {[}Organ (1988); p.~4{]}. It has been described as a
+behavior that \enquote{lubricates} the social machinery of the
+organization, thereby facilitating its effective functioning (Bolino et
+al., 2002; Organ, Podsakoff, \& MacKenzie, 2005; Podsakoff \& MacKenzie,
+1997). Related terms that are now less popular include organizational
+spontaneity (George \& Brief, 1992), extra-role behavior (Van Dyne \&
+LePine, 1998), and contextual performance (Motowidlo \& Van Scotter,
+1994).
+
+Citizenship has consequences for both individuals and collectives.
+Employees demonstrating greater OCBs earn higher supervisor performance
+evaluations (MacKenzie, Podsakoff, \& Fetter, 1991, 1993; Motowidlo \&
+Van Scotter, 1994) and more promotion recommendations (Van Scotter,
+Motowidlo, \& Cross, 2000). Meta-analytic results suggest that
+individuals who consistently engage in OCB are less likely to express
+intentions to leave, to voluntarily quit, and to be absent from work
+(Podsakoff, Whiting, Podsakoff, \& Blume, 2009). For collectives,
+greater levels of OCBs relate to higher performance quality, performance
+quantity, and customer satisfaction (Ehrhart \& Naumann, 2004;
+Podsakoff, MacKenzie, Paine, \& Bachrach, 2000), and some studies
+suggest that organizations competing in changing environments are
+especially dependent on good citizens because the goodwill and social
+capital they foster are a source of competitive advantage (Bolino et
+al., 2002; Leana \& van Buren, 1999; Nahapiet \& Ghoshal, 1998). There
+are also studies documenting the negative consequences of OCBs, which
+include reduced in-role performance, depletion and exhaustion, role
+overload, and feelings of resentment among peers (HANDBOOK; cites). That
+said, several researchers claim that OCBs should be thought of as a
+positive act, which is highlighted in the following quotes:
+
+\begin{quote}
+\begin{quote}
+\enquote{There is considerable support in the literature for the idea
+that citizenship behavior at work is a positive thing} (Bolino et al.,
+2015; p.~56)
+\end{quote}
+\end{quote}
+
+\begin{quote}
+\begin{quote}
+\enquote{Theory and practice should acknowledge the sizable role good
+citizens play\ldots{}because organizations rely on their continued
+investments} (Methot et al., 2017; p.~11)
+\end{quote}
+\end{quote}
+
+Researchers typically pursue one of three broad ways to classify OCBs.
+Initially, OCB included two dimensions: altruism, or helping directed at
+a person after an eliciting stimulus; and generlized compliance, or an
+impersonal sense of conscientiousness (Smith, Organ, \& Near, 1983).
+These two dimensions were later deconstructed into altriusm (responding
+to opportunities to assist a coworker), courtesy (responding with
+kindness), conscientioueness (on time, following rules, etc.), civic
+virtue (concern for the organization), and sportsmanship (tolerate less
+than ideal circumstances while maintaining a positive outlook)
+(HANDBOOK). Other researchers classify OCBs either as affiliative or
+challenging (HANDBOOK). Affiliative behaviors are acts such as helping
+or responding with courtesy in which the actor supports existing company
+processes. Challenging behaviors are acts such as voicing problems or
+initiating change in which the actor adjusts his or her circumstances.
+Finally, OCBs are also distinguished (e.g., Dalal, 2005) by whether they
+benefit individuals (OCB-I; helping, assisting, encouraging) or the
+organization (OCB-O; promoting the company to others).
+
+In this paper, we refer to affialiative OCBs whenever we use the terms
+citizenship, helping, acts of assistance, or OCB. This focus is
+necessary and appropriate for the following reasons. First, Li and
+HANDBOOKAUTHOR spend an entire chapter describing the differences
+between affiliative (helping) and challenging (voicing) OCBs and argue
+that helping should be thought of as the core manifestation of
+citizenship because it (a) aligns with what most people mean when they
+study cooperation in the broader sciences, (b) is based on different
+evolutionary pressures than behaviors such as voicing concerns or
+actively changing circumstances, and (c) leads to construct
+contamination and unnecessary confusion if coupled with change-oriented
+behaviors. Second, Van Dyne, Cummings, and McLean (1995 HANDBOOK BUT OWN
+TEXT) suggest that \enquote{the conceptual definition and subsequent
+operationalizations of OCBs should focus on citizenship behavior that is
+affiliative\ldots{}and should not include challenging} (p.~274). Third,
+helping is the core dimension discussed in the original paper exploring
+the dimensionality of OCBs (Smith et al., 1983) and within Organ's
+theoretical writing about the construct (HANDBOOK OWN TEXT ORGAN).
+Finally, and perhaps most importantly, it aligns with the purpose of
+this study, which is to explore the random nature of prompts for help.
+For all of these reasons, this paper couches itself within the
+affiliative space of the construct.
+
+\hypertarget{sustained-long-run-citizenship}{%
+\section{Sustained, Long-Run
+Citizenship}\label{sustained-long-run-citizenship}}
+
+Recently, researchers have shown an increasing interest in employees
+that repeatedly exhibit greater OCBs compared to their peers. Li et al.
+(2015), for instance, studied manufacturing teams in China and examined
+what they referred to as \enquote{extra milers} -- employees who
+frequently provide greater help relative to their colleagues.
+Specifically, extra milers were defined as team members who exhibited
+high frequency extra-role behaviors such as helping, and the researchers
+operationalized it by collecting other-team-member-rated surveys of OCBs
+and then identifying the team member with the maximum score.
+Unfortunately, there was a discrepancy between how they defined extra
+milers and how it was studied: they defined it by referring to
+frequency, which implies sustained behavior over time consistent with
+the theory that they used to support their arguments (behavioral
+consistency theory), whereas the measures they employed captured
+single-moment levels of OCBs. Nonetheless, the researchers were clearly
+interested in the notion of repeated, exceptional OCBs. They found that
+differences across teams in the number of helping behaviors provided by
+the \enquote{extra miler} correlated with team backup and monitoring
+behaviors.
+
+A similar idea is described in a paper by Methot et al. (2017) that
+explains how employees make sense of life events and its implications
+for OCB. They state,
+
+\begin{quote}
+\begin{quote}
+One topic of particular interest in the OCB literature is the concept of
+\enquote{good citizens} -- employees who tend to engage in high levels
+of OCB\ldots{} Research suggests that good citizens characteristically
+perform OCB because of such factors as personality traits, including
+agreeableness, prosocial orientation and values, and proactive
+personality. p.~10.
+\end{quote}
+\end{quote}
+
+So, good soldiers or extra milers refer to employees that
+\enquote{characteristically} engage in OCB, or that exhibit greater
+helping compared to their colleagues time and time again. Such a pattern
+would manifest as long-run streaks of behavior, similar to a series of
+consecutive heads if one were to flip a coin two hundred times.
+
+What accounts for long-run citizenship? OCB antecedents were described
+earlier in this paper and included individual characteristics such as
+motives, affect, attitudes, fairness perceptions, and engagement.
+Similarly, Methot et al., point to predictors of long-run citizneship in
+the quote above: personality and prosocial values. We suggest an
+alternative: chance opportunities. Just as a series of consecutive heads
+could be a byproduct of chance events from flipping a coin, long-run
+citizenship could be a byproduct of random opportunities. By
+opportunity, we mean a prompt that signals to an employee that an act of
+help can be performed, such as an email from a colleague requesting
+assistance. By random, we mean that help requests follow a mathematical
+form that incorporates chance. The overarching argument in this paper is
+that employees may receive help requests in a pattern that mimics a
+fundamental mathematical process, one that includes randomness, and so
+in the sections below it is necessary to articulate each aspect of our
+argument. First, we describe what we mean by help requests or
+opportunities. Then, we provide one way to specify their mathematical
+form.
+
+\hypertarget{prompts-opportunities}{%
+\section{Prompts \& Opportunities}\label{prompts-opportunities}}
+
+A prompt/request/opportunity is a signal to an employee that an act of
+help can be performed, and this idea was an important element in the
+early OCB literature. In their cornerstone paper describing its
+dimensions, Smith et al. (1983) state that helping occurs after a
+stimuli, or a signal that \enquote{appears to be situational, that is,
+someone has a problem, needs assistance, or requests a service}
+(p.~661). Despite this initial emphasis, Ehrhart (HANDBOOK CHAPTER)
+points out that there has been little follow-up research on the nature
+of requests and how they inform what we know about OCBs. That said,
+there is ample theory elsewhere that describes opportunities more
+broadly as they reflect aspects of the situation or environment in which
+an agent is conducting his or her behavior -- we draw from this
+literature to guide our discussion.
+
+Many researchers across several scientific disciplines have described
+the nature of situations and environments. Within this broad area, two
+ways to think about the environment are relevant for our purposes. The
+first is as a platform, space, or zone which holds distributed
+goal-relevant objects. This perspective is consistent with much of
+Herbert Simon's writing that emphasized the importance of context for
+understanding human behavior. Across a number of papers, theories, and
+normative models (Simon, 1956, 1992) Simon argues that to understand the
+complex behavior of an agent it is first necessary to understand how
+goal-relevant objects are distributed around it. Applied to the current
+paper, this notion embodies the idea that to understand OCBs it is
+necessary to know how opportunities to assist are distributed about an
+employee. To make his writing clear, Simon usually described how objects
+were distributed in space, meaning that an agent was located in a matrix
+and the distribution was over cells. Here, we extend that idea to a
+distribution over time. Not only do employees receive help requests from
+different colleagues, they also receive requests at different moments in
+time, and requests happen repeatedly as an employee moves from moment to
+moment. This distribution over time would reflect the average number of
+requests that the employee would expect to receive at any moment,
+alongisde the expected variability in requests.
+
+The second perspective on the environment is as a shock or disturbance
+that makes opportunities come and go. Random stimuli occur and these
+factors impinge upon actors, allowing some behaviors and constraining
+others. This idea is consistent with the notion of shocks in the
+unfolding model of employee turnover in which discrete events thwart
+some opportunities and create others (Lee \& Mitchell, 1994), to events
+in affective events theory in which random stimuli cause changes in
+employee emotion and behavior (Beal, Weiss, Barros, \& MacDermid, 2005),
+and to the environment in Dishop's goal sampling theory (Dishop, 2019)
+in which actors are only able to approach goals made available by the
+situation at any moment in time. Blumberg and Pringle (1982) define
+opportunities as \enquote{the particular configuration of the field of
+forces surrounding a person and his or her task that enables or
+constrains that person's task performance and that are beyond the
+person's direct control} (p.~565), and Stewart and Nandkeolyar (2007)
+demonstrated that even skilled and motivated workers cannot engage in
+performance facilitating behavior when their actions are constrained by
+the environment.
+
+Across all of these perspectives, the core idea is that there are
+opportunities scattered about the environment that come and go. The
+particular form of opportunity that we examine in this study is a help
+request: a prompt or signal or notification to an employee that an act
+of assistance can be performed. Consider a few examples: A Professor
+receives an email from a colleague asking if she can substitute for an
+undergraduate course; A manager announces that volunteers are needed for
+an upcoming assignment; A blogger tells his writing collaborator that
+she is welcome to review and edit his post if she pleases; A
+statistician witnesses a question posted on a forumn about a statistical
+model relevant to her expertise; A software engineer receives a pull
+request; An academic receives a note from a graduate student asking for
+a friendly review of his paper. Moreover, any single agent may
+experience repeated prompts over the course of a week. On Monday, a
+Professor may receive an email asking for assistance teaching a class.
+On Tuesday, she receives two more emails about optional meetings in her
+department (attending optional meetings is one commonly studied
+manifestation of OCB). On Wednesday, a former graduate student, who is
+now a faculty member at a different school, asks for a letter of
+recommendation. On some days, the Professor has a large stock of help
+requests, whereas on others she has few, if any. The crux of this paper
+is that we expect these helping prompts to follow a specific
+mathematical form, which we specify below.
+
+\hypertarget{accumulating-requests-as-a-random-walk}{%
+\section{Accumulating Requests As a Random
+Walk}\label{accumulating-requests-as-a-random-walk}}
+
+To explain patterns in help requests over time, we draw from probability
+theory. For some employees, the pattern by which they receive help
+requests may mimic a fundamental mathematical process. To see how,
+consider the following heuristic. First, the state we are tracking is
+the number of help requests than an employee receives over time, with
+greater values indicating more notifications. Second, this state can be
+viewed as a dynamic stock, meaning that the employee has a pool or store
+of help requests -- three, for example -- and this number is
+self-similar over time such that it carries over from day to day. If the
+employee receives two help requests today, this number is added to the
+store of help requests that she had yesterday, creating a total that
+moves forward into tomorrow. Similarly, when help requests are removed
+from the pool -- which could occur, for instance, after she or someone
+else provides help and the request is resolved or when a deadline passes
+and help is no longer required -- then it decreases by whatever amount
+was withdrawn. But removing a request does not drive the pool to zero.
+Instead, whatever amount was removed is subtracted from the total in
+such a way that the pool has inertia/memory -- the amount changes from
+where it was at the immediately prior time point, it does not
+arbitrarily swing to zero. This pattern, one in which an employee
+handles a dynamic stock of help requests such that prompts are added or
+removed while the stock retains inertia, mimics a common and simple
+stochastic process: a random walk.
+
+A random walk is a basic concept from probability theory. Models of
+random walks have been used in many scientific disciplines ranging from
+physics, biology, and chemistry (Kenkre, Montroll, \& Shlesinger, 1973;
+Kot, Medlock, Reluga, \& Walton, 2004; Randić, 1980) to economics,
+sociology, and psychology (Alvarez, Atkeson, \& Kehoe, 2007; Johnson,
+2014; Shang, 2018), helping to understand diverse phenomenon such as
+memory search (Stamovlasis \& Tsaparlis, 2003), particle motion (Bramson
+\& Lebowitz, 1991), network and market behavior (Fama, 1995; Newman,
+2005), and animal foraging (Sims et al., 2014).
+
+A random walk is defined as.
+
+\begin{equation}
+y_{t} = y_{t-1} + B + e_{t}
+\end{equation}
+
+where \(y_{t}\) is the current value of \(y\), \(y_{t-1}\) is the value
+of \(y\) at \(t - 1\), \(B\) is a constant known as drift, and \(e_{t}\)
+is a series with a mean zero and constant variance \(\sigma^2_{e}\).
+This first equation reveals that random walks contain inertia or
+self-similarity, which is consistent with our heuristic of helping
+prompts above. Although drift and error are involved, the core aspect of
+a random walk as represented in equation 1 is that the value of \(y\) at
+a given time point is a function of its value at the immediately prior
+time point.
+
+Another key aspect of random walks is that they incorporate
+accumulation, which is more readily apparanet in an alternative but
+equivalent form:
+
+\begin{equation}
+y_{t} = y_{0} + Bt + \sum_{i = 1}^{t} \varepsilon_i
+\end{equation}
+
+where \(y_{0}\) is the initial value of \(y\), \(Bt\) is a deterministic
+trend component, and the last term represents an accumulation of error.
+This second equation reveals that random walks capture the notion of
+accumulating, or adding values to a store/pool over time, which was the
+second component to our heuristic of help requests.
+
+In the same way that logic can be excavated from a verbal theory to gain
+traction about some phenomenon, the notion of a random walk can be drawn
+from probability theory to better understand the nature of help
+requests. Specifically, we suggest that help requests follow a random
+walk, such that they demonstrate self-similarity and have the
+characteristic of accumulating over time.
+
+\begin{quote}
+\begin{quote}
+Hypothesis 1: Help requests follow a random walk.
+\end{quote}
+\end{quote}
+
+In study one, we examine a number of data sources to evaluate whether we
+can find evidence that help requests follow this stochastic process.
+
+\hypertarget{study-1}{%
+\section{Study 1}\label{study-1}}
+
+Archival data was used to assess our hypothesis. We scraped data from
+several different sources on the Internet, each capturing the idea of a
+help request in a slightly different way. Testing for random walks
+requires time-series data with many time points (\(t\)), therefore we
+searched for platforms that contained data with large \(t\) and that
+could be used to capture notifications for help.
+
+\hypertarget{data-sources}{%
+\subsection{Data Sources}\label{data-sources}}
+
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\tightlist
+\item
+  Issues on GitHub Repositories - Non-Academic
+\end{enumerate}
+
+The first set of data was collected from GitHub repositories created by
+software developers. GitHub is an open source website that allows users
+to store, manage, share, and collaborate on projects (repositories) and,
+although most use it for code, it can also be used for other types of
+documents such as Word files. The website contains a variety of features
+that facilitate transparency, collaboration, and networking on projects,
+such as version control, the ability to comment on and request edits to
+other user's projects, and personal pages that exhibit a given user's
+track-record of work. The data that we collected are known as repository
+\enquote{issues.} When a focal individual posts a repository/project,
+other users can then download and use the code that he created. If other
+users want to ask questions about the code, request features, or report
+bugs, they can then create an issue on the focal individual's post. The
+focal individual is then notified that an issue has been placed.
+
+The data we collected were issues posted to single repositories, and we
+collected data on four different software developers. That is, a single
+software developer had a respository that he or she maintained, and over
+time his or her repository collected issues. All of the issues, from
+when the project first began until the most recent comment, were
+collected and time-stamped. This process was then repeated for another
+three software developers working in different industries on unrelated
+projects.
+
+One of the repositories was source code for a functional computer
+language built to create web applications. Another was a compiler to
+convert declarative components into JavaScript. The third was an
+application which corrects console commands. The fourth was a facial
+recognition application programming interface. Three of the four
+software developers work full time for a given company, whereas the
+fourth is an external consultant.
+
+For each data set, help opportunities were operationalized as issues.
+Data were collected on (a) the date that the issue was posted and (b)
+when it was resolved, if ever.
+
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Issues on GitHub Repositories - Academic
+\end{enumerate}
+
+The second set of data was also based on GitHub repositories, but this
+time we used repositories posted by academics. University faculty often
+use GitHub as a version control system when writing documents, as a
+platform to share, monitor, and adjust any applications or tools that
+they develop, and as a resource for downloading data science tools. We
+focused on the individual repositories of four academics, each a faculty
+member at a different university.
+
+One of the repositories was an R package for structural equations
+modeling. Another was the source code and package for a popular Bayesian
+analysis textbook. The third was an R package for multivariate analysis
+of genetic markers, and the fourth was a package for population
+genetics. As before, help opportunities were operationalized as issues
+and we collected (a) the time the issue was placed and (b) when, if
+ever, it was resolved.
+
+\hypertarget{potential-data-sources}{%
+\subsubsection{Potential Data Sources}\label{potential-data-sources}}
+
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  first author own emails
+\end{enumerate}
+
+The third set of data was a series of emails received by the first
+author. From October, 2019 to August, 2020, the first author saved any
+emails from colleagues that seemed relevant to the notion of helping
+opportunities. This process was not systematic on the front end: the
+author stored emails based on his own discretion, storing only those
+emails that appeared relevant as they were received. We tried to make
+the process more systematic on the back end: after collecting all of the
+emails and removing any identifying information, 300 undergraduate
+students underwent a sorting procedure in which they classified the
+emails either as helping opportunities or as irrelevant. We describe
+this process in more detail below.
+
+Three hundred undergraduates at a large Midwestern university were
+recruited to take part in a classification study, which participants
+completed online. After giving consent, the participants were provided
+with a definition of helping opportunities and several example items
+used in prior empirical research. They were then presented with the
+content of a single email, asked to read it, and then were told to
+determine if the content was consistent with a helping opportunity or
+not. Participants rated each email with a bipolar scale including
+\enquote{yes} or \enquote{no.} Agreement indices were collected. In this
+data set, help opportunities were operationalized as emails that raters
+agreed represented requests for citizenship.
+
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  student pools
+\end{enumerate}
+
+Our fourth angle on help opportunities came from graduate student pools.
+We tracked the number of graduate students per year from the years 1999
+to 2019 at three different graduate programs. One was a Political
+Science program located in the Northeast, another was an Organizational
+Psychology department located in the Midwest, and the third program was
+in Accounting and located in the Southwest. In this data set, a help
+opportunity was operationalized as an active graduate student -- someone
+who could be mentored by a faculty -- and we collected data on the
+number of active graduate students per year for each department.
+
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  forumn questions
+\end{enumerate}
+
+Finally, we also collected data from an online forumn.
+\enquote{Psychological Dynamics} is a Facebook group which provides
+users with a platform to share and discuss news, publications, tools,
+and other aspects related to psychological research. The community draws
+researchers from all over the world, and posts are created every day. In
+this data set, help opportunities were operationlized as a post, and
+posts were collected daily from September, 2018 to September, 2019.
+
+{[}table with each data type{]}
+
+A summary of the data sources is presented in Table 1. We collected data
+across diverse platforms for several reasons. First, we wanted to ensure
+that our results were not unique to a given domain. Just as Aguinis and
+colleagues demonstrated performance power curves in different settings,
+our goal was to demonstrate random walks across various platforms.
+Second, we collected data from several sources because each has its own
+unique limitations and strengths. Our hope was that we could learn
+something about help requests in general by taking a broad view across
+all of the data, even though each has its own unique error. The set as a
+whole can tell us something about help requests, even if each has a
+slight weakness.
+
+\hypertarget{analysis}{%
+\subsection{Analysis}\label{analysis}}
+
+All data are structured as time-series such that a single unit is
+represented over successive time points. In total, there are 13 data
+sets: 8 from the GitHub repositories, 1 from the first author's emails,
+an additional 3 from the PhD student pools, and 1 from the public
+forumn. Each of these time-series represents the stock of help
+opportunities over time, such that greater values indicate more helping
+opportunities and lower values indicate fewer helping opportunities. For
+each data set, hypothesis one is evaluated by assessing whether the
+series contains a unit root. We use two unit root tests to evaluate our
+hypothesis. The first, the augmented Dickey-Fuller (ADF; Dickey \&
+Fuller, 1979) test, is the most widely used statistic to evaluate the
+presence of random walks in time-series data. The null hypothesis of
+this test is that the data are generated from a random walk, so when the
+ADF test cannot reject its null our hypothesis is retained. There are
+also unit root tests in which the null hypothesis is instead the absence
+of a unit root, and the most well-known test of this second type is the
+Kwiatkowski, Phillips, Schmidt, Shin, and others (1992) statistic
+(KPSS). Both tests were administered to evaluate our hypothesis. Stated
+simply, if the ADF test cannot reject its null while the KPSS test can,
+then the data provide evidence in two ways that the series follows a
+random walk.
+
+\hypertarget{results}{%
+\subsection{Results}\label{results}}
+
+{[}Fill after data collection{]}.
+
+\hypertarget{study-1-discussion}{%
+\subsection{Study 1 Discussion}\label{study-1-discussion}}
+
+Study one demonstrated that, at least in some cases, help opportunities
+can be modeled as random walks. Time-series data were collected from
+multiple sources, and each series represented an accumulating pattern of
+help opportunities over time. For 12 out of the 13 data sources, both
+unit root tests provided evidence that the series was consistent with a
+random walk. In the last data set, which consisted of \(X\), only the
+ADF test returned evidence that a random walk was present. Identifying
+random patterns in help requests was the first step toward our chance
+model of long-run citizenship. We take this evidence -- that help
+opportunities follow a random walk -- as a starting point for our next
+study.
+
+\hypertarget{study-2}{%
+\subsection{Study 2}\label{study-2}}
+
+Our second study reveals the ways in which random walks may produce
+different forms of long-run citizenship. Its purpose is to document
+patterns of long-run citizenship that emerge from different types of
+random walks. Given that we identified random walks in study one, the
+next step is to assess how varying the parameters of random walks, as
+well as our assumptions about the connection between opportunities and
+acts of help, changes the extent to which they produce extra milers. We
+pursue this study by using simulations, which allow us to witness the
+effects of varying crucial paramters in systematic ways. First, though,
+it is necessary to articulate again the idea of extra milers and
+long-run citizenship.
+
+There are two phrases in the litarture that researchers have used to
+describe long-run citizenship: good soldiers and extra milers. Methot et
+al. (2017) state that good soldiers are people who characteristically
+engage in higher levels of OCB relative to their colleagues. They are
+people who provide more help, relative to others, in
+\enquote{characteristic} ways. Similarly, Li et al. (2015)
+operationalized extra milers as employees who provided the most (as
+rated by team members) OCBs at a given time point, even though their
+theoretical definition of extra milers were those that had this maximum
+score across repeated time points. How would these ideas manifest? What
+is implied in how the researchers describe, study, and label this
+phenomoneon -- which we refer to here as long-run citizenship -- is that
+some employees perform more OCBs than their peers and this effect has
+some form of consistency. At time \(t\), the individual performs more
+OCBs than her colleagues, she does so again at time \(t + 1\), again at
+\(t + 2\), and this pattern continues until \(t + n\), \(n\) being any
+future time point in which she is outdone by a colleague. The value of
+\(n\) that determines whether a person is labeled as an extra miler or
+not remains unspecified, as does the number of consecutive
+\enquote{wins} required. Said differently, it is unclear for how long
+someone must sit as the top citizen to be considered an extra miler, and
+it is also unclear whether the streaks must be consecutive or if someone
+who is frequently a top citizen but never the top citizen for more than
+two time points in a row merits the label. Our interest is not in
+providing a definition or argument about what truly does and does not
+count for employees to be labeled as extra milers by researchers or
+their managers. Our interest, instead, is on what kinds of streaks
+emerge given different random walk parameters and different assumptions
+about the relationship between opportunities and OCBs. What types of
+streaks, or consecutive \enquote{wins} by one colleague compared to
+another with respect to their helping behavior, do we witness under
+different random walks? Our research is the start to creating benchmarks
+that can be used in later research to determine what is really required
+to label something as exceptional.
+
+Again, the purpose of study two is to assess patterns in long-run
+citizenship, or the extent to which one individual provides greater help
+compared to others across consecutive time points, based on different
+parameters applied to help requests. We use simulations for this study,
+and the computer models are structured as follows.
+
+\hypertarget{simulation-heuristic}{%
+\subsection{Simulation Heuristic}\label{simulation-heuristic}}
+
+The simulation was designed to build off prior research examining chance
+models and accumulating processes in areas such as firm performance
+(Denrell, 2004; Polson \& Scott, 2012). Imagine two employees, each
+collecting help requests according to a random walk. From \(t\) to
+\(t + 1\), each employee retains his or her stock of help requests but
+the pool increases or decreases by an amount drawn from a stochastic
+term, meaning that the value by which it increases or decreases is
+random at each moment. This structure exactly mimics the random walks
+identified in study one. At any given time point, help requests lead to
+helping such that the employee with the greatest number of opportunities
+provides the most help. Mathematically, if
+\((x_i, x_{i+1}, \ldots, x_n)\) represents the set of employees whose
+help requests we are tracking over time, with \(x_i\) being the focal
+employee, then \(x_i\) provides the most help at time \(t\) when
+\(x_i > x_n\). We refer to the employee that provides the most help at a
+given time the \enquote{moment citizen,} which naturally embodies the
+idea of a single time point. The pattern that we monitor is the number
+of consecutive times employee \(x_i\) is the moment citizen, which ties
+back to the notions of good soldier and extra miler. Said differently,
+the ideas represented in how researchers have described good soldiers
+and extra milers manifests whenever employee \(x_i\) has long-run
+streaks of being the moment citizen, whereas if the moment citizen
+changes from time point to time point, such that no long-run streaks
+emerge, then the random walks produced no evidence of these labels.
+Ultimately, we are asking the broad question, \emph{What types of
+long-run streaks do we witness when we vary the parameters on random
+walks?} We conducted synthetic experiments, or experiments within a
+computer program in which we wiggle key parameters and witness the
+output, to tackle this question. Moreover, the parameters that we
+manipulate stem from three research questions.
+
+\begin{quote}
+\begin{quote}
+Research Question 1: What are the patterns in long-run citizenship as
+the drift parameter on helping opportunities changes from 0 to 1?
+\end{quote}
+\end{quote}
+
+Research question 1 was designed to address how trending help requests
+change the results. A trend or drift term is an essential property of a
+random walk, although not all random walks have drift. Drift, or trend,
+refers to whether the random walk moves systematically in the positive
+or negative direction over time, despite moving stochastically at each
+time step. Random walks without drift, conversely, move randomly from
+moment to moment but do not show positive or negative trend, unless cut
+short due to sampling limitations. Plotting the random walks from study
+one revealed that both types occurred, so it is necessary to evaluate
+how this characteristic informs our results. Moreover, an ever-growing
+amount of evidence (Braun, Kuljanin, \& DeShon, 2013; Kuljanin, Braun,
+\& DeShon, 2011) suggests that researchers need to account for the
+implications of stochastic trends in their content areas whenever
+effects are explored over time, so it is a crucial aspect to incorporate
+here.
+
+\begin{quote}
+\begin{quote}
+Research Question 2: What are the patterns in long-run citizenship as
+the autoregressive parameter on helping opportunities changes from 0 to
+1?
+\end{quote}
+\end{quote}
+
+One fundamental characteristic of random walks is that they have strong
+autoregressive effects. As this effect goes to zero, the trajectory
+approaches a white noise process, which is another fundamental
+stochastic trajectory. The difference is that white noise processes only
+move according to the error term -- they contain no self-similarity from
+moment to moment. We examine this feature because (a) it captures the
+essence of what it means for opportunities to follow a random walk and
+(b) is consistent with growing calls to examine the implications of
+different strengths of self-similarity among dynamic trajectories
+(DISHOP HANDBOOK).
+
+\begin{quote}
+\begin{quote}
+Research Question 3: What are the patterns in long-run citizenship as
+the number of employees in the simulation increase from 2 to 1000?
+\end{quote}
+\end{quote}
+
+Research question 3 was designed to assess how the size of the
+collective influences patterns in long-run citizenship. Organizational
+science has been and continues to be a science focused on individual
+differences and collectives. Nearly all studies in the organizational
+literature are multiple unit, meaning that they examine their effects
+across multiple people, teams, departments, or companies. This effect
+was therefore important to examine given the collective nature of our
+field.
+
+\hypertarget{analysis-results}{%
+\subsection{Analysis \& Results}\label{analysis-results}}
+
+{[}Fill after data collection{]}. {[}Some expected results shown in
+tables 1-3{]}.
+
+table 1 - data source, help opportunity operationalization, sampling
+frequency
+
+Or I could just do code. Code for base simulation - how will the code
+change for rq1? - how will the code change for rq2? - how will the code
+change for rq3?
+
+figure 1 - expected result from rq1 simulation
+
+figure 2 - expected result from rq2 simulation
+
+figure 3 - expected result from rq3
+
+\newpage
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs}{}
+\leavevmode\hypertarget{ref-alvarez2007if}{}%
+Alvarez, F., Atkeson, A., \& Kehoe, P. J. (2007). If exchange rates are
+random walks, then almost everything we say about monetary policy is
+wrong. \emph{American Economic Review}, \emph{97}(2), 339--345.
+
+\leavevmode\hypertarget{ref-bateman_job_1983}{}%
+Bateman, T. S., \& Organ, D. W. (1983). Job satisfaction and the good
+soldier: The relationship between affect and employee ``citizenship''.
+\emph{Academy of Management Journal}, \emph{26}(4), 587--595.
+
+\leavevmode\hypertarget{ref-beal_episodic_2005}{}%
+Beal, D. J., Weiss, H. M., Barros, E., \& MacDermid, S. M. (2005). An
+episodic process model of affective influences on performance.
+\emph{Journal of Applied Psychology}, \emph{90}(6), 1054.
+
+\leavevmode\hypertarget{ref-blumberg1982missing}{}%
+Blumberg, M., \& Pringle, C. D. (1982). The missing opportunity in
+organizational research: Some implications for a theory of work
+performance. \emph{Academy of Management Review}, \emph{7}(4), 560--569.
+
+\leavevmode\hypertarget{ref-bolino_citizenship_1999}{}%
+Bolino, M. C. (1999). Citizenship and impression management: Good
+soldiers or good actors? \emph{Academy of Management Review},
+\emph{24}(1), 82--98.
+
+\leavevmode\hypertarget{ref-bolino_self-regulation_2012}{}%
+Bolino, M. C., Harvey, J., \& Bachrach, D. G. (2012). A self-regulation
+approach to understanding citizenship behavior in organizations.
+\emph{Organizational Behavior and Human Decision Processes},
+\emph{119}(1), 126--139.
+doi:\href{https://doi.org/10.1016/j.obhdp.2012.05.006}{10.1016/j.obhdp.2012.05.006}
+
+\leavevmode\hypertarget{ref-bolino_well_2015}{}%
+Bolino, M. C., Hsiung, H.-H., Harvey, J., \& LePine, J. A. (2015).
+``Well, I'm tired of tryin'!'' Organizational citizenship behavior and
+citizenship fatigue. \emph{Journal of Applied Psychology},
+\emph{100}(1), 56.
+
+\leavevmode\hypertarget{ref-bolino_citizenship_2002}{}%
+Bolino, M. C., Turnley, W. H., \& Bloodgood, J. M. (2002). Citizenship
+behavior and the creation of social capital in organizations.
+\emph{Academy of Management Review}, \emph{27}(4), 505--522.
+
+\leavevmode\hypertarget{ref-bramson1991asymptotic}{}%
+Bramson, M., \& Lebowitz, J. L. (1991). Asymptotic behavior of densities
+for two-particle annihilating random walks. \emph{Journal of Statistical
+Physics}, \emph{62}(1-2), 297--372.
+
+\leavevmode\hypertarget{ref-braun_spurious_2013}{}%
+Braun, M. T., Kuljanin, G., \& DeShon, R. P. (2013). Spurious Results in
+the Analysis of Longitudinal Data in Organizational Research.
+\emph{Organizational Research Methods}, \emph{16}(2), 302--330.
+doi:\href{https://doi.org/10.1177/1094428112469668}{10.1177/1094428112469668}
+
+\leavevmode\hypertarget{ref-christian2015dynamic}{}%
+Christian, M. S., Eisenkraft, N., \& Kapadia, C. (2015). Dynamic
+associations among somatic complaints, human energy, and discretionary
+behaviors: Experiences with pain fluctuations at work.
+\emph{Administrative Science Quarterly}, \emph{60}(1), 66--102.
+
+\leavevmode\hypertarget{ref-dalal2005meta}{}%
+Dalal, R. S. (2005). A meta-analysis of the relationship between
+organizational citizenship behavior and counterproductive work behavior.
+\emph{Journal of Applied Psychology}, \emph{90}(6), 1241.
+
+\leavevmode\hypertarget{ref-dalal_within-person_2009}{}%
+Dalal, R. S., Lam, H., Weiss, H. M., Welch, E. R., \& Hulin, C. L.
+(2009). A within-person approach to work behavior and performance:
+Concurrent and lagged citizenship-counterproductivity associations, and
+dynamic relationships with affect and overall job performance.
+\emph{Academy of Management Journal}, \emph{52}(5), 1051--1066.
+
+\leavevmode\hypertarget{ref-denrell2004random}{}%
+Denrell, J. (2004). Random walks and sustained competitive advantage.
+\emph{Management Science}, \emph{50}(7), 922--934.
+
+\leavevmode\hypertarget{ref-deshon_multivariate_2012}{}%
+DeShon, R. P. (2012). Multivariate dynamics in organizational science.
+\emph{The Oxford Handbook of Organizational Psychology}, \emph{1},
+117--142.
+
+\leavevmode\hypertarget{ref-dickey_distribution_1979}{}%
+Dickey, D. A., \& Fuller, W. A. (1979). Distribution of the estimators
+for autoregressive time series with a unit root. \emph{Journal of the
+American Statistical Association}, \emph{74}(366a), 427--431.
+
+\leavevmode\hypertarget{ref-dishop_simple_2019}{}%
+Dishop, C. R. (2019). A simple, dynamic extension of temporal motivation
+theory. \emph{The Journal of Mathematical Sociology}, 1--16.
+
+\leavevmode\hypertarget{ref-ehrhart2004organizational}{}%
+Ehrhart, M. G., \& Naumann, S. E. (2004). Organizational citizenship
+behavior in work groups: A group norms approach. \emph{Journal of
+Applied Psychology}, \emph{89}(6), 960.
+
+\leavevmode\hypertarget{ref-fama1995random}{}%
+Fama, E. F. (1995). Random walks in stock market prices. \emph{Financial
+Analysts Journal}, \emph{51}(1), 75--80.
+
+\leavevmode\hypertarget{ref-gabriel_helping_2018}{}%
+Gabriel, A. S., Koopman, J., Rosen, C. C., \& Johnson, R. E. (2018).
+Helping others or helping oneself? An episodic examination of the
+behavioral consequences of helping at work. \emph{Personnel Psychology},
+\emph{71}(1), 85--107.
+
+\leavevmode\hypertarget{ref-george1992feeling}{}%
+George, J. M., \& Brief, A. P. (1992). Feeling good-doing good: A
+conceptual analysis of the mood at work-organizational spontaneity
+relationship. \emph{Psychological Bulletin}, \emph{112}(2), 310.
+
+\leavevmode\hypertarget{ref-glomb_doing_2011}{}%
+Glomb, T. M., Bhave, D. P., Miner, A. G., \& Wall, M. (2011). Doing
+Good, Feeling Good: Examining the Role of Organizational Citizenship
+Behaviors in Changing Mood. \emph{Personnel Psychology}, \emph{64}(1),
+191--223.
+doi:\href{https://doi.org/10.1111/j.1744-6570.2010.01206.x}{10.1111/j.1744-6570.2010.01206.x}
+
+\leavevmode\hypertarget{ref-grant_does_2008}{}%
+Grant, A. M. (2008). Does intrinsic motivation fuel the prosocial fire?
+Motivational synergy in predicting persistence, performance, and
+productivity. \emph{Journal of Applied Psychology}, \emph{93}(1), 48.
+
+\leavevmode\hypertarget{ref-grant_good_2009}{}%
+Grant, A. M., \& Mayer, D. M. (2009). Good soldiers and good actors:
+Prosocial and impression management motives as interactive predictors of
+affiliative citizenship behaviors. \emph{Journal of Applied Psychology},
+\emph{94}(4), 900--912.
+doi:\href{https://doi.org/10.1037/a0013770}{10.1037/a0013770}
+
+\leavevmode\hypertarget{ref-hafenbrack_helping_2019}{}%
+Hafenbrack, A. C., Cameron, L. D., Spreitzer, G. M., Zhang, C., Noval,
+L. J., \& Shaffakat, S. (2019). Helping People by Being in the Present:
+Mindfulness Increases Prosocial Behavior. \emph{Organizational Behavior
+and Human Decision Processes}, S0749597817308956.
+doi:\href{https://doi.org/10.1016/j.obhdp.2019.08.005}{10.1016/j.obhdp.2019.08.005}
+
+\leavevmode\hypertarget{ref-ilies_interactive_2006}{}%
+Ilies, R., Scott, B. A., \& Judge, T. A. (2006). The interactive effects
+of personal traits and experienced states on intraindividual patterns of
+citizenship behavior. \emph{Academy of Management Journal},
+\emph{49}(3), 561--575.
+
+\leavevmode\hypertarget{ref-johnson2014offenders}{}%
+Johnson, S. D. (2014). How do offenders choose where to offend?
+Perspectives from animal foraging. \emph{Legal and Criminological
+Psychology}, \emph{19}(2), 193--210.
+
+\leavevmode\hypertarget{ref-kenkre1973generalized}{}%
+Kenkre, V., Montroll, E., \& Shlesinger, M. (1973). Generalized master
+equations for continuous-time random walks. \emph{Journal of Statistical
+Physics}, \emph{9}(1), 45--50.
+
+\leavevmode\hypertarget{ref-koopman_integrating_2016}{}%
+Koopman, J., Lanaj, K., \& Scott, B. A. (2016). Integrating the Bright
+and Dark Sides of OCB: A Daily Investigation of the Benefits and Costs
+of Helping Others. \emph{Academy of Management Journal}, \emph{59}(2),
+414--435.
+doi:\href{https://doi.org/10.5465/amj.2014.0262}{10.5465/amj.2014.0262}
+
+\leavevmode\hypertarget{ref-kot2004stochasticity}{}%
+Kot, M., Medlock, J., Reluga, T., \& Walton, D. B. (2004).
+Stochasticity, invasions, and branching random walks. \emph{Theoretical
+Population Biology}, \emph{66}(3), 175--184.
+
+\leavevmode\hypertarget{ref-kuljanin_cautionary_2011}{}%
+Kuljanin, G., Braun, M. T., \& DeShon, R. P. (2011). A cautionary note
+on modeling growth trends in longitudinal data. \emph{Psychological
+Methods}, \emph{16}(3), 249--264.
+doi:\href{https://doi.org/http://dx.doi.org.proxy2.cl.msu.edu/10.1037/a0023348}{http://dx.doi.org.proxy2.cl.msu.edu/10.1037/a0023348}
+
+\leavevmode\hypertarget{ref-kwiatkowski1992testing}{}%
+Kwiatkowski, D., Phillips, P. C., Schmidt, P., Shin, Y., \& others.
+(1992). Testing the null hypothesis of stationarity against the
+alternative of a unit root. \emph{Journal of Econometrics},
+\emph{54}(1-3), 159--178.
+
+\leavevmode\hypertarget{ref-lance_ferris_being_2019}{}%
+Lance Ferris, D., Fatimah, S., Yan, M., Liang, L. H., Lian, H., \&
+Brown, D. J. (2019). Being sensitive to positives has its negatives: An
+approach/avoidance perspective on reactivity to ostracism.
+\emph{Organizational Behavior and Human Decision Processes}, \emph{152},
+138--149.
+doi:\href{https://doi.org/10.1016/j.obhdp.2019.05.001}{10.1016/j.obhdp.2019.05.001}
+
+\leavevmode\hypertarget{ref-leana_organizational_1999}{}%
+Leana, C. R., \& van Buren, H. J. (1999). Organizational Social Capital
+and Employment Practices. \emph{The Academy of Management Review},
+\emph{24}(3), 538.
+doi:\href{https://doi.org/10.2307/259141}{10.2307/259141}
+
+\leavevmode\hypertarget{ref-lee_alternative_1994}{}%
+Lee, T. W., \& Mitchell, T. R. (1994). An Alternative Approach: The
+Unfolding Model of Voluntary Employee Turnover. \emph{The Academy of
+Management Review}, \emph{19}(1), 51--89.
+doi:\href{https://doi.org/10.2307/258835}{10.2307/258835}
+
+\leavevmode\hypertarget{ref-li_achieving_2015}{}%
+Li, N., Zhao, H. H., Walter, S. L., Zhang, X.-a., \& Yu, J. (2015).
+Achieving more with less: Extra milers' behavioral influences in teams.
+\emph{Journal of Applied Psychology}, \emph{100}(4), 1025--1039.
+doi:\href{https://doi.org/http://dx.doi.org.proxy1.cl.msu.edu/10.1037/apl0000010}{http://dx.doi.org.proxy1.cl.msu.edu/10.1037/apl0000010}
+
+\leavevmode\hypertarget{ref-lopez2013transformational}{}%
+López-Domı'nguez, M., Enache, M., Sallan, J. M., \& Simo, P. (2013).
+Transformational leadership as an antecedent of change-oriented
+organizational citizenship behavior. \emph{Journal of Business
+Research}, \emph{66}(10), 2147--2152.
+
+\leavevmode\hypertarget{ref-mackenzie1991organizational}{}%
+MacKenzie, S. B., Podsakoff, P. M., \& Fetter, R. (1991). Organizational
+citizenship behavior and objective productivity as determinants of
+managerial evaluations of salespersons' performance.
+\emph{Organizational Behavior and Human Decision Processes},
+\emph{50}(1), 123--150.
+
+\leavevmode\hypertarget{ref-mackenzie1993impact}{}%
+MacKenzie, S. B., Podsakoff, P. M., \& Fetter, R. (1993). The impact of
+organizational citizenship behavior on evaluations of salesperson
+performance. \emph{Journal of Marketing}, \emph{57}(1), 70--80.
+
+\leavevmode\hypertarget{ref-matta_not_2020}{}%
+Matta, F. K., Sabey, T. B., Scott, B. A., Lin, S.-H. (., \& Koopman, J.
+(2020). Not all fairness is created equal: A study of employee
+attributions of supervisor justice motives. \emph{Journal of Applied
+Psychology}, \emph{105}(3), 274--293.
+doi:\href{https://doi.org/http://dx.doi.org.proxy2.cl.msu.edu/10.1037/apl0000440}{http://dx.doi.org.proxy2.cl.msu.edu/10.1037/apl0000440}
+
+\leavevmode\hypertarget{ref-meglino_considering_2004}{}%
+Meglino, B. M., \& Korsgaard, A. (2004). Considering rational
+self-interest as a disposition: Organizational implications of other
+orientation. \emph{Journal of Applied Psychology}, \emph{89}(6), 946.
+
+\leavevmode\hypertarget{ref-methot_good_2017}{}%
+Methot, J. R., Lepak, D., Shipp, A. J., \& Boswell, W. R. (2017). Good
+Citizen Interrupted: Calibrating a Temporal Theory of Citizenship
+Behavior. \emph{Academy of Management Review}, \emph{42}(1), 10--31.
+doi:\href{https://doi.org/10.5465/amr.2014.0415}{10.5465/amr.2014.0415}
+
+\leavevmode\hypertarget{ref-mitchell_can_2019}{}%
+Mitchell, M. S., Greenbaum, R. L., Vogel, R. M., Mawritz, M. B., \&
+Keating, D. J. (2019). Can You Handle the Pressure? The Effect of
+Performance Pressure on Stress Appraisals, Self-regulation, and
+Behavior. \emph{Academy of Management Journal}, \emph{62}(2), 531--552.
+doi:\href{https://doi.org/10.5465/amj.2016.0646}{10.5465/amj.2016.0646}
+
+\leavevmode\hypertarget{ref-motowidlo1994evidence}{}%
+Motowidlo, S. J., \& Van Scotter, J. R. (1994). Evidence that task
+performance should be distinguished from contextual performance.
+\emph{Journal of Applied Psychology}, \emph{79}(4), 475.
+
+\leavevmode\hypertarget{ref-nahapiet_social_1998}{}%
+Nahapiet, J., \& Ghoshal, S. (1998). Social capital, intellectual
+capital, and the organizational advantage. \emph{Academy of Management
+Review}, \emph{23}(2), 242--266.
+
+\leavevmode\hypertarget{ref-newman2005measure}{}%
+Newman, M. E. (2005). A measure of betweenness centrality based on
+random walks. \emph{Social Networks}, \emph{27}(1), 39--54.
+
+\leavevmode\hypertarget{ref-organ_organizational_1988}{}%
+Organ, D. W. (1988). \emph{Organizational citizenship behavior: The good
+soldier syndrome.} Lexington Books/DC Heath and Com.
+
+\leavevmode\hypertarget{ref-organ_organizational_2005}{}%
+Organ, D. W., Podsakoff, P. M., \& MacKenzie, S. B. (2005).
+\emph{Organizational citizenship behavior: Its nature, antecedents, and
+consequences}. Sage Publications.
+
+\leavevmode\hypertarget{ref-organ_meta-analytic_1995}{}%
+Organ, D. W., \& Ryan, K. (1995). A meta-analytic review of attitudinal
+and dispositional predictors of organizational citizenship behavior.
+\emph{Personnel Psychology}, \emph{48}(4), 775--802.
+
+\leavevmode\hypertarget{ref-penner_beyond_1997}{}%
+Penner, L. A., Midili, A. R., \& Kegelmeyer, J. (1997). Beyond Job
+Attitudes: A Personality and Social Psychology Perspective on the Causes
+of Organizational Citizenship Behavior. \emph{Human Performance},
+\emph{10}(2), 111--131.
+doi:\href{https://doi.org/10.1207/s15327043hup1002_4}{10.1207/s15327043hup1002\_4}
+
+\leavevmode\hypertarget{ref-podsakoff_individual-and_2009}{}%
+Podsakoff, N. P., Whiting, S. W., Podsakoff, P. M., \& Blume, B. D.
+(2009). Individual-and organizational-level consequences of
+organizational citizenship behaviors: A meta-analysis. \emph{Journal of
+Applied Psychology}, \emph{94}(1), 122.
+
+\leavevmode\hypertarget{ref-podsakoff_impact_1997}{}%
+Podsakoff, P. M., \& MacKenzie, S. B. (1997). Impact of organizational
+citizenship behavior on organizational performance: A review and
+suggestion for future research. \emph{Human Performance}, \emph{10}(2),
+133--151.
+
+\leavevmode\hypertarget{ref-podsakoff_organizational_2000}{}%
+Podsakoff, P. M., MacKenzie, S. B., Paine, J. B., \& Bachrach, D. G.
+(2000). Organizational citizenship behaviors: A critical review of the
+theoretical and empirical literature and suggestions for future
+research. \emph{Journal of Management}, \emph{26}(3), 513--563.
+
+\leavevmode\hypertarget{ref-podsakoff_oxford_2018}{}%
+Podsakoff, P. M., MacKenzie, S. B., \& Podsakoff, N. P. (2018).
+\emph{The Oxford handbook of organizational citizenship behavior}.
+Oxford University Press.
+
+\leavevmode\hypertarget{ref-polson2012good}{}%
+Polson, N. G., \& Scott, J. G. (2012). Good, great, or lucky? Screening
+for firms with sustained superior performance using heavy-tailed priors.
+\emph{The Annals of Applied Statistics}, \emph{6}(1), 161--185.
+
+\leavevmode\hypertarget{ref-randic1980random}{}%
+Randić, M. (1980). Random walks and their diagnostic value for
+characterization of atomic environment. \emph{Journal of Computational
+Chemistry}, \emph{1}(4), 386--399.
+
+\leavevmode\hypertarget{ref-schreurs2012weekly}{}%
+Schreurs, B. H., Hetty van Emmerik, I., Günter, H., \& Germeys, F.
+(2012). A weekly diary study on the buffering role of social support in
+the relationship between job insecurity and employee performance.
+\emph{Human Resource Management}, \emph{51}(2), 259--279.
+
+\leavevmode\hypertarget{ref-shang2018note}{}%
+Shang, Y. (2018). A note on the h index in random networks. \emph{The
+Journal of Mathematical Sociology}, \emph{42}(2), 77--82.
+
+\leavevmode\hypertarget{ref-simon_rational_1956}{}%
+Simon, H. A. (1956). Rational choice and the structure of the
+environment. \emph{Psychological Review}, \emph{63}(2), 129.
+
+\leavevmode\hypertarget{ref-simon_what_1992}{}%
+Simon, H. A. (1992). What is an ``explanation'' of behavior?
+\emph{Psychological Science}, \emph{3}(3), 150--161.
+
+\leavevmode\hypertarget{ref-sims2014hierarchical}{}%
+Sims, D. W., Reynolds, A. M., Humphries, N. E., Southall, E. J.,
+Wearmouth, V. J., Metcalfe, B., \& Twitchett, R. J. (2014). Hierarchical
+random walks in trace fossils and the origin of optimal search behavior.
+\emph{Proceedings of the National Academy of Sciences}, \emph{111}(30),
+11073--11078.
+
+\leavevmode\hypertarget{ref-smith1983organizational}{}%
+Smith, C., Organ, D. W., \& Near, J. P. (1983). Organizational
+citizenship behavior: Its nature and antecedents. \emph{Journal of
+Applied Psychology}, \emph{68}(4), 653.
+
+\leavevmode\hypertarget{ref-spence_understanding_2011}{}%
+Spence, J. R., Ferris, D. L., Brown, D. J., \& Heller, D. (2011).
+Understanding daily citizenship behaviors: A social comparison
+perspective. \emph{Journal of Organizational Behavior}, \emph{32}(4),
+547--571. doi:\href{https://doi.org/10.1002/job.738}{10.1002/job.738}
+
+\leavevmode\hypertarget{ref-stamovlasis2003complexity}{}%
+Stamovlasis, D., \& Tsaparlis, G. (2003). A complexity theory model in
+science education problem solving: Random walks for working memory and
+mental capacity. \emph{Nonlinear Dynamics, Psychology, and Life
+Sciences}, \emph{7}(3), 221--244.
+
+\leavevmode\hypertarget{ref-stewart2007exploring}{}%
+Stewart, G. L., \& Nandkeolyar, A. K. (2007). Exploring how constraints
+created by other people influence intraindividual variation in objective
+performance measures. \emph{Journal of Applied Psychology},
+\emph{92}(4), 1149.
+
+\leavevmode\hypertarget{ref-van1998helping}{}%
+Van Dyne, L., \& LePine, J. A. (1998). Helping and voice extra-role
+behaviors: Evidence of construct and predictive validity. \emph{Academy
+of Management Journal}, \emph{41}(1), 108--119.
+
+\leavevmode\hypertarget{ref-van2000effects}{}%
+Van Scotter, J., Motowidlo, S. J., \& Cross, T. C. (2000). Effects of
+task performance and contextual performance on systemic rewards.
+\emph{Journal of Applied Psychology}, \emph{85}(4), 526.
+
+\leavevmode\hypertarget{ref-wang2019s}{}%
+Wang, L., Law, K. S., Zhang, M. J., Li, Y. N., \& Liang, Y. (2019). It's
+mine! Psychological ownership of one's job explains positive and
+negative workplace outcomes of job engagement. \emph{Journal of Applied
+Psychology}, \emph{104}(2), 229.
+
+\leavevmode\hypertarget{ref-wu2012role}{}%
+Wu, C.-h., \& Parker, S. K. (2012). The role of attachment styles in
+shaping proactive behaviour: An intra-individual analysis. \emph{Journal
+of Occupational and Organizational Psychology}, \emph{85}(3), 523--530.
+
+
+\end{document}
