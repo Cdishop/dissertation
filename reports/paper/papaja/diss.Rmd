@@ -77,7 +77,7 @@ where $y_{t}$ is the current value of $y$, $y_{t-1}$ is the value of $y$ at $t -
 Another key aspect of random walks is that they incorporate accumulation, which is more readily apparanet in an alternative but equivalent form:
 
 \begin{equation}
-y_{t} = y_{0} + Bt + \sum_{i = 1}^{t} \varepsilon_i
+y_t = y_0 + Bt + \sum_{i=1}^{t} \varepsilon_i
 \end{equation}
 
 where $y_{0}$ is the initial value of $y$, $Bt$ is a deterministic trend component, and the last term represents an accumulation of error. This second equation reveals that random walks capture the notion of accumulating, or adding values to a store/pool over time, which was the second component to our heuristic of help requests. 
