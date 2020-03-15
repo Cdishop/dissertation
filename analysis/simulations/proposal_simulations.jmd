@@ -1,0 +1,249 @@
+
+---
+title: Syntax for Extra Miler Simulations
+author: Christopher R. Dishop
+---
+
+The code for all of the simulations will be contained in this file. Because we are at the proposal stage, none of the code you see here is evaluated. After collecting empirical data, I will update and then run the code.
+
+Packages.
+
+```julia; eval = false
+using DataFrames, DataFramesMeta, Query, Statistics, CSV, CSVFiles, Distributions, Random, PrettyTables
+```
+
+Common commands across all simulations.
+
+```julia; eval = false
+time = 20
+function initial_value()
+    x = rand(Normal(0,1), 1)
+    return(x)
+end
+```
+
+## Base Simulation
+
+The base simulation is consistent with what is described in the simulation heuristic. Here, we evaluate the probability that employee $x_i$ spends $k$ periods as the moment citizen.
+
+```julia; eval = false
+num_sims = 100
+store_moments = zeros(num_sims)
+
+for simulation in 1:num_sims
+
+    employee = zeros(time)
+    employee[[1]] = initial_value()
+    walk2 = zeros(time)
+    walk2[[1]] = initial_value()
+
+    for step in 2:time
+    employee[step] = employee[step - 1] + rand(Normal(0,1), 1)[1]
+    walk2[step] = walk2[step - 1] + rand(Normal(0,1), 1)[1]
+    end
+
+    df_base = DataFrame(
+        employee = employee,
+        walk2 = walk2
+        )
+
+        function convert_moment_citizen(col1, col2)
+            if col1 < col2
+                result = "no"
+            elseif col1 > col2
+                result = "yes"
+            elseif col1 == col2
+                result = "no"
+                return(result)
+            end
+        end
+
+        df_base = @linq df_base |>
+        transform(moment_citizen = convert_moment_citizen.(:employee, :walk2))
+
+        moments = count(i == "yes" for i in df_base.moment_citizen)
+
+        store_moments[[simulation]] .= moments
+end
+
+prob_steps = collect(0:1:time)
+probability_list = zeros(length(prob_steps))
+
+for prob in prob_steps
+    result = count(
+                k == prob for k in store_moments) / length(store_moments)
+    probability_list[[prob + 1]] .= result
+end
+
+base_results = DataFrame(
+    k = [0,1,2,3,4,5,6,7,8,9,10,
+         11,12,13,14,15,16,17,18,19,20],
+    probability = probability_list
+)
+```
+Notice that the last object is a date frame containing the results: probabilities for each value of $k$.
+
+## Research Question 1: Drift
+
+The simulation to address research question one adds a drift component.
+
+```julia; eval = false
+
+drift_params = [0.2,0.4,0.6,0.8,1.0]
+
+df_rq1 = DataFrame(
+    k = [],
+    probability = [],
+    drift = []
+)
+
+for drift in drift_params
+
+
+    num_sims = 100
+    store_moments = zeros(num_sims)
+
+    for simulation in 1:num_sims
+
+
+        employee = zeros(time)
+        employee[[1]] = initial_value()
+        walk2 = zeros(time)
+        walk2[[1]] = initial_value()
+
+        for step in 2:time
+        employee[step] = employee[step - 1] + drift + rand(Normal(0,1), 1)[1]
+        walk2[step] = walk2[step - 1] + drift + rand(Normal(0,1), 1)[1]
+        end
+
+        df_base = DataFrame(
+            employee = employee,
+            walk2 = walk2
+            )
+
+            function convert_moment_citizen(col1, col2)
+                if col1 < col2
+                    result = "no"
+                elseif col1 > col2
+                    result = "yes"
+                elseif col1 == col2
+                    result = "no"
+                    return(result)
+                end
+            end
+
+            df_base = @linq df_base |>
+            transform(moment_citizen = convert_moment_citizen.(:employee, :walk2))
+
+
+            moments = count(i == "yes" for i in df_base.moment_citizen)
+
+                store_moments[[simulation]] .= moments
+            end
+
+            prob_steps = collect(0:1:time)
+            probability_list = zeros(length(prob_steps))
+
+            for prob in prob_steps
+                result = count(
+                    k == prob for k in store_moments) / length(store_moments)
+                        probability_list[[prob + 1]] .= result
+            end
+
+        single_run_results = DataFrame(
+            k = [0,1,2,3,4,5,6,7,8,9,10,
+                 11,12,13,14,15,16,17,18,19,20],
+            probability = probability_list,
+            drift = vcat(
+                        repeat([drift], length(probability_list))
+            )
+            )
+
+    append!(df_rq1, single_run_results)
+end
+
+```
+
+## Research Question 2: Autoregression
+
+The simulation to address research question 2 adds an autoregressive component.
+
+```julia; eval = false
+
+autor_params = [0.0,0.2,0.4,0.6,0.8]
+
+df_rq2 = DataFrame(
+    k = [],
+    probability = [],
+    autor = []
+)
+
+for autor in autor_params
+
+
+    num_sims = 100
+    store_moments = zeros(num_sims)
+
+    for simulation in 1:num_sims
+
+
+        employee = zeros(time)
+        employee[[1]] = initial_value()
+        walk2 = zeros(time)
+        walk2[[1]] = initial_value()
+
+        for step in 2:time
+        employee[step] = autor*employee[step - 1] + rand(Normal(0,1), 1)[1]
+        walk2[step] = autor*walk2[step - 1] + rand(Normal(0,1), 1)[1]
+        end
+
+        df_base = DataFrame(
+            employee = employee,
+            walk2 = walk2
+            )
+
+            function convert_moment_citizen(col1, col2)
+                if col1 < col2
+                    result = "no"
+                elseif col1 > col2
+                    result = "yes"
+                elseif col1 == col2
+                    result = "no"
+                    return(result)
+                end
+            end
+
+            df_base = @linq df_base |>
+            transform(moment_citizen = convert_moment_citizen.(:employee, :walk2))
+
+
+            moments = count(i == "yes" for i in df_base.moment_citizen)
+
+                store_moments[[simulation]] .= moments
+            end
+
+            prob_steps = collect(0:1:time)
+            probability_list = zeros(length(prob_steps))
+
+            for prob in prob_steps
+                result = count(
+                    k == prob for k in store_moments) / length(store_moments)
+                        probability_list[[prob + 1]] .= result
+            end
+
+        single_run_results = DataFrame(
+            k = [0,1,2,3,4,5,6,7,8,9,10,
+                 11,12,13,14,15,16,17,18,19,20],
+            probability = probability_list,
+            autor = vcat(
+                        repeat([autor], length(probability_list))
+            )
+            )
+
+    append!(df_rq2, single_run_results)
+end
+```
+
+## Research Question 3: Collective
+
+Research question 3 examines the probability that employee $x_i$ spends $k$ periods as the moment citizen as the number of employees in the collective increases. This simulation is substantially more complex and will require an entirely different syntax scheme.
