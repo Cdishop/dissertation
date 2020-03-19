@@ -249,18 +249,9 @@ end
 Research question 3 examines the probability that employee $x_i$ spends $k$ periods as the moment citizen as the number of employees in the collective increases. This simulation is substantially more complex and will require an entirely different syntax scheme.
 
 
-```julia
-
-
-
-
+```julia; eval = false
 
 using DataFrames, DataFramesMeta, Statistics, Distributions, Random, RCall
-
-
-# what is the probability that the employee is in the top 20%
-
-# common parameters
 
 total_walks = 800
 steps = 20
@@ -279,8 +270,6 @@ total_sims = 100
 
 for sim in 1:total_sims
 
-    # simulate all random walks
-
     df = DataFrame()
 
     for walk in 1:total_walks
@@ -292,13 +281,13 @@ for sim in 1:total_sims
             y[step] = y[step - 1] + rand(Normal(0,1), 1)[1]
         end
 
+
         insert!(df, walk, y, Symbol(walk))
     end
 
 
-    # iterate across employee amounts, select that many columns
+    employee_conditions = [2, 200, 400, 600, 800]
 
-    employee_conditions = [2, 200, 400, 500, 800]
     store_it = DataFrame(
         simulation = zeros(5),
         employee_condition = zeros(5),
@@ -307,16 +296,18 @@ for sim in 1:total_sims
 
     counter = 0
 
-
     for employee_count in employee_conditions
-         counter = counter + 1
+        counter = counter + 1
 
-        # pull employee_count (e.g., 2) random columns from a vector
-        use_cols = collect(1:1:employee_count)
+        use_cols = sample(1:employee_count, employee_count, replace = false)
 
-        # now select those columns to work with
+
         condition_df = @linq df |>
             select(use_cols)
+
+        change_cols = collect(1:1:employee_count)
+        rename!(condition_df, [Symbol("$i") for i in change_cols])
+
 
             @rput condition_df
             @rput employee_count
@@ -403,29 +394,22 @@ function create_results(employee_number)
                  11,12,13,14,15,16,17,18,19,20],
         probability = probability_list_z,
         num_employees = vcat(
-                        repeat([employee_number], length(probability_list_200))
+                        repeat([employee_number], length(probability_list_z))
         )
         )
 
         return(cond_results)
     end
 
-# condition 2: 200 employees
 cond2_results = create_results(200)
-# 400 employees
 cond3_results = create_results(400)
-# 600 employees
 cond4_results = create_results(600)
-# 800 employees
 cond5_results = create_results(800)
-
-
 
 
 r3_output = append!(cond1_results, cond2_results)
 r3_output = append!(r3_output, cond3_results)
 r3_output = append!(r3_output, cond4_results)
 r3_output = append!(r3_output, cond5_results)
-
 
 ```

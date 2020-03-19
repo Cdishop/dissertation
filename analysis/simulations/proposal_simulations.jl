@@ -295,6 +295,13 @@ end
 
 
 
+# rq3: more employees
+
+
+
+
+
+
 using DataFrames, DataFramesMeta, Statistics, Distributions, Random, RCall
 
 
@@ -309,13 +316,18 @@ function initial_value()
     return(x)
 end
 
+
+# the simulation column will contain simulation 1, 2, 3, 4, 5, etc. through total_sims
+# the employee condition column will contain 2, 200, 400, 600, 800
+# the moment citizen counts will contain the number of times employee x_i was the moment citizen
+
 rq3_df = DataFrame(
     simulation = [],
     employee_condition = [],
     moment_citizen_counts = []
 )
 
-total_sims = 50
+total_sims = 100
 
 for sim in 1:total_sims
 
@@ -332,13 +344,22 @@ for sim in 1:total_sims
             y[step] = y[step - 1] + rand(Normal(0,1), 1)[1]
         end
 
+    # place the walks into a data frame where each walk is a column
+    # column 1 is the first walk
+    # column 2 is the second walk
+    # column 3 is the third walk
+    # the column names are just called 1,2,3,4, etc.
+
         insert!(df, walk, y, Symbol(walk))
     end
 
+    # now I have all 800 random walks, the total population possible
 
-    # iterate across employee amounts, select that many columns
+    # select 2 columns for condition 1, select 200 for condition 2, 400 for condition 3, etc.
 
     employee_conditions = [2, 200, 400, 600, 800]
+
+    # within a single simulation, I evaluate the 2 person condition, the 200 person condition, etc.
     store_it = DataFrame(
         simulation = zeros(5),
         employee_condition = zeros(5),
@@ -347,16 +368,29 @@ for sim in 1:total_sims
 
     counter = 0
 
-
+    # start with the 2 employee condition, then do the 200 person condition ...
     for employee_count in employee_conditions
          counter = counter + 1
 
-        # pull employee_count (e.g., 2) random columns from a vector
-        use_cols = collect(1:1:employee_count)
+        # pull employee_count (2, then 200, then 400) random walks from the total 800
+        use_cols = sample(1:employee_count, employee_count, replace = false)
 
-        # now select those columns to work with
+
+        # narrow my data frame so I'm only looking at the pulled walks
         condition_df = @linq df |>
             select(use_cols)
+
+        # I randomly selected columns, so change their names to 1,2,3,4, etc through last column
+        # the first column will be employee x_i
+        change_cols = collect(1:1:employee_count)
+        rename!(condition_df, [Symbol("$i") for i in change_cols])
+
+        # manipulate that reduced data frame in r
+        # for each row (time point), identify the top (e.g., 20%) of values
+        # is one of those values from the first column? (employee x_i)
+
+        # in other words, is employee x_i in the top (e.g., 20%) set of values for a given time point
+        # repeat across all time points
 
             @rput condition_df
             @rput employee_count
@@ -366,11 +400,15 @@ for sim in 1:total_sims
 
             for (row_i in 1:20){
 
+                # select a single time point
                 row <- condition_df %>%
                     slice(row_i)
 
-                percent_use <- round(ceiling(0.8*employee_count))
+                # within that time point, I want to identify the max 20% of values
+                percent_use <- round(ceiling(0.2*employee_count))
 
+                # each column contains a random walk
+                # I want to identify the top 20% of values within a single row across all of my columns
                 max_percent_df <- row %>%
                     rownames_to_column() %>%
                     gather(column, value, -rowname) %>%
@@ -379,10 +417,17 @@ for sim in 1:total_sims
                     filter(rk <= percent_use) %>%
                     arrange(rowname, rk)
 
+                # above returns a df with a column that lists which columns were in the top 20%
+                # column 1 is employee x_i
+                # is that employee in the df?
                 column_contained <- sum(max_percent_df$column == "1")
 
+                # if so
+                # then employee x_i was in the top 20%
+                # so count it and increase the counter
                 if(column_contained >= 1){moment_counts <- moment_counts + 1}
 
+            # repeat for every time point
             }
             """
             @rget moment_counts
@@ -391,6 +436,7 @@ for sim in 1:total_sims
             store_it[counter, :employee_condition] = employee_count
             store_it[counter, :moment_citizen_counts] = moment_counts
 
+        # repeat for every condition (200, 400, 600...)
         end
 
         append!(rq3_df, store_it)
