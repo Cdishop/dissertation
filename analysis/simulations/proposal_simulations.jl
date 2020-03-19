@@ -1,4 +1,4 @@
-using DataFrames, DataFramesMeta, Query, Statistics, CSV, CSVFiles, Distributions, Random, PrettyTables
+using DataFrames, DataFramesMeta, Query, Statistics, CSV, CSVFiles, Distributions, Random, PrettyTables, RCall
 
 time = 20
 function initial_value()
@@ -315,7 +315,7 @@ rq3_df = DataFrame(
     moment_citizen_counts = []
 )
 
-total_sims = 100
+total_sims = 50
 
 for sim in 1:total_sims
 
@@ -338,7 +338,7 @@ for sim in 1:total_sims
 
     # iterate across employee amounts, select that many columns
 
-    employee_conditions = [2, 200, 400, 500, 800]
+    employee_conditions = [2, 200, 400, 600, 800]
     store_it = DataFrame(
         simulation = zeros(5),
         employee_condition = zeros(5),
@@ -369,7 +369,7 @@ for sim in 1:total_sims
                 row <- condition_df %>%
                     slice(row_i)
 
-                percent_use <- round(ceiling(0.2*employee_count))
+                percent_use <- round(ceiling(0.8*employee_count))
 
                 max_percent_df <- row %>%
                     rownames_to_column() %>%
@@ -443,7 +443,7 @@ function create_results(employee_number)
                  11,12,13,14,15,16,17,18,19,20],
         probability = probability_list_z,
         num_employees = vcat(
-                        repeat([employee_number], length(probability_list_200))
+                        repeat([employee_number], length(probability_list_z))
         )
         )
 
