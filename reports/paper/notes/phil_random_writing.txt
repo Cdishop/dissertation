@@ -1,0 +1,27 @@
+(a) put it after study 1
+
+study 1 demonstrated...
+this was a crucial step because it provides evidence that randomness may be a factor for extra milers. 
+
+Why was that important? 
+- it was important because chance has a lot to say about long-run streaks. 
+
+(b) put it after hook
+
+"The nature of chance in long-run patterns"
+
+[after]
+
+In the OCB literature, there is a growing emphasis on a pattern that researchers have dubbed good soldiers or extra milers. But in the same way that long-run financial, atheletic, or business success is not a reliable indicator of skill or intellect, long-run, exceptional citizenship may not be a reliable indicator of motives
+
+
+chance can produce long-streaks of financial, atheletic, or business success, it may be that frequent, exceptional citizenship
+
+(c) put it under accumulating requests as a random walk
+
+In his book on chance, Leonard Mlodinow states, "A lot of what happens to us -- success in our careers, in our investments, and in our life decisions, both major and minor -- is as much the result of random factors as the result of skill, preparedness, and hard work. So the reality that we perceive is not a direct reflection of the people or circumstances that underlie it but instead an image blurred by the randomizing effects of unforeseeable or fluctuating external forces" (dunkard, p. 11). Streaks of success or loss, clusters of particles or agents, movement toward or away from an object -- these are all patterns that can appear systematic but nonetheless may emerge from nothing more than chance. Random variation often creates what looks like orderly patterns, appearing meaningful from one perspective but becoming spurious noise once the true mechanism is unveiled. Research has shown that people often fail to recognize chance in their observations (cites), cannot produce patterns consistent with chance (cite), and routinely misjudge events because they downplay its effect (cites). 
+
+The tension of determining whether a pattern is meaningful or random is deeply embedded in our daily lives. In Hollywood, executives are evaluated based on the assumption that meaning can be culled from the random spikes and dips in box-office movie performance. Sherry Lansing, who was initially praised for successfully running the Paramount Motion Picture Group, was removed after the company's market share demonstrated the following decreasing trend over six years: 11.4, 10.6, 11.3, 7.4, 7.1, 6.7 -- a streak which caused BusinessWeek to state that Lansing "may simply no longer have Hollywood's hot hand." In hindsight, researchers have argued that this sequence was far too short to adequately distinguish flawed decision-making from random fluctuations, a statement supported by follow up data demonstrating that the trajectory reverted back to its mean (Mlodinow, cite). Big Tech companies have also been confronted with the idea that randomness can produce seemingly systematic patterns. When Apple released the "shuffle" function on its early iPods, users complained after hearing songs by the same artist played back-to-back, believing that the function was not actually shuffling at random. According to Steve Jobs, the company then adjusted and made the feature "less random to make it feel more random" (p. 175). In sports, fans surrender their emotions to and make bets based on the perceived streakiness of their teams. Unfortunately for them, Tversky and colleagues demonstrated that the apparent streaks in basketball free-throws -- studied among the Philadelphia 76ers, Boston Celtics, and Cornell's mens and women's varsity teams -- exhibited no evidence of systematic behavior. A similar analysis with baseball conducted by E. M. Purcell led him to the conclusion that, "nothing ever happens in baseball above and beyond the frequency predicted by coin-tossing models" (p. 179). In gambling, the problem of divying up a jackpot based on true winnings rather than randomly allocating pieces to each player is one of the most longstanding issues to date, and it was first put into a mathematical framework by Pascal and Fermet, two pionneers of modern probability and statistics. 
+
+Separating meaning from chance is also embedded in the statistical architecture used across many scientific disciplines. Researchers often develop and present their work under the framework of hypothesis testing, an approach to conducting a study in which questions are asked, data are collected, and statistical models are applied all with respect to a single fundamental question about separating meaning from chance: what is the probability that a given hypothesis (usually called the "null") could have produced the result? Assuming that chance is the only factor operating, what is the probability of witnessing an observed result? Ultimately, the goal is to parse random, unsystematic varince from something meaningful. The same is true in measurement theory, which proposes that observations culled from an assessment contain both true and error score variance. Many of its core developments, including factor analysis, validity and reliability testing, latent score modeling, measurement equivalence, and differential item functioning (cites) were attempts to provide a better understanding of whether a test score was meaningful or due to something random. 
+

@@ -1,0 +1,235 @@
+
+
+
+
+# drunkard's walk
+
+
+@book{mlodinow2009drunkard,
+  title={The drunkard's walk: How randomness rules our lives},
+  author={Mlodinow, Leonard},
+  year={2009},
+  publisher={Vintage}
+}
+
+
+
+Mlodinow, L. (2009). The drunkard's walk: How randomness rules our lives. Vintage.
+
+
+
+
+"A lot of what happens to us -- success in our careers, in our investments, and in our life decisions, both major and minor -- is as much the result of random factors as the result of skill, preparedness, and hard work. So the reality that we perceive is not a direct reflection of the people or circumstances that underlie it but is instead an image blurred by the randomizing effects of unforeseeable or fluctuating external forces." (p. 11).
+
+"We habitually understimate the effects of randomness." (p. 11). 
+
+"In the political world, the economic world, the business world -- even when careers and millions of dollars are at stake -- chance events are often conscpicuously misinterpreted as accomplishments or failures." (p. 11). 
+
+"Deciding how much of an outcome is due to skill and how much to luck is not a no-brainer. Random events often come like the raisins in a box of cereal -- in groups, streaks, and clusters. And although Fortune is fair in potentialities, she is not fair in outcomes. That means that if each of 10 Hollywood executives tosses 10 coins, although each has an equal chance of being the winner or the loser, in the end there will be winners and losers. In this example, the chances are 2 out of 3 that at least 1 of the executives will score 8 or more heads or tails." (p. 13). 
+
+A real example:
+
+"One of the most high profile examples of anointment and regicide in modern Hollywood was the case of Sherry Lansing, who ran Paramount with great success for many years. Under Lansing, Paramount won Best Picture awards for Forrest Gump, Braveheart, and Titanic and posted its two highest-grossing years ever. Then Lansing's reputation suddenly plunged, and she was dumped after Paramount experienced, as Variety put it, "a long stretch of underperformance at the box office." 
+
+In mathematical terms there is both a short and long explanation for Lansing's fate. First, the short answer. Look at this series of percentages: 11.4, 10.6, 11.3, 7.4, 7.1, 6.7. Notice something? Lansing's boss, Sumner Redstone, did too, and for him the trend was significant, for those six numbers represented the market share of Paramount's Motion Picture Group for the final six years of Lansing's tenure. The trend caused BusinessWeek to speculate that Lansing "may simply no longer have Hollywood's hot hand." Soon Lansing announced she was leaving, and a few months later a talent manager named Brad Grey was brought on board. 
+
+How can a surefire genius lead a company through seven great years and then fail practically overnight? There were plently of theories explaining Lansing's early success. While Paramount was doing well, Lansing was praised for making it one of Hollywood's best-run studios and for her knack for turning conventional stories into $100 million hits. When her fortune changed, the revisionists took over. Her penchant for making successful remakes and sequels became a drawback. Most damning of all, perhaps, was the notion that her failure was due to her "middle-of-the-road tastes." She was now blamed for green-lighting such box office dogs as Timeline and Lara Croft Tomb Raider: The Cradle of Life. Suddenly the conventional wisdom was that Lansing was risk averse, old-fashioned, and out of touch with trends. But can she really be blamed for thinking that a Michael Crichton bestseller would be promising movie fodder? And where were all the Lara Croft critics when the first Tomb Raider film took in $131 million in box office revenue?
+
+...
+In hindsight it is clear that Lansing was fired because of the industry's misunderstandings of randomness and not because of her flawed decision making: Paramount's films for the following year were already in the pipeline when Lansing left the company. So if we want to know roughly how Lansing would have done in some parallel universe in which she remained in her job, all we need to do is look at the data in the year following her departure. With such films as War of the Worlds and The Longest Yard, Paramount had its best summer in a decade and saw its market share rebound to nearly 10 percent. That isn't merely ironic -- it's again that aspect of randomness called regression toward the mean." (p. 14-15).
+
+"When we look at extraordinary accomplishments in sports -- or elsewhere -- we should keep in mind that extraordinary events can happen without extraordinary causes. Random events often look like nonrandom events, and in interpreting human affairs we must take care not to confuse the two." (p. 20). 
+
+
+Inferior team can still be crowned champion of a series:
+"If one team is good enough to warrant beating another in 55% of its games, the weaker team will nevertheless win a 7-game series about 4 times out of 10. And if the superior team could be expected to beat its oppenent, on average, 2 out of each 3 times they meet, the inferior team will still win a 7-game series about once every 5 matchups. In the lopsided 2/3-probability case, for example, you'd have to play a series consisting of at minimum the best of 23 games to determine the winner with what is called statistical significance, meaning that the weaker team would be crowned champion 5% or less of the time. And in the case of one team's having only a 55% edge, the short statistically significant "world series" would be the best of 269 games...being crowned 'world champion' is not a very reliable indication that a team is actually the best one." (p. 71). 
+- how long of a series do you need to tell? (manager guesses best team after 1st game; manager guesses best team after 2nd game...etc. What is the percentage that each manager is right?)
+- how many series repeats of 7 games do you need?
+
+
+"It shows that if two companies compete head-to-head or two employees within a company compete, though there may be a winner and a loser each quarter or each year, to get a reliable answer regarding which company or which employee is superior by simplying tallying who beats whom, you'd have to make the comparison over decades or centuries. If, for instance, employee A is truly superior and in the long run win a performance comparison with employee B on 60 out of 100 occassions, in a simple best-of-5 series of comparisons the weaker employee will still win almost one-third of the time. It is dangerous to judge ability by short-term results." (p. 71). 
+
+This whole issue of the last two paragraphs relates back to the problem of points:
+"The question de Mere brought to Pascal was called the problem of points: Suppose you and another player are playing a game in which you both have equal chances and the first player to earn a certain number of points wins. The game is interrupted with one player in the lead. What is the fairest way to divide the pot? The solution, de mere noted, should reflect each player's chance of victory given the score that prevails when the game is interrupted." (p. 67). 
+- the issue was resolved by a collaboration between Pascal and Pierre de Fermat
+- from it came Pascal's triangle and its numerous applications
+
+p. 91 huge idea from probability theory:
+- if we observe things for long enough, their true frequencies will be revealed
+- as we increase the number of trials, the observed frequencies will reveal the underlying probabilities
+
+
+"Let's assume that, based on their knowledge and abilities, each CEO has a certain probability of success each year (however his or her company may define that). And do make things simple, let's assume that for these CEOs successful years occur at a frequency of 60%. The chances that in a given 5-year period a partcular CEO's performance will reflect that underlying rate are only 1 in 3. Think about this in the context of Fortune 500: in the past five years 333 of the CEOs would have exhibited performance that did not reflect their true ability. Moreover, we should expect about 1 in 10 CEOs to have 5 winning or losing years in a row. What does this tell us? It is more reliable to judge people by analyzing their abilities than by glancing at the scoreboard."
+- HUGE POINT. A HUGE POINT FOR MEASURING ABILITIES
+
+"One should not appraise human action on the basis of its results." (p. 100) - Maistrov, Probability Theory: A Historical Sketch
+
+"Jakob Bernoulli had shown that through mathematical analysis one could learn how the inner hidden probabilities that underlie natural systems are reflected in the data those systems produce. As for the question that Bernoulli did not answer -- the question of how to infer, from the data produced, the underlying probability of events -- the answer would not come for several decades more." (p. 103).
+
+We intuitively put our observations as outcomes and ask for causes, which leads us to the bayes error, an error of flipping.
+- my boss has been slow to respond to my emails
+- I infer that she is upset with me. 
+- My reasoning goes something like this: if my boss is upset with me, she would avoid my emails and be slow to respond.
+- if my boss doens't like me anymore, she would be slow to respond
+- so the structure of my reasoning is...
+- upset => slow
+- but do you see how that chain of logic is different from my first observation and inference? My observation is the slowness; it should be first.
+- slow => make an inference about her qualities
+- but upset => DOES NOT EQUAL slow => make an inference
+- the probability that A will occur given B is generally different from the probability that B will occur given A; and you can find people mistakenly thinking that they will be the same everywhere. p. 117
+
+
+Bernoulli's theorem is about how many heads to expect if you plan to conduct many coin tosses, and the connection between many observations and revealing underlying probabilities, whereas Bayes investigated the issue of how certain you can be of an inference given only few observations. p. 109. 
+- ultimately, both cared about the ultimate question: how can we infer underlying probabilities from observation?
+
+
+A high school teacher awards an English professor a 92 on her essay (that she wrote for her child to hand in). "If a teacher awards grades on a 100-point scale, those tiny distinctions must really mean something. But if ten publishers could deem the manuscript for the first Harry Potter book unworthy of publication, how could this poor high school teacher distinguish so finely between essays as to award one a 92 and another a 93? If we accept that the quality of an essay is somehow definable, we must still recognize that a grade is not a description of an essay's degree of quality but rather a measurement of it, and one of the most important ways randomness affects us is through its influence on measurement. In the case of the essay the measurement apparatus was the teacher, and a teacher's assessment, like any measurement, is susceptible to random variance and error." (p. 125-126). 
+
+
+"If a traffic cop tells the judge her radar gun clocked you going thirty-nine in a thirty-five-mile-per-hour zone, the ticket will usually stick despite the fact that readings from radar guns often vary by several miles per hour. ...few educators talk about the studies showing that, if you want to gain 30 points in an SAT, there's a good chance you can do it simply by taking the test a couple more times." (p. 129). "But as Gene Epstein, the economics editor of Barron's, put it, 'Merely because the number has changed doesn't necessarily mean that the thing itself has changed."
+
+
+p. 134 great discussion of the general problem of measurement. 10 wine raters all provide scores of 90 vs another group that produces a mean of 90 but some score it as low as 70 and others as high as 110. Same for scientists. For groups of scientists studying the same problems, their observations will differ. How can we determine the true score given noise in the observations?
+
+
+"That the distribution of errors follows some universal law, sometimes called the error law, is the central precept on which the theory of measurement is based. Its magical implication is that, given taht certain very common conditions are satisfied, any determination of a true value based on measured values can be solved employeing a single mathematical analysis. When such a universal law is employed, the problem of determining the true position of a planet based on a set of astronomers' measurements is equivalent to that of determining the position of a bull's-eye given only teh arrow holes or a wine's 'quality' given a series of ratings." (p. 136). 
+
+
+"We cannot know whether our single observation represents the mean or an outlier, an event to be on or a rare happening that is not likely to be reproduced. But at a minimum we ought to be aware that a sample point is just a sample point, and rather than accepting it simply as reality, we ought to see it in the context of the standard deviation or the spread of possibilities that produced it." (p. 142-143). 
+
+The central limit theorum explains why the normal distribution is the appropriate curve to represent errors. Errors are unknown, independent factors that can bump truth up or down. They get added into a cumulative thing. That is exactly the central limit theorem.  
+
+
+"Individual life spans -- and lives -- are unpredictable, but when data are collected from groups and analyzed en masse, regular patterns emerge. Suppose you have driven accident-free for twenty years. Then one fateful afternoon while you're on vactation in Quebec with your spouse and your in-laws, your mother-in-law yells, "Look out for that moose!" and you swerve into a warning sign that says essentially the same thing. To you the incident would feel like an odd and unique event. But as the need for the sign indicates, in an ensemble of thousands of drivers a certain percentage of drivers can be counted on to encouter a moose. In fact, a statistical ensemble of people acting randomly often displays behavior as consistent and predictable as a group of people pursuing conscious goals. Or as the philosopher Immanuel Kant wronte in 1784, "Each, according to his own inclination follows his own purpose, often in oppostion to others; yet each individual and people, as if following some guiding threat, go toward a natural but to each of them unknown goal; all work toward furthering it, even if they would set little store by it if they did know it." (p. 147). 
+
+"We associate randomness with disorder. Yet although the lives of 200 million drivers vary unforeseeably, in the aggregate their behavior could hardly have proven more orderly. Analogous regularities can be found if we examine how people vote, buy stocks, marry, are told to get lost, misaddress letters, or sit in traffic on their way to a meeting they didn't want to go to in the first place -- or if we measure the length of their legs, the size of their feet, the width of their buttocks, or the breadth of their beer bellies...Social data often follows a normal distribution." (p. 148). 
+
+Einstein's genius was in figuring out that random synchrony produces brownian motion. You can observe particles in water jiggling. What causes that? Randomness at the microscopic level that sometimes aligns in sync: molecules randomly move about, in a random walk, only changing direction after a hit. Each hit is far to small to create a noticeable impression on the particles floating in the water, and the molecule collisions happen far too frequently relative to the rate at which the particles jiggle. It is only when pure luck occassionally leads to a lopsided preponderance of hits from some particular direction that a noticeable jiggle occurs. p. 167
+
+"Much of the order we perceive in nature belies an invisible underlying disorder and hence can be understood only through the rules of randomness." (p. 168)
+Einstein, "It is a magnificent feeling to recognize the unity of a complex phenomena which appear to be things quite apart from the direct visible truth." 
+
+"Though in random variation there are orderly patterns, patterns are not always meaningful. And as important as it is to recognize that meaning when it is there, it is equally important not to extract meaning when it is not there." (p. 168). 
+
+"Scientists have moved to protect themselves from identifying false patterns by developing methods of statistical analysis to decide whether a set of observations provides good support for a hypothesis or whether, on the contrary, the apparent support is probably due to chance. For example, when physicists seek to determine whether the data from a supercollider is significant, they don't eyeball their graphs, looking for bumps that rise above the noise; they apply mathematical techniques." (p. 171). 
+
+Someone guesses whether a coin will come up heads or tails. If she gets them all right, we might think that she has some skill. If she gets about 50/50, we might think that she is just guessing. What if the data fall somewhere in between or if there isn't much data? "Where do we draw the line between accepting and rejecting the competing hypotheses? This is what significance testing does: it is a formal procedure for calculating the probability of our having observed what we observed if the hypothesis we are testing is true." P. 172
+
+
+Say we observe here, and she gets a certain number of guesses correct. "Our statistical architecture allows us to calculate the probability that she could have accomplished the predictions by chance alone. If she had guessed the coin-toss results correctly so often that, say, the probability of her being that successful by chance alone is only 3%, then we would reject the hypothesis that she was guessing." p. 172. 
+
+"Researchers concluded that people have a very poor conception of randomness; they do not recognize it when they see it and they cannot produce it when they try, and what's worse, we routinely misjudge the role of chance in our lives and make decisions that are demonstrably misaligned with our own best interests." (p. 174). 
+
+George Spencer-Brown, who wrote that in a random series of 10^1000007 zeroes and ones, you should expect at least 10 nonoverlapping subsequences of 1 million consecutive zeroes. Imagine such a sequence showed up in your calculator if you called for a random series, would you be wrong to send your calculator back and ask for a refund? p. 174
+- this issue is what happened to Apple: "Apple ran into that issue with the random shuffling method it initially employed in its iPod music players: true randomness sometimes produces repetition, but when users heard the same song or songs by the same artist played back-to-back, they believed the shuffling wasn't random. And so the company made the feature 'less random to make it feel more random,' said Apple founder Steve Jobs. p. 175
+
+"Intersest in the hot hand fallacy began in 1985, in particular with a paper by Tversky and his co-workers that was published in the journal Cognitive Psychology. In that paper, 'The Hot Hand in Basketball: On the Misperception of Random Sequences,' Tversky and colleagues investigated reams of basketball statistics. The players' talen varied, of course. Some made half their shots, some more, some less. Each pplayer also had occasional hot and cold streaks. The paper's authors asked the questions, how do the number and length of the streaks compare with waht you would observed if the result of each shot were determined by a random process? That is, how would things have turned out if rather than shooting basketbas, the players had tossed coins weighted to reflect their observed shooting percentages? The researchers found that despite the streaks, the floor shots of the Philadelphia 76ers, the free throws of the Boston Celtics, and the experimentally controlled floor shots of the Cornell University men's and women's varsity basketball teams exhibited no evidence of systematic behavior." (p. 178)
+
+What about streakiness in baseball? E. M. Purcell found that, except for Joe DiMaggio's fifty-six game hitting streak, 'nothing every happened in baseball above and beyond the frequency predicted by coin-tossing models." (p. 179). 
+- bad players and teams have longer and more frequent streaks of failure than great players or great teams, but that is because their average failure or success rate is higher, and the higher the average rate, the longer and more frequent the streaks that randomness will produce. 
+
+The probability of you predicting stock market changes correctly for 15 years straight is remarkably low. But the proability that someone does it, out of the thousands that try, is very high - p. 180
+
+
+"It is important to understand that streaks and other patterns that don't appear random can indeed happen by pure chance. It is also important, when assessing others, to recognize that among a large group of people it would be very odd if one of them didn't experience a long streak of successes or failures." (p. 181). 
+
+"Chance is a more fundamental conception than causality." p. 195 - Max Born
+
+The fundamental assymetry that makes the past seem obvious but the future very hard to predict.
+- take a water molecule, randomly walking about. After a priod of time, we observe that it has walked quite far
+- we take note of its route, collecting data on every collision and every turn, its zigzag path from here to there. In hindsight, we can perfectly explain why the molecule moved from spot to spot based on the particles it collided with.
+- But the molecule could have collided with many others, so predict its movement beforehand we would have had to perform an unimaginable number of calculations on a potentially unkowwable number of molecultes.
+- what we observe is a single realization. Movement that we observe after the fact is far easier to predict and explain that if we try to predict it beforehand.
+
+
+"We afford automatic respect to superstar business moguls, politicians, and actors and to anyone flying around in a private jet, as if their accomplishments must reflect unique qualities not shared by those forced to eat commercial airline food." (p. 200). 
+
+
+Charles Perrow theory of accidents. "In his theory Perrow recognized that modern systems are made up of thousands of parts, including fallible human decision makers, which interrelate in ways that are, like Laplace's atoms, impossible to track and anticipate individually. Yet one can bet on the fact that just as atoms executing a drunkard's walk will eventually get somewhere, so too will accidents eventually occur. Called normal accident theory, Perrow's doctrine describes how that happens -- how accidents can occur without clear causes, without those glaring erros and incompetent villians sought by corporate or government commisions. But although normal accident theory is a theory of why, inevitably, things sometimes go wrong, it could also be flipped around to explain why, inevitably, they sometimes go right. For in a complex undertaking, no matter how many times we fail, if we keep trying, there is often a good chance we eventually will succeed. In fact, economists like W. Brian Arthur argue that a concurrence of minor factors can even lead companies with no particular edge to come to diminate their competitors. 'In the real world, if several similar-sized firms entered a market together, small fortuitious events -- unexpected orders, chance meetings with buyers, managerial whims -- could help determine which ones received early sales and, over time, which came to dominate. Economic activity is...[determined] by indiivdual transactions that are too small to foresee, and tehse small 'random' events could [ac]cumulate and become magnified by positive feedbacks over time." (p. 204). 
+
+# lady tea
+
+
+@book{salsburg2001lady,
+  title={The lady tasting tea: How statistics revolutionized science in the twentieth century},
+  author={Salsburg, David},
+  year={2001},
+  publisher={Macmillan}
+}
+
+Salsburg, D. (2001). The lady tasting tea: How statistics revolutionized science in the twentieth century. Macmillan.
+
+
+
+
+Until Fisher, experiments were idiosyncratic to each scientist. People published their conclusions, not their data or analysis. Fisher showed that the first step in the design of an experiment is to set up a group of mathematical equations describing the relationship between the data that will be collected and the outcomes that are being estimated. 
+
+High school students in a physics class roll balls down a slope and try to find a number for g, the constant of acceleration. The more times that the students try the experiment, the more different numbers they calculate, and each number differs across the student groups. "What the teacher does not tell the students is that all experiments are sloppy and that very seldom does even the most careful scientist get the number right. Little unforeseen and unobservable glitches occur in every experiment. The air in the room might be too warm and the sliding weight might stick for a microsecond before it begins to slide. A slight breeze from a passing butterfly might have an effect. What one really gets out of an experiment is a scatter of numbers, not one of which is right but all of which can be used to get a close estimate of the correct value. ...[so what we look at are distributions]. This distribution of numbers can be written as a mathematical formula that tells us the probability that an observed number will be a given value. What value that number actually takes in a specific experiment is unpredictable. We can only talk about probabilities of values and not about certainties of values. The results of an individual experiment are random, in the sense that they are unpredictable. The statistical models of distributions, however, enable us to describe the mathematical nature of that randomness." (p. 14-15). 
+
+"It took some time for science to realize the inherent randomness of observations. In the eighteen and nineteeht centuries, astronomers and physicists created mathematical formulas that described their observations to a degree of accuracy that was acceptable. Deviations between observed and predicted values were expected because of the basic imprecision of the measuring instruments, and were ignored. Planets and other astronomical bodies were assumed to follow precise paths determined by the fundamental equations of motion. Uncertainty was due to poor instrumentation. It was not inherent in nature.
+
+With the development of ever more precise measuring instruments in physics, and with attempts to extend this science of measurement to biology and sociology, the inherent randomness of nature become more and more clear. How could this be handled? One way was to keep the precise mathematical formulas and treat the deviations between the observed values and the predicted values as a small, unimportant error. In fact, as early as 1820, mathematical papers by Laplace describe the first probability distribution, the error distribution, that is a mathematical formulation of the probabilities associated with these small, unimportant errors. This error distribution has entered popular parlance as the 'bell shaped curve,' or the normal distribution.
+
+It took Pearson to go one step beyond the normal curve. Looking at the data accumulated in biology, Pearson conceived of the measurements themselves, rather than the errors in the measurement, as having a probability distribution. Whatever we measure is really part of a random scatter, whose probabilities are described by a mathematical function, the distribution function. Pearson discovered a family of distribution functions that he called the 'skew distributions' and that, he claimed, would describe any type of scatter a scientist might see in data. Each of the distributions in this family is identified by four numbers.
+
+The numbers that identify the distribution function are not the same type of 'number' as the measurements. These numbers can never be observed but can be inferred from the way in which the measurements scatter. These numbers were later to be called parameters. The four parameters that completely describe a member of the Pearson System are called (mean, sd, symmetry, kurtosis). 
+
+There is a subtle shift in thinking with Pearson's system of skew distributions. Before Pearson, the 'things' that science dealt with were real and palpable. Kepler attempted to discover the mathematical laws that described how the planets moved in space. William Harvey's experiments tried to determine how blood moved through the veins and arteries of a specific animal. Chemistry dealt with elements and compounds made up of elements. However, the 'planets' that Kepler tried to tame were really a set of numbers identifying the positions in the sky where shimmering lights were seen by observers on earth. The exact course of blood through the veins of a single horse was different from waht might have been seen with a different horse, or with a specific human being. No one was able to produce a pure sample of iron, although it was known to be an element.
+
+Pearson proposed that these observable phenomena were only random reflections. What was real was the probability distribution. The real 'things' of science were not things that we could observe and hold but mathematical functions that describe the randomness of what we could observe. The four parameters of a distribution are what we really want to determine in a scientific investigation. In some sense, we can never really determine those four parameters. We can only estimate them from the data." (p. 15-16-17). 
+
+What we then started doing was calculating how the parameters of distributions differed after experiments. Put crabs in salt water vs put crabs in harbor water. Measure the body size of all crabs that survive. The distribution of the crabs in salt water differs from the distribution of the crabs in harbor water. 
+
+Then Gossett ("student") started looking at data that followed a poisson distribution, which was described by a single parameter and not in the original family proposed by Pearson. Moreover, all of Pearson's work assumed that the sample of data was so large that the parameters could be determined without error. Gossett asked, what happens if the sample were small? How can we deal with random error that is bound to find its way into our calculation? p. 29
+
+
+Fisher develops analysis of variance and the notion of embedding randomness into experiments to cancel noise. I want to determine the effect of fertilizer, but if I plant my fertilizer in a systematic way then I confound my effects with soil quality, weather, etc. If I randomize where I put the fertilizer, then unobserved effects, on average, cancel each other out. Randomness helps reduce noise. 
+
+"Before the statistical revolution, the 'things' with which science dealt were either measurements made or the physical events that generated those measurements. With the statistical revolution, the things of science became the parameters that goverened the distribution of the measurements." (p. 93). 
+
+Fisher then worked out a hypothesis test, which to him was a sequence. But its real machinery didn't come until Neyman. "Neyman's major discovery was that significance testing made no sense unless there were at least two possible hypotheses. That is, you could not test whether data fit a normal distribution unless there was some other distribution or set of distributions that you believed it would fit. The choice of these alternative hypotheses dictates the way in which the significance test is run." (p. 109). 
+
+P-value
+I give a placebo and a "grow hair" drug to two groups. I find that, after 4 months, the men in the "grow hair" drug group grew, on average, by 10 inches, whereas the men in the placebo group grew, on average, 2 inches, for a difference of 8 inches. What does a p-value mean? If the null were true, if there was no effect of my drug, if both the placebo and the drug did the same thing to the men, what is the probability that I would have calculated an 8 inch difference? 
+"The p-value is a probability, and this is how it is computed. Since it is used to show that the hypothesis under which it is calculated is false, what does it really mean? It is a theoretical probability associated with the observations under conditions that are most likely false. It has nothing to do with reality." (p. 111). 
+
+
+"Thus, the random sample is better than either the opportunity or judgment sample, not because it gaurantees correct answers but because we can calculate a range of answers that will contain the correct answer with a high probability." (p. 172).
+
+
+"In the 1950s, Richard Bellman produced a set of theorems, which he callued the 'curse of dimensionality.' What these theorems say is that, as the dimension of the space increases, it becomes less and less possible to get good estimates of parameters. Once the analyst is out in ten- to twenty-dimensional space, it is not possible to detect anything with less than hundres of thousands of observations." (p. 226). 
+
+
+"In spite of the apparent determinism of molecular biology, where genes are found that cause cells to generate specific proteins, the actual data from this science are filled with randomness and the genes are, in fact, parameters of the distribution of those results. The effects of modern drugs on bodily functions, where doses of 1 or 2 milligrams cause profound changes in blood pressure or psychic neuroses, seem to be exact. But the pharmacological studies that prove these effects are designed and analyzed in terms of probability distributions, and the effects are parameters of those distributions.
+
+Similarly, the statistical methods of econometrics are used to model the economic activity of a nation or of a firm. The subatomic particles we confidently think of as electrons and protons are described in quantum mechanics as probability distributions. Sociologists derive weighted sums of averages taken across populations to describe the interactions of individuals -- but only in terms of probability distributions. In many of these sciences, the use of statistical models is so much a part of their methodology that the parameters of the distributions are spoken of as if they were real, measurable things. The uncertain conglomeration of shifting and changing measurements that are the starting point of these sciences is submerged in the calculations, and the conclusions are stated in terms of parameters that can never be directly observed." (p. 295-296).
+
+
+
+# Naked statistics
+
+"The data present unorganized clues. Statistical analysis is the detective work that crafts raw data into some meaningful conclusion." (p. 10). 
+
+"Statistics cannot prove anything with certainty. Instead, the power of statistical inference derives from observing some pattern or outcome and then using probability to determine the most likely explanation for that outcome." (p. 144). 
+
+
+# book of why
+
+
+
+
+@book{pearl2018book,
+  title={The book of why: the new science of cause and effect},
+  author={Pearl, Judea and Mackenzie, Dana},
+  year={2018},
+  publisher={Basic Books}
+}
+
+
+
+Pearl, J., & Mackenzie, D. (2018). The book of why: the new science of cause and effect. Basic Books.
+
+
+
+Differentiating effects from chance is the fundamental component to Pearl's "do calculus" in which the researcher embodies a subjective belief in a causal diagram and then determines whether questions can be answered via observable data. Without first presenting a belief in a causal diagram, it is much more difficult to separate truth from noise because many different dgm's can generate the same observations.
+

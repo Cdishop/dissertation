@@ -10,6 +10,7 @@ library(tidyverse)
 library(ggplot2)
 
 ggplot(df_fig2, aes(x = k, y = Probability)) +
+  geom_bar(stat = 'identity') + 
   theme_classic() + 
   theme(axis.title.x = element_text(face = 'italic'))
 
