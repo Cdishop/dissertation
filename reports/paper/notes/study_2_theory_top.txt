@@ -1,0 +1,8 @@
+Study 2 theory up top
+
+
+theory rq1: "Spirals"
+
+theory rq2: "Contiuity"
+
+theory rq3: "Collective"

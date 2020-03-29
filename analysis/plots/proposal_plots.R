@@ -32,12 +32,15 @@ df_fig3 <- data.frame(
 
 library(tidyverse)
 library(ggplot2)
+library(png)
+qmark_small <- readPNG('qmark_small.png')
 
 ggplot(df_fig3, aes(x = k, y = Probability, shape = Drift)) +
   theme_classic() + 
   geom_point(alpha = 0) +
   theme(axis.title.x = element_text(face = 'italic')) + 
-  guides(shape = guide_legend(override.aes = list(alpha=1))) 
+  guides(shape = guide_legend(override.aes = list(alpha=1))) + 
+  annotation_raster(qmark_small, ymin = 0.07, ymax = 0.22, xmin = 0, xmax = 20)
 
 
 
@@ -61,7 +64,9 @@ ggplot(df_fig4, aes(x = k, y = Probability, shape = Autoregressive)) +
   theme_classic() + 
   geom_point(alpha = 0) +
   theme(axis.title.x = element_text(face = 'italic')) + 
-  guides(shape = guide_legend(override.aes = list(alpha=1))) 
+  guides(shape = guide_legend(override.aes = list(alpha=1))) + 
+  annotation_raster(qmark_small, ymin = 0.07, ymax = 0.22, xmin = 0, xmax = 20)
+
 
 
 
@@ -85,4 +90,6 @@ ggplot(df_fig5, aes(x = k, y = Probability, shape = Employees)) +
   theme_classic() + 
   geom_point(alpha = 0) +
   theme(axis.title.x = element_text(face = 'italic')) + 
-  guides(shape = guide_legend(override.aes = list(alpha=1))) 
+  guides(shape = guide_legend(override.aes = list(alpha=1))) + 
+  annotation_raster(qmark_small, ymin = 0.07, ymax = 0.22, xmin = 0, xmax = 20)
+
