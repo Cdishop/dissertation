@@ -42,7 +42,7 @@ for simulation in 1:num_sims
     walk2[step] = walk2[step - 1] + rand(Normal(0,1), 1)[1]
     end
 
-    # store the random walks
+    # store the random walks for a single simulation run
     df_base = DataFrame(
         employee = employee,
         walk2 = walk2
@@ -64,6 +64,7 @@ for simulation in 1:num_sims
         transform(moment_citizen = convert_moment_citizen.(:employee, :walk2))
 
         # how many times is there a yes in the moment citizen column?
+        # if there are 7 yesses, then the focal employee was the moment citizen 7 times in a single, 20-time-step random walk
 
         moments = count(i == "yes" for i in df_base.moment_citizen)
 
@@ -73,8 +74,17 @@ end
 
 
 # now I have a data set that tells me, for each simulation, how many time steps was the employee the moment citizen?
-# so, I need to convert those to probabilities
-# what's the probability that he spends 0 time steps?
+# after a single simulation run, I store the number 7 (the employee was the moment citizen for 7 time points)
+# after the second simulation, I store the number 2 (the employee was the moment citizen for 2 time points)
+# after the third simulation, I store the number 0 (the employee was the moment citizen for 0 time points)
+# repeat, and produce a data set filled with 7's, 2's, 0's, or any number between 0 and 20
+
+# how many 0's do I have? how many 1's? how many 2's?
+# if I have almost all 0's, that tells me that typically the focal employee spends 0 time points as the moment citizen
+# if I have almost all 20's, that tells me that typically the focal employee spends 20 time points as the moment citizen
+
+# these values are in the form of counts. I need to turn them into probabilities for my results
+# what's the probability that he spends 0 time steps as the moment citizen?
 # count the 0's, then divide by the number of simulations
 
 
@@ -83,18 +93,20 @@ prob_steps = collect(0:1:time)
 # an empty vector to store the probabilities
 probability_list = zeros(length(prob_steps))
 
-# for each probability (k), 0, 1, 2, 3...
+# for each possible value that I want to calculate a probability for (k), 0, 1, 2, 3...
 for prob in prob_steps
     # how many times does 0 appear in store_moments? how many times does 1 appear? etc...
     result = count(
                 k == prob for k in store_moments) / length(store_moments)
+    # put that result into my store vector
     probability_list[[prob + 1]] .= result
 end
 
 # now I have a vector of probabilities.
-# the first probability is the number of times 0 appeared
-# the second is the number of times 1 appeared
-# the third is the number of times 2 appeared...
+# in the first position of the vector is the probability that the focal employee was the moment citizen for 0 periods
+# in the second position of the vector is the probability that the focal employee was the moment citizen for 1 periods
+# in the third position of the vector is the probability that the focal employee was the moment citizen for 2 periods
+# ...
 
 base_results = DataFrame(
     k = [0,1,2,3,4,5,6,7,8,9,10,
@@ -182,7 +194,10 @@ for drift in drift_params
                         repeat([drift], length(probability_list))
             )
             )
-
+    # for a single drift value, I run x simulations and store them
+    # for the next drift value, I run x simulations and store them
+    # for the third drift value, I run x simulations and store them
+    # so, this data set is the summary of all sim runs across all drift parameters
     append!(df_rq1, single_run_results)
 end
 
@@ -200,7 +215,7 @@ end
 
 
 # rq2: autoregressive
-# only change is to run a for loop that changes the autoregrssive parameter
+# same as above but manipulating the autoregressive rather than drift parameter
 
 
 autor_params = [0.0,0.2,0.4,0.6,0.8]
@@ -288,16 +303,12 @@ end
 
 
 
-# rq3: more employees
-
-
-
 
 
 
 # rq3: more employees
 
-
+# this simulation is more complex
 
 
 
@@ -331,7 +342,7 @@ total_sims = 100
 
 for sim in 1:total_sims
 
-    # simulate all random walks
+    # simulate all 800 random walks
 
     df = DataFrame()
 
@@ -360,6 +371,8 @@ for sim in 1:total_sims
     employee_conditions = [2, 200, 400, 600, 800]
 
     # within a single simulation, I evaluate the 2 person condition, the 200 person condition, etc.
+    # there are 5 total conditions (2, 200, 400, 600, 800)
+
     store_it = DataFrame(
         simulation = zeros(5),
         employee_condition = zeros(5),
@@ -372,7 +385,7 @@ for sim in 1:total_sims
     for employee_count in employee_conditions
          counter = counter + 1
 
-        # pull employee_count (2, then 200, then 400) random walks from the total 800
+        # randomly pull employee_count (2, then 200, then 400) random walks from the total 800
         use_cols = sample(1:employee_count, employee_count, replace = false)
 
 
@@ -385,7 +398,12 @@ for sim in 1:total_sims
         change_cols = collect(1:1:employee_count)
         rename!(condition_df, [Symbol("$i") for i in change_cols])
 
-        # manipulate that reduced data frame in r
+        # now I need to identify if employee x_i is in the top 20% of the randomly selected walks
+        # this is hard to do in julia so I did it in R.
+        # remember that I'm looking at whether x_i is in the top 20% of the randomly selected walks for EVERY TIME POINT
+
+
+        # the actual structure of the syntax is as follows:
         # for each row (time point), identify the top (e.g., 20%) of values
         # is one of those values from the first column? (employee x_i)
 
@@ -417,9 +435,8 @@ for sim in 1:total_sims
                     filter(rk <= percent_use) %>%
                     arrange(rowname, rk)
 
-                # above returns a df with a column that lists which columns were in the top 20%
-                # column 1 is employee x_i
-                # is that employee in the df?
+                # above returns a df with a column called "column" that tells me which columns (1,3,9,etc.) were in the top 20%
+                # is employee x_i in that list? i.e., is 1 listed in the column called "column"?
                 column_contained <- sum(max_percent_df$column == "1")
 
                 # if so
@@ -432,16 +449,18 @@ for sim in 1:total_sims
             """
             @rget moment_counts
 
+        # now I have (for a single simulation run) the number of time points employee x_i was in the top 20% when there were 2 employees
             store_it[counter, :simulation] = sim
             store_it[counter, :employee_condition] = employee_count
             store_it[counter, :moment_citizen_counts] = moment_counts
 
         # repeat for every condition (200, 400, 600...)
+        # this is still just a single simulation run
         end
 
+        # do that for multiple simulation runs and append the results
         append!(rq3_df, store_it)
 end
-
 
 
 # condition 1: 2 employees
