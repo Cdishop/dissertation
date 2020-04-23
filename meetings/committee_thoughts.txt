@@ -1,28 +1,83 @@
+# What do I want to ask?
+
 1) fewer data sets
 
-
-2) assumption vs situational
-
+Ok if I just do GitHub, # of grad students, and own emails?
 
 
+2) Breadth of emails
+
+I have emails from
+- msu org psych grads
+- msu psych grads
+- msu faculty
+- org grads at other schools
+- people at companies
 
 
-# Committee ready
+# Predicted committee issues
+
+1) Are requests really part of OCBs?
+
+Yes. The scales are built with "requests" in mind.
+- "The Moorman and Blakely 1995 scale focuses on the extent that individuals help coworkers when such help is needed." (Ellington, Dierdorff, Rubin, 2014)
+
+Yes. Ehrhart chapter says so.
+- "Most incidents of helping are the direct result of a request for help" (Ehrhart chapter,  p. 482).
+
+Yes. Review of help-seeking says so.
+- "At least a certain proportion of employee helping or OCB-I is in direct response to the solicitation of help by a potential help-recipient, which is a critical element of any helping-based interaction." (Bamberger, 50).
+
+2) Examples of GitHub Issues
 
 
-1) OCB items
+Not really a problem, but the requester cannot figure something out.
+https://github.com/rmcelreath/rethinking/issues/15
 
-OCB desriptions of mesaures about capturing "reactions"
+A bug.
+https://github.com/rmcelreath/rethinking/issues/38
 
-2) examples of github issues
+3) Examples of OCB Opportunity Emails
 
-3) examples of OCB opportunity emails
+From Daisy.
+I just learned that my mom had a severe back/hip injury and will have limited range of motion for the next few weeks. I’m trying to see if I could fly back to Taiwan next week to help her out. I’m looking for someone who would be willing to help me cover my two undergrad IO class... I teach from 12:40-2pm on Tuesday and Thursday, and next week we’ll be covering criterion development and performance appraisal
 
-4) is it safe to assume opportunities cause acts?
+From AM:
+Asking students to attend a job talk and post coffee session.
+
+
+4) Assume opportunities cause acts or end with differences in opportunity?
+
+Keep as is and assume that opportunities cause acts. (find evidence)
+- evidence
+- quote
+
+Or, just state that RWs produce vast differences in opportunity. Done.
 
 5) is it really random? chance yields differences in opportunity...but the employee still has to choose to act. She makes the choice. So how is that random?
 
-6) opportunity is a signal to an employee, so it's in the employee's head. Not objective.
-- same as "shocks." Yes, it is in the employee's head.
 
-7) evidence that opportunities produce behavior?
+Denrell
+- any model in which random variation is a fundamental component is a chance explanation. 
+- all models probably have an idea of chance, but not all use random variation as a driving force
+- the fact that opportunities are randomly added or subtracted from the store of opportunities is a fundamental part of my model. Without it, you wouldn't see vast differences in opportunities. 
+- randomness in my model is one crucial aspect. 
+- a chance model incorporates unbiased variation as a key assumption to explkain an empirical regularity.
+
+
+6) Is opportunity objective or subjective?
+
+My measures are objective. But theoretically it's subjective. Just like shocks in the unfolding model.
+
+Shock in Lee's unfolding model:
+- an event that initiates the psych analysis involved in quitting.
+- an event that jars employees toward deliberate judgment about leaving.
+
+7) Not enough support to show that this "good soldier" thing is actually common
+
+Talk about how every measure is about "frequency." So frequency is a big issue.
+- Bergeron chapter: frequency is a common way of measuring OCBs
+- Rosen chapter: frequency is the recommended way of measuring OCBs
+- Moorman and Podsakoff scales: use a response anchor "always"
+- Bolino 2015 quote which I didn't include in proposal: "tend to engage in characteristically..."
+
