@@ -1,83 +1,36 @@
-# What do I want to ask?
+8) Width of items
 
-1) fewer data sets
-
-Ok if I just do GitHub, # of grad students, and own emails?
+OCBs are about cooperation within members of your own organization, aren't they?
 
 
-2) Breadth of emails
+(a) That's why I have both academic and non-academic
 
-I have emails from
-- msu org psych grads
-- msu psych grads
-- msu faculty
-- org grads at other schools
-- people at companies
+Github issues for academics is "outside" org
 
+Githut issues for non-academics is "inside" org
 
-# Predicted committee issues
+(b) OCB-O
 
-1) Are requests really part of OCBs?
+Keep up with developments in org
+Defend the org when others criticize it
+Show pride when representing the org in public
+Offer ideas to improve the org functioning
+Demonstrate concern about the image of the org
 
-Yes. The scales are built with "requests" in mind.
-- "The Moorman and Blakely 1995 scale focuses on the extent that individuals help coworkers when such help is needed." (Ellington, Dierdorff, Rubin, 2014)
+Bergeron, Ostroff, Schroeder, & Block, 2014
+@ university, internal OCB
+- serve on committees
+- attend major student events
+- act like a peacemaker when departments disagree
 
-Yes. Ehrhart chapter says so.
-- "Most incidents of helping are the direct result of a request for help" (Ehrhart chapter,  p. 482).
+@ professional, service OCB
+- chair at professional meeting
+- officer for a professional association
+- organize a meeting at professional association
+- serve on journal editorial board
 
-Yes. Review of help-seeking says so.
-- "At least a certain proportion of employee helping or OCB-I is in direct response to the solicitation of help by a potential help-recipient, which is a critical element of any helping-based interaction." (Bamberger, 50).
+(c) Broader issue
 
-2) Examples of GitHub Issues
+I haven't seen a discussion of these issues. The most common "scope" issue is one of in-role versus extra-role breadth. Is this act part of your job description or not? Do you think this act is part of your job description? Do managers think that this act is part of your job description?
 
-
-Not really a problem, but the requester cannot figure something out.
-https://github.com/rmcelreath/rethinking/issues/15
-
-A bug.
-https://github.com/rmcelreath/rethinking/issues/38
-
-3) Examples of OCB Opportunity Emails
-
-From Daisy.
-I just learned that my mom had a severe back/hip injury and will have limited range of motion for the next few weeks. I’m trying to see if I could fly back to Taiwan next week to help her out. I’m looking for someone who would be willing to help me cover my two undergrad IO class... I teach from 12:40-2pm on Tuesday and Thursday, and next week we’ll be covering criterion development and performance appraisal
-
-From AM:
-Asking students to attend a job talk and post coffee session.
-
-
-4) Assume opportunities cause acts or end with differences in opportunity?
-
-Keep as is and assume that opportunities cause acts. (find evidence)
-- evidence
-- quote
-
-Or, just state that RWs produce vast differences in opportunity. Done.
-
-5) is it really random? chance yields differences in opportunity...but the employee still has to choose to act. She makes the choice. So how is that random?
-
-
-Denrell
-- any model in which random variation is a fundamental component is a chance explanation. 
-- all models probably have an idea of chance, but not all use random variation as a driving force
-- the fact that opportunities are randomly added or subtracted from the store of opportunities is a fundamental part of my model. Without it, you wouldn't see vast differences in opportunities. 
-- randomness in my model is one crucial aspect. 
-- a chance model incorporates unbiased variation as a key assumption to explkain an empirical regularity.
-
-
-6) Is opportunity objective or subjective?
-
-My measures are objective. But theoretically it's subjective. Just like shocks in the unfolding model.
-
-Shock in Lee's unfolding model:
-- an event that initiates the psych analysis involved in quitting.
-- an event that jars employees toward deliberate judgment about leaving.
-
-7) Not enough support to show that this "good soldier" thing is actually common
-
-Talk about how every measure is about "frequency." So frequency is a big issue.
-- Bergeron chapter: frequency is a common way of measuring OCBs
-- Rosen chapter: frequency is the recommended way of measuring OCBs
-- Moorman and Podsakoff scales: use a response anchor "always"
-- Bolino 2015 quote which I didn't include in proposal: "tend to engage in characteristically..."
-
+Perhaps this is a whole new area to explore. Do acts toward "the broader scientific community" count as OCB? Why can't Org Psychologists at large be the organization? 
