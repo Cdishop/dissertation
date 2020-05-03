@@ -124,7 +124,7 @@ https://github.com/gergness/srvyr
 
 
 Writing about
-- https://github.com/sveltejs/svelte
+- https://github.com/sveltejs/svelte/issues
 - https://github.com/elm/compiler
 - https://github.com/nvbn/thefuck/issues
 - https://github.com/ageitgey/face_recognition/issues
