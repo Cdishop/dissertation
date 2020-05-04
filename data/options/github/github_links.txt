@@ -1,3 +1,67 @@
+# using
+
+- no groups
+- not people who mostly post their own issues
+- not people who have other people respond for them
+
+
+academic
+- https://github.com/yrosseel/lavaan/issues
+- https://github.com/rmcelreath/rethinking/issues
+- https://github.com/thibautjombart/adegenet/issues
+- https://github.com/KlausVigo/phangorn/issues
+- https://github.com/liamrevell/phytools/issues
+- https://github.com/susanathey/causalTree/issues
+- https://github.com/malcolmbarrett/ggdag/issues
+- https://github.com/nassarhuda/MatrixNetworks.jl/issues
+- https://github.com/jcjohnson/torch-rnn/issues
+
+non academic
+- https://github.com/ronisbr/PrettyTables.jl/issues
+- https://github.com/rich-iannone/DiagrammeR/issues
+- https://github.com/ageitgey/face_recognition/issues
+- https://github.com/yu4u/age-gender-estimation/issues
+- https://github.com/barryclark/jekyll-now/issues
+- https://github.com/jbrooksuk/node-summary/issues
+- https://github.com/gabrielecirulli/2048/issues
+- https://github.com/patbenatar/vscode-advanced-new-file/issues
+- https://github.com/JacksonGariety/gulp-nodemon/issues
+- https://github.com/gitawego/cordova-screenshot/issues
+- https://github.com/fatiherikli/brainfuck-visualizer/issues
+- https://github.com/jakubroztocil/httpie/issues
+- https://github.com/kirill-konshin/next-redux-wrapper/issues
+- https://github.com/nvbn/thefuck/issues
+- https://github.com/joshuaulrich/quantmod/issues
+- https://github.com/zaqqaz/jest-allure/issues
+- https://github.com/ismailhabib/custom-protocol-detection/issues
+- https://github.com/gregberge/svgr/issues
+- https://github.com/mjackson/unpkg/issues
+- https://github.com/sindresorhus/generator-nm/issues
+- https://github.com/jantimon/html-webpack-plugin/issues
+- https://github.com/bubenshchykov/ngrok/issues
+- https://github.com/mmiller42/html-webpack-externals-plugin/issues
+- https://github.com/selaux/eslint-plugin-filenames/issues
+- https://github.com/faceyspacey/babel-plugin-universal-import/issues
+- https://github.com/jdalton/docdown/issues
+
+
+
+
+Future scraping by starting with all github issues:
+- filter to only "question" tags
+- filter to only those who opened an issue that differ from the person who owns the repo
+- filter to only those who closed the issue that match the person who owns the repo
+
+
+Next steps
+- something with projects
+- the amount of "just wait and let the person say 'oops ok i figured it out'"
+- people who have "helper engineers". E.g., guy below seems to have people responding for him
+https://github.com/acdlite?tab=repositories
+
+
+
+
 # academics with stats packages
 
 (1) Yves Rosseel lavaan
@@ -18,10 +82,12 @@ https://github.com/ShusenTang/Dive-into-DL-PyTorch/issues
 (4) bayesian stats package by statistics professor
 
 https://github.com/merliseclyde/BAS/issues?q=is%3Aissue+is%3Aclosed
+- creates own issues
 
 (5) genetics r tools by Grunwald dude at Oregon State
 
 https://github.com/grunwaldlab/poppr/issues
+- lab of people
 
 (6) genetics stuff by Associate professor at Imperiel College
 
@@ -38,6 +104,7 @@ https://github.com/liamrevell/phytools/issues
 (9) software thing by assistant professor of engineering
 
 https://github.com/mauricioaniche/repodriller/issues
+- creates his own issues
 
 
 
@@ -62,6 +129,7 @@ Writing about
 a guy who seems to develop software for a living
 
 https://github.com/philc/vimium/issues
+- creates a lot of his own issues
 
 (2) face recognition
 
@@ -82,6 +150,7 @@ https://github.com/nvbn/thefuck/issues
 (5) data scientist at Strong Analytics in Chicago - eye tracking
 
 https://github.com/jwdink/eyetrackingR/issues?page=3&q=is%3Aissue+is%3Aclosed
+- creates a lot of own issues
 
 (6) modeling financial data in R, Josh Ulrich, software engineer
 
@@ -155,7 +224,57 @@ https://github.com/Rdatatable/data.table/issues
 
 https://github.com/r-lib
 
+(5) The Pallets Project
 
+https://github.com/pallets
+
+(6) Theano
+
+https://github.com/Theano
+
+(7)
+
+https://github.com/varvet
+
+
+(8)
+
+https://github.com/MiniKeePass
+
+
+(9)
+
+https://github.com/postmanlabs
+
+
+(10)
+
+https://github.com/zeit
+
+
+(11)
+
+https://github.com/heroku
+
+
+(12)
+
+https://github.com/prerender
+
+
+(13)
+
+https://github.com/contiamo
+
+
+(14)
+
+https://github.com/algolia
+
+
+(15)
+
+https://github.com/Vincit
 
 
 

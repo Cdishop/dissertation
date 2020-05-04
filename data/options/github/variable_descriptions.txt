@@ -1,0 +1,64 @@
+# github_name
+
+Name of the github user.
+
+# repo_name
+
+Name of the repository.
+
+# issue_id
+
+Unique identifier associated with each issue. E.g., 1, 2, 3
+
+# issue_opener
+
+Username of the person who opened the issue.
+
+# issue_date
+
+Date that the issue was opened. 
+
+# issue
+
+Name of issue.
+
+# issue_labels
+
+Label(s) applied to the issue.
+
+# closed
+
+If the issue was closed or not. 1 = yes; 0 = no
+
+# date_closed
+
+Date that the issue was closed, if ever. 
+
+# issue_closer
+
+Username of the person who closed the issue.
+
+# comment_id
+
+Unique identifier for each comment. E.g., 1, 2, 3
+
+# comment_user
+
+Name of the person posting the comment. 
+
+# comment_date
+
+Date that the comment was posted. 
+
+# comment
+
+Text of the respective comment. 
+
+
+
+
+
+
+
+
+
