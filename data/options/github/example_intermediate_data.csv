@@ -1,0 +1,29 @@
+﻿repo_id,github_name,repo_name,issue_id,issue_opener,issue_date,issue,issue_labels,closed,date_closed,issue_closer,comment_id,comment_user,comment_date,comment
+1,rmcelreath,rethinking,1,svats2k,10/24/19,Error in bayesian model fit using ulam using 1.90 version,none,1,10/26/19,svats2k,1,svats2k,10/24/19,I am building a simple model for data generated…
+1,rmcelreath,rethinking,1,svats2k,10/24/19,Error in bayesian model fit using ulam using 1.90 version,none,1,10/26/19,svats2k,2,rmcelreath,10/25/19,I suspect the error arises from passing in character…
+1,rmcelreath,rethinking,1,svats2k,10/24/19,Error in bayesian model fit using ulam using 1.90 version,none,1,10/26/19,svats2k,3,svats2k,10/25/19,Thank you for your…
+1,rmcelreath,rethinking,2,faranji,10/18/19,Issue installing rethinking,none,1,10/18/19,faranji,1,faranji,10/18/19,"Hi, Unfortunately I'm having issues…"
+1,rmcelreath,rethinking,2,faranji,10/18/19,Issue installing rethinking,none,1,10/18/19,faranji,2,faranji,10/18/19,"Manually installing ""backports"" solved…"
+2,nvbn,thefuck,1,scorphus,3/18/20,brew task' typo don't get correctly fixed,"enhancement, help wanted",0,,,1,scorphus,3/18/20,The output of …
+2,nvbn,thefuck,1,scorphus,3/18/20,brew task' typo don't get correctly fixed,"enhancement, help wanted",0,,,2,cjoshmartin,3/21/20,I could fix this…
+2,nvbn,thefuck,1,scorphus,3/18/20,brew task' typo don't get correctly fixed,"enhancement, help wanted",0,,,3,scorphus,3/21/20,@cjoshmartin' please go ahead...
+2,nvbn,thefuck,2,GildedHonour,3/16/20,Feature request - 'fuck' for 'fuck' that's misspelled,none,0,,,1,GildedHonour,3/16/20,If I say fruck or fuk…
+2,nvbn,thefuck,2,GildedHonour,3/16/20,Feature request - 'fuck' for 'fuck' that's misspelled,none,0,,,2,alepinio,4/19/20,"ok but, next…"
+2,nvbn,thefuck,2,GildedHonour,3/16/20,Feature request - 'fuck' for 'fuck' that's misspelled,none,0,,,3,GildedHonour,4/20/20,That's up to fuck…
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,

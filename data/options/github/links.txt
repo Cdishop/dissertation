@@ -1,0 +1,41 @@
+35 total
+
+academic
+- https://github.com/yrosseel/lavaan/issues
+- https://github.com/rmcelreath/rethinking/issues
+- https://github.com/thibautjombart/adegenet/issues
+- https://github.com/KlausVigo/phangorn/issues
+- https://github.com/liamrevell/phytools/issues
+- https://github.com/susanathey/causalTree/issues
+- https://github.com/malcolmbarrett/ggdag/issues
+- https://github.com/nassarhuda/MatrixNetworks.jl/issues
+- https://github.com/jcjohnson/torch-rnn/issues
+
+non academic
+- https://github.com/ronisbr/PrettyTables.jl/issues
+- https://github.com/rich-iannone/DiagrammeR/issues
+- https://github.com/ageitgey/face_recognition/issues
+- https://github.com/yu4u/age-gender-estimation/issues
+- https://github.com/barryclark/jekyll-now/issues
+- https://github.com/jbrooksuk/node-summary/issues
+- https://github.com/gabrielecirulli/2048/issues
+- https://github.com/patbenatar/vscode-advanced-new-file/issues
+- https://github.com/JacksonGariety/gulp-nodemon/issues
+- https://github.com/gitawego/cordova-screenshot/issues
+- https://github.com/fatiherikli/brainfuck-visualizer/issues
+- https://github.com/jakubroztocil/httpie/issues
+- https://github.com/kirill-konshin/next-redux-wrapper/issues
+- https://github.com/nvbn/thefuck/issues
+- https://github.com/joshuaulrich/quantmod/issues
+- https://github.com/zaqqaz/jest-allure/issues
+- https://github.com/ismailhabib/custom-protocol-detection/issues
+- https://github.com/gregberge/svgr/issues
+- https://github.com/mjackson/unpkg/issues
+- https://github.com/sindresorhus/generator-nm/issues
+- https://github.com/jantimon/html-webpack-plugin/issues
+- https://github.com/bubenshchykov/ngrok/issues
+- https://github.com/mmiller42/html-webpack-externals-plugin/issues
+- https://github.com/selaux/eslint-plugin-filenames/issues
+- https://github.com/faceyspacey/babel-plugin-universal-import/issues
+- https://github.com/jdalton/docdown/issues
+

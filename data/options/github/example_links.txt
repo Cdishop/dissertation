@@ -1,0 +1,15 @@
+# repo_id = 1; issue_id = 1
+
+https://github.com/rmcelreath/rethinking/issues/194
+
+# repo_id = 1; issue_id = 2
+
+https://github.com/rmcelreath/rethinking/issues/192
+
+# repo_id = 2; issue_id = 1
+
+https://github.com/nvbn/thefuck/issues/1066
+
+# repo_id = 2; issue_id = 2
+
+https://github.com/nvbn/thefuck/issues/1065
