@@ -1,18 +1,97 @@
 
-# My questions
 
-1) ok to drop facebook posts?
-
-2) you still have to be PI
+# Key aspects to change based on proposal and committee feedback
 
 
+1) introduction needs to be a contingency approach. person by situation interaction. 
+
+couch this in other people's writing
+- fundamental attribution error
+- murray b = p, s, pxs
+- davis same thing
+- systematic and unsystematic
+
+Broad, then zoom.
 
 
-# Rick's points
+2) must have people responses in the simulation.
+
+Some discussion of how people respond and put that into the simulation.
+
+3) aren't you saying that requests for help are random?
+
+No, I am not.
+
+4) Someone will read this and say, "well cool but what I am talking about isn't random, or isn't at all related to what you are talking about; so put it aside and continue."
 
 
-* persuading rather than just giving it
-* broadened, better at selling goods
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Fred Prior to Committee Meeting Feedback
+
+Think about social capital and bandura chance factors.
+
+
+1) Social Capital
+
+Bizzi, 2015 (international encyclopedia of the social & behavioral sciences, 2nd edition, volumn 22
+
+An outcome of helping. After you help, you accumulate social capital from your peers, and that gives you advantages (reputation, people like you, etc).
+
+What I am talking about is potential capital. You haven't yet acted, but if you did it would give you social capital. 
+
+2) comparative effectiveness research
+
+NIH got sick of funding research from one perspective
+- does cognitive behavioral therapy work?
+
+Now, they fund research that is comparative:
+- is cognitive behavior or interpersonal therapy better?
+
+I am kind of establishing a similar argument in my paper.
+
+3) Bandura random chance factors
+
+Look up paper.
+
+4) BBC article on opportunity structure
+
+After the civial war, whites and blacks were equal in their level of poverty. After 3 generations, the whites were way ahead, essentially they were back to the advantages that they had before the civial war. Why?
+- they had different opportunities
+
+
+Bandura chance
+
+Gladkova, 2017
+
+Bandura conceptualises chance as‘an unin-tended meeting of persons unfamiliar with eachother’(Bandura, 1982: 748). He postulates thattwo sets of separate but interactive constructsshould be taken into consideration as we try tounderstand how chance affects the life course:personal determinants and social milieus. Onthe personal side, chance meetings are most likelyto affect life courses if they get converted into alasting relationship. Interpersonal attraction, aswell as personal characteristics such as people’sattributes, belief systems, interests, and compe-tences influence whether a chance encounter willturn into a strong tie or not. On the social side, theimpact of chance encounters depends on the‘holding and shaping power of the milieus into which people are fortuitously inaugurated’(Bandura, 2001: 12). Social circles with their be-liefs, value systems and prescribed behaviourpatterns, and the kind of people who populatethem make some chance encounters more proba-ble and leave a stronger impact on people’s livesthan others (Bandura, 1982).
+
+1998 psych inquiry he talks about Krantz's view of chance events
+
+Psychology of chance encounters (american psychologist)
+
+
+
+
+
+
+
+
+
+
+# Rick After Committee Proposal Feedback
 
 
 1) broad, then narrow
@@ -24,10 +103,8 @@ rich get richer social capital and receiving requests
 
 then you say. if you don't have the opportunity, none of this other stuff matters. That's what i'm focusing on. what's the impact of the opportunity?
 
+Can keep the discussion of chance, but that should be the zoom in part
 
-what about chance and back discussion of that yielding stuff
-- yes, keep
-- have it be part of the zoom in approach
 
 2)
 
@@ -39,44 +116,16 @@ don't include academics in github requests.
 
 4)
 
-facebook no data. That's cool. Just make sure they know about te decisions. 
+You don't need to include facebook data. But make sure the committee is informed about the decision.
+
+5) add person into the simulations
 
 
 
 
 
 
-
-
-
-
-
-2) add person into simulation
-
-
-1) framing
-
-Situation by person interaction. Full model then zoom.
-
-Maybe fred wants me to mimic his adaptive portfolio idea
-- bandura
-- SOR murray / skinner. Stimulus, response , org 
-- people are functions of both persons and environment
-
-2) assumption part needs to be different ways of responding
-
-Here are 4 ways people might respond (based on the literature)
-- constant percent
-- variance
-
-3) solicited helping
-
-requests for help
-- don't say opportunities
-
-
-
-# writing about proposal comments that I want to reflect on
+# writing about proposal comments that I want to reflect on and wish I would have had better responses for.
 
 
 AM1) I was thinking fundamental attribution error. How is this more than that?
@@ -115,5 +164,4 @@ Yes and no. I am saying, (1) pay attention to the situation and (2) IF requests 
 Nick2) Ok, then people are going to downplay you.
 
 Hmm, if requests are random then they can create this outcome. Cool. But the effects I'm studying aren't random so throw it aside.
-
 

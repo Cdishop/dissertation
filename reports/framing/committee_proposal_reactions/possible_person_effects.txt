@@ -1,0 +1,184 @@
+Notions
+
+
+
+
+
+
+# 1 - yielding extra milers by creating accumulation
+
+Both agents resolve all requests in their environment, they are equally altruistic. After time 1 point, both have requests at 0. Then, A receives 2 requests and B receives 4. Both resolve all of them. Then, A receives 1 request and B receives 0. Both resolve all of them. Over time, neither will emerge as the extra miler. 
+
+
+What is required for an extra miler to emerge?
+
+You need to allow the requests to accumulate somehow. 
+
+
+(a) people can only respond to a fraction of the incoming requests
+
+50% rather than 100%. 
+
+(b) the agents have a set number of requests that they resolve and requests come in in larger amounts than what they can resolve
+
+Agent A and B can resolve 3 requests per time point (i.e., they resolve all requests if 3 or under). If the error term on the random walk is greater than 3, then an extra miler will emerge. 
+
+They could satisfice on 0 requests per time point or on resolving X number of requests per time point and this effect would still work
+
+(c) the requests are allowed to accumulate on their own for 10 time points before the agents resolve them
+
+For 10 time points requests compile. Now the agents act. For 10 time points the requests compile. Now the agents act.
+
+All of these are equivalent
+
+
+
+## creating accumulation by adding a delay or by receiving so many requests that you cannot resolve them all.
+
+
+
+## Nick's point is that I need to cite some literature showing that "people have an ability or desire to respond to 2 requests per time point" is legit
+- discrepancy theory
+- satisfycing
+- need theory
+
+
+## this should turn into a theory paper
+
+The 4 mechanisms that generate extra milers.
+- accumulation is what you need. How do you get accumulation?
+++ delay
+++ people desire only to complete some of their requests
+++ the requests come in at such large amounts that they cannot keep up
+
+Make all of these propositions. Have a theory explaining each. This is an AMR paper. 
+
+
+
+## the perspective is accumulation, not chance.
+
+Point to requests in someone's environment. Point to accumulating. 
+
+
+
+AMR theory Paper
+- Extra Milers and Good Soldiers
+- Individual characteristics predictors
+- we know that behaviors are the result of both person and environment interactions.
+- You can think of this behavior pattern as a "long-lead"
+- We point to a mechanism that generates long-leads: accumulation
+
+- person things that generate accumulation
+++ desire to resolve only a fraction of requests
+++ desire to resolve only a specific number of requests
+++ desire to respond only a given number of times
+
+- environment things that generate accumulation
+++ delay
+++ many requests coming in at a single time point
+++ autoregression, effects have long lasting impacts (theory of cumulative advantage)
+
+None of these things on their own generate the effect. You have to consider their interaction. A person has an ability and desire to respond to requests. If that's more than what the environment is providing...etc.
+
+
+
+
+
+
+
+
+
+
+# 2 - you observe equivalent results regardless of whether people respond to high vs low numbers of requests
+
+(a) more requests = more help
+
+At each time point, I resolve 20% of my requests. 20% of 100 is more than 20% of 10, so if I have more opportunities then I help more.
+
+This yields extra milers.
+
+(b) fewer requests = more help
+
+At each time point, the help I provide is 1/(1 + X), X being the number of requests that I have
+
+This yields extra milers. 
+
+
+
+
+## perspectives
+
+- theory about opportunities and actions. More opportunity = more action
+- limited resources (paper that's similar to my ocb aggregate) theory
+
+
+
+
+
+
+
+
+
+
+
+# 3 - sheer number vs rate/trend/tik
+
+
+(a) sheer number
+
+At each time point, agents resolve 20% (or 1 / (1 + x)) of their requests. 
+
+This yields extra milers.
+
+
+(b) trend/rate/tik
+
+-- (included sheer notion)
+
+Agents only resolve issues when they witness an uptick (or receive number of requests at a given time point that is an outlier). Once that happens, they resolve 20% (or 1 / (1 + x)) of their requests.
+
+This yields extra milers.
+
+-- just trend
+
+At each time point, agents respond to an uptick but not down tick or same number in their requests. 
+
+This does not yield extra milers.
+
+
+
+
+
+
+
+
+
+
+# 4 - compare against individual differences
+
+
+Agent A resolves 4, agent B resolves 2. Agent A is the more altruistic person...but he or she may have fewer opportunities. 
+
+
+
+
+
+
+
+
+
+
+
+# 5 - conformity and mimicing others
+
+I try to match my partner. If he or she responds, then I respond.
+- if sheer number, this yields no extra miler
+- if fraction, this yields extra miler
+
+
+
+
+
+
+
+# Next question. Which do I want to combine? Do I want all of these?

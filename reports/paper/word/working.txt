@@ -1,0 +1,381 @@
+# Big Picture Introduction. 
+
+Behavior is a function of both the person and situation. Behavior is a function of both systematic and random factors.
+
+Mimic
+- Fred diversity portfolio
+- thompson "electronic helping behavior"
+
+
+
+
+
+1) behavior due to environment and person
+
+
+## Davis theory
+
+The Theory of Work Adjustment belongs to a class of theories known as P-E theo- ries (Dawis, 2000), which are about the person (P) in an environment (E) and the
+fit between, and the interaction of, P and E. There are a variety of Es (physical, school, work, family, home, social, or even one other person); hence, it behooves P-E theorists at the outset to identify and define the E to which they refer. As its name indicates, TWA is about the work environment.
+
+There are P variables and E variables, and these are often used to account for behavior or behavioral outcomes. However, the basic proposition of P-E theories is that the explanation for behavior or behavioral outcomes lies not so much with the P or the E variables, but rather, with the P-E combination. Even if P and E variables contribute to the explanation, it is a particular P-E combination that will best ex- plain the particular behavior or behavioral outcome.
+
+P-E theories use two constructions to denote the P-E combination: fit and in- teraction. Fit refers to the degree to which P characteristics correspond to E characteristics assessed across commensurate (parallel or matching) dimen- sions. For example, different workers (P) have different sets of skills, and differ- ent jobs (E) require different sets of skills. Fit means that some workers have the set of skills that a job requires but other workers do not, or some jobs require the set of skills that a worker has but other jobs do not.
+
+Interaction refers to P’s and E’s action on and reaction to each other in a mutual give and take. Workers and work environments are not static, unchanging entities, but rather, they can and do change. For example, dissatisfied workers will “do something” to change dissatisfying work situations, such as complain to manage- ment or work even harder to “prove” to management that they deserve better treat- ment. Management might respond to complaints negatively by laying off workers or respond positively by increasing worker pay. TWA is both a P-E fit theory and a P-E interaction theory.
+
+
+The Theory of Work Adjustment started out as a P-E fit theory. As TWA was re- vised and expanded, it developed into an interaction theory—a process model that included the fit (or predictive) model. Before the two models are described, the basic concepts on which TWA is premised are first presented and discussed.
+As a psychological theory, TWA’s focus is on P and P’s behavior. However, P does not exist or behave in a vacuum; rather, P always exists and behaves in an E. Any the- ory about P has to be a theory about P-in-an-E.
+The theory of work adjustment begins with the assumptions that (1) as a liv- ing organism, P has requirements that have to be met, many or even most of them through E; (2) P has capabilities that enable it to meet these requirements; and (3) much of P’s behavior in interacting with E is about meeting these re- quirements.
+
+
+## Simon: you have to know agent and how desired objects are distributed around it
+
+
+## Lewin 1951
+
+A person's behavior (B) is a function of the person (P) and his or her environment (E). 
+
+"it does not offer much in explaining the processes by which persons and situations interact to produce behavior."
+
+
+## Cognitive affective processing systems (CAPS)
+
+Mischel & Shoda, 1995
+
+A person's behavior is dependent upon how his or her personality system processes the situation characteristics that he or she is experiencing. Thus, personality is a mediator of the relationship bewteeen situation characteristics and behavior.
+
+On one hand, the literature contains a sizeable amount of empirical support for the CAPS model. For example, if-then patterns of behavior (i.e., situation-based contingencies) exhibit some stability across time (Fournier, Moskowitz, & Zuroff, 2009; Smith, Shoda, Cumming, & Smoll, 2009) and seem to be associated with cognitive structures (e.g., Pauletti, Cooper, & Perry, 2014). On the other hand, however, the utility of the CAPS model is still hampered by the fact that no general taxonomy of cognitiveaffective processes that make up the personality system has been yet identified or described. 
+
+
+## Trait activation theory
+
+Tett & Gutterman, 2000
+
+the behavioral expression of a trait requires arousal of that trait by trait-relevant sitautional cues. TAT suggests that the situation characteristics serve as moderators of the relationship between personality traits and behavior. It posits that much of behavior is explained by the interaction of traits and situations.
+
+
+## Whole Trait Theory
+
+Fleeson, 2012
+
+Integrates trait perspectives on personality with social-cognitive perspectives. WTT posits that an individual's behavior (or other state expressions such as affect or cognition) can be conceptualized and quantified by a density distribution. The central tendency (mean) of such a density distributions, or one's average behavior accross situations, corresponds roughly to one's trait level. Behavioral deviations from one's central tendency can be explained by situation-based contingencies. 
+
+
+## Murray presses and needs
+
+"In common with Jung, Murray noted that a person's behavior is as much determined by his or her conception of the future as by the person's conditioning in the past. Murray gives equal weight to the person and the situation, and above all emphasizes the interaction between the two."
+
+Needs: drive that has the potential to prompt a behavior. There are individual differences in needs.
+
+Presses: environmental factors play a role in how needs are displayed in behavior. Pressures means an external influence on motivation. 
+
+
+
+
+2) behavior due to systematic and unsystematic factors
+
+serendipitious
+fortuitious
+luck
+unsystematic
+random
+happenstance
+right place right time
+
+
+
+## Mlodinow - already in dissertation
+
+## Frank 2016 success and luck: good fortune and the myth of meritocracy
+
+## Talib - fortuitious
+
+## Makridakis - dance with chance
+
+
+
+
+
+
+
+
+
+
+
+
+# Situation
+
+
+1) accumulation
+
+## Theory of cumulative advantage
+
+## Social Capital
+
+
+2) randomness
+
+
+statements about the world happening randomly. Or theoretical ideas that establish that randomness is a necessary perspective.
+
+
+## Bandura Chance
+
+Bandura conceptualises chance as‘an unintended meeting of persons unfamiliar with eachother’(Bandura, 1982: 748). He postulates that two sets of separate but interactive constructs should be taken into consideration as we try to understand how chance affects the life course:personal determinants and social milieus. On the personal side, chance meetings are most likely to affect life courses if they get converted into a lasting relationship. Interpersonal attraction, as well as personal characteristics such as people’s attributes, belief systems, interests, and competences influence whether a chance encounter will turn into a strong tie or not. On the social side, the impact of chance encounters depends on the‘holding and shaping power of the milieus into which people are fortuitously inaugurated’(Bandura, 2001: 12). Social circles with their beliefs, value systems and prescribed behaviour patterns, and the kind of people who populate them make some chance encounters more probable and leave a stronger impact on people’s livesthan others (Bandura, 1982).
+
+1998 psych inquiry he talks about Krantz's view of chance events
+
+
+
+
+
+
+
+
+
+# Liu & de Rond, 2016
+
+Key idea for my dissertation:
+- chance just means an event that you have no control over
+
+A review of how luck is used across management research.
+
+Luck is an alternative explantion for performance differences, yet it is rarely taken center-stage in scholarship.
+
+The purpose of the analysis that follows is to show how the application of luck in the current management literature can broaden and enrich our understanding of how the interactions between chance, context, and human interventions are relevant to managmenet. 
+
+In explaining an empirical regularity, a management scholar should consider explaining this regularity as a result of random variation in a structured system. In other words, it makes sense to start for an explanation by developing a model relying on random variation. 
+
+Lucks meaning can vary widely. For some, it is the unexplained variances that lack pragmatic value (Porter, 1991). As Barney (1997, p. 17) writes: "what prescriptive advice can we give to managers given that the role of luck is important, 'that they should be lucky'?" For others, luck is essnetial for explaining performance differences because randomness in structured environments can produce systematic patterns (Denrell, 2004; Henderson, Raynor, & Ahmed, 2012; Levinthal, 1991). Still others argue that while good and bad luck can happen to anyone, some are more pepared than others (Dew, 2009; de Rond, 2014), for example, by being mindful enough to rebound from bad luck (Weick & Sutcliffe, 2006), or by securing a higher 'return on luck' (Collins & Hansen, 2011). Some even argue that others' systematic underestimation of luck can signal profitable opportunities (Denrell & Liu, 2012; Lewis, 2003; Mauboussin, 2012).
+
+What is luck?
+- something that happens due to chance
+
+Outline 5 common uses of luck.
+
+1) luck as attribution (decision making, psychology)
+
+Attribution theory (Hewstone, 1989; Kelley, 1971; Weiner et al., 1971): people tend to attribute observed outcomes to four possible factors: skill, effort, task difficulty, and luck. People are more likely to attribute an observed outcome to luck when the cause of the outcome is considered to be external, unstable, and uncontrollable.
+
+Fundamental attribution error: tendency of people to over-attribute outcomes to dispositional factors such as skill than to situational factors such as luck (Gilbert & Malone, 1995; Ross & Nisbett, 1991). 
+
+Mostly psych research
+- observe success/performance, what do people believe caused it?
+- people routinely look for causal explanations and hold illusory correlations
+
+This streams offers reasons for why people downplay the role of luck, and when people are likely to attribute to person rather than situation. 
+
+
+2) Luck as randomness (sociology)
+
+Highlight the random nature of behaviors in organizations (Starbuck, 1994). Even if people have intentions, and make conscious choices based on these intentions, outcomes can still appear to be dominated by random processes. 
+
+4 sources of randomness in organizations
+
+(a)
+
+Org outcomes appear random because outcomes are influenced by external events that managers have little control over (Pfeffer & Salancik, 1978). 
+
+(b) 
+
+Outcomes of carefully planned behavior appear random if choices are based on inaccurate forecasts or on an incomplete understanding of means-ends connections. 
+
+e.g., firm growth rates are nearly random (Coad, 2009). Why? Capable but unlucky firms who bet on the wrong product will not grow, whereas firms with weak capabilities who happen to bet on the right products will.
+
+(c) 
+
+Outcomes may appear random when outcomes are decoupled from intentions. Managers may choose a good culture to implement, but it may be implemented in a way that differs from his or her intent. 
+
+(d) 
+
+competition. Samuelson (1965) shows that competition between skilled and rational actors in financial markets can lead to randomly fluctuating asset prices. 
+
+So, all of these are about systematic things producing and outcome that is random. 
+
+
+
+
+
+3) Luck as Counterfactual (sociology)
+
+Take an event as something that happens in history. This story is one draw from a distribution of possible histories. If you were to draw again and re-run the story, would the same event occur? If re-observing the event is very unlikely, then the story can be said to be due to luck (Durand & Vaara, 2009; Pritchard, 2005; Carroll & Harrison, 1994). 
+- often crazy hard because it requires us to know a lot
+- people also bias their focus on realized histories rather than alternatives
+
+An exceptional performer may be better than others but her acquisition of superior skill can be attributed to luck (Pritchard, 2005; Teigen, 2005; Frank & Cook, 1995; Denrell, Fang, & Zhao, 2013). 
+
+e.g., take hockey:
+
+Canadian hockey players: in every elite group of hockey players studied, at least 40% were born between January and March (Barnsley et al., 1985). This regularity seems to suggest that those born between January and March are more talented at playing hockey than the others and the secret of becoming a professional hockey player in Canada lie in birthd dates (Gladwell, 2008). This is an example of amplifying luck through path dependency. High performers from each age group of hockey-playing Canadian children are selected and groomed for inclusion at the next level. But there is a rule: the cut-off age for each new hockey league is the 1st of January. This means that those who are born in the first three months are older and likely to have greater physical maturity than their peers in the same age class. They are more likely to be chosen to play more often and at higher levels, where they will have better teammates, better training, and more game experience (Pierson, Addona, & Yates, 2014). After a few years of this selection process and the advantages that come from it, the players who are born in the first three months will likely end up being better than their peerrs who may have had the potential to have been as good or better. 
+- chance is when you were born, which you have no control over. 
+
+
+
+
+4) Luck as undeserved
+
+Realized outcomes are not determined solely by intentional design -- uncontrollable and unpredictable factors can interfere and produce consequences that are decoupled from intention. 
+
+Most of this research is about how people are blamed or rewarded based on realized outcomes. 
+- Fama, 1980; Jenson & Meckling, 1976 -- agency theory
+- moral luck: Nagel, 1976
+- accountability for extreme failures: Perrow, 1984
+
+
+
+
+5) Luck as Serendipity (strategy and Entrepeneurship)
+
+Unintended consequences.
+- events that cannot be attributed to the beneficiary in any meaningful way.
+
+How can luck be tamed by actor's skills?
+
+
+
+
+How are all the perspectives related? The perspectives reflect varying assumptions about the actors' degrees of freedom in outcomes: from a high degree (luck as serendipity), to a moderate degree (luck as attributions or undeserved), and to a low degree (luck as randomness or counterfactuals). One perspective does not necessarily represent reality more accurately than others. 
+
+
+
+
+
+
+
+
+# Denrell, Fang, & Liu, 2015
+
+A paper that promotes the "random school of thought." 
+- mostly about using chance as a fundamental theoretical postulate because it is consistent with empirical results and can explain empirical regularities
+- less about the idea that life is fundamentally random
+
+Theory development that relies on randomness as its first principle can offer a theoretically rich and empirically fruitful paradigm in the management sciences.
+
+Random variation deserves to be taken seriously as a theoretical mechanism of considerable generality and with strong empirical support. 
+
+The assumption of (nearly) random variation is often consistent with empirical data. 
+
+Chance is a core theoretical postulate in physics (Ruhla & Ruhia, 1992) and genetics (Kimura, 1984). 
+
+When a management scholar tries to explain an empirical regularity, it makes sense to start the search for an explanation by developing a model relying on random variation.
+
+## chance explanations
+
+An explanation that incorporates randomness, conceptualized as unsystematic and unbiased variation, as a key assumption to explain an empirical regularity. 
+
+They key is that the phenomenon to be explained can be derived from the assumptions of the model (randomness). 
+
+It does not mean that everything is random. Randomness often reflects human ignorance. Randomness is a theoretical postulate, an abstraction introduced by the theorist to capture what he or she believes is essential about the behavior of the units being modeled. A theorist assumes random growth not because she believes this assumption captures everything about how firms work but because she believes that this assumption is sufficient for her purpose. 
+
+*key*
+- observed macrolevel patterns can be an expected consequence of randomness at the micro level
+- randomness often has systematic aggregate consequences
+
+## then he reviews some key chance processes
+
+## then he reviews areas of management which have incorporated chance models
+
+Assuming randomness is often consistent with data. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Person
+
+## Discrepancy
+
+
+Motivated action theory account of goal orientation (DeShon & Gillespie)
+
+Goals are simulataneously and automatically monitored for discrepancies between the current states and the desired states. At any fixed point in time, action is directed toward reducing a discrepancy on a single goal. 
+- that's the key. Action is directed toward reducing a discrepancy
+
+
+Control theory (Powers, 1973)(Campion & Lord, 1982)(Carver & Scheier, 1981)
+- focuses on the comparisons between desired goal states for variables and the perceptions of one's current, estimated, or anticipated states of those variables. Control theory postulates that the student will be motivated to reduce the discrepancy. The student will allocate resources toward the goal until the discrepancy is eliminated. 
+
+Control theory
+- posits that feedback regarding one's own behavior acts as a sensor signal, which can be compared with some sort of standard or referent. When a discrepancy is found between the two, the individual is motivated to reduce the discrepancy by either changing individual behavior or changing the referent. 
+
+
+## Need Theory
+
+Motives are seen as variable internal states that, when activated or aroused, energize and direct behavior. In these models, deprivation and deviation from desired states play a central role. Behaviors are expressions of inborn drives.
+
+Instead of using a definition of need as something required for existence, most current social-psychological theories of basic needs employ some version of the concept of thriving. For example, Deci and Ryan (2000) argue that truly basic needs are those that influence a person's well-being. Experiences that satisfy these basic needs are thought of as nutriments, and insufficient amounts of these nutriments result in a failure to thrive. Inadequate degrees of satisfaction of these basic needs may not lead to premature death but instead are revealed in the failure to achieve one's potential or to function as well as one might under more optimal conditions of need fulfillment. Need satisfaction should promote well-being and psychological thriving. 
+
+Baumeister and Leary (1995), in their argument for considering belongingness to be a basic human need, suggested a set of criteria that could be used to evaluate whether a need is truly fundamental: a need should
+- produce effects readily under all but averse conditions
+- have affective qualities
+- direct cognitive processing
+- lead to ill effects when thwarted
+- elicit goal-oriented behavior designed to satisfy it
+- be universal in the sense of applying to all people
+- not be derivative of other motives
+- affect a broad variety of behaviors
+- have implications that go beyond immediate psychologcial functioning
+
+
+SDT is about competence, autonomy, and relatedness. All of which may be fulfilled by a help request, and so a person may direct more effort toward these requests when they have more of them. 
+
+
+(a) Murray (1938)
+
+Generated a list of 20 needs empirically, with the need for achievement, power, and affiliation having the most follow up research (Atkinson, 1958; McClelland, 1958; McClelland & Watson, 1973; Winter, 1973; Baumeister & Leary, 1995).
+
+
+The theories they then compare in the review:
+- maslow's (1943) hierarchy of needs
+- core social motives theory (Fiske, 2004; Stevens & Fiske, 1995)
+- terror management theory (Psyzcyznski et al., 1997)
+- attachment theory (Bowlby, 1969
+- Self determination theory (Deci & Ryan, 1980; 2000). 
+
+
+
+
+
+## OCB agg overload
+
+## Boredom
+
+Help more with fewer requests
+- small groups promote cooperation (newark, rand)
+- low-ball: start with an offer they can't refuse. After getting agreement, change the offer
+- boredom boost productivity
+https://journals.aom.org/doi/10.5465/amd.2017.0033?utm_source=zapier.com&utm_medium=referral&utm_campaign=zapier
+
+- boredom promotes desire for new experiences
+https://www.sciencedirect.com/science/article/abs/pii/S0022103113002205?utm_campaign=zapier&utm_medium=referral&utm_source=zapier.com
+
+- boredom and mindwandering promotes future-focused, goal-directed thought
+https://www.sciencedirect.com/science/article/abs/pii/S1053810011001978?utm_campaign=zapier&utm_medium=referral&utm_source=zapier.com
+
+- book on why boredom is good
+https://www.amazon.co.uk/Upside-Downtime-Why-Boredom-Good/dp/1472135997?utm_source=zapier.com&utm_medium=referral&utm_campaign=zapier
+
+- boredom can make you creative
+https://www.tandfonline.com/doi/abs/10.1080/10400419.2014.901073#.VNL8MWTF98s
+
+
+## Other
+
+Small groups promote cooperation (nowak, rand)
+
+Low-ball: start small. 
+
+
+
+
+

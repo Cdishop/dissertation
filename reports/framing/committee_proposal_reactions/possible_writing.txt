@@ -1,0 +1,639 @@
+
+# Route 00) high, low, and conformity
+
+
+
+
+OCB pattern. Individual predictors. This research provides a stochastic and situation alternative.
+
+Large picture. Behavior is due to both the situation and person factors. On top of that, behavior is a function of both systematic and random factors. We know a lot about the person factors. There has also been statements about systematic factors. This research highlights chance as an effect that can generate differences in people's situations and then more appropriately captures the person by situation interaction. 
+
+Unpack the pattern. This is the behavior pattern that I'm referring to.
+
+Requests => Helping (big image. situation effects and person effects)
+(we know what person effects lead to differences in helping. we do not know what situation effects lead to differences in requests)
+
+The situation aspect that I focus on are requests. 
+- accumulation
+++ theory of cumulative advantage
+++ social capital
+- randomness
+++ bandura
+++ denrell
+
+Person responding to those requests.
+- more requests = more help
+++ discrepancy
+++ trust spiral
+++ need theory?
+
+- fewer requests = more help
+++ theory A
+++ theory B
+++ maybe: satisfycing, work overload (ocb agg similar paper), breaking up tasks into smaller tasks, batching
+
+- conformity = group pressure to respond to the average level of help
+++ whole lotta shit
+
+
+Obviously, systematic requests targeted at one person results in many more requests at that person. So, I'm going to hold random constant. I'm not going to have a "non-random" condition in my simulations.
+
+
+Simulation results (is xi in top 10%?)
+
+- People provide more help when they have more requests/solicitations
+++ requests are random and do not accumulate = extra milers do not emerge
+++ requests are random and accumulate = extra milers emerge
+
+- People provide more help when they have fewer requests/solicitations
+++ requests are random and do not accumulate = extra milers do not emerge
+++ requests are random and accumulate = extra milers emerge
+
+- Conformity
+- I provide 0.5*requests level of help, as do you. After time point 1, I provide 10 and you provide 5. 
+- The average is 7.5
+- At the next time point, I select either 0.5*requests level of help or 7.5 level of help with probability z.
+- high z means high conformity.
+++ I'm not sure what will happen.
+
+
+I'm not saying that solicitations must be random, but that they do not have to be anything more systematic than random and accumulating and you can get the result. 
+
+
+
+Other response styles
+- conformity: people try to mimic the levels of help of their colleagues. If they are mimicing the exact levels of help, then no extra milers would emerge. But if they are mimicing the percent of help, then extra milers would emerge.
+- trend: do people react more to requests for help when they have requests trending in a given direction? No research. You have daisy stuff. You have management guy stuff. But not a lot here. 
+- do people resolve requests when they help? I'm setting it up as if they do not. You may not resolve the request when you help. Sometimes you may resolve the request entirely when you help. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Same thing but just re-writing it to get it in my head
+
+OCB pattern. Individual predictors. Alternative. 
+
+Big picture. Behavior is due to both the situation and person. Behavior is due to both systematic and unsystematic (random) factors. Need to look at their interaction.
+
+Murray. Skinner. Attribution. B = s, p, pxs. Davis. 
+
+Requests => Help
+- situation
+- person
+
+Get randomness in this image, somehow.
+
+Situation
+- accumulation
+++ theory of cumulative advantage
+++ social capital theory
+- randomness
+++ bandura
+++ denrell
+
+Person
+- respond to requests
+++ discrepancy
+++ need theory
+- respond to few requests
+++ overload
+++ boredom
+- conformity - respond to others
+++ discussion of this research
+++ you react to what the group is doing
+
+Much research on the person effects. We haven't looked at the interaction. Simulations can help.
+
+Simulations (probability that xi is in the top 10%)
+Per person effect, can randomness and accumulation generate an extra miler? How do the results differ across the various person effects?
+
+1) respond to requests
+
+I give 0.5*requests level of help.
+- randomness and accumulation: extra milers emerge
+- randomness and no accumulation: extra milers do not emerge
+
+2) respond to few requests
+
+I give 1(1 + x) level of help.
+- randomness and accumulation: extra milers emerge
+- randomness and no accumulation: extra milers do not emerge
+
+3) conformity
+
+I give 0.5*requests with probabiltiy z and group average requests with probability 1-z
+with super high conformity, no extra milers emerge
+with lower conformity, the same pattern: randomness and accumulation.
+
+
+Study 2. Make sure it is possible to observe randomness and accumulation in the real world. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Route 1) Broad: add sheer number and rate as responses
+
+OCB pattern. Individual predictors. This research provides a stochastic and situation alternative.
+
+Large picture. Behavior is due to both the situation and person factors. On top of that, behavior is a function of both systematic and random factors. We know a lot about the person factors. There has also been statements about systematic factors. This research highlights chance as an effect that can generate differences in people's situations and then more appropriately captures the person by situation interaction. 
+
+Unpack the pattern. This is the behavior pattern that I'm referring to.
+
+Requests => Helping (big image. situation effects and person effects)
+(we know what person effects lead to differences in helping. we do not know what situation effects lead to differences in requests)
+
+The situation aspect that I focus on are requests. 
+- accumulation
+++ theory of cumulative advantage
+++ social capital
+- randomness
+++ bandura
+++ denrell
+
+Person responding to those requests.
+- sheer number
+++ discrepancy
+++ need theory
+++ satisfyicing
+- rate
+++ daisy paper
+++ msu managment guy who wrote my thesis paper
+
+Obviously, systematic requests targeted at one person results in many more requests at that person. So, I'm going to hold random constant. I'm not going to have a "non-random" condition in my simulations.
+
+
+(a) simulations such that helping means resolving a request
+
+Simulation results (is xi in top 10%?)
+
+- People respond to sheer number of requests condition
+- you remove x number of requests each time point
+++ requests are random and do not accumulate = extra milers do not emerge
+++ requests are random and accumulate = extra milers emerge
+
+- People respond to rate: up or down tik
+- when they see an increase by 1, they resolve 1
+++ requests are random and do not accumulate = extra milers do not emerge
+++ requests are random and accumulate = extra milers do not emerge
+
+
+(b) simulations such that help provided doesn't influence your requests. You have a level of help an an extra variable.
+
+Simulation results (is xi in top 10%?)
+
+- Help provided is based on number of requests
+- I give more help when I have more requests and less help when I have fewer
+++ requests are random and do not accumulate = extra milers do not emerge
+++ requests are random and accumulate = extra milers emerge
+
+- Help provided is based on trend
+- When I see an increase by 1, then I give help, otherwise I do not.
+++ requests are random and do not accumulate = extra milers do not emerge
+++ requests are random and accumulate = extra milers do not emerge
+
+
+
+Ok, so the simulation results don't change if requests "go away" due to help or not.
+
+
+** evidence that requests can be random and accumulate. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Route 2) Broad: add respond to many vs respond to few as responses
+
+
+OCB pattern. Individual predictors. This research provides a stochastic and situation alternative.
+
+Large picture. Behavior is due to both the situation and person factors. On top of that, behavior is a function of both systematic and random factors. We know a lot about the person factors. There has also been statements about systematic factors. This research highlights chance as an effect that can generate differences in people's situations and then more appropriately captures the person by situation interaction. 
+
+Unpack the pattern. This is the behavior pattern that I'm referring to.
+
+Requests => Helping (big image. situation effects and person effects)
+(we know what person effects lead to differences in helping. we do not know what situation effects lead to differences in requests)
+
+The situation aspect that I focus on are requests. 
+- accumulation
+++ theory of cumulative advantage
+++ social capital
+- randomness
+++ bandura
+++ denrell
+
+Person responding to those requests.
+- more requests = more help
+++ discrepancy
+++ trust spiral
+++ need theory?
+
+- fewer requests = more help
+++ theory A
+++ theory B
+
+
+Obviously, systematic requests targeted at one person results in many more requests at that person. So, I'm going to hold random constant. I'm not going to have a "non-random" condition in my simulations.
+
+
+Simulation results (is xi in top 10%?)
+
+- People provide more help when they have more requests/solicitations
+++ requests are random and do not accumulate = extra milers do not emerge
+++ requests are random and accumulate = extra milers emerge
+
+- People provide more help when they have fewer requests/solicitations
+++ requests are random and do not accumulate = extra milers do not emerge
+++ requests are random and accumulate = extra milers emerge
+
+
+I'm not saying that solicitations must be random, but that they do not have to be anything more systematic than random and accumulating and you can get the result. 
+
+
+
+Other response styles
+- conformity: people try to mimic the levels of help of their colleagues. If they are mimicing the exact levels of help, then no extra milers would emerge. But if they are mimicing the percent of help, then extra milers would emerge.
+- trend: do people react more to requests for help when they have requests trending in a given direction? No research. You have daisy stuff. You have management guy stuff. But not a lot here. 
+- do people resolve requests when they help? I'm setting it up as if they do not. You may not resolve the request when you help. Sometimes you may resolve the request entirely when you help. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Route 4) What if the response style was a trait. High prosocial means they prefer to respond to 4 rather than 1 request per time point.
+
+
+OCB pattern. Individual predictors. This research provides a stochastic and situation alternative.
+
+Large picture. Behavior is due to both the situation and person factors. On top of that, behavior is a function of both systematic and random factors. We know a lot about the person factors. There has also been statements about systematic factors. This research highlights chance as an effect that can generate differences in people's situations and then more appropriately captures the person by situation interaction. 
+
+Unpack the pattern. This is the behavior pattern that I'm referring to.
+
+Requests => Helping (big image. situation effects and person effects)
+(we know what person effects lead to differences in helping. we do not know what situation effects lead to differences in requests)
+
+The situation aspect that I focus on are requests. 
+- accumulation
+++ theory of cumulative advantage
+++ social capital
+- randomness
+++ bandura
+++ denrell
+
+Person responding to those requests.
+- prosocial people = more help
+++ they desire to resolve 4 requests (compared to low prosocial people who desire to resolve 1 request)
+
+Obviously, systematic requests targeted at one person results in many more requests at that person. So, I'm going to hold random constant. I'm not going to have a "non-random" condition in my simulations.
+
+
+Simulation results (is xi in top 10%?)
+
+- Population of people with extreme different trait levels
+- Population of people with moderate different trait levels
+- Population of people with no different trait levels
+
+What I would show is that extra milers emerge in all of them. Obviously, if one person is vastly more prosocial than he or she will provide more help. But vastly different observed help can happen if the agents have identical levels of altruism. 
+
+
+That's not quite right. To remove the extra miler effect in the extremely different traits example you could put the error on the random walk as a low number. Then super high prosocials do not have a chance to emerge.
+
+In other words, without accumulation, prosocials cannot shine. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Route 5) Trait paired with people respond when requests are low vs high
+
+
+
+
+
+
+
+
+
+
+
+
+# Route that I want but can't do) It need not be systematic or individual factors
+
+OCB pattern. Causes are individual characteristics. Underlying mechanisms are systematic. 
+
+Draw attention to the person by situation interaction. People act within a context. Going to hold the people factors constant and point to situation and stochastic effects.
+
+due to the person
+- how do people respond to requests
+they react to sheer number
+discrepancy
+need
+
+Opening suggests that there are fundamental differences across people in these effects that generate an extra miler. Here, I'm going to show that agents can be the same and yet the phenomenon can still occur.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Accumulate randomly. That's the key. I'm trying to say that if requests accumulate randomly that generates huge differences in opportunity. 
+
+Random or Chance in my paper has a specific meaning:
+- it accumulates
+- at each time step, it moves up or down stochastically
+
+
+H1 needs to be:
+- Is there evidence that at least some requests for help follow random walks?
+
+
+
+
+
+
+
+Multitude of different ways people might respond to requests. The goal here is to show the power of the situation. So I pick one way of responding with individual differences in how altruistic people are and continue.
+
+- people respond with a fraction of their requests. 
+
+
+
+
+
+
+# Route 1) mechanisms that cause accumulation
+
+Same intro, sort of.
+
+
+All agents are equally altruistic. 
+
+How do they respond to requests?
+- They have a need or disrepancy number of requests to resolve, and they resolve that number each time point.
+- lots of research on compliance. foot in door, door in face, etc. Lots of these have to do with the content of the message rather than the 
+
+
+Using that 1 response pattern and having all agents be equally altruistic. Now hypotheses about 
+
+
+Extra milers emerge if (accumulting x random interaction) (plus delay)
+
+- requests are systematically greater for an employee
+
+++ social capital
+++ resources
+
+- requests accumulate 
+
+
+
+
+
+# Route 2) Person X Situation Interaction
+
+all situation effects that would create extra milers given a person effect (i.e., a type of responding)
+
+Or vice versa, all person effects (i.e., a type of responding) that could create extra milers given a situation effect
+
+
+A person could respond by having a desired number of requests that he or she responds to
+- random requests
+- random accumulating requests
+
+
+
+
+
+# Route 3) Start with Person and tackle accumulating
+
+Person X Situation Interaction
+
+We already know the person stuff. So this dissertation doesn't examine that. Take one type of responding: people have a desire to resolve 2 requests per time point.
+- discrepancy
+- satisfycing
+- need theory
+
+What are the situation aspects that could yield extra milers even when people are equally altruistic?
+
+1) accumulating
+
+can happen by
+- delays
+- requests coming in that are above a person's ability to respond
+
+2) of course, if accumulating happens systematically that could lead to differences in the number of requests. But it doesn't have to be. Randomness gets you there as well.
+
+
+
+
+
+# Route 4) Dissertation - full shift
+
+Extra Milers. Due to individual characteristics. We know behavior is a situation by person interaction. 
+
+Murray, Skinner, Attribution Error
+B = F(P, E, PxE)
+
+Situation
+- requests in a person's environment
+
+Person
+- how are they responding to those requests?
+
+
+
+Requests in a person's environment
+- two notions: accumulating and randomness
+
+
+
+How people respond:
+- two notions: sheer number vs trend
+
+- Accumulate randomly = differences in request store
+
+
+Simulation results (is xi in top 10%?)
+
+- People respond to sheer number of requests condition
+++ requests are non-random and do not accumulate = extra milers emerge
+++ requests are non-random and do accumulate = extra milers emerge
+++ requests are random and do not accumulate = extra milers do not emerge
+++ requests are random and accumulate = extra milers emerge
+
+- People respond to rate: up or down tik
+++ requests are non-random and do not accumualte = extra milers emerge
+++ requests are non-random and accumulate = extra milers emerge
+++ requests are random and do not accumulate = extra milers do not emerge
+++ requests are random and accumulate = extra milers do not emerge
+
+For rate, randomness is what matters. 
+For sheer number, both randomness and accumulation are important
+
+
+Then, my "hey look requests follow random walks" is really just an appendix. 
+
+
+
+
+# Route 5) Dissertation - need not be systematic
+
+Person effects matter, but behavior is a person by situation interaction. Here is the robust person effects in the literature. Here is how that manifests as someone reacting to requests. We know this to occur.
+
+My point is this: people could be identical in the manner described above but be living in vastly different situations.
+
+What can yield differences in the number of requests a person receives?
+- random accumulation
+
+We know that random accumulation can yield differences in request stores. Given the individual characteristics literature
+There are two points to make:
+- non-systematic factors can yield a systematic observed result (bolino)
+- given differences in requests, 
+
+
+
+Here are all of the individual differences. But they could be equivalent people. 
+
+
+
+
+
+
+# Route 6) how much greater must a good soldier be?
+
+We know that person effects matter. But we also know that behavior is a person by situation interaction. 
+
+individual predictors
+responses 
+- person effects for responding
+- this person has a level of altruisim that is four
+
+Statement: people who are more prosocial provide more help
+
+
+Situation
+- requests in a person's environment
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
