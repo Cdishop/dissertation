@@ -24,13 +24,17 @@ P-E theories use two constructions to denote the P-E combination: fit and in- te
 
 Interaction refers to P’s and E’s action on and reaction to each other in a mutual give and take. Workers and work environments are not static, unchanging entities, but rather, they can and do change. For example, dissatisfied workers will “do something” to change dissatisfying work situations, such as complain to manage- ment or work even harder to “prove” to management that they deserve better treat- ment. Management might respond to complaints negatively by laying off workers or respond positively by increasing worker pay. TWA is both a P-E fit theory and a P-E interaction theory.
 
-
 The Theory of Work Adjustment started out as a P-E fit theory. As TWA was re- vised and expanded, it developed into an interaction theory—a process model that included the fit (or predictive) model. Before the two models are described, the basic concepts on which TWA is premised are first presented and discussed.
 As a psychological theory, TWA’s focus is on P and P’s behavior. However, P does not exist or behave in a vacuum; rather, P always exists and behaves in an E. Any the- ory about P has to be a theory about P-in-an-E.
+
 The theory of work adjustment begins with the assumptions that (1) as a liv- ing organism, P has requirements that have to be met, many or even most of them through E; (2) P has capabilities that enable it to meet these requirements; and (3) much of P’s behavior in interacting with E is about meeting these re- quirements.
 
 
 ## Simon: you have to know agent and how desired objects are distributed around it
+
+## Johns Context
+
+Context is broadly defined as “situational opportunities and con- straints that affect the occurrence and meaning of organizational behavior as well as functional relationships between variables” (Johns, 2006, p. 386). Distinct dimensions of context include the task, social, and physical contexts (Hattrup & Jackson, 1996; Johns, 2006; Morgeson & Dierdorff, 2010; Mowday & Sutton, 1993), each of which can exert a direct or moderating influence on behavior. 
 
 
 ## Lewin 1951
@@ -126,11 +130,6 @@ statements about the world happening randomly. Or theoretical ideas that establi
 Bandura conceptualises chance as‘an unintended meeting of persons unfamiliar with eachother’(Bandura, 1982: 748). He postulates that two sets of separate but interactive constructs should be taken into consideration as we try to understand how chance affects the life course:personal determinants and social milieus. On the personal side, chance meetings are most likely to affect life courses if they get converted into a lasting relationship. Interpersonal attraction, as well as personal characteristics such as people’s attributes, belief systems, interests, and competences influence whether a chance encounter will turn into a strong tie or not. On the social side, the impact of chance encounters depends on the‘holding and shaping power of the milieus into which people are fortuitously inaugurated’(Bandura, 2001: 12). Social circles with their beliefs, value systems and prescribed behaviour patterns, and the kind of people who populate them make some chance encounters more probable and leave a stronger impact on people’s livesthan others (Bandura, 1982).
 
 1998 psych inquiry he talks about Krantz's view of chance events
-
-
-
-
-
 
 
 
@@ -293,6 +292,25 @@ Assuming randomness is often consistent with data.
 
 # Person
 
+1) more requests = more help
+
+## foot in the door
+
+One way to view this research is...
+- start by sending 1 request. Once you get some action on it, send another.
+- ask them to comply with a small request. Once you get compliance ask for another and somewhat larger request.
+
+Cialdini & Goldstein, 2004
+Weyant 1996 (this technique produces mixed results)
+Pliner, Hart, Kohl, & Saari, 1974
+Reingen, 1978
+Cialdini & Ascani, 1976
+Freedman & Fraser, 1966
+Burger & Guadagno 2003
+Burger, 1999
+Freedman & Fraser (1966)
+
+
 ## Discrepancy
 
 
@@ -330,7 +348,7 @@ Baumeister and Leary (1995), in their argument for considering belongingness to 
 SDT is about competence, autonomy, and relatedness. All of which may be fulfilled by a help request, and so a person may direct more effort toward these requests when they have more of them. 
 
 
-(a) Murray (1938)
+Murray (1938)
 
 Generated a list of 20 needs empirically, with the need for achievement, power, and affiliation having the most follow up research (Atkinson, 1958; McClelland, 1958; McClelland & Watson, 1973; Winter, 1973; Baumeister & Leary, 1995).
 
@@ -346,36 +364,126 @@ The theories they then compare in the review:
 
 
 
-## OCB agg overload
+
+
+
+
+
+2) fewer requests = more help
+
+
+## door in face
+
+One way to view this research is...
+- start by sending 4 requests, then cancel one to get compliance.
+
+Cialdino & ...
+Weyant, 1996 (somewhat more successful than foot in door)
+Cialdini & Ascani (1976)
+Schwarzwald, Raz, & Zvibel, 1979
+Goldman (1985)
+Brownstein & Katzev, 1985)
+O'Keefe & Hale, 2001
+O'Keefe, 1999
+Millar (2002)
+Cialdini, Vincent, Lewis, Catalan, Wheeler, & Darby, 1975
+
+
+delay between requests
+Dillard et al., 1984 - nice, this is about sequential requests
+Dolinski et al., 2001
+
+
+
+## resource allocation
+
+Implied in the construct of resource capacity is the notion of scarcity, the limited capacity assumption. That is, multiple demands must compete for the same units of time within the pool of resources (Hockey, 1997). There is a fixed amount of time, and individuals must make choices as to how much time to allocate to task performance versus OCB. Spending time on one activity necessarily comes at the expense of another. It is in this way that there exists a zero-sum relationship. Any change in time allocated to OCB comes at a cost to task performance, and vice versa, such that the net change is always zero. Therefore, the two types of performance are not independent. It is important to examine how the total set of resources is allocated across possible behaviors, because the patterning of resource allocation is critical to understanding performance outcomes at the individual level.
+
+Finally, drawing on Becker (1965), Bergeron (2007) argued from a resource allocation theory perspective that spending time on activities such as citizenship behavior comes at the expense of time spent on core tasks, creating a “paradox” for employees where performing citizenship may diminish task performance and other outcomes such as raises or promotions.
+
+Indeed, emerging research has begun to find more specific support for the performance trade-offs associated with citizenship behavior. Bergeron, Shipp, Rosen, and Furst (2013) found that, controlling for time spent on task performance, employees who devoted more time to citizenship had lower salary increases and advanced more slowly than those who spent less time on it. In a sample of job incumbents from a wide variety of occupations, Rubin, Dierdorff, and Bachrach (2013) found a curvilinear relationship between the frequency with which citizenship was performed and supervisor-rated task performance. Similarly, Rapp, Bachrach, and Rapp (2013) found curvilinearity between helping behavior and objective task outcomes among sales personnel (call activity and quota percentage).
+
+In resource allocation theory, resource limitations constrain a person’s capacity to direct attention to multiple job requirements (Kahneman, 1973)
+
+Resource allocation theory positions scarce resources as a limiting factor constraining the performance of distinct aspects of a work role (Hockey, 1997; Schmidt & Dolis, 2009) and addresses decisions about the use of scarce resources such as time. Because time is a scarce resource, employees must choose how to use their time. Decisions about time use directly impact how well individuals can perform any particular aspect of their role. Activities to which more time is allocated should see higher performance than those to which less is time is allocated. Bergeron (2007) proposed applying resource allocation theory
+as a lens to understand the relationship between task performance and OCB. Although a range of activities consume work time (Drago & Garvey, 1998), task performance and OCB are among those consuming the most time (Van Dyne, Cummings, & McLean Parks, 1995). Because each day has a fixed number of working hours, the time that can be allocated to OCB or task performance is a fixed resource. Bergeron (2007) theorized that employees must make a trade-off and that OCB comes at the expense of task performance. This conceptualization aligns with recent evidence of a negative association (.40, p  .01) between OCB and task performance (Bergeron et al., 2011) as well as with research demonstrating how the allocation of resources across competing goals can lead to diminished performance on impoverished demand choices (Erez, Gopher, & Arzi, 1990)
+
+
+
+
+# Lin, Schaumberg, & Reich, 2016
+
+Not a boredom study, but could be used to support the idea that few requests produce help.
+
+
+
+
+Lots of past research on prosocial vs non prosocial people (with respect to complying with requests).
+
+These authors propose that many desire to avoid requests for help altogether.
+- people know that they will feel dissatisfied regardless of their action
+- don't help and you feel like a bad person
+- comply and you've wasted your time
+
+
+Across a couple of experiments, they find that people prefer to avoid prosocial requests altogether if they can.
+
+
 
 ## Boredom
 
-Help more with fewer requests
-- small groups promote cooperation (newark, rand)
-- low-ball: start with an offer they can't refuse. After getting agreement, change the offer
-- boredom boost productivity
-https://journals.aom.org/doi/10.5465/amd.2017.0033?utm_source=zapier.com&utm_medium=referral&utm_campaign=zapier
 
-- boredom promotes desire for new experiences
-https://www.sciencedirect.com/science/article/abs/pii/S0022103113002205?utm_campaign=zapier&utm_medium=referral&utm_source=zapier.com
+# Park, Lim, & Oh, 2019 (good example of "no research in this area" study)
 
-- boredom and mindwandering promotes future-focused, goal-directed thought
-https://www.sciencedirect.com/science/article/abs/pii/S1053810011001978?utm_campaign=zapier&utm_medium=referral&utm_source=zapier.com
+Research showing that boredom can have positive outcomes
+- study 1: boredom boosts productivity
+- study 2: boredom alone does not necessarily lead to anger and frustration
+- study 3: boredom is particularly useful for individuals with high LOC and learning goal orientation
 
-- book on why boredom is good
-https://www.amazon.co.uk/Upside-Downtime-Why-Boredom-Good/dp/1472135997?utm_source=zapier.com&utm_medium=referral&utm_campaign=zapier
+Boredom is defined as an affective state composed of unpleasant feelings when an individual feels a lack of stimulation and experiences difficulty concentrating on the current activity (Fisher, 1993).
+- often motivates individuals to change the status quo, either by shifting out of the activity or leaving the situation
+- boredom pushes people to act
+- boredom causes individuals to seek to find something stimulating: seek challenges and actions
+- our results suggest that boredom acts asn an impetus to search for and explore novelty seeking behaviors
+- Elpidorou (2014) suggests that boredom is an indicator of intrinsic motive, by serving as a warning that individuals are not doing what they want to do, which could cause them to switch their goals or tasks.
 
-- boredom can make you creative
-https://www.tandfonline.com/doi/abs/10.1080/10400419.2014.901073#.VNL8MWTF98s
-
-
-## Other
-
-Small groups promote cooperation (nowak, rand)
-
-Low-ball: start small. 
+Other studies that support the boredom => creativity link
+- Hamilton, Haier, & Buschsbaum (1984)
+- Baird, Smallwood, Mrazek, Kam, Franklin, & Schooler (2012)
+- anectodal: Csikszentmihalyi, 1975 (flow)
 
 
 
+
+
+# Baird, Smallwood, & Schooler (2011)
+
+Boredom leads to mind-wandering, which is future-focused and primarily focuses on considering and planning personally relevant future goals...which can actually boost productivity once attention is returned back to the task.
+
+
+# Gasper & Middlewood (2014)
+
+
+Manipulated boredom lead to better performance on two measures of associative thought (compared to relaxed or distressed participants).
+- boredom leads to a desire for new experiences and sensation seeking, which leads to better performance on associative thought
+
+Associative thought is useful for creativity.
+- a key aspect of creativity is to make noval, broad, unusual, and useful associations between concepts (Mednick, Mednick, & Mednick, 1964)
+
+
+
+
+# Mann & Cadman, 2014
+
+Two studies showing that boredom can increase creativity.
+
+Boredom
+- a state in which the level of perceived stimulation is perceived as unsatisfactorily low (Drory, 1982, p. 141)
+- lack of external stimulation leads to increased neural arousal in search of variety
+
+Generally viewed as a negative thing. And there is plenty of research to support this idea.
+
+but boredom can be a catalyst for action
+- boredom is an alerting phenomenon that all is not well and something must be done (Gaylin, 1979, p. 129).
 
 
