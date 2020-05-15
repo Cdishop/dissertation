@@ -1,3 +1,21 @@
+OCBs. Pattern. What are the predictors? Explain.
+
+The purpose of this paper is. Contributions.
+- more recognition of person x situation interaction (extend the ocb literature by recognizing that help is function of a complex interaction between a person's environment and his or her own behavior).
+- underlying causes need not be systematic. A seemingly systematic observed pattern (good soldiers) can be the result of unsystematic (random) requests as long as those requests accumulate or have persistence. 
+
+Big Picture. Behavior is a function of both persons and situations. So, I'm going to examine the combined effects of a few situation and a few person aspects.
+
+Situation
+- Simon distribution of goal-relevant objects framining
+- what are the effects of two patterns that requests might take over time
+- persistence
+- randomness
+- I'm not talking about the causes of persistence or the causes of randomness. I'm also not saying that every situation leads to randomly accumulating requests. I'm saying that requests that persist and are random create a situation in which few have a large stock of requests whereas others do not. 
+
+Cumulate and cumulative is the key word, not accumulate.
+
+
 # Big Picture Introduction. 
 
 Behavior is a function of both the person and situation. Behavior is a function of both systematic and random factors.
@@ -114,9 +132,33 @@ right place right time
 
 1) accumulation
 
-## Theory of cumulative advantage
 
-## Social Capital
+Sitaution
+- what I'm really referring to is characteristics on the random walks.
+- for whatever reason, the requests are random
+- for whatever reason, the requests accumulate
+
+WHEN I SAY SITUATION, THAT MEANS THE PATTERN OF REQUESTS A PERSON IS RECEIVING. WHAT ARE THE EFFECTS OF VARIOUS PATTERNS? DRAW FROM SIMON. YOU HAVE TO PAY ATTENTION TO THE DISTRIBUTION OF GOAL-RELEVANT OBJECTS IN A PERSON'S ENVIRONMENT.
+
+I'M NOT ARGUING OR SPECIFYING THE CAUSES OF ACCUMULATION. I'M SAYING THAT THERE IS REASON TO BELIEVE THAT REQUESTS MIGHT ACCUMULATE (FOR ANY NUMBER OF REASONS) AND THEN I'M TRYING TO SHOW THE EFFECTS OF ACCUMULATING REQUESTS. 
+
+Reasons requests might accumulate (again, my paper isn't about predictors of accumulation. it's about the effects of accumulation)
+- cumulative advantage
+- all of the effects from that section
+- inertia from vancouver and cronin
+- social capital
+
+When requests accumulate, that means...
+
+Now chance or randomness. 
+- background
+- When requests are random, that means...
+
+What are the effects of when requests accumulate and are random?
+- probability theory
+
+
+
 
 
 2) randomness
