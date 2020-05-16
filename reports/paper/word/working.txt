@@ -5,6 +5,7 @@ The purpose of this paper is. Contributions.
 - underlying causes need not be systematic. A seemingly systematic observed pattern (good soldiers) can be the result of unsystematic (random) requests as long as those requests accumulate or have persistence. 
 
 Big Picture. Behavior is a function of both persons and situations. So, I'm going to examine the combined effects of a few situation and a few person aspects.
+- Simon: examine the characteristics of objects in the environment and how the person responds to those objects. Person x Situation. 
 
 Situation
 - Simon distribution of goal-relevant objects framining
