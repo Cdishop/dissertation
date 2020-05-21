@@ -67,6 +67,7 @@ Other response styles / implications / directions
 - do people resolve requests when they help? I'm setting it up as if they do not. You may not resolve the request when you help. Sometimes you may resolve the request entirely when you help. 
 - how do people respond to the sheer number and rate of requests? we have a ton of info about compliance, but most are one-off moments. we need more research here. Copy and paste my email to Smaldino. 
 - within person many requests. We have a lot of research on sending requests to many people and how that decreases your probability of getting a response. We don't know whether that holds within-persons. 
+- are "yes I'll respond" and "amount i'm giving" separate decisions? If people respond to influx, do they say "yes" when draw > 0 and then determine level of help based on 0.5*size_of_draw. If so, then the distribution of the draw is very influential. A uniform gives you something completely different than a normal.
 
 
 
