@@ -1,0 +1,58 @@
+Sims
+
+RWs:
+
+random draw between 0 and 20
+run over time. if < 0, make 0.
+
+inertia means 1*prior. No inertia means 0*prior.
+
+
+1a) respond to many: random & inertia
+help is a function of pool size.
+
+help = 0.5*num_requests
+
+1b) respond to many: random & no inertia
+help = 0.5*num_requests
+
+2a) respond to few: random & inertia
+help = 1/(1 + num_requests)
+
+
+2b) respond to few: random & no inertia
+help = 1/(1 + num_requests)
+
+
+3a) respond to influx: random & inertia
+help is a function of the draw: arrivals and departures of requests.
+
+help = if(draw > 0)
+
+3b) respond to influx: random & no inertia
+help = if(draw > 0)
+
+
+
+4a) respond to outflow: random & inertia
+help = if(draw < 0)
+
+4b) respond to outflow: random & no inertia
+help = if(draw < 0)
+
+
+5a) conformity: random & inertia
+help is a function of what others are doing. 
+
+z = conformity level
+
+help1 = 0.5*num_requests
+
+help_beyond =
+
+ave_help1 or 0.5*requests with probability z choosing ave
+
+5b) conformity: random & no inertia
+
+I used a static group average. I could have also used a moving group average and the results would be the same. The value of the group average doesn't matter, neither does it matter whether the group average changes or not. What matters is that all of the employees converge on the same value at a given time step...not whether that value at the time step is the same as the last time step.  
+

@@ -1,22 +1,29 @@
 using DataFrames, DataFramesMeta, Query, Statistics, CSV, CSVFiles, Distributions, Random, PrettyTables, RCall
 
 # common parameters
-sims = 100
-num_employees = 600
+sims = 60
+num_employees = 300
 steps = 20
 #function initial_value()
 #    x = rand(0:100,1)[1]
 #    return(x)
 #end
 function initial_value()
-    x = (rand()*30)[1]
+    x = (rand()*20)[1]
     return(x)
 end
 
 
-# sim1: respond to many: inertia
 
-store_it = DataFrame(
+
+
+
+
+
+##########################################################################################################################
+# sim1a: respond to many: inertia
+
+store_it_sim1a = DataFrame(
     simulation = zeros(sims),
     moment_citizen_counts = zeros(sims)
 )
@@ -36,7 +43,7 @@ for sim in 1:sims
          requests[1] = initial_value()
 
          help = zeros(steps)
-         help[1] = 1*requests[1]
+         help[1] = 0.5*requests[1]
 
          for step in 2:steps
 
@@ -45,7 +52,7 @@ for sim in 1:sims
                  requests[step] = 0
              end
 
-             help[step] = 1*requests[step]
+             help[step] = 0.5*requests[step]
 
          end
 
@@ -89,8 +96,8 @@ for sim in 1:sims
 
 
 # now I have (for a single simulation run) the number of time points employee x_i was in the top 20% when there were 2 employees
-    store_it[counter, :simulation] = sim
-    store_it[counter, :moment_citizen_counts] = moment_counts
+    store_it_sim1a[counter, :simulation] = sim
+    store_it_sim1a[counter, :moment_citizen_counts] = moment_counts
 
 end
 
@@ -100,11 +107,11 @@ probability_list_2 = zeros(length(prob_steps))
 
 for prob in prob_steps
     result = count(
-        k == prob for k in store_it.moment_citizen_counts) / length(store_it.moment_citizen_counts)
+        k == prob for k in store_it_sim1a.moment_citizen_counts) / length(store_it_sim1a.moment_citizen_counts)
             probability_list_2[[prob + 1]] .= result
 end
 
-cond1_results = DataFrame(
+sim1a_results = DataFrame(
     k = [0,1,2,3,4,5,6,7,8,9,10,
          11,12,13,14,15,16,17,18,19,20],
     probability = probability_list_2,
