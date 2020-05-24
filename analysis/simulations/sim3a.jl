@@ -1,8 +1,8 @@
 using DataFrames, DataFramesMeta, Query, Statistics, CSV, CSVFiles, Distributions, Random, PrettyTables, RCall
 
 # common parameters
-sims = 100
-num_employees = 80
+sims = 10000
+num_employees = 300
 steps = 20
 #function initial_value()
 #    x = rand(0:100,1)[1]
@@ -120,11 +120,14 @@ for prob in prob_steps
             probability_list_2[[prob + 1]] .= result
 end
 
+
 sim3a_results = DataFrame(
-        k = [0,1,2,3,4,5,6,7,8,9,10,
-             11,12,13,14,15,16,17,18,19,20],
-        probability = probability_list_2,
-        num_employees = vcat(
-                    repeat([2], length(probability_list_2))
-        )
-        )
+            k = [0,1,2,3,4,5,6,7,8,9,10,
+                 11,12,13,14,15,16,17,18,19,20],
+            probability = probability_list_2)
+
+
+cd(dirname(@__FILE__))
+
+
+CSV.write("sim-results/sim3a.csv", sim3a_results)

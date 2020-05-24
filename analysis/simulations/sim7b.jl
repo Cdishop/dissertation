@@ -22,10 +22,12 @@ end
 
 
 ##########################################################################################################################
-# sim3b: respond to influx: no inertia
+# sim7b: conformity: no inertia
 
+# level of conformity
+z = 0.2
 
-store_it_sim3b = DataFrame(
+store_it_sim5a = DataFrame(
     simulation = zeros(sims),
     moment_citizen_counts = zeros(sims)
 )
@@ -39,27 +41,27 @@ for sim in 1:sims
          df_requests = DataFrame()
          df_help = DataFrame()
 
+         group_mean = 5
+
          for walk in 1:num_employees
 
              requests = zeros(steps)
              requests[1] = initial_value()
 
              help = zeros(steps)
-             help[1] = requests[1]
+             help[1] = 0.5*requests[1]
 
              for step in 2:steps
 
-                 draw = rand(Normal(0,1), 1)[1]
-
-                 requests[step] = 0*requests[step - 1] + draw
+                 requests[step] = 0*requests[step - 1] + rand(Normal(0,1), 1)[1]
                  if requests[step] < 0
                      requests[step] = 0
                  end
 
-                 if draw > 0
-                     help[step] = 5
+                 if rand()[1] < z
+                     help[step] = group_mean
                  else
-                     help[step] = 0
+                     help[step] = 0.5*requests[step]
                  end
 
 
@@ -105,8 +107,8 @@ for sim in 1:sims
 
 
     # now I have (for a single simulation run) the number of time points employee x_i was in the top 20% when there were 2 employees
-        store_it_sim3b[counter, :simulation] = sim
-        store_it_sim3b[counter, :moment_citizen_counts] = moment_counts
+        store_it_sim5a[counter, :simulation] = sim
+        store_it_sim5a[counter, :moment_citizen_counts] = moment_counts
 
 end
 
@@ -116,12 +118,13 @@ probability_list_2 = zeros(length(prob_steps))
 
 for prob in prob_steps
     result = count(
-        k == prob for k in store_it_sim3b.moment_citizen_counts) / length(store_it_sim3b.moment_citizen_counts)
+        k == prob for k in store_it_sim5a.moment_citizen_counts) / length(store_it_sim5a.moment_citizen_counts)
             probability_list_2[[prob + 1]] .= result
 end
 
 
-sim3b_results = DataFrame(
+
+sim7b_results = DataFrame(
             k = [0,1,2,3,4,5,6,7,8,9,10,
                  11,12,13,14,15,16,17,18,19,20],
             probability = probability_list_2)
@@ -130,4 +133,4 @@ sim3b_results = DataFrame(
 cd(dirname(@__FILE__))
 
 
-CSV.write("sim-results/sim3b.csv", sim3b_results)
+CSV.write("sim-results/sim7b.csv", sim7b_results)
