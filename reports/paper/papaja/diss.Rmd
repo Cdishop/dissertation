@@ -168,7 +168,7 @@ I conducted two studies examining a situation by person framework and its implic
 
 ## Theoretical Implications
 
-The present work contributes to OCB science by broadening our perspective to more readily acknowledge the role of both persons and situations. Several researchers have suggested that requests, despite being fundamental to most incidents of helping, are underexamined in the citizenship literature [@cain_giving_2014;].(**Ehrhart**) They are alive and well in related literatures such as advice and help-seeking [@bamberger_employee_2009; @bonaccio_advice_2006; @bohns_mis_2016] but are not commonly included in discussions of citizenship. The idea that requests are overlooked is matched by an emphasis in the other direction favoring individual characteristics such as motives, personality, and justice perceptions [@podsakoff_oxford_2018]. My research adds to this work by offering a situation by person framework capturing the role of requests and responses over time. I built from Simon's simple rules model and integrated notions of sustained lead, compliance, and self-regulation to articulate how frequently exceptional citizens may arise from a combination of one's circumstances and reactions. I found that, across a few different ways employees might respond to requests for help, good soldiers emerged when requests exhibited inertia and random fluctuations. These findings enhance our theoretical understanding of how the circumstances employees encounter (captured by requests over time) may combine with reactions to yield citizenship.
+The present work contributes to OCB science by broadening our perspective to more readily acknowledge the role of both persons and situations. Several researchers have suggested that requests, despite being fundamental to most incidents of helping, are underexamined in the citizenship literature [@cain_giving_2014;].(**Ehrhart**) They are alive and well in related literatures such as advice and help-seeking [@bamberger_employee_2009; @bonaccio_advice_2006; @bohns_mis_2016] but are not commonly included in discussions of citizenship. The idea that requests are overlooked is matched by an emphasis in the other direction favoring individual characteristics such as motives, personality, and justice perceptions [@podsakoff_oxford_2018]. My research adds to this work by offering a situation by person framework capturing the role of requests and responses over time. I built from Simon's simple rules model and integrated notions of sustained lead, compliance, and self-regulation to articulate how frequently exceptional citizens may arise from a combination of one's circumstances and reactions. I found that, across a few different ways employees might respond to requests for help, good soldiers emerged when requests exhibited inertia and randomness. These findings enhance our theoretical understanding of how the circumstances employees encounter (captured by requests over time) may combine with reactions to yield citizenship.
 
 This research also contributes to the OCB literature because it provides mechanisms are not a priori congruent with the outcome they attempt to explain. Methot et al. (2015) argue that streaky good soldiers are due to traits such as agreeableness, proactive personality, and prosocial orientations and values. Bolino et al. (2015) provide a similar suggestion. These explanations rely on motives that in advance dispose individuals in the direction of the pattern to be explained -- a common tactit used in the social and behavioral sciences [@fiedler_beware_2000; @heider_social_1944]. As a first step in reasoning about an observed pattern, research often targets causes that are similar to or congruent with an outcome. Egocentric attributions are explained by presuming egocentric memory [@ross_egocentric_1979]. Stereotypes are explained by suggesting that stereotype-consistent information is more readily encoded, stored, and retrieved in memory [@friedrich_primary_1993; @greenberg_self_1982; @kunda_case_1990]. Similarly, a frequent helper is explained by suggesting that the individual is prosocial. My research adds to the literature regarding the causes of streaky citizenship by demonstrating how a situation by person interaction may yield this pattern. The explanation was unique because the effects did not begin with biases that push some employees toward citizenship before movement began. Extra milers emerged even though employees were homogeneous within conditions. Extra milers emerged even though the processes by which employees received help requests were identical. No a priori between-employee differences were required. This research therefore offers a unique perspective demonstrating how a seemingly systematic, between-person outcome need not require systematic, between-person causes. Of course, personality and motives matter. My intention was to present a parsimonious theoretical explanation to which such additional constructs were not strictly necessary. 
 
@@ -191,39 +191,11 @@ This work also offers direction for organizational helping interventions. Many s
 
 ## Limitations
 
-There were several limitations that should be acknowledged. 
+There were several limitations that should be acknowledged. Concerning the simulation, one might add or consider any of the following for future research. The first is that employees may work through a sequence of decisions when responding with help rather than the single command as implemented here. In the current research, for example, the decision to help (a binary "yes" or "no") was not treated separately from the decision of how much help to provide (given "yes," what level of help should be offered?). Studies have shown that different decisions call on unique aspects of one's environment (EMERGENCY CALL CHART). One could conceive of situation cues such as influx, outflow, and pool size as informing one decision whereas some of the unexamined cues, such as the framing of a message, as informing another. Both may then combine to influence help. Second, this research did not include a 1 to -1 correspondence between help and resolved requests. There are conceptual reasons for and against this position. Employees may feel that they offered inadequate help and return to a request at a later period. It also, functionally, captures the notion of a delay such that employees are unable to act the moment requests are received. Alternatively, one could argue that employees perceive requests leaving every time they help. Concerning the pilot study, the goal was to maximize my within-person sample size but doing so came at the cost of a between-person sample. Moreover, request trajectories were only examined in two contexts and so they may not generalize to other situations. 
 
-Many issues that could make the simulation more complex:
-- the goal here was to demonstrate simple, sufficient conditions
+# Conclusion
 
-The intentions of the simulations presented here was to explore A and B. Of course, we could not examine all the possible dynamic processes that might create Z. 
-
-One might add or consider a few additional aspects. Theory A, theory B. These variables remain to be considered and examined. 
-
-Conformity
-- match level of help. Match in their percent of requests that they respond to
-
-All employees were homogeneous.
-
-Not network effects.
-
-Few employees that I examined help request trajectories for.
-
-
-
-
-Common
-- limitation in sample
-- limitation such that you have common method bias
-- different ways to operationalize a construct
-- cross sectional
-- participant bias in responding (recall bias)
-
-
-
-
-
-
+Words.
 
 
 
