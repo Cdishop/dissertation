@@ -1,0 +1,69 @@
+---
+title: "cleaning"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+knitr::opts_knit$set(root.dir = "../data/working")
+```
+
+# Hand exploration to identify col names and relevant rows
+
+1 = graduate major
+2 = graduate major identifier?
+3 = degree level (e.g., MS, PHD, MFA)
+4 = total students across masters and doctoral (so masters would be MS and MFA, etc)
+5 = women (of total students)
+6 = men (of total students)
+7 = NA column
+8 = total masters students
+9 = total women masters students
+10 = total men masters students
+11 = NA column
+12 = total doctoral students
+13 = total women doctoral students
+14 = total men doctoral students
+
+Which columns do I need?
+
+1 = graduate major
+2 = graduate major identifier (i think that's what this column is...)
+12 = total doctoral students
+
+On which row does the actual data begin? row 6
+
+# cleaning
+
+Steps
+
+1) get file names
+2) for every file, import and clean
+3) save
+
+```{r}
+library(tidyverse)
+library(readxl)
+```
+
+
+1) get file names
+
+```{r}
+knitr::opts_knit$set(root.dir = "../data/working")
+
+
+files <- Sys.glob("*.xlsx")
+files
+getwd()
+```
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+knitr::opts_knit$set(root.dir = "/tmp")
+knitr::opts_knit$set(root.dir = "../data/cleaned")
+
+getwd()
+```
