@@ -5,12 +5,13 @@ df <- read.csv("../data/cleaned/df.csv")
 degrees <- unique(df$degree)
 
 
-## use only degrees with > 20 time points
-table(df$degree, df$time)
 
 
 df1 <- df %>%
   filter(degree == degrees[18])
+df1 <- df1 %>%
+  mutate(time = 1:nrow(df1))
+
 
 dfdickey <- plm.data(df1, index = c("file", "time"))
 
@@ -29,6 +30,8 @@ for(i in 1:runs){
   
   dt <- df %>%
     filter(degree == degrees[i])
+  dt <- dt %>%
+    mutate(time = 1:nrow(dt))
   
   dtdickey = plm.data(dt, index = c("file", "time"))
   
@@ -40,3 +43,13 @@ for(i in 1:runs){
   
   
 }
+
+
+(store_results %>%
+  filter(dickey > 0.05, kpss < 0.05) %>%
+  count()) / nrow(store_results)
+
+
+(store_results %>%
+  filter(dickey > 0.05) %>%
+  count()) / nrow(store_results)
