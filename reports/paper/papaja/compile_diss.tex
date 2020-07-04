@@ -1,0 +1,848 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[english,,man]{apa6}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdftitle={Title},
+            pdfkeywords={Dynamics, dynamical, modeling, longitudinal, HLM, RCM, panel bias, unobserved heterogeneity},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+% Manuscript styling
+\usepackage{upgreek}
+\captionsetup{font=singlespacing,justification=justified}
+
+% Table formatting
+\usepackage{longtable}
+\usepackage{lscape}
+% \usepackage[counterclockwise]{rotating}   % Landscape page setup for large tables
+\usepackage{multirow}		% Table styling
+\usepackage{tabularx}		% Control Column width
+\usepackage[flushleft]{threeparttable}	% Allows for three part tables with a specified notes section
+\usepackage{threeparttablex}            % Lets threeparttable work with longtable
+
+% Create new environments so endfloat can handle them
+% \newenvironment{ltable}
+%   {\begin{landscape}\begin{center}\begin{threeparttable}}
+%   {\end{threeparttable}\end{center}\end{landscape}}
+\newenvironment{lltable}{\begin{landscape}\begin{center}\begin{ThreePartTable}}{\end{ThreePartTable}\end{center}\end{landscape}}
+
+% Enables adjusting longtable caption width to table width
+% Solution found at http://golatex.de/longtable-mit-caption-so-breit-wie-die-tabelle-t15767.html
+\makeatletter
+\newcommand\LastLTentrywidth{1em}
+\newlength\longtablewidth
+\setlength{\longtablewidth}{1in}
+\newcommand{\getlongtablewidth}{\begingroup \ifcsname LT@\roman{LT@tables}\endcsname \global\longtablewidth=0pt \renewcommand{\LT@entry}[2]{\global\advance\longtablewidth by ##2\relax\gdef\LastLTentrywidth{##2}}\@nameuse{LT@\roman{LT@tables}} \fi \endgroup}
+
+% \setlength{\parindent}{0.5in}
+% \setlength{\parskip}{0pt plus 0pt minus 0pt}
+
+% \usepackage{etoolbox}
+\makeatletter
+\patchcmd{\HyOrg@maketitle}
+  {\section{\normalfont\normalsize\abstractname}}
+  {\section*{\normalfont\normalsize\abstractname}}
+  {}{\typeout{Failed to patch abstract.}}
+\makeatother
+\shorttitle{MODELING DYNAMICS}
+\author{Christopher R. Dishop\textsuperscript{1}}
+\affiliation{
+\vspace{0.5cm}
+\textsuperscript{1} Michigan State University}
+\authornote{Christopher R. Dishop, Department of Psychology, Michigan State University. Richard P. DeShon, Department of Psychology, Michigan State University.
+
+
+Correspondence concerning this article should be addressed to Christopher R. Dishop, 316 Physics Rd \#348, East Lansing, MI 48824. E-mail: dishopch@msu.edu}
+\keywords{Dynamics, dynamical, modeling, longitudinal, HLM, RCM, panel bias, unobserved heterogeneity\newline\indent Word count: 141}
+\DeclareDelayedFloatFlavor{ThreePartTable}{table}
+\DeclareDelayedFloatFlavor{lltable}{table}
+\DeclareDelayedFloatFlavor*{longtable}{table}
+\makeatletter
+\renewcommand{\efloat@iwrite}[1]{\immediate\expandafter\protected@write\csname efloat@post#1\endcsname{}}
+\makeatother
+\usepackage{lineno}
+
+\linenumbers
+\usepackage{csquotes}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[shorthands=off,main=english]{babel}
+\else
+  % load polyglossia as late as possible as it *could* call bidi if RTL lang (e.g. Hebrew or Arabic)
+  \usepackage{polyglossia}
+  \setmainlanguage[]{english}
+\fi
+
+\title{Title}
+
+\date{}
+
+\abstract{
+Good soldiers refer to employees who exhibit sustained, superior citizenship relative to others. Researchers have argued that this streaky behavior is due to motives, personality, and other individual characteristics such as one's justice perceptions. The present set of studies, grounded in a situation by person framework, broaden this view to more readily acknowledge both context and self-regulatory actions. A pilot web-scraping study examined received help request trajectories over long periods of time. The observed pattern was then implemented into an agent-based simulation where person characteristics and responses could be systematically controlled and manipulated. The results suggest that employee helping behaviors may exhibit sustained differences even if employees do not a priori differ in motive or character. Theoretical and practical implications, as well as study limitations, are discussed.
+
+The results suggest that there need not be differences across individuals in motive, personality, or disposition for sustained differences in helping behavior to emerge.
+
+The results suggest that sustained differences in helping behaviors may emerge even if there are no a priori between-employee differences in character.
+
+The results suggest that employee helping behaviors may exhibit sustained differences even if employees do not a priori differ in motive or character.
+}
+
+\begin{document}
+\maketitle
+
+Organizational citizenship behaviors (OCBs) have been the focus of extensive scholarship among researchers and practitioners for more than 4 decades. Citizenship behaviors are actions conducted by employees that are discretionary and not necessarily associated with specific job requirements (Organ, 1988), and they include behaviors such as helping colleagues after being asked for assistance or accommodating the work schedules of others when they request time off. Leaders put OCBs on equal footing to task performance when asked about the merits of different behaviors within their teams (Podsakoff, MacKenzie, \& Podsakoff, 2018) and researchers have gone so far as to describe OCBs as critical lubricants enhancing the social machinery of organizations (Bolino, Turnley, \& Bloodgood, 2002; Organ, Podsakoff, \& MacKenzie, 2005). Many studies document both the positive and negative outcomes of citizenship for individuals and collectives (Bergeron, 2007; Bergeron, Shipp, Rosen, \& Furst, 2013; Podsakoff, Whiting, Podsakoff, \& Blume, 2009; Podsakoff, MacKenzie, Paine, \& Bachrach, 2000).
+
+One topic of recent interest in this literature is a pattern which has been articulated using phrases such as \enquote{extra miler} or \enquote{good soldier} (Li, Zhao, Walter, Zhang, \& Yu, 2015; Methot, Lepak, Shipp, \& Boswell, 2017). These labels refer to an employee who consistently offers more OCBs than his or her colleagues -- across an unspecified amount of time, he or she is typically one of the employees offering the greatest number of OCBs -- and the presumed causes of this behavior are individual characteristics. Methot et al., (2017), for instance, argue that personality traits and prosocial motives are the research-supported causes of this pattern. Stated simply, an extra miler/good soldier exhibits sustained, superior levels of OCBs due to his or her disposition or attitude (e.g., Chiaburu, Oh, Berry, Li, \& Gardner, 2011). This emphasis on individual characteristics is similar to the commonly identified predictors of OCBs in general, which include one's propensity to be concerned for others, personality, prosocial motives, impression management, job satisfaction and commitment, perceptions of trust, fit, fairness, and ostracism (Grant \& Mayer, 2009; Lance Ferris et al., 2019; Meglino \& Korsgaard, 2004; Organ \& Ryan, 1995) (\textbf{HANDBOOK: BELLAIRS; KRISTOF-BROWN; PICCOLO}) and, at the within-person level, one's positive affect, engagement, and perceptions of justice or supervisor support (Christian, Eisenkraft, \& Kapadia, 2015; Dalal, Lam, Weiss, Welch, \& Hulin, 2009; Glomb, Bhave, Miner, \& Wall, 2011; Ilies, Scott, \& Judge, 2006; Lin, Savani, \& Ilies, 2019; Matta et al., 2020). Indeed, Bolino (1999) and Bolino et al. (2002) state that there is a consensus that OCBs stem from dispositions, motivation, and fairness perceptions.
+
+There are three underdeveloped areas within the research on extra milers/good soldiers that the current study attempts to address. First, one way to view this literature is from the perspective of the fundamental attribution error (Gilbert \& Malone, 1995; Ross, 2001) such that it is driven largely by person-oriented effects and, at times, downplays the role of the situation. Relative to the person-oriented studies, comparatively little research has investigated how the observed pattern -- a tendency for an employee to be among the top citizens -- may be a function not only of the individual but also the interaction between that individual and his or her situation. Exceptions exist in the fit and job embeddness literatures but even among these studies the emphasis is on individual perceptions (Rich, Lepine, \& Crawford, 2010; Vogel \& Feldman, 2009) (\textbf{job embed chapter}). Focusing on the person by situation interaction is necessary because the same individual tendencies that yield a given behavior in one situation may manifest different behavior when circumstances change.
+
+Second, but related to the notion of a person by situation interaction, the conversation surrounding extra milers and good soldiers is missing an appreciation of the pleas for help employees receive over time. In their cornerstone paper describing its dimensions, Smith, Organ, and Near (1983) state that many forms of OCB occur after a stimulus that \enquote{appears to be situational, that is, someone has a problem, needs assistance, or requests a service} (p.~661). Despite this initial emphasis, Ehrhart (2018) points out that there has been little follow-up research on the nature of requests and how they inform what we know about OCBs. Requests over time are necessary to examine for several reasons. They create a baseline for employees to react to, with some employees potentially receiving many more requests than others, have the potential to change whether a given amount of help should merit the label \enquote{extra miler} or \enquote{good soldier} (the same amount of help looks different if it follows 2 versus 12 requests for assistance), and several authors (Bamberger, 2009) (\textbf{Eharhart handbook}) state that most acts of affiliative citizenship happen after a request to do so. Cain, Dana, and Newman (2014), for instance, argue that a substantial amount of prosocial behavior is prompted by requests from others.
+
+Third, just as the person-oriented effects occupy the foreground of this literature, researchers have tended to examine the systematic while neglecting the unsystematic. Moreover, researchers sometimes imply that systematic patterns -- i.e., extra milers or good soldiers -- cannot be produced by unsystematic causes, an idea that runs counter to the growing research on chance and random processes (Liu \& de Rond, 2016). To appreciate this assumption, it is useful to describe a study by Bolino, Hsiung, Harvey, and LePine (2015). These authors examine within-person variance in OCBs, depletion, and motives, and correlate the constructs over time. They motivate their study by arguing that it is unreasonable to expect (1) motives to be completely stable over time and (2) good soldiers, or employees that exhibit greater OCBs relative to their peers, to always be good. They then demonstrate that motives do show within-person variance and that they correlate with OCBs. What these authors imply is that sustained, exceptional citizenship (i.e., long-run \enquote{streakiness}) is unlikely when there is within-person instability in the variables that are assumed to cause OCBs. Said differently, when the causes are unstable (motives), the outcome must be unstable (OCB). This idea, though, contradicts what we know about stochastic (random) processes, particularly the notion that no systematic variance in the cause is required to produce what looks like long-run stability in the outcome (Henderson, Raynor, \& Ahmed, 2012). If the cause is random and unsystematic, it is still possible -- and in some cases extremely likely -- that the response process contains systematic patterns in the form of long-run streaks. What this means for the citizenship literature is that it is necessary to understand the role of randomness because the core idea underlying the notions extra miler and good soldier is that employee behaviors exhibit streakiness -- a pattern which we know to be a possible byproduct of chance.
+
+To make progress toward these areas, the current research asks how extra milers/good soldiers might be generated from a situation by person interaction (Figure 1). I draw from Simon (1955) to describe a framework capturing the requests an employee receives asking for help and the self-regulatory actions he or she may take in response, from citizenship theory and stochastics to reason about the movement of help requests over time, and from theories of compliance and conformity to consider employee reactions to solicited help. This research takes a generative, computational perspective focusing on simple mechanisms that yield an emergent pattern. Understanding the processes through which sustained citizenship arises offers an alternative perspective to the research literature and urges caution to managers when inferring motive from observed behaviors. The explanation provided by this research is unique because it does not rely on effects that ex ante bias individuals in the direction of the outcome to be explained. That is, frequent citizenship can be generated from mechanisms that are not obviously congruent with the pattern, such as a prosocial motive. The current effort focuses on affiliative OCBs, rather than challenging or proactive OCBs such as voice, because (a) the goal of this research is to articulate how solicited requests may combine with reactionary help, (b) many researchers have stated that affiliative OCBs should be thought of as the core manifestation of citizenship (Li et al., 2018; Van dyne, cumming, mclean 1995; Smith et al., 1983; \emph{PROPOSAL}), and (c) helping behaviors have \enquote{been identified as an important form of citizenship behavior by virtually everyone who has worked in this area} (p.~516) (Podsakoff, MacKenzie, Paine, \& Bahcrach, 2000).
+
+\hypertarget{theoretical-background-person-x-situation-interaction}{%
+\section{Theoretical Background: Person x Situation Interaction}\label{theoretical-background-person-x-situation-interaction}}
+
+Many theories suggest that employee behaviors are the result of a complex interaction between acting agents and their environment. Lewin's (1951) now famous assertion that behavior is a function of both persons and situations led to a flurry of personality theories examining person by situation interactions (Cognitive affective systems theory; trait activation theory; whole trait theory; Fleeson \& Jayawickreme, 2015; Mischel \& Shoda, 1995; Tett \& Guterman, 2000). Murray's system of needs, which describes internal (needs) and external (presses) causes of behavior but \enquote{above all emphasizes the interaction between the two} (Epstein, 1979, p. 652), is the foundation for several need-based models such as self-determination theory (Deci \& Ryan, 1980). The notion that behavior arises from the combination of one's tendencies and circumstances is also described in theories of self-regulation (Dawis \& Lofquist, 1978; DeShon \& Gillespie, 2005). Similarly, Blumberg and Pringle (1982) highlight the critical importance of adding opportunities to motivation and ability as key determinants of job performance because the environment can either enable or constrain performance (Johns, 2018; Stewart \& Nandkeolyar, 2006). In the citizenship literature, researchers have examined person by environment effects but often from the perspective of fit or compatabiltiy such that there is a perceived match between, say, one's values and those enacted by the organization (\textbf{handbook kristoff brown}).
+
+The current research uses Simon's simple rules model (DeShon \& Rench, 2009; Simon, 1955) as a theoretical starting point and builds from his account of the person by situation interaction. Across a number of papers, theories, and normative models (Simon, 1956, 1991, 1992) Simon argues that to understand the complex behavior of an agent it is necessary to describe (1) how goal-relevant objects are distributed around it and (2) the rules it uses to select courses of action. His framework suggests that the objects employees are confronted with over time combine with the mechanisms they use to select a response to yield a given behavior. The behavior that this study focuses on is the idea of a good soldier (extra miler). Applying Simon's framework to affiliative helping suggests that, over time, an employee exhibiting extra miler behavior may arise from the combination of the requests she receives and her responses to those requests. That is, requests for assistance (situation) interact with employee reactions (person) to yield a behavioral pattern (extra milers/good soldiers).
+
+\hypertarget{situation-requests-over-time-sustained-lead}{%
+\subsection{Situation -- Requests Over Time \& Sustained Lead}\label{situation-requests-over-time-sustained-lead}}
+
+A request is defined as a notification to an employee that an act of assistance can be performed. Consider a few examples: A Professor receives an email from a colleague asking if she can substitute for an undergraduate course; An employee hears an announcement from a manager that volunteers are needed for an upcoming assignment; A statistician witnesses a question posted on a forum about a statistical model relevant to her expertise; A software engineer receives a pull request; An academic receives a note from a graduate student asking for a friendly review of his paper. Moreover, any agent may experience repeated prompts over the course of a week. On Monday, a Professor may receive an email asking for assistance teaching a class. On Tuesday, she receives two more emails about optional meetings in her department (attending optional meetings is one commonly studied indicator of OCB). On Wednesday, a former graduate student, who is now a faculty member at a different school, asks for a letter of recommendation. On some days the Professor has a large stock of help requests whereas on others she has few, if any.
+
+Requests for help are related to ideas elsewhere. Entrepenaurs respond to opportunities that prompt them to enter the market (Short, Ketchen, Shook, \& Ireland, 2010). Employees enact job performance after being triggered by what Stewart and Nandkeolyar (2006; 2007) refer to as situation enabling factors. Safety reminders stimulate safety behaviors (Komaki, Barwick, \& Scott, 1978). Questions that interrupt a training intervention and prompt self-regulatory activity improve learning and performance (Sitzmann \& Ely, 2010). Prompts are also examined in selection (Levashina, Hartwell, Morgeson, \& Campion, 2014), forensic interviews (Sternberg, Lamb, Orbach, Esplin, \& Mitchell, 2001), and in event-sampling methodology where they are used to improve participant survey responding (Laurenceau \& Bolger, 2005; Shiffman, 2009).
+
+What is missing in these other areas that becomes relevant as we consider requests over time is a discussion of sustained lead: some employees may consistently receive greater or fewer requests than others. The notion of sustained lead is well-known in literatures focusing on stocks other than requests (e.g., finance, strategy, mechanics; Denrell, 2004; Akimoto, 2008; Henderson et al., 2012; Shreve, 2004). It has not received attention in the citizenship space because studies do not often capture how requests compile over time (Ehrhart, 2018). Instead, most examine how to appropriately phrase a single, one-time plea (Cain et al., 2014), leaving the idea of a stockpile unspecified. An employee's pool of requests may change or stay the same as she moves throughout her week. Due to this fluidity, the size of her pool may be larger or smaller than her colleagues. Larger on some days; smaller on others, or vice versa. Sustained lead refers to a situation in which the rank order of a set of stocks remains stable over time. Applied to help requests, this would mean that employees with the most requests at time \(t\) also tend to be the employees with the most requests at \(t\) + 1, \(t\) + 2, and so on. It captures the stability of relative positions, and it is worth considering for the following reason. If sustained lead occurs with requests, it establishes a situation where some employees continually experience more requests than others. It does not guarantee action but creates an environment with unequal opportunity. Recall that the core idea underlying extra milers/good soldiers is that some employees repeatedly exhibit more citizenship than their colleagues. Sustained lead may be one factor gently pushing in that direction. Of course, it also depends on how employees respond.
+
+Simon's (1955) situation by person framework suggests that the arrangement of objects in a person environment is one aspect influencing his or her behavior. In this research, I use requests over time and sustained lead to specify this broad idea. There are two schools of thought regarding the mechanisms of sustained lead: the random and the systematic.
+
+\hypertarget{the-random-school-of-thought}{%
+\subsubsection{The Random School of Thought}\label{the-random-school-of-thought}}
+
+Probability theory and stochastics (Basu, 2003; Jaynes \& Bretthorst, 2003; Lévy, 1940) offer two features that are sufficient to yield sustained lead whenever they occur in tandem. These include inertia and randomness.
+
+\textbf{Inertia}. Inertia refers to the self-similarity of a variable from one moment to the next (\textbf{Cronin \& Vancouver, 2020}). It can be thought of as conservation or persistence in the sense that the state retains its condition over time until something changes it. When an employee compiles help requests with inertia this means that he or she has a pool or store of help requests -- three, for example -- and this number is self-similar such that it carries-over from day to day. If the employee receives three help requests today, this number is added to the store of requests that she had yesterday, creating a total that moves forward into tomorrow. Similarly, when help requests are removed from the pool -- which could occur, for instance, after she or someone else provides help and the request is resolved or when a deadline passes and help is no longer required -- then it decreases by whatever amount was withdrawn. But removing a request does not drive the pool to zero. Instead, whatever amount was removed is subtracted from the total in such a way that the pool has inertia/memory -- the amount changes from where it was at the immediately prior time point, it does not arbitrarily swing to zero.
+
+Weiss, H. M., \& Cropanzano, R. (1996). Affective events theory: A theoretical discussion of the structure, causes, and consequences of affective experiences at work. In B. M. Staw \& L. L. Cummings (Eds.), Research in organizational behavior (pp.~1--74). Greenwich, CT: Elsevier Science.
+
+\textbf{Randomness}. The second feature is the extent to which requests compile randomly. The idea that chance has a stronger effect on people's lives than often given credit for is expressed in social theory (Bandura, 1982; Dew, 2009), probability theory and mathematics (Dobrow, 2016), and among popular press (Mlodinow, 2008; Taleb, 2005). In the current research, the notion of randomness is drawn from the chance perspectives presented in Denrell, Fang, and Liu (2014) and Liu and de Rond (2016). An employee that accumulates requests randomly means that the likelihood of receiving a request or having a request removed is pulled from a probability distribution such that both are equally likely. It is a coin-flip whether requests join or leave. Mathematically, an employee's stock adds or subtracts requests based on a draw from a distribution with \(N(0, \sigma^2)\).
+
+Probability theory demonstrates that a set of trajectories (e.g., requests over time for multiple employees) exhibiting both inertia and randomness generates sustained lead. In simple terms, there is a high probability that one employee will consistently have more requests than another if requests compile randomly with inertia. If inertia is not present, however, sustained lead does not occur (Table 2).
+
+\hypertarget{the-systematic-school-of-thought}{%
+\subsubsection{The Systematic School of Thought}\label{the-systematic-school-of-thought}}
+
+Paste these cites from old word doc.
+
+Other theories offer non-random sources of sustained lead. The principle of cumulative advantage (Aguinis, O'Boyle, Gonzalez-Mulé, \& Joo, 2016) suggests that small benefits received during early periods fuel large gaps between \enquote{haves} and \enquote{have nots} at later stages. The mechanisms that create lasting advantages are numerous, and they include incumbency effects (Saloner, Shepard, \& Podolny, 2001), path dependence (Arthur, 1989), first-mover-effects (Lieberman \& Montgomery, 1988), switch costs (Klemperer, 1995), resource developments (Nelson \& Winter, 1982; Dosi, 1988), lucky early detections (Barney, 1986), productivity multiplicity and ceilings (Aguinis et al., 2016), network effects (Gnutzmann, 2008), and Matthew effects (e.g., Vancouver, Li, Weinhardt, Steel, \& Purl, 2016). Due to any combination of these features, employees may exhibit sustained differences in their resource pools (such as request for help). Social capital theory (Adler \& Kwon, 2002; Galunic, Ertug, \& Gargiulo, 2012; Nahapiet \& Ghoshal, 1998) also captures the idea of preserved differences in pools. Some individuals accrue large stores of social capital and are therefore differentially exposed to a whole host of aspects, some of which include information, social support, direct and indirect contacts, cutting-edge technology, trust, diverse perspectives, and unique communities (Hansen, 1999, Inkpen \& Tsang, 2005; Reinholt, Pedersen, \& Foss, 2011; Seibert, Kraimer, \& Liden, 2001). Due to this exposure, then, employees with greater social capital may persistently receive greater numbers of requests than others.
+
+Although I return to cumulative advantage and social capital in the Discussion, this research focuses on the random perspective for the following reasons. First, one core purpose of this study is to counter the reasoning by Bolino et al. (2015) and demonstrate that unsystematic factors can lead to systematic outcomes. As stated, their research takes the perspective that instability in the presumed causes of citizenship implies instability in citizenship itself. The current study suggests that even when an underlying cause of citizenship is unsystematic the observed behavior may still exhibit systematic patterns. Randomness is the quintessential form of an unsystematic effect, making it necessary to include in order to demonstrate this point. Second, Bandura's theory of chance factors (1982) suggests that randomly occurring events often have a significant influence on behavior. This sentiment is echoed in several discussions of stochastic processes (Ross, 2014; Tijms, 2012). For at least some subset of employees, the requests they receive may follow a random pattern. From a different perspective, Liu and de Rond (2016) suggest that even when a system is non-random embedding randomness as a first principle into one's research is necessary when the object of study -- requests for help in this case -- is influenced by many potentially uncontrollable forces. Help requests may come and go because of serendipity, luck, or influences that employees themselves do not cause. Moreover, the true causes of arrivals and departures may not be random at all. What Liu and de Rond (2016) propose is that when many such effects operate on a stock then randomness can be an appropriate perspective because observed data on the stock itself will appear random. Fourth, Denrell et al. (2014) argue that randomness should be the theoretical starting point whenever research examines compiling trajectories in a new domain. Most research on compliance (see below) examines a single plea. This study, instead, takes a small step in the direction toward considering requests that compile over time. Following Denrell et al.'s (2014) recommendation, I start with randomness because little research exists on request stockpiling over time.
+
+The last reason is the most important: randomness can be an appropriate perspective at a given level of analysis. One component in this research is the concept of a help request trajectory: a time-series representing one's store of requests that can fluctuate up or down at each step. Although little research exists on these specific trajectories, there is a massive literature showing that randomness may appear whenever studies examine compiling trajectories. In economics, financial and visitor arrival trajectories exhibit randomness (Bhattacharya \& Narayan, 2005; Cooper, 1982). In biology, foraging and movement trajectories exhibit randomness (Hill \& Häder, 1997). In psychology, memory search and decision trajectories exhibit randomness (Hills, Jones, \& Todd, 2012; Reike \& Schwarz, 2016). None necessarily imply a fundamentally stochastic world, only that random movement exists at the level of an observed trajectory. Many trajectories captured in time-series data manifest random patterns -- the same may occur for help requests. This does not mean that if we were to zoom-in on a lower level of analysis that the elements of the system would be random. They may not be. Everything underneath could in fact be non-random. The current research, though, is at a higher level of analysis focusing on the trajectory itself. At this zoomed-out level of analysis (Zaheer, Albert, \& Zaheer, 1999), trajectories often express random movements. That is, despite non-random origins an observed trajectory at a higher level of analysis can fluctuate randomly from one time point to the next. A pool of help requests is one such \enquote{higher level} trajectory. For this reason, randomness isn't something to be shunned but understood. By taking the random persepctive, therefore, I am not suggesting that received help requests are fundamentally random but that random movement may exist at the level of an observed trajectory. To the extent that random fluctuations appear in data, randomness is a meaningful perspective. A pilot study reported below addresses whether there is evidence of randomness in request trajectories.
+
+THESE CITES ARE IN NEWER WORD DOC.
+
+The notion that trajectories with inertia and randomness exhibit sustained lead was originally expressed using Paul Levy's arcsine law but it is now commonly referred to as the law of long leads in random processes. Sustained leads have been examined in studies of organizational age (cite), resource accumulation (cite), and firm performance (cite). The current article continues this research by considering requests for help as stocks that may rise or fall over time, potentially exhibiting sustained lead. Of course, to determine whether extra milers/good soldiers arise it is also necessary to describe the person.
+
+\hypertarget{person-responding-to-requests}{%
+\subsection{Person -- Responding To Requests}\label{person-responding-to-requests}}
+
+Studies have shown that people comply with one-shot requests for many reasons. Typical effects include the attractiveness and tone of the person asking (Fehr, Dybsky, Wacker, Kerr, \& Kerr, 1979; Gross, Wallston, \& Piliavin, 1975; Waddell \& Ivory, 2015), the mood, arousal, empathy, and stereotypes of the person being asked (Cialdini \& Goldstein, 2004; Florey \& Harrison, 1997; Forgas, 1998; Paciello, Fida, Cerniglia, Tramontano, \& Cole, 2013), the number of other people present (Barron \& Yechiam, 2002; Latané \& Darley, 1970; Yechiam \& Barron, 2003), and the framing of the message (e.g., direct, urgent, positive, specific; Ellison, Gray, Lampe, \& Fiore, 2014; Enzle \& Harvey, 1982; Goldman, Broll, \& Carrill, 1983; Graham, 1998; Langer \& Abelson, 1972). There is less research addressing how individuals respond to a dynamic pool of requests -- i.e., reacting to received requests that continually update and may or may not compile into a large pool. To reason about this less commonly studied perspective, I draw from compliance techniques and self-regulation theory.
+
+\textbf{Respond to Many}. One way employees might react is that they offer greater help when request pools are large rather than small. Control theory suggests that people monitor discrepancies between current and desired states (Lord \& Levy, 1994; Powers, 1973). At any fixed point in time, action is directed toward reducing a discrepancy such that people allocate resources until it is eliminated. When employees receive many requests for help, they may perceive a discrepancy that directs them toward action: current levels of help are not sufficient to deter incoming requests and so greater resource investments are required. With sustained lead, this type of responding would yield extra milers/good soldiers because the size of the request pool influences how individuals act. Employees with larger pools offer more help than employees with smaller pools. Moreover, relative positions of pleas persist under sustained lead. In this situation by person interaction, some employees would repeatedly offer more help than others because they continually have larger request pools. Without sustained lead (i.e., when requests compile randomly but without inertia), this type of responding would yield similar levels of help across all employees and would therefore not yield extra milers/good soldiers.
+
+Hypothesis 1: If requests compile with randomness and inertia and employees offer greater help when they have many rather than few requests then good soldiers emerge.
+
+Hypothesis 2: If requests compile with randomness but not inertia and employees offer greater help when they have many rather than few requests then good soldiers do not emerge.
+
+\textbf{Respond to Few}. There is also theory to suggest that employees offer help when they have few rather than many requests. According to resource allocation theory (Becker, 1965; Hockey, 1997), people have a limited capacity to direct attention to multiple aspects of their work. With fewer requests, an employee may have more time and cognitive resources to devote to the individuals asking for help. Many employees, for instance, find that they can be more effective when demands do not stretch them too thin (Brown, Jones, \& Leigh, 2005). The same conclusion arises from an alternative perspective. Research on boredom (Park, Lim, \& Oh, 2019) suggests that low activity situations lead to associative thought which can prompt action. To the extent that an employee with few requests is less stimulated than an employee with many, he or she may experience greater levels of boredom which, in turn, acts as a catalyst for action. Bored employees, for instance, may become more creative (Baird, Smallwood, \& Schooler, 2011; Mann \& Cadman, 2014) and effective (Gasper \& Middlewood, 2014) in their offer to help. With sustained leads, this type of responding would yield extra milers/good soldiers because help is driven once again by the size of one's request pool. Without sustained leads, conversely, help would be similar across employees.
+
+Hypothesis 3: If requests compile with randomness and inertia and employees offer greater help when they have few rather than many requests then good soldiers emerge.
+
+Hypothesis 4: If requests compile with randomness but not inertia and employees offer greater help when they have few rather than many requests then good soldiers do not emerge.
+
+\textbf{Respond to Influx}. Employees may also respond to the number of new arrivals. A commonly studied effect in social psychology is the foot-in-the-door (FITD) technique, which is a strategy used to secure compliance (Freedman \& Fraser, 1966). The core idea is that a small request is immediately followed by a larger one so that the target, after being lured by the original request, responds to both. Evidence for the effectiveness of this technique is mixed (Dillard, Hunter, \& Burgoon, 1984; Weyant, 1996). Moreover, studies often examine a single snapshot of back-to-back requests rather than a continual influx of requests over time. In general, though, this research offers indirect support for the idea that employees may offer help when they witness an influx of requests. Research on the velocity aspect of control theory also suggests that employees may respond to the change (rather than size) of their request pool. Experiments show that information about one's changing situation relate to affective and cognitive reactions when discrepancy sizes are held constant (Chang, Johnson, \& Lord, 2009; Hsee \& Abelson, 1991). This type of responding would yield the same outcome with and without sustained leads. Help is based on request pool changes rather than size and so the effect of request sustained leads would be diminished.
+
+Hypothesis 5: If requests compile with randomness and inertia and employees offer greater help when they experience an influx of requests then good soldiers do not emerge.
+
+Hypothesis 6: If requests compile with randomness but not inertia and employees offer greater help when they experience an influx of requests then good soldiers do not emerge.
+
+\textbf{Respond to Outflow}. The alternative is that employees offer help when requests exit. The sibling compliance strategy to the FITD technique is the door-in-the-face (DITF) technique: start with a large request but quickly withdraw and request something smaller (Cialdini \& Ascani, 1976; Cialdini et al., 1975). Evidence for this effect is also mixed but somewhat more favorable (Dillard et al., 1984; Weyant, 1996). This technique suggests that employees may offer help when they experience requests leaving rather than arriving from their pool. Under this response, employees again react to change rather than size. The hypothesized outcome, therefore, is that good soldiers do not emerge irrespective of randomness and inertia.
+
+Hypothesis 7: If requests compile with randomness and inertia and employees offer greater help when they experience an outflow of requests then good soldiers do not emerge.
+
+Hypothesis 8: If requests compile with randomness but not inertia and employees offer greater help when they experience an outflow of requests then good soldiers do not emerge.
+
+\textbf{Norm Conformity}. A final possibility is that employees look to their colleagues to determine how much help to provide. Research on conformity suggests that people often change their behavior to match the responses of others (Cialdini \& Goldstein, 2004). They do so because they desire to form an accurate interpretation of reality or to obtain social approval (Deutsch \& Gerard, 1955; Pan \& Houser, 2017). Moreover, social impact theory (Latané, 1981) suggests that people conform to the attitudes, beliefs, and behavioral propensities exhibited by the people in their surroundings (although not always). Employees may therefore try to match their peers, offering help in a similar way to what they witness among their colleagues. Indeed, research suggests that perceived norms and majority tendencies relate to one's allocation of help (Bolino, Turnley, Gilstrap, \& Suazo, 2009; Grant, 2014; Liu, Zhao, \& Sheard, 2017). Studies on career aspirations have also shown that individuals use group averages to compare against when forming impressions of their own achievement (Nagengast \& Marsh, 2012). The hypothesized outcome under this response is that extra milers/good soldiers do not emerge because employees look to others rather than requests to determine their allocation of citizenship. Note that with norm conformity it is possible for all employees to converge on a high level of citizenship yet the notion of one or few being exceptional would be absent -- no one stands out as superior if all are equally great.
+
+Hypothesis 9: If requests compile with randomness and inertia and employees match their colleagues in how much help they provide then good soldiers do not emerge.
+
+Hypothesis 10: If requests compile with randomness but not inertia and employees match their colleagues in how much help they provide then good soldiers do not emerge.
+
+\hypertarget{research-overview}{%
+\section{Research Overview}\label{research-overview}}
+
+This research is completed in two stages. In the first, I conduct a pilot study addressing the question, Is there evidence that requests for help exhibit randomness and inertia? Although such motion is commonly identified in other time-series data, little research has examined whether help request trajectories display these features. Assessing this first question is necessary as a preliminary step leading to the substantive hypotheses regarding good soldiers and extra milers. In the second, I develop an agent-based model to assess Hypotheses 1-10. Institutional review board (IRB) approval for this research was obtained from Michigan State University (MSU Study ID: 00004221).
+
+\hypertarget{pilot}{%
+\section{Pilot}\label{pilot}}
+
+To assess whether help request trajectories (at least some of the time) exhibit random movement, I collected archival data from the Internet. This pilot adhered to the theory-driven web scraping approach proposed by Landers, Brusso, Cavanaugh, and Collmus (2016), which states the following. Begin with a research question already determined and then develop a scraping approach to address it; Seek data that is indicative of the target behavior; Identify how the planned analyses inform one's selection of web data; Once collected, assess whether one's assumptions about web behavior manifest in the scraped data; Articulate which assumptions were and were not met and how the data was adjusted accordingly. In this pilot study, the research question was whether help request trajectories display randomness and inertia. The planned analysis was to examine the presence or absence of these features in time-series data using unit root tests (described later). Unit root tests require data with many time points, therefore I selected GitHub as a data platform because it contains indicators of requests over long periods of time.
+
+\textbf{Issues on GitHub Repositories -- Non-Academic}. Data were collected from GitHub repositories created by software developers. GitHub is an open source website that allows users to store, manage, share, and collaborate on projects (repositories) and, although most use it for code, it can also be used for other types of documents such as Word files. The data I collected are known as repository \enquote{issues.} When an individual posts a repository/project, other users can then download and use the code that she/he created. If other users want to ask questions, request features, or report bugs, they can post an issue on the focal individual's repository which automatically triggers a notification. The repositories I selected were posted by single users, rather than groups, to ensure that issues were targeted at one individual. For a given repository owned by a single user, I collected all issues from when the repo was first created until July 1st, 2020. This process was repeated for 27 different users. Observations occurred at the day level.
+
+\textbf{Issues on GitHub Repositories -- Academic}. I also collected data from GitHub repositories created by academics. University faculty often use GitHub as a version control system when writing documents, as a platform to share, monitor, and adjust any applications or tools that they develop, and as a resource for downloading data science tools. Similar to above, I collected issues across 9 different repositories, each maintained by a single academic.
+
+For each of the 36 data sets, a help request was operationalized as an issue. For each issue, I collected (a) the date it was posted and (b) when it was removed or resolved, if ever. Issues can be removed or resolved on GitHub due any number of reasons. For example, the individual who posts it may figure out the problem on his or her own. If this happens, he or she can follow-up the original issue with another notification. It is also possible for the repository owner to respond and then close the issue. Alternatively, a \enquote{bystander} -- someone who did not post the issue nor did he or she create the repo but happened to come across the public system of notifications for any number of reasons (one being that he or she uses the code within the repository and so actively follows it) -- can send his or her own response. For any or all of these reasons, requests can be resolved. Of course, it is also possible for them to lay dormant indefinitely. Following suggestions from Landers et al. (2016), both academic and non-academic repositories were included because it is possible to view various types of repository activity either as in-role or extra-role behavior. PODSAKOFF CHAPTER also note that the boundaries of citizenship are sometimes blurry because employees may believe certain behaviors to be in-role even though they are not part of a job description (and vice versa). Prior literature on OCBs among academics, for instance, has differentiated in-role research activity from behaviors focused on contributing to one's broader profession (Bergeron, Ostroff, Schroeder, \& Block, 2014).
+
+After scraping the raw data and prior to converting it into a time-series format for analysis the data was checked against my assumptions about its format (Landers et al., 2016). My first assumption was that the data would offer observations frequently over long periods of time. This assumption was met (see Results for descriptives). I also assumed that repository owners would receive issues from other individuals. This assumption was partially met. I noticed that, occassionally, a repository owner would post an issue him or herself and subsequently respond -- a web behavior that I had not planned for. Out of all data points gathered, self-created issues happened 11\% of the time. Landers et al. (2016) recommend selecting cases that are consistent with one's data-source theory and removing inconsistencies if they occur infrequently. Self-created issues, therefore, were not included in the final data set. Only issues posted by non-owners of the repository counted toward a help request trajectory. Keep in mind that selecting cases that are representative of one's data-source theory is different from carelessly creating missing data (Newman, 2014).
+
+\hypertarget{analysis}{%
+\subsubsection{Analysis}\label{analysis}}
+
+The final data structure includes 36 trajectories, each representing the number of received help requests (issues) across time for a single user. Each time-series represents a stock of help requests over time, with greater values indicating more requests and lower values indicating fewer requests. For each data set, the pilot research question regarding randomness and inertia is evaluated by assessing whether the series contains a unit root. Unit root tests examine the presence or absence of random walks in time-series (for a larger discussion see Kuljanin, Braun, \& DeShon, 2011). What matters for my purposes is that random walks contain both inertia and random movement, so when a unit root test cannot reject the presence of a random walk then there is evidence of both inertia and random fluctuations. The most widely used statistic to evaluate the presence of random walks in time-series data is the augmented Dickey-Fuller (ADF; Dickey \& Fuller, 1979) test. The null hypothesis of this test is that the data are generated from a random walk.
+
+\hypertarget{results}{%
+\subsubsection{Results}\label{results}}
+
+Descriptives and ADF results are reported in Table XXX. The shortest series included data across 533 days and began on YYY. The longest series included data across 3347 days and began on UUU. The third and fourth columns of Table XXX, respectively, report the Dickey-Fuller test statistic and p-value for each of the 36 series. 83\% of the help-request trajectories could not reject the presence of a random walk. Randomness and inertia, therefore, exist at least some of the time in the fluctuations one observes among GitHub issues. See the appendix for a visualization of the data alongside an additional set of trajectories in which the majority also contain a unit root.
+
+\hypertarget{pilot-discussion}{%
+\subsection{Pilot Discussion}\label{pilot-discussion}}
+
+The pilot study reveals that at least some help request trajectories exhibit random movement. 83\% of the trajectories examined (as well as 77\% in an alternative data set, see appendix) could not reject the presence of random walks. The second step in this research is to more systematically examine how dynamic requests for help interact with person responses to yield extra milers/good soldiers.
+
+\hypertarget{study}{%
+\subsection{Study}\label{study}}
+
+To test Hypotheses 1-10, I conduct an agent-based simulation. Agent-based models are programs written in computer code in which agents operate according to simple rules. They allow us to witness the emergence of behavioral patterns given a set of governing principles specified in a script. Prior research has used this technique to examine recruitment (Newman \& Lyon, 2009), firing systems and selection validity (Scullen, Bergey, \& Aiman-Smith, 2005), performance skews (Vancouver, Li, Weinhardt, Steel, \& Purl, 2016), group genesis (Gray et al., 2014), crowd behavior (Bernhardsson, n.d.), how people pair with romantic partners (Kalick \& Hamilton, 1986), and the effects of stereotype threat on turnover (Grand, 2017). I use an agent-based model to examine whether the interaction between requests and responses induces patterns consistent with what has been described using terms such as extra milers and good soldiers. Recall that these labels refer to a subset of employees who frequently offer more help than others.
+
+\hypertarget{simulation-heuristic}{%
+\subsection{Simulation Heuristic}\label{simulation-heuristic}}
+
+The simulation is designed to (a) build off prior research on sustained leads (Denrell, 2004; Polson \& Scott, 2012) and (b) remain consistent with the idea of extra milers/good soldiers. Imagine a set of employees, each collecting help requests according to a random walk (i.e., a trajectory with randomness and inertia). From \(t\) to \(t + 1\), each employee retains his or her stock of help requests but the pool increases or decreases by an amount drawn from a stochastic term, meaning that the value by which it increases or decreases is random at each moment. Formally, help requests for employee \(i\) at time \(t\) are \(x_{i_t}\) = \(ax_{i-{t-1}}\) + \(\varepsilon_{i_t}\), with \(a = 1\) and where \(\varepsilon_{i_t}\), \(t\) = 1, 2, \ldots{}, \(n\) are independently and identically distributed random variables with zero mean and finite variance. This simulation design is used to evaluate Hypotheses 1, 3, 5, 7, and 9, concerning trajectories with randomness and inertia. The remaining Hypotheses, concerning trajectories with randomness but not inertia, are evaluated by setting \(a\) to 0. The simulation structure follows a 2x5 design, with the first factor representing the situation (random with inertia or random without inertia) and the second representing the person (responding to many, few, influx, outflow, or conformity). Employee responses are implimented as follows.
+
+\textbf{Responding to Many or Few}. In the first two conditions, employee help is function of the size of one's request pool. By size, I mean the number of requests that sit within an agent's stock at a given period. In the \enquote{Respond to Many} condition, employee help is a positive function of size, meaning that an employee offers more help when her request pool is large and less help when her pool is small. In the \enquote{Respond to Few} condition, employee help is a negative function size, meaning that an employee offers more help when her request pool is small and less help when her pool is large.
+
+\textbf{Responding to Influx or Outflow}. In the next two conditions, help is a function of request pool change. That is, employees respond based on arriving or departing requests. In the \enquote{Respond to Influx} condition, help is a function of positive change such that an employee offers help when she witnesses incoming requests but does not offer help otherwise. In the \enquote{Respond to Outflow} condition, help is a function of negative change such that an employee offers help when she witnesses departing requests but does not offer help otherwise. In both conditions, employees do not help when their pools remain identical from \(t\) to \(t + 1\).
+
+\textbf{Norm Conformity}. In the last condition, help is a function of a group average (with a given probability). After the first period, employees offer help at levels similar to their peers with probability \(z\), which represents a conformity coefficient. This conformity coefficient determines the likelihood that a given employee will choose to offer help at the same level as his or her colleagues. If she chooses otherwise, then she offers help based on the size of her pool as specified in conditions 1 and 2.
+
+The pattern I monitor that connects to the notion of extra milers/good soldiers is the probability that a given agent starting in quantile \(Q\) at time \(t\) remains within +-10\% of this quantile for the remaining periods. Take, for example, an employee who offers the 12th highest amount of help among a group of agents during the first step. I ask, what is the probability that she remains within a window of +-10\% of that quantile in period \(t + 1\)? Period \(t + 2\)? Period \(t + 3\)? For how many consecutive steps, \(n\), is a given employee expected to stay within his or her same quantile? What this analysis captures is the stability of relative positions. It indicates the \enquote{streakiness} of employee help. If extra milers/good soldiers emerge, then the probability of remaining within +-10\% of one's quantile should peak for large values of \(n\). Said differently, if the greatest probability for a given condition is that a randomly selected employee remains within a given quantile for all periods then extra milers/good soldiers have emerged. Employees offering the most help remain so across time, as do the employees offering the least amount of help. If good soldiers do not emerge, conversely, then the greatest probability will appear over \(n = 0\), meaning that there is no stability in relative positions. Employees offering the most help do not hold their relative position across time.
+
+\hypertarget{analysis-results}{%
+\subsection{Analysis \& Results}\label{analysis-results}}
+
+Simulations were completed in Julia and are available at the following repository (www). In a single run, the number of time steps was set to 20 and the number of employees to 300. Results are based on 10,000 replicates. The design was fully crossed, with each situation factor paired with every person factor. For the conformity condition, three different values were selected for the conformity coefficient, \(z\). These included 0.2 (low), 0.5 (moderate), and 0.8 (high). Conceptually, this parameter refers to the likelihood that an agent provides help consistent with norms of the other employees. Results are as follows.
+
+\textbf{Respond to Many or Few}. Figure 1 presents the probabilty of spending \(n\) time steps in the same quantile of offered help. Peak probabilities near \(n = 19\) means that extra milers emerge: a given employee is most likely to spend all periods after the first step in the same relative position -- if he or she offered the 12th largest amount of help at time \(t = 1\) then she offers the 12th largest amount of help thereafter. Peak probabilities near \(n = 0\) indicate no good soldiers: a given employee is most likely to spend zero periods after the first step in the same relative position -- the exceptional citizens lose their rank. The first row of Figure 1 demonstrates results across the \enquote{Respond to Many} and \enquote{Respond to Few} conditions when requests move randomly with inertia. As shown, the greatest probability occurs at \(n = 19\) and so good soldiers emerge. The effects are the opposite when requests compile randomly without inertia. The greatest probability occurs near \(n = 0\) and so good soldiers do not emerge. Consistent with Hypotheses 1 and 2, when employees react to many rather than few requests and requests compile randomly with inertia then good soldiers emerge; they do not when requests compile randomly without inertia. Consistent with Hypotheses 3 and 4, when employees react to few rather than many requests and requests compile randomly with inertia then good soldiers emerge; they do not when requests compile randomly without inertia.
+
+\textbf{Respond to Influx or Outflow}. Figure 2 presents the influx and outflow conditions. As above, peak probabilities near \(n = 19\) indicate extra miler emergence. In these conditions, good soldiers do not emerge irrespective of the different situation effects. The intuition for this observation is that responding to change rather than size removes the differences across the situations. Trajectories with randomness have vastly different implications for pool size depending on whether interita is or is not present. But this distinction is not relevant for arriving/departing requests -- in both, requests join or leave randomly and so they operate similarly across employees. Consistent with Hypotheses 5 and 6, when employees react to influx then good soldiers emerge regardless of randomness and inertia. Consistent with Hypotheses 7 and 8, when employees react to outflow then good soldiers also emerge regardless of randomness and inertia.
+
+\textbf{Norm Conformity.} Figure 3 presents the results across three different conformity values: low, moderate, and high. Extra milers emerge when conformity pressure is low and when requests compile with randomness and inertia. They are less likely to emerge when the trajectories lose inertia. At moderate conformity, extra milers are less likely to occur. And at high levels of conformity they become even less likely to occur. Consistent with Hypotheses 9 and 10, when help is based on pressures to conform rather than reacting to requests then good soldiers do not emerge (with the caveat that conformity pressure needs to be sufficiently high).
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+I conducted two studies examining a situation by person framework and its implications for the citizenship literature. The framework presented an alternative perspective on extra milers and good soldiers, which refer to employees who repeatedly offer more help than others. Results supported my Hypotheses, suggesting that alternative mechanisms can yield this streaky pattern. This research has implications for both theory and practice.
+
+\hypertarget{theoretical-implications}{%
+\subsection{Theoretical Implications}\label{theoretical-implications}}
+
+The present work contributes to OCB science by broadening our perspective to more readily acknowledge the role of both persons and situations. Several researchers have suggested that requests, despite being fundamental to most incidents of helping, are underexamined in the citizenship literature (Cain et al., 2014).(\textbf{Ehrhart}) They are alive and well in related literatures such as advice and help-seeking (Bohns, 2016; Bonaccio \& Dalal, 2006) but are not commonly included in discussions of citizenship. The idea that requests are overlooked is matched by an emphasis in the other direction favoring individual characteristics such as motives, personality, and justice perceptions (Podsakoff et al., 2018). My research adds to this work by offering a situation by person framework capturing the role of requests and responses over time. I built from Simon's simple rules model and integrated notions of sustained lead, compliance, and self-regulation to articulate how frequently exceptional citizens may arise from a combination of one's circumstances and reactions. I found that, across a few different ways employees might respond to requests for help, good soldiers emerged when requests exhibited inertia and randomness. These findings enhance our theoretical understanding of how the circumstances employees encounter (captured by requests over time) may combine with reactions to yield citizenship.
+
+This research also contributes to the OCB literature because it provides mechanisms are not a priori congruent with the outcome they attempt to explain. Methot et al. (2015) argue that streaky good soldiers are due to traits such as agreeableness, proactive personality, and prosocial orientations and values. Bolino et al. (2015) provide a similar suggestion. These explanations rely on motives that in advance dispose individuals in the direction of the pattern to be explained -- a common tactit used in the social and behavioral sciences (Heider, 1944). As a first step in reasoning about an observed pattern, research often targets causes that are similar to or congruent with an outcome. Egocentric attributions are explained by presuming egocentric memory (Ross \& Sicoly, 1979). Stereotypes are explained by suggesting that stereotype-consistent information is more readily encoded, stored, and retrieved in memory (Friedrich, 1993; Greenberg, Pyszczynski, \& Solomon, 1982; Kunda, 1990). Similarly, a frequent helper is explained by suggesting that the individual is prosocial. My research adds to the literature regarding the causes of streaky citizenship by demonstrating how a situation by person interaction may yield this pattern. The explanation was unique because the effects did not begin with biases that push some employees toward citizenship before movement began. Extra milers emerged even though employees were homogeneous within conditions. Extra milers emerged even though the processes by which employees received help requests were identical. No a priori between-employee differences were required. This research therefore offers a unique perspective demonstrating how a seemingly systematic, between-person outcome need not require systematic, between-person causes. Of course, personality and motives matter. My intention was to present a parsimonious theoretical explanation to which such additional constructs were not strictly necessary.
+
+The current findings also contribute to the budding literature on chance explanations in organizational science. Several papers have recently called for a greater appreciation of randomness in organizational theory (Denrell et al., 2014; Liu \& de Rond, 2016). As stated, such a perspective does not imply that an investigated system is fundamentally random, only that this approach can be useful given the granularity of one's research. As Denrell et al. (2014) describe, \enquote{A chance explanation explains a regularity by adding the assumption of random variation and demonstrating how a mechanism involving random variation can be used to derive the regularity in question} (p.). So far, explanations using randomness as a first principle have tended to focus either on macro or cognitive applications. These include important studies on firm growth (Bottazzi \& Secchi, 2003; Riccaboni, Pammolli, Buldyrev, Ponta, \& Stanley, 2008), performance (Henderson et al., 2012), and risk (Denrell, 2008) and, at the opposite end of the spectrum, probability estimates and predictions (Hilbert, 2012). The findings presented here reveal how randomness may play a role in the citizenship literature. Understanding how it operates is necessary not because all acts of helping are random or because received requests are unpredictable, but because at a given level of analysis a trajectory over time may exhibit random movement. This research offers theoretical insight into the downstream consequences randomness can lead to, especially when it is paired with inertia.
+
+It is worth reflecting on the fact that this work was different from typical presentations in organizational psychology and management. There were no regression coefficients, no multi-level models, no interviews or surveys. Instead, this research was consistent with a generative or computational perspective, or what is sometimes called the third scientific discipline (Ilgen \& Hulin, 2000). A generative explanation describes a social phenomenon in terms of the internal and external mechanisms that may produce it, rather than by inferring causes from observed co-variations (Smith \& Conrey, 2007). The goals of a computational approach are many: identify mechanisms that can generate a pattern of interest, suggest alternatives to previously agreed-upon predictors, call attention to variables whose importance might not otherwise be recognized, demonstrate how complexity can emerge from simple components (Epstein, 2008). It focuses less on prediction and more on the logic of an explanation. It tries not to fully represent the real world but abstract to something simple in order to provide insight. It eschews ambiguous language in favor of reproducible code, but at the cost of breadth. Theorists have called for researchers to use the approach (Smaldino, Calanchini, \& Pickett, 2015) but it is far from common in organizational psychology and behavior. This work is a small step in that direction. Without such an approach, it is harder to recognize alternative mechanisms because the dynamics of a system are not easily simulated in one's head (Cronin, Gonzalez, \& Sterman, 2009). Moreover, researchers are forced to study only that which can be measured and analyzed under the covariation paradigm, naturally limiting our ability to generate theoretical insight.
+
+Finally, the perspective presented in this research, although random, need not be incompatible with theories of cumulative advantage or social capital. The level of analysis in this study was simply one step removed. Cumulative advantage and social capital offer reasons for why some individuals may experience greater or fewer requests than others. It is not inconsistent to say that, at a lower level of analysis, cumulative advantage and social capital may explain why some are afforded more requests than others while, at a higher level of analysis, observed requests trajectories exhibit random movement. Both could occur. This research simply started with trajectory movement and offered downstream consequences. Others may glean insight by going lower and instead focusing on upstream causes of movement. Another consistency is that, in terms of downstream consequences, cumulative advantage and social capital offer identical predictions to the Hypotheses presented here. If requests exhibit sustained lead due to reasons of cumulative advantage and social capital, the same outcome -- whether or not good soldiers emerge -- is predicted across all person responses. For example, Hypothesis 1 predicted that if sustained lead occurs and employee responses are a positive function of pool size then good soldiers emerge. The prediction stays the same regardless of whether sustained lead is due to random movement or social capital and cumulative advantage. The current research, therefore, need not act in opposition to these literatures but as a complimentary starting point for each.
+
+\hypertarget{practical-implications}{%
+\subsection{Practical implications}\label{practical-implications}}
+
+There are two practical implications. The first is that managers need to be weary of attributing motive after witnessing patterns of citizenship. Given the possibility of long leads from the processes described in this research, presuming that a frequent citizen has prosocial motives or characteristics may be misleading. Even if there are no systematic differences across individuals in motive or personality, there will often still be different patterns of behavior. The reverse is also true: employees exhibiting the same level of citizenship need not have the same motives. The importance of understanding this insight can be expressed using Grant's (2014) book on helping. In it, he describes a study by Hui, Lam, and Law (2000), which examines employee citizenship before and after a promotion opportunity. The researchers find that some employees exhibit lower OCBs after being promoted whereas others retain high levels before and after promotion. Grant (2014) explains:
+
+\begin{quote}
+\begin{quote}
+Of the seventy tellers who were promoted, thirty-three were genuine givers: they sustained their giving after the promotion. The other thirty-seven tellers declined rapidly in their giving. They were fakers: in the three months before the promotion, they knew they were being watched, so they went out of their way to help others. But after they got promoted, they reduced their giving by an average of 23 percent each. p.~246
+\end{quote}
+\end{quote}
+
+His description infers motive from behavior: some employees were genuine because they exhibited one pattern of citizenship whereas others were not because they exhibited a different pattern. In other words, when an employee lowered her citizenship from one period to the next she was classified as fake. The point Grant was making in his book, which I agree with, was that motives are necessary to account for, otherwise unexpected changes in citizenship can occur. Indeed, perceptions of instrumentality were an important aspect to Hui et al.'s (2000) research. My point is that drawing meaning from observed citizenship patterns, be they stable or volatile, is much harder than given credit for -- especially when only two time points are assessed. Managers need to be aware that seemingly meaningful patterns can be generated by unsystematic causes. This idea of course connects to a long history of research on attributions. Citizenship relates to supervisor impressions, liking, and attributions of motive which then relate to performance judgments (Allen \& Rush, 1998). Performance judgments are themselves subject to a menu of effects, including gain or loss framing, decoys, dilution, anchoring, and the correspondence principle (Connolly, Reb, \& Kausel, 2013; Highhouse, 1996; Thorsteinson, Breier, Atwell, Hamilton, \& Privette, 2008; Wong \& Kwong, 2005). There are also studies examining how supervisors rate trajectories, often finding that the within-person mean, trend, and variability influence ratings (Ferris, Reb, Lian, Sim, \& Ang, 2018). What this study adds to this conversation is a probabilty theory perspective: whereas performance management literatures tend to focus the extent to which supervisor ratings are more favorable given one trajectory or another (Highhouse, Dalal, \& Salas, 2013), probability theory researchers often spend considerable time trying to understand whether a given trajectory can be meaningfully parsed from chance in the first place. Such a simple effort is not without its consequences. In Hollywood, executives are evaluated based on the assumption that meaning can be culled from the random spikes and dips in box-office movie performance. Sherry Lansing, who was initially praised for successfully running the Paramount Motion Picture Group, was removed after the company's percentage-of-market-share demonstrated the following decreasing trend over six years: 11.4, 10.6, 11.3, 7.4, 7.1, 6.7 -- a streak which caused BusinessWeek to state that Lansing \enquote{may simply no longer have Hollywood's hot hand} (Grover, 2003). In hindsight, researchers have argued that this sequence was far too short to adequately distinguish flawed decision-making from random fluctuations, a statement supported by follow up data demonstrating that the trajectory reverted back to its mean (Mlodinow, 2009). So it is with citizenship: managers need to be armed with the tools necessary to differentiate meaning from chance because employees who are identical in character may nonetheless exhibit different patterns of citizenship. For a greater discussion, see Henderson et al. (2012).
+
+This work also offers direction for organizational helping interventions. Many strategies exist, including helping skills techniques (Hill et al., 2008), the helpful organizational behavior paradigm (Bandura \& Lyons, 2012), manager-directed initiatives (Tews \& Tracey, 2009), mentor or peer-based efforts (Hill \& Lent, 2006), or interventions based on the mutual-investment model (van Gerwen, Buskens, \& van der Lippe, 2018). Organizations hoping to promote certain outcomes may want to take heed of the fact that the type of citizenship response employees enact informs the outcome that occurs across the collective. Organizations will need to consider whether they value similar or dissimilar levels of help across employees, the type of responding a given intervention calls for, the nature of requests employees experience, and the extent to which a suggested intervention will promote the outcome of interest. If an intervention, for example, promotes citizenship such that employees respond to request size rather than change then it will be much more difficult for the organization to create similar levels of citizenship across the collective. Employees may also benefit from a systematic assessment that provides feedback on how they receive variations in requests over time. Based on such detailed feedback, employees could identify their own response patterns, compare to others, and adjust accordingly in-line with espoused values of the organization.
+
+\hypertarget{limitations}{%
+\subsection{Limitations}\label{limitations}}
+
+There were several limitations that should be acknowledged. Concerning the simulation, one might add or consider any of the following for future research. The first is that employees may work through a sequence of decisions when responding with help rather than the single command as implemented here. In the current research, for example, the decision to help (a binary \enquote{yes} or \enquote{no}) was not treated separately from the decision of how much help to provide (given \enquote{yes,} what level of help should be offered?). Studies have shown that different decisions call on unique aspects of one's environment (Wegwarth, Gaissmaier, \& Gigerenzer, 2009). One could conceive of situation cues such as influx, outflow, and pool size as informing one decision whereas some of the unexamined cues, such as the framing of a message, as informing another. Both may then combine to influence help. Second, this research did not include a 1 to -1 correspondence between help and resolved requests. There are conceptual reasons for and against this position. Employees may feel that they offered inadequate help and return to a request at a later period. It also, functionally, captures the notion of a delay such that employees are unable to act the moment requests are received. Alternatively, one could argue that employees perceive requests leaving every time they help. Concerning the pilot study, the goal was to maximize my within-person sample size but doing so came at the cost of a between-person sample. Moreover, request trajectories were only examined in two contexts and so they may not generalize to other situations.
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+Leonard Mlodinow (2009) wrote, \enquote{A lot of what happens to us -- success in our careers, in our investments, and in our life decisions, both major and minor -- is as much the result of random factors as the result of skill, preparedness, and hard work. So the reality that we perceive is not a direct reflection of the people or circumstances that underlie it but instead an image blurred by the randomizing effects of unforeseeable or fluctuating external forces} (p.~11). Whereas existing research examines individual dispositions, motives, and personality as the forces underlying citizenship, I proposed that randomly fluctuating help requests combine with self-regulatory actions to yield streaky helping behaviors. This perspective fits within the recent citizenship and chance perspectives as well as the long-standing situation by person frameworks in psychology and management. It opens the literature to both context and individual effects, highlighting how their combination plays a critical role in frequent citizenship. It advances the citizenship literature by asserting that employees need not differ in motive, personality, or altruism to nonetheless exhibit sustained differences in helping. It calls attention to the importance of requests, and the aspects to which employees may or may not attend to. Finally, it offers a generative perspective capturing simple mechanisms yielding the emergence of streaky citizenship.
+
+\hypertarget{appendix}{%
+\section{Appendix}\label{appendix}}
+
+To demonstrate the prevalence of random walks in time-series observations, data were also collected on the number of graduate students per department at a large, Midwestern University. Ninety-two series were obtained from the school. Each trajectory captures the number of active graduate students in a given department across all terms -- from when the department first began until Summer 2020. Greater scores indicate more active graduate students, and lower scores indicate fewer active graduate students. These data do not represent specific notifications or help requests, of course. The purpose of this data, instead, is to reiterate that randomness is a legitamate perspective because such fluctuations will occur at higher levels of analysis. A graduate student is not synonymous with a help request. But a graduate student is an agent through which a help request may be developed and then delivered. Moreover, the process by which graduate students enter and exit graduate school is not, at its core, random. But observed trajectories at a higher level of analysis may still exhibit random movement. Indeed, of the 92 trajectories collected, 77\% could not reject the presence of a unit root. Visualizations of each series, as well as the series located in the GitHub data sources, can be accessed using the link below.
+
+\newpage
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs}{}
+\leavevmode\hypertarget{ref-adler_social_2002}{}%
+Adler, P. S., \& Kwon, S.-W. (2002). Social capital: Prospects for a new concept. \emph{Academy of Management Review}, \emph{27}(1), 17--40.
+
+\leavevmode\hypertarget{ref-aguinis_cumulative_2016}{}%
+Aguinis, H., O'Boyle, E., Gonzalez-Mulé, E., \& Joo, H. (2016). Cumulative advantage: Conductors and insulators of heavy-tailed productivity distributions and productivity stars. \emph{Personnel Psychology}, \emph{69}(1), 3--66.
+
+\leavevmode\hypertarget{ref-akimoto_generalized_2008}{}%
+Akimoto, T. (2008). Generalized arcsine law and stable law in an infinite measure dynamical system. \emph{Journal of Statistical Physics}, \emph{132}(1), 171.
+
+\leavevmode\hypertarget{ref-allen1998effects}{}%
+Allen, T. D., \& Rush, M. C. (1998). The effects of organizational citizenship behavior on performance judgments: A field study and a laboratory experiment. \emph{Journal of Applied Psychology}, \emph{83}(2), 247.
+
+\leavevmode\hypertarget{ref-baird_back_2011}{}%
+Baird, B., Smallwood, J., \& Schooler, J. W. (2011). Back to the future: Autobiographical planning and the functionality of mind-wandering. \emph{Consciousness and Cognition}, \emph{20}(4), 1604--1611. \url{https://doi.org/10.1016/j.concog.2011.08.007}
+
+\leavevmode\hypertarget{ref-martocchio_employee_2009}{}%
+Bamberger, P. (2009). Employee help-seeking: Antecedents, consequences and new insights for future research. In J. J. Martocchio \& H. Liao (Eds.), \emph{Research in Personnel and Human Resources Management} (Vol. 28, pp. 49--98). Emerald Group Publishing Limited. \url{https://doi.org/10.1108/S0742-7301(2009)0000028005}
+
+\leavevmode\hypertarget{ref-bandura_psychology_1982}{}%
+Bandura, A. (1982). The psychology of chance encounters and life paths. \emph{American Psychologist}, \emph{37}(7), 747.
+
+\leavevmode\hypertarget{ref-bandura_helping_2012}{}%
+Bandura, R. P., \& Lyons, P. R. (2012). Helping managers stimulate employee voluntary, helpful behavior. \emph{Industrial and Commercial Training}, \emph{44}(2), 94--102. \url{https://doi.org/10.1108/00197851211202939}
+
+\leavevmode\hypertarget{ref-barron_private_2002}{}%
+Barron, G., \& Yechiam, E. (2002). Private e-mail requests and the diffusion of responsibility. \emph{Computers in Human Behavior}, \emph{18}(5), 507--520. \url{https://doi.org/10.1016/S0747-5632(02)00007-9}
+
+\leavevmode\hypertarget{ref-basu_introduction_2003}{}%
+Basu, A. K. (2003). \emph{Introduction to stochastic processes}. Alpha Science Int'l Ltd.
+
+\leavevmode\hypertarget{ref-becker_theory_1965}{}%
+Becker, G. S. (1965). A Theory of the Allocation of Time. \emph{The Economic Journal}, 493--517.
+
+\leavevmode\hypertarget{ref-bergeron_potential_2007}{}%
+Bergeron, D. M. (2007). The potential paradox of organizational citizenship behavior: Good citizens at what cost? \emph{Academy of Management Review}, \emph{32}(4), 1078--1095.
+
+\leavevmode\hypertarget{ref-bergeron_organizational_2013}{}%
+Bergeron, D. M., Shipp, A. J., Rosen, B., \& Furst, S. A. (2013). Organizational citizenship behavior and career outcomes: The cost of being a good citizen. \emph{Journal of Management}, \emph{39}(4), 958--984.
+
+\leavevmode\hypertarget{ref-bergeron_dual_2014}{}%
+Bergeron, D., Ostroff, C., Schroeder, T., \& Block, C. (2014). The Dual Effects of Organizational Citizenship Behavior: Relationships to Research Productivity and Career Outcomes in Academe. \emph{Human Performance}, \emph{27}(2), 99--128. \url{https://doi.org/10.1080/08959285.2014.882925}
+
+\leavevmode\hypertarget{ref-bernhardsson_buffet_nodate}{}%
+Bernhardsson, E. (n.d.). Buffet lines are terrible, but let's try to improve them using computer simulations. Retrieved May 28, 2020, from \url{https://erikbern.com/2019/10/16/buffet-lines-are-terrible.html}
+
+\leavevmode\hypertarget{ref-bhattacharya_testing_2005}{}%
+Bhattacharya, M., \& Narayan, P. K. (2005). Testing for the random walk hypothesis in the case of visitor arrivals: Evidence from Indian tourism. \emph{Applied Economics}, \emph{37}(13), 1485--1490.
+
+\leavevmode\hypertarget{ref-blumberg_missing_1982}{}%
+Blumberg, M., \& Pringle, C. D. (1982). The missing opportunity in organizational research: Some implications for a theory of work performance. \emph{Academy of Management Review}, \emph{7}(4), 560--569.
+
+\leavevmode\hypertarget{ref-bohns_mis_2016}{}%
+Bohns, V. K. (2016). (Mis) Understanding our influence over others: A review of the underestimation-of-compliance effect. \emph{Current Directions in Psychological Science}, \emph{25}(2), 119--123.
+
+\leavevmode\hypertarget{ref-bolino_citizenship_1999}{}%
+Bolino, M. C. (1999). Citizenship and impression management: Good soldiers or good actors? \emph{Academy of Management Review}, \emph{24}(1), 82--98.
+
+\leavevmode\hypertarget{ref-bolino_well_2015}{}%
+Bolino, M. C., Hsiung, H.-H., Harvey, J., \& LePine, J. A. (2015). ``Well, I'm tired of tryin'!'' Organizational citizenship behavior and citizenship fatigue. \emph{Journal of Applied Psychology}, \emph{100}(1), 56.
+
+\leavevmode\hypertarget{ref-bolino_citizenship_2002}{}%
+Bolino, M. C., Turnley, W. H., \& Bloodgood, J. M. (2002). Citizenship behavior and the creation of social capital in organizations. \emph{Academy of Management Review}, \emph{27}(4), 505--522.
+
+\leavevmode\hypertarget{ref-bolino_citizenship_2009}{}%
+Bolino, M. C., Turnley, W. H., Gilstrap, J. B., \& Suazo, M. M. (2009). Citizenship under pressure: What's a ``good soldier'' to do? \emph{Journal of Organizational Behavior}, \emph{31}(6), 835--855. \url{https://doi.org/10.1002/job.635}
+
+\leavevmode\hypertarget{ref-bonaccio_advice_2006}{}%
+Bonaccio, S., \& Dalal, R. S. (2006). Advice taking and decision-making: An integrative literature review, and implications for the organizational sciences. \emph{Organizational Behavior and Human Decision Processes}, \emph{101}(2), 127--151. \url{https://doi.org/10.1016/j.obhdp.2006.07.001}
+
+\leavevmode\hypertarget{ref-bottazzi_stochastic_2003}{}%
+Bottazzi, G., \& Secchi, A. (2003). A stochastic model of firm growth. \emph{Physica A: Statistical Mechanics and Its Applications}, \emph{324}(1-2), 213--219.
+
+\leavevmode\hypertarget{ref-brown_attenuating_2005}{}%
+Brown, S. P., Jones, E., \& Leigh, T. W. (2005). The attenuating effect of role overload on relationships linking self-efficacy and goal level to work performance. \emph{Journal of Applied Psychology}, \emph{90}(5), 972.
+
+\leavevmode\hypertarget{ref-cain_giving_2014}{}%
+Cain, D. M., Dana, J., \& Newman, G. E. (2014). Giving Versus Giving In. \emph{Academy of Management Annals}, \emph{8}(1), 505--533. \url{https://doi.org/10.5465/19416520.2014.911576}
+
+\leavevmode\hypertarget{ref-chang_moving_2009}{}%
+Chang, C.-H. D., Johnson, R. E., \& Lord, R. G. (2009). Moving beyond discrepancies: The importance of velocity as a predictor of satisfaction and motivation. \emph{Human Performance}, \emph{23}(1), 58--80.
+
+\leavevmode\hypertarget{ref-chiaburu_five-factor_2011}{}%
+Chiaburu, D. S., Oh, I.-S., Berry, C. M., Li, N., \& Gardner, R. G. (2011). The five-factor model of personality traits and organizational citizenship behaviors: A meta-analysis. \emph{Journal of Applied Psychology}, \emph{96}(6), 1140.
+
+\leavevmode\hypertarget{ref-christian_dynamic_2015}{}%
+Christian, M. S., Eisenkraft, N., \& Kapadia, C. (2015). Dynamic associations among somatic complaints, human energy, and discretionary behaviors: Experiences with pain fluctuations at work. \emph{Administrative Science Quarterly}, \emph{60}(1), 66--102.
+
+\leavevmode\hypertarget{ref-cialdini_test_1976}{}%
+Cialdini, R. B., \& Ascani, K. (1976). Test of a concession procedure for inducing verbal, behavioral, and further compliance with a request to give blood. \emph{Journal of Applied Psychology}, \emph{61}(3), 295.
+
+\leavevmode\hypertarget{ref-cialdini_social_2004}{}%
+Cialdini, R. B., \& Goldstein, N. J. (2004). Social Influence: Compliance and Conformity. \emph{Annual Review of Psychology}, \emph{55}(1), 591--621. \url{https://doi.org/10.1146/annurev.psych.55.090902.142015}
+
+\leavevmode\hypertarget{ref-cialdini_reciprocal_1975}{}%
+Cialdini, R. B., Vincent, J. E., Lewis, S. K., Catalan, J., Wheeler, D., \& Darby, B. L. (1975). Reciprocal concessions procedure for inducing compliance: The door-in-the-face technique. \emph{Journal of Personality and Social Psychology}, \emph{31}(2), 206.
+
+\leavevmode\hypertarget{ref-connolly_regret_2013}{}%
+Connolly, T., Reb, J., \& Kausel, E. E. (2013). Regret salience and accountability in the decoy effect. \emph{Judgment and Decision Making}, \emph{8}(2), 136.
+
+\leavevmode\hypertarget{ref-cooper_world_1982}{}%
+Cooper, J. C. (1982). World stock markets: Some random walk tests. \emph{Applied Economics}, \emph{14}(5), 515--531.
+
+\leavevmode\hypertarget{ref-cronin_why_2009}{}%
+Cronin, M. A., Gonzalez, C., \& Sterman, J. D. (2009). Why don't well-educated adults understand accumulation? A challenge to researchers, educators, and citizens. \emph{Organizational Behavior and Human Decision Processes}, \emph{108}(1), 116--130.
+
+\leavevmode\hypertarget{ref-dalal_within-person_2009}{}%
+Dalal, R. S., Lam, H., Weiss, H. M., Welch, E. R., \& Hulin, C. L. (2009). A within-person approach to work behavior and performance: Concurrent and lagged citizenship-counterproductivity associations, and dynamic relationships with affect and overall job performance. \emph{Academy of Management Journal}, \emph{52}(5), 1051--1066.
+
+\leavevmode\hypertarget{ref-dawis_note_1978}{}%
+Dawis, R., \& Lofquist, L. H. (1978). A note on the dynamics of work adjustment. \emph{Journal of Vocational Behavior}, \emph{12}(1), 76--79.
+
+\leavevmode\hypertarget{ref-deci_self-determination_1980}{}%
+Deci, E. L., \& Ryan, R. M. (1980). Self-determination theory: When mind mediates behavior. \emph{The Journal of Mind and Behavior}, 33--43.
+
+\leavevmode\hypertarget{ref-denrell_random_2004}{}%
+Denrell, J. (2004). Random walks and sustained competitive advantage. \emph{Management Science}, \emph{50}(7), 922--934.
+
+\leavevmode\hypertarget{ref-denrell_organizational_2008}{}%
+Denrell, J. (2008). Organizational risk taking: Adaptation versus variable risk preferences. \emph{Industrial and Corporate Change}, \emph{17}(3), 427--466.
+
+\leavevmode\hypertarget{ref-denrell_perspectivechance_2014}{}%
+Denrell, J., Fang, C., \& Liu, C. (2014). Perspective---Chance explanations in the management sciences. \emph{Organization Science}, \emph{26}(3), 923--940.
+
+\leavevmode\hypertarget{ref-deshon_motivated_2005}{}%
+DeShon, R. P., \& Gillespie, J. Z. (2005). A motivated action theory account of goal orientation. \emph{Journal of Applied Psychology}, \emph{90}(6), 1096.
+
+\leavevmode\hypertarget{ref-deshon_clarifying_2009}{}%
+DeShon, R. P., \& Rench, T. A. (2009). Clarifying the notion of self-regulation in organizational behavior. \emph{International Review of Industrial and Organizational Psychology}, \emph{24}, 217--248.
+
+\leavevmode\hypertarget{ref-deutsch_study_1955}{}%
+Deutsch, M., \& Gerard, H. B. (1955). A study of normative and informational social influences upon individual judgment. \emph{The Journal of Abnormal and Social Psychology}, \emph{51}(3), 629.
+
+\leavevmode\hypertarget{ref-dew_serendipity_2009}{}%
+Dew, N. (2009). Serendipity in entrepreneurship. \emph{Organization Studies}, \emph{30}(7), 735--753.
+
+\leavevmode\hypertarget{ref-dickey_distribution_1979}{}%
+Dickey, D. A., \& Fuller, W. A. (1979). Distribution of the estimators for autoregressive time series with a unit root. \emph{Journal of the American Statistical Association}, \emph{74}(366a), 427--431.
+
+\leavevmode\hypertarget{ref-dillard_sequential-request_1984}{}%
+Dillard, J. P., Hunter, J. E., \& Burgoon, M. (1984). SEQUENTIAL-REQUEST PERSUASIVE STRATEGIES.: Meta-Analysis of Foot-in-the-Door and Door-in-the-Face. \emph{Human Communication Research}, \emph{10}(4), 461--488. \url{https://doi.org/10.1111/j.1468-2958.1984.tb00028.x}
+
+\leavevmode\hypertarget{ref-dobrow_introduction_2016}{}%
+Dobrow, R. P. (2016). \emph{Introduction to stochastic processes with R}. John Wiley \& Sons.
+
+\leavevmode\hypertarget{ref-ellison_social_2014}{}%
+Ellison, N. B., Gray, R., Lampe, C., \& Fiore, A. T. (2014). Social capital and resource requests on Facebook. \emph{New Media \& Society}, \emph{16}(7), 1104--1121. \url{https://doi.org/10.1177/1461444814543998}
+
+\leavevmode\hypertarget{ref-enzle_rhetorical_1982}{}%
+Enzle, M. E., \& Harvey, M. D. (1982). Rhetorical Requests for Help. \emph{Social Psychology Quarterly}, \emph{45}(3), 172--176. \url{https://doi.org/10.2307/3033650}
+
+\leavevmode\hypertarget{ref-epstein2008model}{}%
+Epstein, J. M. (2008). Why model? \emph{Journal of Artificial Societies and Social Simulation}, \emph{11}(4), 12.
+
+\leavevmode\hypertarget{ref-epstein_explorations_1979}{}%
+Epstein, S. (1979). Explorations in personality today and tomorrow: A tribute to Henry A. Murray. \emph{American Psychologist}, \emph{34}(8), 649--653. \url{https://doi.org/http://dx.doi.org.proxy2.cl.msu.edu/10.1037/0003-066X.34.8.649}
+
+\leavevmode\hypertarget{ref-fehr_obtaining_1979}{}%
+Fehr, M. J., Dybsky, A., Wacker, D., Kerr, J., \& Kerr, N. (1979). Obtaining help from strangers: Effects of eye contact, visible struggling, and direct requests. \emph{Rehabilitation Psychology}, \emph{26}(1), 1--6. \url{https://doi.org/http://dx.doi.org.proxy2.cl.msu.edu/10.1037/h0090920}
+
+\leavevmode\hypertarget{ref-ferris_what_2018}{}%
+Ferris, D. L., Reb, J., Lian, H., Sim, S., \& Ang, D. (2018). What goes up must... Keep going up? Cultural differences in cognitive styles influence evaluations of dynamic performance. \emph{Journal of Applied Psychology}, \emph{103}(3), 347.
+
+\leavevmode\hypertarget{ref-fleeson_whole_2015}{}%
+Fleeson, W., \& Jayawickreme, E. (2015). Whole trait theory. \emph{Journal of Research in Personality}, \emph{56}, 82--92.
+
+\leavevmode\hypertarget{ref-florey_reactions_1997}{}%
+Florey, A., \& Harrison, D. A. (1997). REACTIONS TO REQUESTS FOR ACCOMMODATIONS FROM THE DISABLED: THEORY AND EVIDENCE IN TWO POPULATIONS. \emph{Academy of Management Proceedings}, \emph{1997}(1), 139--143. \url{https://doi.org/10.5465/ambpp.1997.4981071}
+
+\leavevmode\hypertarget{ref-forgas_asking_1998}{}%
+Forgas, J. P. (1998). Asking Nicely? The Effects of Mood on Responding to More or Less Polite Requests. \emph{Personality and Social Psychology Bulletin}, \emph{24}(2), 173--185. \url{https://doi.org/10.1177/0146167298242006}
+
+\leavevmode\hypertarget{ref-freedman_compliance_1966}{}%
+Freedman, J. L., \& Fraser, S. C. (1966). Compliance without pressure: The foot-in-the-door technique. \emph{Journal of Personality and Social Psychology}, \emph{4}(2), 195.
+
+\leavevmode\hypertarget{ref-friedrich_primary_1993}{}%
+Friedrich, J. (1993). Primary error detection and minimization (PEDMIN) strategies in social cognition: A reinterpretation of confirmation bias phenomena. \emph{Psychological Review}, \emph{100}(2), 298.
+
+\leavevmode\hypertarget{ref-galunic_positive_2012}{}%
+Galunic, C., Ertug, G., \& Gargiulo, M. (2012). The positive externalities of social capital: Benefiting from senior brokers. \emph{Academy of Management Journal}, \emph{55}(5), 1213--1231.
+
+\leavevmode\hypertarget{ref-gasper_approaching_2014}{}%
+Gasper, K., \& Middlewood, B. L. (2014). Approaching novel thoughts: Understanding why elation and boredom promote associative thought more than distress and relaxation. \emph{Journal of Experimental Social Psychology}, \emph{52}, 50--57. \url{https://doi.org/10.1016/j.jesp.2013.12.007}
+
+\leavevmode\hypertarget{ref-gilbert_correspondence_1995}{}%
+Gilbert, D. T., \& Malone, P. S. (1995). The correspondence bias. \emph{Psychological Bulletin}, \emph{117}(1), 21.
+
+\leavevmode\hypertarget{ref-glomb_doing_2011}{}%
+Glomb, T. M., Bhave, D. P., Miner, A. G., \& Wall, M. (2011). Doing Good, Feeling Good: Examining the Role of Organizational Citizenship Behaviors in Changing Mood. \emph{Personnel Psychology}, \emph{64}(1), 191--223. \url{https://doi.org/10.1111/j.1744-6570.2010.01206.x}
+
+\leavevmode\hypertarget{ref-goldman_requests_1983}{}%
+Goldman, M., Broll, R., \& Carrill, R. (1983). Requests for help and prosocial behavior. \emph{Journal of Social Psychology; Worcester, Mass.}, \emph{119}(1), 55--59. Retrieved from \url{http://search.proquest.com/docview/1290697349/citation/6D851E1565C64816PQ/1}
+
+\leavevmode\hypertarget{ref-graham_consultant_1998}{}%
+Graham, D. S. (1998). Consultant effectiveness and treatment acceptability: An examination of consultee requests and consultant responses. \emph{School Psychology Quarterly}, \emph{13}(2), 155--168. \url{https://doi.org/http://dx.doi.org.proxy2.cl.msu.edu/10.1037/h0088979}
+
+\leavevmode\hypertarget{ref-grand_brain_2017}{}%
+Grand, J. A. (2017). Brain drain? An examination of stereotype threat effects during training on knowledge acquisition and organizational effectiveness. \emph{Journal of Applied Psychology}, \emph{102}(2), 115--150. \url{https://doi.org/http://dx.doi.org.proxy2.cl.msu.edu/10.1037/apl0000171}
+
+\leavevmode\hypertarget{ref-grant_give_2014}{}%
+Grant, A. (2014). \emph{Give and Take: Why Helping Others Drives Our Success} (Reprint edition). Ottawa: Penguin Books.
+
+\leavevmode\hypertarget{ref-grant_good_2009}{}%
+Grant, A. M., \& Mayer, D. M. (2009). Good soldiers and good actors: Prosocial and impression management motives as interactive predictors of affiliative citizenship behaviors. \emph{Journal of Applied Psychology}, \emph{94}(4), 900--912. \url{https://doi.org/10.1037/a0013770}
+
+\leavevmode\hypertarget{ref-gray_emergence_2014}{}%
+Gray, K., Rand, D. G., Ert, E., Lewis, K., Hershman, S., \& Norton, M. I. (2014). The emergence of ``us and them'' in 80 lines of code: Modeling group genesis in homogeneous populations. \emph{Psychological Science}, \emph{25}(4), 982--990.
+
+\leavevmode\hypertarget{ref-greenberg_self-serving_1982}{}%
+Greenberg, J., Pyszczynski, T., \& Solomon, S. (1982). The self-serving attributional bias: Beyond self-presentation. \emph{Journal of Experimental Social Psychology}, \emph{18}(1), 56--67.
+
+\leavevmode\hypertarget{ref-gross_beneficiary_1975}{}%
+Gross, A. E., Wallston, B. S., \& Piliavin, I. M. (1975). Beneficiary Attractiveness and Cost as Determinants of Responses to Routine Requests for Help. \emph{Sociometry}, \emph{38}(1), 131. \url{https://doi.org/10.2307/2786237}
+
+\leavevmode\hypertarget{ref-hansen_search-transfer_1999}{}%
+Hansen, M. T. (1999). The search-transfer problem: The role of weak ties in sharing knowledge across organization subunits. \emph{Administrative Science Quarterly}, \emph{44}(1), 82--111.
+
+\leavevmode\hypertarget{ref-heider_social_1944}{}%
+Heider, F. (1944). Social perception and phenomenal causality. \emph{Psychological Review}, \emph{51}(6), 358.
+
+\leavevmode\hypertarget{ref-henderson_how_2012}{}%
+Henderson, A. D., Raynor, M. E., \& Ahmed, M. (2012). How long must a firm be great to rule out chance? Benchmarking sustained superior performance without being fooled by randomness. \emph{Strategic Management Journal}, \emph{33}(4), 387--406.
+
+\leavevmode\hypertarget{ref-highhouse_context-dependent_1996}{}%
+Highhouse, S. (1996). Context-dependent selection: The effects of decoy and phantom job candidates. \emph{Organizational Behavior and Human Decision Processes}, \emph{65}(1), 68--76.
+
+\leavevmode\hypertarget{ref-highhouse_judgment_2013}{}%
+Highhouse, S., Dalal, R. S., \& Salas, E. (2013). \emph{Judgment and decision making at work}. Routledge.
+
+\leavevmode\hypertarget{ref-hilbert_toward_2012}{}%
+Hilbert, M. (2012). Toward a synthesis of cognitive biases: How noisy information processing can bias human decision making. \emph{Psychological Bulletin}, \emph{138}(2), 211.
+
+\leavevmode\hypertarget{ref-hill_narrative_2006}{}%
+Hill, C. E., \& Lent, R. W. (2006). A narrative and meta-analytic review of helping skills training: Time to revive a dormant area of inquiry. \emph{Psychotherapy: Theory, Research, Practice, Training}, \emph{43}(2), 154--172. \url{https://doi.org/10.1037/0033-3204.43.2.154}
+
+\leavevmode\hypertarget{ref-hill_helping_2008}{}%
+Hill, C. E., Roffman, M., Stahl, J., Friedman, S., Hummel, A., \& Wallace, C. (2008). Helping skills training for undergraduates: Outcomes and prediction of outcomes. \emph{Journal of Counseling Psychology}, \emph{55}(3), 359--370. \url{https://doi.org/10.1037/0022-0167.55.3.359}
+
+\leavevmode\hypertarget{ref-hill_biased_1997}{}%
+Hill, N. A., \& Häder, D.-P. (1997). A biased random walk model for the trajectories of swimming micro-organisms. \emph{Journal of Theoretical Biology}, \emph{186}(4), 503--526.
+
+\leavevmode\hypertarget{ref-hills_optimal_2012}{}%
+Hills, T. T., Jones, M. N., \& Todd, P. M. (2012). Optimal foraging in semantic memory. \emph{Psychological Review}, \emph{119}(2), 431.
+
+\leavevmode\hypertarget{ref-hockey_compensatory_1997}{}%
+Hockey, G. R. J. (1997). Compensatory control in the regulation of human performance under stress and high workload: A cognitive-energetical framework. \emph{Biological Psychology}, \emph{45}(1-3), 73--93.
+
+\leavevmode\hypertarget{ref-hsee_velocity_1991}{}%
+Hsee, C. K., \& Abelson, R. P. (1991). Velocity relation: Satisfaction as a function of the first derivative of outcome over time. \emph{Journal of Personality and Social Psychology}, \emph{60}(3), 341.
+
+\leavevmode\hypertarget{ref-hui_instrumental_2000}{}%
+Hui, C., Lam, S. S., \& Law, K. K. (2000). Instrumental values of organizational citizenship behavior for promotion: A field quasi-experiment. \emph{Journal of Applied Psychology}, \emph{85}(5), 822.
+
+\leavevmode\hypertarget{ref-ilgen_computational_2000}{}%
+Ilgen, D. R., \& Hulin, C. L. (2000). \emph{Computational modeling of behavior in organizations: The third scientific discipline.} American Psychological Association.
+
+\leavevmode\hypertarget{ref-ilies_interactive_2006}{}%
+Ilies, R., Scott, B. A., \& Judge, T. A. (2006). The interactive effects of personal traits and experienced states on intraindividual patterns of citizenship behavior. \emph{Academy of Management Journal}, \emph{49}(3), 561--575.
+
+\leavevmode\hypertarget{ref-inkpen_social_2005}{}%
+Inkpen, A. C., \& Tsang, E. W. (2005). Social capital, networks, and knowledge transfer. \emph{Academy of Management Review}, \emph{30}(1), 146--165.
+
+\leavevmode\hypertarget{ref-jaynes_probability_2003}{}%
+Jaynes, E. T., \& Bretthorst, G. L. (2003). \emph{Probability theory: The logic of science}. Cambridge: Cambridge University Press. Retrieved from \url{http://www5.unitn.it/Biblioteca/it/Web/LibriElettroniciDettaglio/50847}
+
+\leavevmode\hypertarget{ref-johns_advances_2018}{}%
+Johns, G. (2018). Advances in the Treatment of Context in Organizational Research. \emph{Annual Review of Organizational Psychology and Organizational Behavior}, \emph{5}(1), 21--46. \url{https://doi.org/10.1146/annurev-orgpsych-032117-104406}
+
+\leavevmode\hypertarget{ref-kalick_matching_1986}{}%
+Kalick, S. M., \& Hamilton, T. E. (1986). The matching hypothesis reexamined. \emph{Journal of Personality and Social Psychology}, \emph{51}(4), 673.
+
+\leavevmode\hypertarget{ref-komaki_behavioral_1978}{}%
+Komaki, J., Barwick, K. D., \& Scott, L. R. (1978). A Behavioral Approach to Occupational Safety: Pinpointing and Reinforcing Safe Performance in a Food Manufacturing Plant. \emph{Journal of Applied Psychology; Washington}, \emph{63}(4), 434. Retrieved from \url{http://search.proquest.com/docview/213939054?pq-origsite=summon}
+
+\leavevmode\hypertarget{ref-kuljanin_cautionary_2011}{}%
+Kuljanin, G., Braun, M. T., \& DeShon, R. P. (2011). A cautionary note on modeling growth trends in longitudinal data. \emph{Psychological Methods}, \emph{16}(3), 249--264. \url{https://doi.org/http://dx.doi.org.proxy2.cl.msu.edu/10.1037/a0023348}
+
+\leavevmode\hypertarget{ref-kunda_case_1990}{}%
+Kunda, Z. (1990). The case for motivated reasoning. \emph{Psychological Bulletin}, \emph{108}(3), 480.
+
+\leavevmode\hypertarget{ref-lance_ferris_being_2019}{}%
+Lance Ferris, D., Fatimah, S., Yan, M., Liang, L. H., Lian, H., \& Brown, D. J. (2019). Being sensitive to positives has its negatives: An approach/avoidance perspective on reactivity to ostracism. \emph{Organizational Behavior and Human Decision Processes}, \emph{152}, 138--149. \url{https://doi.org/10.1016/j.obhdp.2019.05.001}
+
+\leavevmode\hypertarget{ref-landers_primer_2016}{}%
+Landers, R. N., Brusso, R. C., Cavanaugh, K. J., \& Collmus, A. B. (2016). A primer on theory-driven web scraping: Automatic extraction of big data from the Internet for use in psychological research. \emph{Psychological Methods}, \emph{21}(4), 475--492. \url{https://doi.org/10.1037/met0000081}
+
+\leavevmode\hypertarget{ref-langer_semantics_1972}{}%
+Langer, E. J., \& Abelson, R. P. (1972). The semantics of asking a favor: How to succeed in getting help without really dying. \emph{Journal of Personality and Social Psychology}, \emph{24}(1), 26.
+
+\leavevmode\hypertarget{ref-latane_psychology_1981}{}%
+Latané, B. (1981). The psychology of social impact. \emph{American Psychologist}, \emph{36}(4), 343.
+
+\leavevmode\hypertarget{ref-latane_unresponsive_1970}{}%
+Latané, B., \& Darley, J. M. (1970). \emph{The unresponsive bystander: Why doesn't he help?} Appleton-Century-Crofts.
+
+\leavevmode\hypertarget{ref-laurenceau_using_2005}{}%
+Laurenceau, J.-P., \& Bolger, N. (2005). Using diary methods to study marital and family processes. \emph{Journal of Family Psychology}, \emph{19}(1), 86.
+
+\leavevmode\hypertarget{ref-levashina_structured_2014}{}%
+Levashina, J., Hartwell, C. J., Morgeson, F. P., \& Campion, M. A. (2014). The structured employment interview: Narrative and quantitative review of the research literature. \emph{Personnel Psychology}, \emph{67}(1), 241--293.
+
+\leavevmode\hypertarget{ref-lewin_field_1951}{}%
+Lewin, K. (1951). Field theory in social science.
+
+\leavevmode\hypertarget{ref-levy_sur_1940}{}%
+Lévy, P. (1940). Sur certains processus stochastiques homogènes. \emph{Compositio Mathematica}, \emph{7}, 283--339.
+
+\leavevmode\hypertarget{ref-li_achieving_2015}{}%
+Li, N., Zhao, H. H., Walter, S. L., Zhang, X.-a., \& Yu, J. (2015). Achieving more with less: Extra milers' behavioral influences in teams. \emph{Journal of Applied Psychology}, \emph{100}(4), 1025--1039. \url{https://doi.org/http://dx.doi.org.proxy1.cl.msu.edu/10.1037/apl0000010}
+
+\leavevmode\hypertarget{ref-lin_doing_2019}{}%
+Lin, K. J., Savani, K., \& Ilies, R. (2019). Doing good, feeling good? The roles of helping motivation and citizenship pressure. \emph{Journal of Applied Psychology}, \emph{104}(8), 1020--1035. \url{https://doi.org/10.1037/apl0000392}
+
+\leavevmode\hypertarget{ref-liu_good_2016}{}%
+Liu, C., \& de Rond, M. (2016). Good Night, and Good Luck: Perspectives on Luck in Management Scholarship. \emph{Academy of Management Annals}, \emph{10}(1), 409--451. \url{https://doi.org/10.5465/19416520.2016.1120971}
+
+\leavevmode\hypertarget{ref-liu_organizational_2017}{}%
+Liu, Y., Zhao, H., \& Sheard, G. (2017). Organizational citizenship pressure, compulsory citizenship behavior, and work--family conflict. \emph{Social Behavior and Personality: An International Journal}, \emph{45}(4), 695--704.
+
+\leavevmode\hypertarget{ref-lord_moving_1994}{}%
+Lord, R. G., \& Levy, P. E. (1994). Moving from cognition to action: A control theory perspective. \emph{Applied Psychology}, \emph{43}(3), 335--367.
+
+\leavevmode\hypertarget{ref-mann_does_2014}{}%
+Mann, S., \& Cadman, R. (2014). Does Being Bored Make Us More Creative? \emph{Creativity Research Journal}, \emph{26}(2), 165--173. \url{https://doi.org/10.1080/10400419.2014.901073}
+
+\leavevmode\hypertarget{ref-matta_not_2020}{}%
+Matta, F. K., Link to external site, this link will open in a new window, Sabey, T. B., Scott, B. A., Lin, S.-H. (., \& Koopman, J. (2020). Not all fairness is created equal: A study of employee attributions of supervisor justice motives. \emph{Journal of Applied Psychology}, \emph{105}(3), 274--293. \url{https://doi.org/http://dx.doi.org.proxy2.cl.msu.edu/10.1037/apl0000440}
+
+\leavevmode\hypertarget{ref-meglino_considering_2004}{}%
+Meglino, B. M., \& Korsgaard, A. (2004). Considering rational self-interest as a disposition: Organizational implications of other orientation. \emph{Journal of Applied Psychology}, \emph{89}(6), 946.
+
+\leavevmode\hypertarget{ref-methot_good_2017}{}%
+Methot, J. R., Lepak, D., Shipp, A. J., \& Boswell, W. R. (2017). Good Citizen Interrupted: Calibrating a Temporal Theory of Citizenship Behavior. \emph{Academy of Management Review}, \emph{42}(1), 10--31. \url{https://doi.org/10.5465/amr.2014.0415}
+
+\leavevmode\hypertarget{ref-mischel_cognitive-affective_1995}{}%
+Mischel, W., \& Shoda, Y. (1995). A cognitive-affective system theory of personality: Reconceptualizing situations, dispositions, dynamics, and invariance in personality structure. \emph{Psychological Review}, \emph{102}(2), 246.
+
+\leavevmode\hypertarget{ref-mlodinow_drunkards_2008}{}%
+Mlodinow, L. (2008). \emph{The Drunkard's Walk: How Randomness Rules Our Lives}. Vintage.
+
+\leavevmode\hypertarget{ref-nagengast_big_2012}{}%
+Nagengast, B., \& Marsh, H. W. (2012). Big fish in little ponds aspire more: Mediation and cross-cultural generalizability of school-average ability effects on self-concept and career aspirations in science. \emph{Journal of Educational Psychology}, \emph{104}(4), 1033--1053. \url{https://doi.org/10.1037/a0027697}
+
+\leavevmode\hypertarget{ref-nahapiet_social_1998}{}%
+Nahapiet, J., \& Ghoshal, S. (1998). Social capital, intellectual capital, and the organizational advantage. \emph{Academy of Management Review}, \emph{23}(2), 242--266.
+
+\leavevmode\hypertarget{ref-newman_missing_2014}{}%
+Newman, D. A. (2014). Missing Data: Five Practical Guidelines. \emph{Organizational Research Methods}, \emph{17}(4), 372--411. \url{https://doi.org/10.1177/1094428114548590}
+
+\leavevmode\hypertarget{ref-newman_recruitment_2009}{}%
+Newman, D. A., \& Lyon, J. S. (2009). Recruitment efforts to reduce adverse impact: Targeted recruiting for personality, cognitive ability, and diversity. \emph{Journal of Applied Psychology}, \emph{94}(2), 298--317. \url{https://doi.org/http://dx.doi.org.proxy1.cl.msu.edu/10.1037/a0013472}
+
+\leavevmode\hypertarget{ref-organ_organizational_1988}{}%
+Organ, D. W. (1988). \emph{Organizational citizenship behavior: The good soldier syndrome.} Lexington Books/DC Heath and Com.
+
+\leavevmode\hypertarget{ref-organ_organizational_2005}{}%
+Organ, D. W., Podsakoff, P. M., \& MacKenzie, S. B. (2005). \emph{Organizational citizenship behavior: Its nature, antecedents, and consequences}. Sage Publications.
+
+\leavevmode\hypertarget{ref-organ_meta-analytic_1995}{}%
+Organ, D. W., \& Ryan, K. (1995). A meta-analytic review of attitudinal and dispositional predictors of organizational citizenship behavior. \emph{Personnel Psychology}, \emph{48}(4), 775--802.
+
+\leavevmode\hypertarget{ref-paciello_high_2013}{}%
+Paciello, M., Fida, R., Cerniglia, L., Tramontano, C., \& Cole, E. (2013). High cost helping scenario: The role of empathy, prosocial reasoning and moral disengagement on helping behavior. \emph{Personality and Individual Differences}, \emph{55}(1), 3--7.
+
+\leavevmode\hypertarget{ref-pan_social_2017}{}%
+Pan, X., \& Houser, D. (2017). Social approval, competition and cooperation. \emph{Experimental Economics}, \emph{20}(2), 309--332.
+
+\leavevmode\hypertarget{ref-guihyun_park_why_2019}{}%
+Park, G., Lim, B.-C., \& Oh, H. S. (2019). Why Being Bored Might Not Be a Bad Thing After All. \emph{Academy of Management Discoveries}, \emph{5}(1), 78--92. \url{https://doi.org/10.5465/amd.2017.0033}
+
+\leavevmode\hypertarget{ref-podsakoff_individual-and_2009}{}%
+Podsakoff, N. P., Whiting, S. W., Podsakoff, P. M., \& Blume, B. D. (2009). Individual-and organizational-level consequences of organizational citizenship behaviors: A meta-analysis. \emph{Journal of Applied Psychology}, \emph{94}(1), 122.
+
+\leavevmode\hypertarget{ref-podsakoff_organizational_2000}{}%
+Podsakoff, P. M., MacKenzie, S. B., Paine, J. B., \& Bachrach, D. G. (2000). Organizational citizenship behaviors: A critical review of the theoretical and empirical literature and suggestions for future research. \emph{Journal of Management}, \emph{26}(3), 513--563.
+
+\leavevmode\hypertarget{ref-podsakoff_oxford_2018}{}%
+Podsakoff, P. M., MacKenzie, S. B., \& Podsakoff, N. P. (2018). \emph{The Oxford handbook of organizational citizenship behavior}. Oxford University Press.
+
+\leavevmode\hypertarget{ref-polson_good_2012}{}%
+Polson, N. G., \& Scott, J. G. (2012). Good, great, or lucky? Screening for firms with sustained superior performance using heavy-tailed priors. \emph{The Annals of Applied Statistics}, \emph{6}(1), 161--185.
+
+\leavevmode\hypertarget{ref-powers_feedback_1973}{}%
+Powers, W. T. (1973). Feedback: Beyond Behaviorism: Stimulus-response laws are wholly predictable within a control-system model of behavioral organization. \emph{Science}, \emph{179}(4071), 351--356.
+
+\leavevmode\hypertarget{ref-reike_one_2016}{}%
+Reike, D., \& Schwarz, W. (2016). One model fits all: Explaining many aspects of number comparison within a single coherent model---A random walk account. \emph{Journal of Experimental Psychology: Learning, Memory, and Cognition}, \emph{42}(12), 1957.
+
+\leavevmode\hypertarget{ref-reinholt_why_2011}{}%
+Reinholt, M. I. A., Pedersen, T., \& Foss, N. J. (2011). Why a central network position isn't enough: The role of motivation and ability for knowledge sharing in employee networks. \emph{Academy of Management Journal}, \emph{54}(6), 1277--1297.
+
+\leavevmode\hypertarget{ref-riccaboni_size_2008}{}%
+Riccaboni, M., Pammolli, F., Buldyrev, S. V., Ponta, L., \& Stanley, H. E. (2008). The size variance relationship of business firm growth rates. \emph{Proceedings of the National Academy of Sciences}, \emph{105}(50), 19595--19600.
+
+\leavevmode\hypertarget{ref-rich_job_2010}{}%
+Rich, B. L., Lepine, J. A., \& Crawford, E. R. (2010). Job engagement: Antecedents and effects on job performance. \emph{Academy of Management Journal}, \emph{53}(3), 617--635.
+
+\leavevmode\hypertarget{ref-ross_getting_2001}{}%
+Ross, L. D. (2001). Getting down to fundamentals: Lay dispositionism and the attributions of psychologists. \emph{Psychological Inquiry}, \emph{12}(1), 37--40.
+
+\leavevmode\hypertarget{ref-ross_egocentric_1979}{}%
+Ross, M., \& Sicoly, F. (1979). Egocentric biases in availability and attribution. \emph{Journal of Personality and Social Psychology}, \emph{37}(3), 322.
+
+\leavevmode\hypertarget{ref-ross_introduction_2014}{}%
+Ross, S. (2014). Introduction to Probability Theory. In \emph{Introduction to Probability Models} (pp. 1--19). Elsevier. \url{https://doi.org/10.1016/B978-0-12-407948-9.00001-3}
+
+\leavevmode\hypertarget{ref-saloner_strategic_2001}{}%
+Saloner, G., Shepard, A., \& Podolny, J. (2001). Strategic Management, John Willey \& Sons. \emph{New York}.
+
+\leavevmode\hypertarget{ref-scullen_forced_2005}{}%
+Scullen, S. E., Bergey, P. K., \& Aiman-Smith, L. (2005). Forced distribution rating systems and the improvement of workforce potential: A baseline simulation. \emph{Personnel Psychology}, \emph{58}(1), 1--32.
+
+\leavevmode\hypertarget{ref-seibert_social_2001}{}%
+Seibert, S. E., Kraimer, M. L., \& Liden, R. C. (2001). A social capital theory of career success. \emph{Academy of Management Journal}, \emph{44}(2), 219--237.
+
+\leavevmode\hypertarget{ref-shiffman_ecological_2009}{}%
+Shiffman, S. (2009). Ecological momentary assessment (EMA) in studies of substance use. \emph{Psychological Assessment}, \emph{21}(4), 486.
+
+\leavevmode\hypertarget{ref-short_concept_2010}{}%
+Short, J. C., Ketchen, D. J., Shook, C. L., \& Ireland, R. D. (2010). The Concept of ``Opportunity'' in Entrepreneurship Research: Past Accomplishments and Future Challenges. \emph{Journal of Management}, \emph{36}(1), 40--65. \url{https://doi.org/10.1177/0149206309342746}
+
+\leavevmode\hypertarget{ref-shreve_stochastic_2004}{}%
+Shreve, S. E. (2004). \emph{Stochastic calculus for finance II: Continuous-time models} (Vol. 11). Springer Science \& Business Media.
+
+\leavevmode\hypertarget{ref-simon_behavioral_1955}{}%
+Simon, H. A. (1955). A behavioral model of rational choice. \emph{The Quarterly Journal of Economics}, \emph{69}(1), 99--118.
+
+\leavevmode\hypertarget{ref-simon_rational_1956}{}%
+Simon, H. A. (1956). Rational choice and the structure of the environment. \emph{Psychological Review}, \emph{63}(2), 129.
+
+\leavevmode\hypertarget{ref-simon_bounded_1991}{}%
+Simon, H. A. (1991). Bounded rationality and organizational learning. \emph{Organization Science}, \emph{2}(1), 125--134.
+
+\leavevmode\hypertarget{ref-simon_what_1992}{}%
+Simon, H. A. (1992). What is an ``explanation'' of behavior? \emph{Psychological Science}, \emph{3}(3), 150--161.
+
+\leavevmode\hypertarget{ref-sitzmann_sometimes_2010}{}%
+Sitzmann, T., \& Ely, K. (2010). Sometimes you need a reminder: The effects of prompting self-regulation on regulatory processes, learning, and attrition. \emph{Journal of Applied Psychology}, \emph{95}(1), 132--144. \url{https://doi.org/http://dx.doi.org.proxy1.cl.msu.edu/10.1037/a0018080}
+
+\leavevmode\hypertarget{ref-smaldino2015theory}{}%
+Smaldino, P. E., Calanchini, J., \& Pickett, C. L. (2015). Theory development with agent-based models. \emph{Organizational Psychology Review}, \emph{5}(4), 300--317.
+
+\leavevmode\hypertarget{ref-smith_organizational_1983}{}%
+Smith, C. A., Organ, D. W., \& Near, J. P. (1983). Organizational citizenship behavior: Its nature and antecedents. \emph{Journal of Applied Psychology}, \emph{68}(4), 653.
+
+\leavevmode\hypertarget{ref-smith2007agent}{}%
+Smith, E. R., \& Conrey, F. R. (2007). Agent-based modeling: A new approach for theory building in social psychology. \emph{Personality and Social Psychology Review}, \emph{11}(1), 87--104.
+
+\leavevmode\hypertarget{ref-sternberg_use_2001}{}%
+Sternberg, K. J., Lamb, M. E., Orbach, Y., Esplin, P. W., \& Mitchell, S. (2001). Use of a structured investigative protocol enhances young children's responses to free-recall prompts in the course of forensic interviews. \emph{Journal of Applied Psychology}, \emph{86}(5), 997.
+
+\leavevmode\hypertarget{ref-stewart_adaptation_2006}{}%
+Stewart, G. L., \& Nandkeolyar, A. K. (2006). Adaptation and Intraindividual Variation in Sales Outcomes: Exploring the Interactive Effects of Personality and Environmental Opportunity. \emph{Personnel Psychology; Durham}, \emph{59}(2), 307--332. Retrieved from \url{http://search.proquest.com/docview/220133960/abstract/418A38FC6C224C6DPQ/1}
+
+\leavevmode\hypertarget{ref-stewart_exploring_2007}{}%
+Stewart, G. L., Nandkeolyar, A. K., \& Link to external site, this link will open in a new window. (2007). Exploring how constraints created by other people influence intraindividual variation in objective performance measures. \emph{Journal of Applied Psychology}, \emph{92}(4), 1149--1158. \url{https://doi.org/http://dx.doi.org.proxy1.cl.msu.edu/10.1037/0021-9010.92.4.1149}
+
+\leavevmode\hypertarget{ref-taleb_fooled_2005}{}%
+Taleb, N. (2005). \emph{Fooled by randomness: The hidden role of chance in life and in the markets} (Vol. 1). Random House Incorporated.
+
+\leavevmode\hypertarget{ref-tett_situation_2000}{}%
+Tett, R. P., \& Guterman, H. A. (2000). Situation trait relevance, trait expression, and cross-situational consistency: Testing a principle of trait activation. \emph{Journal of Research in Personality}, \emph{34}(4), 397--423.
+
+\leavevmode\hypertarget{ref-tews_helping_2009}{}%
+Tews, M. J., \& Tracey, J. B. (2009). Helping Managers Help Themselves: The Use and Utility of On-the-Job Interventions to Improve the Impact of Interpersonal Skills Training. \emph{Cornell Hospitality Quarterly}, \emph{50}(2), 245--258. \url{https://doi.org/10.1177/1938965509333520}
+
+\leavevmode\hypertarget{ref-thorsteinson_anchoring_2008}{}%
+Thorsteinson, T. J., Breier, J., Atwell, A., Hamilton, C., \& Privette, M. (2008). Anchoring effects on performance judgments. \emph{Organizational Behavior and Human Decision Processes}, \emph{107}(1), 29--40.
+
+\leavevmode\hypertarget{ref-tijms_understanding_2012}{}%
+Tijms, H. (2012). \emph{Understanding probability}. Cambridge University Press.
+
+\leavevmode\hypertarget{ref-vancouver_using_2016}{}%
+Vancouver, J. B., Li, X., Weinhardt, J. M., Steel, P., \& Purl, J. D. (2016). Using a Computational Model to Understand Possible Sources of Skews in Distributions of Job Performance: PERSONNEL PSYCHOLOGY. \emph{Personnel Psychology}, \emph{69}(4), 931--974. \url{https://doi.org/10.1111/peps.12141}
+
+\leavevmode\hypertarget{ref-van_gerwen_employee_2018}{}%
+van Gerwen, N., Buskens, V., \& van der Lippe, T. (2018). Employee cooperative behavior in organizations: A vignette experiment on the relationship between training and helping intentions. \emph{International Journal of Training and Development}, \emph{22}(3), 192--209. \url{https://doi.org/10.1111/ijtd.12128}
+
+\leavevmode\hypertarget{ref-vogel_integrating_2009}{}%
+Vogel, R. M., \& Feldman, D. C. (2009). Integrating the levels of person-environment fit: The roles of vocational fit and group fit. \emph{Journal of Vocational Behavior}, \emph{75}(1), 68--81. \url{https://doi.org/10.1016/j.jvb.2009.03.007}
+
+\leavevmode\hypertarget{ref-waddell_its_2015}{}%
+Waddell, T. F., \& Ivory, J. D. (2015). It's Not Easy Trying to be One of the Guys: The Effect of Avatar Attractiveness, Avatar Sex, and User Sex on the Success of Help-Seeking Requests in an Online Game. \emph{Journal of Broadcasting \& Electronic Media}, \emph{59}(1), 112--129. \url{https://doi.org/10.1080/08838151.2014.998221}
+
+\leavevmode\hypertarget{ref-wegwarth_smart_2009}{}%
+Wegwarth, O., Gaissmaier, W., \& Gigerenzer, G. (2009). Smart strategies for doctors and doctors-in-training: Heuristics in medicine. \emph{Medical Education}, \emph{43}(8), 721--728.
+
+\leavevmode\hypertarget{ref-weyant_application_1996}{}%
+Weyant, J. M. (1996). Application of compliance techniques to direct-mail requests for charitable donations. \emph{Psychology \& Marketing}, \emph{13}(2), 157--170. \href{https://doi.org/10.1002/(SICI)1520-6793(199602)13:2\%3C157::AID-MAR3\%3E3.0.CO;2-E}{https://doi.org/10.1002/(SICI)1520-6793(199602)13:2\textless{}157::AID-MAR3\textgreater{}3.0.CO;2-E}
+
+\leavevmode\hypertarget{ref-wong_between-individual_2005}{}%
+Wong, K. F. E., \& Kwong, J. Y. (2005). Between-individual comparisons in performance evaluation: A perspective from prospect theory. \emph{Journal of Applied Psychology}, \emph{90}(2), 284.
+
+\leavevmode\hypertarget{ref-yechiam_learning_2003}{}%
+Yechiam, E., \& Barron, G. (2003). Learning to Ignore Online Help Requests. \emph{Computational \& Mathematical Organization Theory}, \emph{9}(4), 327--339. \url{https://doi.org/10.1023/B:CMOT.0000029054.93142.2b}
+
+\leavevmode\hypertarget{ref-zaheer_time_1999}{}%
+Zaheer, S., Albert, S., \& Zaheer, A. (1999). Time scales and organizational theory. \emph{Academy of Management Review}, \emph{24}(4), 725--741.
+
+\end{document}

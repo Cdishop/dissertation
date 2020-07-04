@@ -1,24 +1,23 @@
 ---
-
 # https://crsh.github.io/papaja_man/index.html
 
-title             : "A good soldier or random exposure?"
-shorttitle        : "LONGITUDINAL INFERENCES"
+title             : "Title"
+shorttitle        : "MODELING DYNAMICS"
 
 author: 
   - name          : "Christopher R. Dishop"
     affiliation   : "1"
     corresponding : yes    # Define only one corresponding author
-    address       : "316 Physics Road, Psychology Building, Room 348, East Lansing, MI, 48823"
+    address       : "316 Physics Rd #348, East Lansing, MI 48824"
     email         : "dishopch@msu.edu"
-    
+
 affiliation:
   - id            : "1"
     institution   : "Michigan State University"
 
 
 author_note: |
-  Direct all correspondence to dishopch@msu.edu.
+  Christopher R. Dishop, Department of Psychology, Michigan State University. Richard P. DeShon, Department of Psychology, Michigan State University.
 
 abstract: |
   Good soldiers refer to employees who exhibit sustained, superior citizenship relative to others. Researchers have argued that this streaky behavior is due to motives, personality, and other individual characteristics such as one's justice perceptions. The present set of studies, grounded in a situation by person framework, broaden this view to more readily acknowledge both context and self-regulatory actions. A pilot web-scraping study examined received help request trajectories over long periods of time. The observed pattern was then implemented into an agent-based simulation where person characteristics and responses could be systematically controlled and manipulated. The results suggest that employee helping behaviors may exhibit sustained differences even if employees do not a priori differ in motive or character. Theoretical and practical implications, as well as study limitations, are discussed. 
@@ -27,13 +26,13 @@ abstract: |
   
   The results suggest that sustained differences in helping behaviors may emerge even if there are no a priori between-employee differences in character. 
   
-  The results suggest that employee helping behaviors may exhibit sustained differences even if employees do not a priori differ in motive or character.  
-  
-keywords          : "longitudinal inferences, between-unit, growth, trends, dynamics, relationships over time, processes"
-#wordcount         : "149"
+  The results suggest that employee helping behaviors may exhibit sustained differences even if employees do not a priori differ in motive or character. 
+
+keywords          : "Dynamics, dynamical, modeling, longitudinal, HLM, RCM, panel bias, unobserved heterogeneity"
+wordcount         : "141"
+nocite            : '@xu_deshon_dishop'
 
 bibliography      : ["refs.bib"]
-nocite: '@deshon_multivariate_2012; @xu_deshon_dishop; @zyphura; @zyphurb'
 
 figsintext        : no
 figurelist        : no
@@ -56,9 +55,8 @@ set.seed(42)
 ```
 
 ```{r global_options, include=FALSE}
-knitr::opts_chunk$set(fig.path = 'figures/', echo = TRUE, warning = FALSE, message = FALSE)
+knitr::opts_chunk$set(fig.path = 'figures/', echo = TRUE, warning = FALSE, message = FALSE, size = "tiny")
 ```
-
 
 ```{r child = 'diss.Rmd'}
 ```
