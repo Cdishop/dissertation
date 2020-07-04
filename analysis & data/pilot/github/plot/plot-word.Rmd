@@ -1,0 +1,121 @@
+---
+title: "plot"
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F, fig.height = 11, fig.width = 8)
+```
+
+```{r, results = 'asis', eval = F}
+library(tidyverse)
+library(ggplot2)
+
+load("../data/for-analysis-ts/daily_plot.RData")
+pt <- issues_open_timeline
+
+
+start <- 1
+end <- 6
+for(i in 1:6){
+  
+  use <- seq(from = start, to = end, by = 1)
+  print(
+  pt %>% 
+    filter(repoid %in% use) %>% 
+    ggplot() +
+    aes(event_at, value, color = repoidname, group = repoidname) + 
+    geom_step(show.legend = F, color = "black") + 
+    facet_wrap(vars(repoidname), scales = "free", ncol = 1) + 
+    ylim(0, NA) + 
+    theme_classic() + 
+    labs(
+      x = "Day",
+      y = NULL,
+      title = "Number of Open Issues"
+  )
+
+  )
+  start <- start + 6
+  end <- end + 6
+  
+  
+}
+
+
+
+```
+
+
+
+
+
+```{r, results = "asis", eval = T}
+library(tidyverse)
+library(ggplot2)
+library(ggforce)
+
+load("../data/for-analysis-ts/daily_plot.RData")
+pt <- issues_open_timeline
+
+
+  pt %>% 
+    ggplot() +
+    aes(event_at, value, color = repoidname, group = repoidname) + 
+    geom_step(show.legend = F, color = "black") + 
+    facet_wrap_paginate(~repoidname,
+                        nrow = 6,
+                        ncol = 1,
+                        scales = "free") + 
+    ylim(0, NA) + 
+    theme_classic() + 
+    labs(
+      x = "Day",
+      y = NULL,
+      title = "Number of Open Issues"
+  ) + 
+  theme(axis.text.x = element_blank(),
+        axis.ticks.x = element_blank()) -> p
+  
+  required_n_pages <- n_pages(p)
+  
+  
+  for(i in 1:required_n_pages){
+    
+    
+  pt %>% 
+    ggplot() +
+    aes(event_at, value, color = repoidname, group = repoidname) + 
+    geom_step(color = "black") + 
+    facet_wrap_paginate(~repoidname, 
+                        scales = "free", 
+                        nrow = 6,
+                        ncol = 1, 
+                        page = i) + 
+    ylim(0, NA) + 
+    theme_classic() + 
+    labs(
+      x = "Day",
+      y = NULL,
+      title = "Number of Open Issues"
+  ) + 
+  theme(axis.text.x = element_blank(),
+        axis.ticks.x = element_blank()) -> p
+    
+    print(p)
+    
+    
+  }
+  
+  
+
+
+
+
+```
+
+
+

@@ -1,5 +1,9 @@
 ## unit root tests
 
+
+https://nwfsc-timeseries.github.io/atsa-labs/sec-boxjenkins-aug-dickey-fuller.html
+
+
 https://freakonometrics.hypotheses.org/12729
 
 # state space modeling

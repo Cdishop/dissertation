@@ -1,0 +1,44 @@
+
+
+533, 3347
+
+
+83% github issues unit root
+77% msu grad students contain unit root
+
+
+
+Inclusion criteria:
+- issue opened by someone other than the owner
+- not a pull request
+- the issue has at least one action by the owner
+
+start = 91148
+finish = 48502
+
+97% unit root based on kpss
+66% unit root based on df
+
+
+
+Inclusion criteria (strict inclusion 1):
+- issue opened by someone other than the owner
+- not a pull request
+
+
+start = 91148
+finish = 56671
+
+97% unit root based on kpss
+83% unit root based on df
+
+
+Inclusion criteria (strict inclusion 2):
+- issue opened by someone other than the owner
+
+
+start = 91148
+finish = 81599
+
+100% unit root based on kpss
+83% unit root based on df

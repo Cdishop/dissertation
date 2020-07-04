@@ -4,7 +4,8 @@
 # 2) for each file, load and clean, then combine
 # 3) select only those with time-series > 20 periods
 # 4) add time column
-# 5) save
+# 5) remove a few of the series after visual inspection
+# 6) save
 
 library(tidyverse)
 library(readxl)
@@ -360,9 +361,21 @@ for(p in 2:length(degrees)){
   dftime <- bind_rows(dftime, dd)
 }
 
+# 5) remove a few series after visual inspection
+
+# remove a few series after visual inspection (e.g., they canceled the program)
+
+nouse <- c("College of Medicine-Anatomy",
+           "College of Social Science-Psychology-Urban Studies",
+           "College of Education-Educational Psychology",
+           "College of Natural Science-Entomology")
+
+dftime <- dftime %>%
+  filter(!degree %in% nouse)
 
 
-# 5) save
+
+# 6) save
 
 getwd()
 setwd("../cleaned")

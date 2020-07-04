@@ -1,0 +1,110 @@
+---
+title: "Time Series Plots"
+output:
+  rmdformats::material:
+    highlight: kate
+---
+
+```{r setup, echo=FALSE, cache=FALSE, warning = F, message = F}
+library(knitr)
+library(rmdformats)
+library(tidyverse)
+library(ggplot2)
+library(data.table)
+
+## Global options
+options(max.print="900")
+opts_chunk$set(echo=FALSE,
+	             cache=FALSE,
+               prompt=FALSE,
+               tidy=TRUE,
+               comment=NA,
+               message=FALSE,
+               warning=FALSE,
+               fig.width = 10)
+opts_knit$set(width=100)
+```
+
+# Introduction
+
+Find the github and MSU graduate student data by navigating with the pane on the left. The github data includes 36 time series, each representing the number of issues collected on a repository per day. The MSU student data includes 92 time series, each representing the number of active graduate students in a department per term.
+
+# GitHub Issues
+
+
+```{r}
+
+load("../github/data/for-analysis-ts/daily_issues.RData")
+pt <- data.table(issues_open_daily)
+allrepos <- unique(pt$repoidname)
+
+plotissue <- function(rp){
+  
+  zz <- ggplot(pt[repoidname == rp],
+               aes(x = event_at_index, y = value, group = repoidname)) + 
+        geom_point(alpha = 0.8) + 
+        geom_line(color = "darkblue", alpha = 0.7) + 
+        ylim(0, NA) + 
+        theme_classic() + 
+        labs(x = "Day", y = "Number of Open Issues", title = rp) + 
+        theme(axis.text.x = element_blank(),
+              axis.ticks.x = element_blank(),
+              text = element_text(size = 40)) 
+ 
+  return(zz)
+}
+
+```
+
+
+
+```{r, fig.width = 25, fig.height = 10}
+
+
+
+for(l in 1:length(allrepos)){
+  
+  gplot <- plotissue(allrepos[l])
+  print(gplot)
+  
+  
+}
+
+```
+
+
+
+# MSU Students
+
+```{r}
+
+df <- read.csv("../msustudents/data/cleaned/df.csv")
+dt <- data.table(df)
+
+
+
+all_degrees <- unique(df$degree)
+
+plotit <- function(d){
+  
+  g <- ggplot(dt[degree == d], aes(x = time, y = total, group = degree_id)) +
+         geom_point(alpha = 0.8) + 
+         geom_line(color = "darkblue", alpha = 0.7) + 
+         labs(x = "Time", y = "Number Graduate Students", title = d) + 
+         theme_bw()
+  
+  return(g)
+  
+}
+```
+
+```{r}
+for(i in 1:length(all_degrees)){
+  
+  plot <- plotit(all_degrees[i])
+  print(plot)
+  
+}
+```
+
+

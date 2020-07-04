@@ -198,3 +198,4 @@ issues_open_timeline %>%
 
 
 write.csv(issues_open_daily, "../data/for-analysis-ts/daily_issues.csv")
+write.csv(issues_open_timeline, "../data/for-analysis-ts/daily_plot.csv")

@@ -22,16 +22,18 @@ df1 <- df %>%
 dfdickey <- plm.data(df1, index = c("file", "time"))
 
 adf.test(dfdickey[, "total"])["p.value"][[1]]
+adf.test(dfdickey[, "total"])$statistic[[1]]
 
 kpss.test(dfdickey[, "total"])["p.value"][[1]]
 
 
 runs <- length(degrees)
 store_results <- data.frame(
-  "dickey" = numeric(runs),
+  "dickeyp" = numeric(runs),
   "kpss" = numeric(runs),
   "degree_id" = numeric(runs),
-  "timepoints" = numeric(runs)
+  "timepoints" = numeric(runs),
+  "dickey" = numeric(runs)
 )
 
 for(i in 1:runs){
@@ -42,24 +44,27 @@ for(i in 1:runs){
   dtdickey = plm.data(dt, index = c("file", "time"))
   
   dy <- adf.test(dtdickey[, "total"])["p.value"][[1]]
+  dstat <- adf.test(dtdickey[, "total"])$statistic[[1]]
+
   kp <- kpss.test(dtdickey[, "total"])["p.value"][[1]]
   
-  store_results[[i, "dickey"]] <- dy
+  store_results[[i, "dickeyp"]] <- dy
   store_results[[i, "kpss"]] <- kp
   store_results[[i, "degree_id"]] <- dt$degree_id[1]
   store_results[[i, "timepoints"]] <- tail(dt$time, 1)
+  store_results[[i, "dickey"]] <- dstat
   
   
 }
 
 
 (store_results %>%
-  filter(dickey > 0.05, kpss < 0.05) %>%
+  filter(dickeyp > 0.05, kpss < 0.05) %>%
   count()) / nrow(store_results)
 
 
 (store_results %>%
-  filter(dickey > 0.05) %>%
+  filter(dickeyp > 0.05) %>%
   count()) / nrow(store_results)
 
 (store_results %>%
@@ -68,7 +73,7 @@ for(i in 1:runs){
 
 
 store_results <- store_results %>% 
-  mutate(DP = ifelse(dickey > 0.05, "Yes", "No")) %>% 
+  mutate(DP = ifelse(dickeyp > 0.05, "Yes", "No")) %>% 
   mutate(KP = ifelse(kpss < 0.05, "Yes", "No"))
 
 df <- left_join(df, store_results)
@@ -84,13 +89,16 @@ df %>%
   filter(time == 1) %>% 
   mutate(degreecode = c(1:length(degrees))) %>% 
   unite("Start", term, year, sep = "-") %>% 
-  select(degreecode, Start, timepoints, DP, KP) %>% 
+  select(degreecode, Start, timepoints, dickey, dickeyp, DP) %>% 
+  mutate(dickey = round(dickey, digits = 2)) %>% 
+  mutate(dickeyp = round(dickeyp, digits = 2)) %>% 
   rename("Degree ID" = degreecode,
          "Start Date" = Start,
          "Length of Series (Semesters)" = timepoints,
-         "DF Unit Root" = DP,
-         "KPSS Unit Root" = KP) %>% 
+         "Dickey-Fuller Statistic" = dickey,
+         "P-Value" = dickeyp,
+         "Unit Root Present" = DP) %>% 
   kable() %>% 
   kable_styling() %>% 
-  footnote("Dickey-Fuller Results: 77% of series contain unit root\nKPSS Results: 65% of series contain unit root")
+  footnote("77% of series contain unit root")
 

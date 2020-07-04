@@ -93,20 +93,26 @@ df1 <- df %>%
 dfdickey <- plm.data(df1, index = c("repoid", "event_at_index"))
 
 # not significant = random walk
-adf.test(dfdickey[, "value"])["p.value"][[1]]
+adf.test(dfdickey[, "value"])["p.value"][[1]] # p value
+adf.test(dfdickey[, "value"])$statistic[[1]] # test statistic
+
 
 # significant = random walk
-kpss.test(dfdickey[, "value"])["p.value"][[1]]
+kpss.test(dfdickey[, "value"], null = "Trend")["p.value"][[1]]
+
+
 ```
+
 Loop over each time series
 
 ```{r}
 
 runs <- nrow(repids)
 store_results <- data.frame(
-  "dickey" = numeric(runs),
+  "dickeyp" = numeric(runs),
   "kpss" = numeric(runs),
-  "repoid" = numeric(runs)
+  "repoid" = numeric(runs),
+  "dickey" = numeric(runs)
 )
 
 for(i in 1:runs){
@@ -118,20 +124,22 @@ for(i in 1:runs){
 
   # not significant = random walk
   dy <- adf.test(dtdickey[, "value"])["p.value"][[1]]
+  dt <- adf.test(dtdickey[, "value"])$statistic[[1]]
 
   # significant = random walk
-  kp <- kpss.test(dtdickey[, "value"])["p.value"][[1]]
+  kp <- kpss.test(dtdickey[, "value"], null = "Trend")["p.value"][[1]]
   
   
-  store_results[[i, "dickey"]] <- dy
+  store_results[[i, "dickeyp"]] <- dy
   store_results[[i, "kpss"]] <- kp
   store_results[[i, "repoid"]] <- i
+  store_results[[i, "dickey"]] <- dt
   
   
 }
 
 store_results %>% 
-  filter(dickey > 0.05) %>% 
+  filter(dickeyp > 0.05) %>% 
   count() / nrow(store_results)
 
 store_results %>% 
@@ -140,9 +148,10 @@ store_results %>%
 
 
 (store_results %>%
-  filter(dickey > 0.05, kpss < 0.05) %>%
+  filter(dickeyp > 0.05, kpss < 0.05) %>%
   count()) / nrow(store_results)
 ```
+
 
 Place results into a table
 
@@ -151,24 +160,27 @@ Place results into a table
 df$nicedate <- gsub(df$event_at, pattern = "00:00:00", replacement = "")
 library(kableExtra)
 store_results <- store_results %>% 
-  mutate(DF = ifelse(dickey > 0.05, "Yes", "No")) %>% 
+  mutate(DF = ifelse(dickeyp > 0.05, "Yes", "No")) %>% 
   mutate(KP = ifelse(kpss < 0.05, "Yes", "No"))
 
 df <- left_join(df, store_results)
 
 df %>% 
   filter(event_at_index == 0) %>% 
-  select(repoid, nicedate, numdays, DF, KP) %>% 
+  select(repoid, nicedate, numdays, dickey, dickeyp, DF) %>% 
   mutate(numdays_round = round(numdays, digits = 0)) %>% 
-  select(repoid, nicedate, numdays_round, DF, KP) %>% 
+  mutate(dickey = round(dickey, digits = 2)) %>% 
+  mutate(dickeyp = round(dickeyp, digits = 2)) %>% 
+  select(repoid, nicedate, numdays_round, dickey, dickeyp, DF) %>% 
   rename("Repo ID" = repoid,
          "Start Date" = nicedate,
          "Length of Time Series (Days)" = numdays_round,
-         "DF Unit Root" = DF,
-         "KPSS Unit Root" = KP) %>% 
+         "Dickey-Fuller Statistic" = dickey,
+         "P-Value" = dickeyp,
+         "Unit Root Present" = DF) %>% 
   kable() %>% 
   kable_styling() %>% 
-  footnote("Dickey-Fuller Results: 67% of series contain unit root\nKPSS Results: 97% of series contain unit root")
+  footnote("83% of series contain unit root")
 
 ```
 
