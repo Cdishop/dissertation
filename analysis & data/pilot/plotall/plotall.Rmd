@@ -107,4 +107,196 @@ for(i in 1:length(all_degrees)){
 }
 ```
 
+# Dickey-Fuller Results
+
+### GitHub Issues
+
+
+```{r}
+library(tidyverse)
+library(tseries)
+library(plm)
+gf <- read.csv("../github/data/for-analysis-ts/daily_issues.csv")
+
+
+repos <- gf %>% 
+  distinct(repo) %>% pull()
+
+repids <- tibble(
+  'repo' = repos,
+  'repoid' = c(1:36)
+)
+
+gf <- left_join(gf, repids)
+
+numdays <- gf %>% 
+  group_by(repo) %>% 
+  summarize(
+    numdays = max(event_at_index))
+
+gf <- left_join(gf, numdays)
+
+
+runs <- nrow(repids)
+store_resultsg <- data.frame(
+  "dickeyp" = numeric(runs),
+  "kpss" = numeric(runs),
+  "repoid" = numeric(runs),
+  "dickey" = numeric(runs)
+)
+
+for(i in 1:runs){
+  
+  dt <- gf %>%
+    filter(repoid == i)
+  
+  dtdickey <- plm.data(dt, index = c("repoid", "event_at_index"))
+
+  # not significant = random walk
+  dy <- adf.test(dtdickey[, "value"])["p.value"][[1]]
+  dt <- adf.test(dtdickey[, "value"])$statistic[[1]]
+
+  # significant = random walk
+  kp <- kpss.test(dtdickey[, "value"], null = "Trend")["p.value"][[1]]
+  
+  
+  store_resultsg[[i, "dickeyp"]] <- dy
+  store_resultsg[[i, "kpss"]] <- kp
+  store_resultsg[[i, "repoid"]] <- i
+  store_resultsg[[i, "dickey"]] <- dt
+  
+  
+}
+
+
+
+gf$nicedate <- gsub(gf$event_at, pattern = "00:00:00", replacement = "")
+library(kableExtra)
+store_resultsg <- store_resultsg %>% 
+  mutate(DF = ifelse(dickeyp > 0.05, "Yes", "No")) %>% 
+  mutate(KP = ifelse(kpss < 0.05, "Yes", "No"))
+
+gf <- left_join(gf, store_resultsg)
+
+gf %>% 
+  filter(event_at_index == 0) %>% 
+  select(repoid, nicedate, numdays, dickey, dickeyp, DF) %>% 
+  mutate(numdays_round = round(numdays, digits = 0)) %>% 
+  mutate(dickey = round(dickey, digits = 2)) %>% 
+  mutate(dickeyp = round(dickeyp, digits = 2)) %>% 
+  select(repoid, nicedate, numdays_round, dickey, dickeyp, DF) %>% 
+  mutate(nicedate = as.character(nicedate)) %>% 
+  mutate(nicedate = str_trim(nicedate)) %>% 
+  mutate(numdays_round = as.character(numdays_round)) %>% 
+  mutate(numdays_round = str_trim(numdays_round)) %>% 
+  mutate(dickey = as.character(dickey)) %>% 
+  mutate(dickey = str_trim(dickey)) %>% 
+  mutate(dickeyp = as.character(dickeyp)) %>% 
+  mutate(dickeyp = str_trim(dickeyp)) %>% 
+  mutate(repoid = as.character(repoid)) %>% 
+  mutate(repoid = str_trim(repoid)) %>% 
+  rename("Repo ID" = repoid,
+         "Start" = nicedate,
+         "Length (Days)" = numdays_round,
+         "Dickey-Fuller" = dickey,
+         "P-Value" = dickeyp,
+         "Unit Root" = DF) %>% 
+  kable(tabe.attr = "style='width:60%;'") %>% 
+  kable_styling() %>% 
+  footnote("83% of series contain unit root")
+
+
+```
+
+
+### MSU Students
+
+
+```{r}
+
+
+library(tidyverse)
+library(tseries)
+library(plm)
+df <- read.csv("../msustudents/data/cleaned/df.csv")
+
+# remove a few series after visual inspection (e.g., they canceled the program)
+
+nouse <- c("College of Medicine-Anatomy",
+           "College of Social Science-Psychology-Urban Studies",
+           "College of Education-Educational Psychology",
+           "College of Natural Science-Entomology")
+
+df <- df %>%
+  filter(!degree %in% nouse)
+
+
+degrees <- unique(df$degree)
+
+
+
+runs <- length(degrees)
+store_results <- data.frame(
+  "dickeyp" = numeric(runs),
+  "kpss" = numeric(runs),
+  "degree_id" = numeric(runs),
+  "timepoints" = numeric(runs),
+  "dickey" = numeric(runs)
+)
+
+for(i in 1:runs){
+  
+  dt <- df %>%
+    filter(degree == degrees[i])
+  
+  dtdickey = plm.data(dt, index = c("file", "time"))
+  
+  dy <- adf.test(dtdickey[, "total"])["p.value"][[1]]
+  dstat <- adf.test(dtdickey[, "total"])$statistic[[1]]
+
+  kp <- kpss.test(dtdickey[, "total"])["p.value"][[1]]
+  
+  store_results[[i, "dickeyp"]] <- dy
+  store_results[[i, "kpss"]] <- kp
+  store_results[[i, "degree_id"]] <- dt$degree_id[1]
+  store_results[[i, "timepoints"]] <- tail(dt$time, 1)
+  store_results[[i, "dickey"]] <- dstat
+  
+  
+}
+
+
+
+store_results <- store_results %>% 
+  mutate(DP = ifelse(dickeyp > 0.05, "Yes", "No")) %>% 
+  mutate(KP = ifelse(kpss < 0.05, "Yes", "No"))
+
+df <- left_join(df, store_results)
+
+
+
+
+# describe it in table
+
+library(kableExtra)
+
+df %>% 
+  filter(time == 1) %>% 
+  mutate(degreecode = c(1:length(degrees))) %>% 
+  unite("Start", term, year, sep = "-") %>% 
+  select(degreecode, Start, timepoints, dickey, dickeyp, DP) %>% 
+  mutate(dickey = round(dickey, digits = 2)) %>% 
+  mutate(dickeyp = round(dickeyp, digits = 2)) %>% 
+  rename("Degree ID" = degreecode,
+         "Start Date" = Start,
+         "Length of Series (Semesters)" = timepoints,
+         "Dickey-Fuller Statistic" = dickey,
+         "P-Value" = dickeyp,
+         "Unit Root Present" = DP) %>% 
+  kable() %>% 
+  kable_styling() %>% 
+  footnote("77% of series contain unit root")
+
+
+```
 

@@ -2,7 +2,7 @@
 
 # https://crsh.github.io/papaja_man/index.html
 
-title             : "Thinking Longitudinal: A Framework for Scientific Inferences with Temporal Data"
+title             : "A good soldier or random exposure?"
 shorttitle        : "LONGITUDINAL INFERENCES"
 
 author: 
@@ -11,29 +11,23 @@ author:
     corresponding : yes    # Define only one corresponding author
     address       : "316 Physics Road, Psychology Building, Room 348, East Lansing, MI, 48823"
     email         : "dishopch@msu.edu"
-  - name          : "Michael T. Braun"
-    affiliation   : "2"    
-  - name          : "Goran Kuljanin"
-    affiliation   : "3"
-  - name          : "Richard P. DeShon"
-    affiliation   : "1"
     
 affiliation:
   - id            : "1"
     institution   : "Michigan State University"
-  - id            : "2"
-    institution   : "University of South Florida"
-  - id            : "3"
-    institution   : "DePaul University"
 
 
 author_note: |
-  This article is currently in press for the Handbook of Temporal Dynamic Organizational Behavior. It can be cited as:
-  
-  Dishop, C. R., Braun, M. T., Kuljanin, G., & DeShon, R. P. (In press). Thinking Longitudinal: A Framework for Scientific Inferences with Temporal Data. In Griep, Y. Hansen, S. D., Vantilborgh, T., & Hofmans, J. (Ed.), Handbook of Temporal Dynamic Organizational Behavior. Edward Elgar Publishing.
+  Direct all correspondence to dishopch@msu.edu.
 
 abstract: |
-  In this manuscript we explore how to think about patterns contained in longitudinal or panel data structures. Organizational scientists recognize that psychological phenomena and processes unfold over time and, to better understand them, organizational researchers increasingly work with longitudinal data and explore inferences within those data structures. Longitudinal inferences may focus on any number of fundamental patterns, including construct trajectories, relationships between constructs, or dynamics. Although the diversity of longitudinal inferences provides a wide foundation for garnering knowledge in any given area, it also makes it difficult for researchers to know the set of inferences they may explore with longitudinal data, which statistical models to use given their questions, and how to situate their specific inquiries within the broader set of longitudinal inferences. Moreover, the diversity of statistical models that can be applied to longitudinal data requires that researchers understand how one inference category differs from another. 
+  Good soldiers refer to employees who exhibit sustained, superior citizenship relative to others. Researchers have argued that this streaky behavior is due to motives, personality, and other individual characteristics such as one's justice perceptions. The present set of studies, grounded in a situation by person framework, broaden this view to more readily acknowledge both context and self-regulatory actions. A pilot web-scraping study examined received help request trajectories over long periods of time. The observed pattern was then implemented into an agent-based simulation where person characteristics and responses could be systematically controlled and manipulated. The results suggest that employee helping behaviors may exhibit sustained differences even if employees do not a priori differ in motive or character. Theoretical and practical implications, as well as study limitations, are discussed. 
+
+  The results suggest that there need not be differences across individuals in motive, personality, or disposition for sustained differences in helping behavior to emerge.
+  
+  The results suggest that sustained differences in helping behaviors may emerge even if there are no a priori between-employee differences in character. 
+  
+  The results suggest that employee helping behaviors may exhibit sustained differences even if employees do not a priori differ in motive or character.  
   
 keywords          : "longitudinal inferences, between-unit, growth, trends, dynamics, relationships over time, processes"
 #wordcount         : "149"

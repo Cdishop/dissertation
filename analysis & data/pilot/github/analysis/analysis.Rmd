@@ -1,10 +1,13 @@
 ---
 title: "unitroot"
-output: html_document
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+knitr::opts_chunk$set(echo = F, warning = F, message = F, include = F)
 ```
 
 
@@ -155,7 +158,7 @@ store_results %>%
 
 Place results into a table
 
-```{r}
+```{r, eval = F}
 
 df$nicedate <- gsub(df$event_at, pattern = "00:00:00", replacement = "")
 library(kableExtra)
@@ -172,15 +175,58 @@ df %>%
   mutate(dickey = round(dickey, digits = 2)) %>% 
   mutate(dickeyp = round(dickeyp, digits = 2)) %>% 
   select(repoid, nicedate, numdays_round, dickey, dickeyp, DF) %>% 
+  mutate(nicedate = as.character(nicedate)) %>% 
+  mutate(nicedate = str_trim(nicedate)) %>% 
+  mutate(numdays_round = as.character(numdays_round)) %>% 
+  mutate(numdays_round = str_trim(numdays_round)) %>% 
+  mutate(dickey = as.character(dickey)) %>% 
+  mutate(dickey = str_trim(dickey)) %>% 
+  mutate(dickeyp = as.character(dickeyp)) %>% 
+  mutate(dickeyp = str_trim(dickeyp)) %>% 
+  mutate(repoid = as.character(repoid)) %>% 
+  mutate(repoid = str_trim(repoid)) %>% 
   rename("Repo ID" = repoid,
-         "Start Date" = nicedate,
-         "Length of Time Series (Days)" = numdays_round,
-         "Dickey-Fuller Statistic" = dickey,
+         "Start" = nicedate,
+         "Length (Days)" = numdays_round,
+         "Dickey-Fuller" = dickey,
          "P-Value" = dickeyp,
-         "Unit Root Present" = DF) %>% 
-  kable() %>% 
+         "Unit Root" = DF) %>% 
+  kable(tabe.attr = "style='width:60%;'") %>% 
   kable_styling() %>% 
   footnote("83% of series contain unit root")
 
 ```
 
+
+```{r, include = T}
+library(flextable)
+df$nicedate <- gsub(df$event_at, pattern = "00:00:00", replacement = "")
+library(kableExtra)
+store_results <- store_results %>% 
+  mutate(DF = ifelse(dickeyp > 0.05, "Yes", "No")) %>% 
+  mutate(KP = ifelse(kpss < 0.05, "Yes", "No"))
+
+df <- left_join(df, store_results)
+
+fitdf <- df %>% 
+  filter(event_at_index == 0) %>% 
+  select(repoid, nicedate, numdays, dickey, dickeyp, DF) %>% 
+  mutate(numdays_round = round(numdays, digits = 0)) %>% 
+  mutate(dickey = round(dickey, digits = 2)) %>% 
+  mutate(dickeyp = round(dickeyp, digits = 2)) %>% 
+  select(repoid, nicedate, numdays_round, dickey, dickeyp, DF) %>% 
+  rename("Repo ID" = repoid,
+         "Start Date" = nicedate,
+         "Length (Days)" = numdays_round,
+         "Dickey-Fuller" = dickey,
+         "P-Value" = dickeyp,
+         "Unit Root" = DF) 
+
+fitdf <- flextable(fitdf)
+fitdf <- autofit(fitdf)
+fitdf <- fontsize(fitdf, size = 9)
+fitdf
+
+
+
+```
