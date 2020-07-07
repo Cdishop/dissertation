@@ -5,11 +5,29 @@
 
 day 1 the repo was opened
 day 1 the first issue was created...
+- full history of repository
 
-2) I believe you collected data from one additional repo. who?
+- might fall apart if you have a repo that is transferred from one owner to another
 
 
 3) What is your third inclusion criteria?
+
+
+
+common:
+- open an issue adn then resolve their own problem
+- or someone who isn't author answers it
+
+- this inclusion says, there must be one action inside of the issue
+- if this is included, then the author must have made an action
+
+
+- issue rows 3 through 7. Opened by someone who isn't associated with repo. then closed by owner and owner left a comment. followed by two comments by original issue author. 
+
+- the owner must appear at least one time in the user association column
+
+
+
 
 4) what is...
 
@@ -19,3 +37,42 @@ fs::file_copy(
 )
 
 The gist is that it runs the tidy script, but I don't know how to use it.
+
+
+yes. this runs it and then copies it to your directory. 
+
+
+fs::file_copy(
+  fs::path_package("githubIssueCollection", "tidy-gh-issues.R"),
+  "."
+)
+
+
+
+
+other points
+
+- thank you
+- easy, great. happy to do so again moving forward
+- not in academia. like it?
+
+
+
++ re-run the github data collection piece
++ rtweet: don't run on that. That's a collective
+++ filter that one out
+++ if you want to look up a user. use github_user
+++ he didn't pull information about users
+++ he has a user table, but the info really isn't that useful
+
+listviewer::
+gh::gh("/user") listviewer::jsonedit(gh::gh("/user"))
+purrr::map_dfr(issues$user$id, gh_user_by_id) 
+gh::gh("/users/:user", user = "lionel-) 
+
+
+
+
+TO DO
+- sinem class surveys
+- email Yung-jia about doing data tidying thing and what not
