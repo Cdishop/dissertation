@@ -1,0 +1,21 @@
+# Garrick q's
+
+
+1) when does the data begin?
+
+day 1 the repo was opened
+day 1 the first issue was created...
+
+2) I believe you collected data from one additional repo. who?
+
+
+3) What is your third inclusion criteria?
+
+4) what is...
+
+fs::file_copy(
+  fs::path_package("githubIssueCollection", "tidy-gh-issues.R"),
+  "path-to/issue-data-dir"
+)
+
+The gist is that it runs the tidy script, but I don't know how to use it.
