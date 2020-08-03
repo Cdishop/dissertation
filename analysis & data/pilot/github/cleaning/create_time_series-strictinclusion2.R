@@ -260,8 +260,7 @@ issues_open_daily$repoidname <- factor(issues_open_daily$repoidname,
                                         "GitHub Repo: 32",
                                         "GitHub Repo: 33",
                                         "GitHub Repo: 34",
-                                        "GitHub Repo: 35",
-                                        "GitHub Repo: 36"))
+                                        "GitHub Repo: 35"))
 
 
 
@@ -300,11 +299,10 @@ issues_open_timeline$repoidname <- factor(issues_open_timeline$repoidname,
                                                   "GitHub Repo: 32",
                                                   "GitHub Repo: 33",
                                                   "GitHub Repo: 34",
-                                                  "GitHub Repo: 35",
-                                                  "GitHub Repo: 36"))
+                                                  "GitHub Repo: 35"))
 
 save(issues_open_daily, file = "../data/for-analysis-ts/daily_issues.RData")
 save(issues_open_timeline, file = "../data/for-analysis-ts/daily_plot.RData")
 
-#write.csv(issues_open_daily, "../data/for-analysis-ts/daily_issues.csv")
-#write.csv(issues_open_timeline, "../data/for-analysis-ts/daily_plot.csv")
+write.csv(issues_open_daily, "../data/for-analysis-ts/daily_issues.csv")
+write.csv(issues_open_timeline, "../data/for-analysis-ts/daily_plot.csv")

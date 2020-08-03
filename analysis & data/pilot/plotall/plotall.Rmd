@@ -27,7 +27,7 @@ opts_knit$set(width=100)
 
 # Introduction
 
-Find the github and MSU graduate student data by navigating with the pane on the left. The github data includes 36 time series, each representing the number of issues collected on a repository per day. The MSU student data includes 92 time series, each representing the number of active graduate students in a department per term.
+Find the github and MSU graduate student data by navigating with the pane on the left. The github data includes 35 time series, each representing the number of issues collected on a repository per day. The MSU student data includes 92 time series, each representing the number of active graduate students in a department per term.
 
 # GitHub Issues
 
@@ -124,7 +124,7 @@ repos <- gf %>%
 
 repids <- tibble(
   'repo' = repos,
-  'repoid' = c(1:36)
+  'repoid' = c(1:length(repos))
 )
 
 gf <- left_join(gf, repids)
@@ -203,7 +203,7 @@ gf %>%
          "Unit Root" = DF) %>% 
   kable(tabe.attr = "style='width:60%;'") %>% 
   kable_styling() %>% 
-  footnote("83% of series contain unit root")
+  footnote("80% of series contain unit root")
 
 
 ```

@@ -39,7 +39,7 @@ repos <- df %>%
 
 repids <- tibble(
   'repo' = repos,
-  'repoid' = c(1:36)
+  'repoid' = c(1:length(repos))
 )
 
 df <- left_join(df, repids)
@@ -193,7 +193,7 @@ df %>%
          "Unit Root" = DF) %>% 
   kable(tabe.attr = "style='width:60%;'") %>% 
   kable_styling() %>% 
-  footnote("83% of series contain unit root")
+  footnote("80% of series contain unit root")
 
 ```
 
