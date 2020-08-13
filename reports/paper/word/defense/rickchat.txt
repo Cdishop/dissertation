@@ -76,3 +76,67 @@ Post chat notes:
 2) hypotheses
 
 3) accumulate rather than compile
+
+
+
+Post Methods and discussion notes:
+
+1) fluff dickey fuller introduction
+
+In Econ, it is a requirement that you demonstrate that your time series is not a random walk before moving forward to make any substantive claims
+
+Convey how widely it is used. People use it everywhere, across disciplines. It is a standard. It is a baseline to evaluate before moving forward with substantive ideas.
+
+Other disciplines care a lot about this statistic.
+
+
+2) fluff pilot discussion
+
+Connect it back to my substantive point.
+
+
+
+3) fluff first paragraph of simulation results
+
+Conceptual paragraph about relative rank. What am I assessing? What am I conceptually looking at in my results? 
+
+
+Stability of relative rank. Wheover is high initially remains high at later periods. Exceptional citizen at time 1 has a different level of citizenship at time 2, and at time 3, and 4. But across the entire time span their fluctuations in OCB remain above all others.
+
+4) fluff figure conclusions from simulation
+
+Remind the readers of hypotheses.
+
+Have a summary paragraph. The results show that X, Y, and Z. Connect them back to the substantive ideas.
+
+
+
+
+5) fluff the results
+
+Add "it depends" paragraphs. E.g., if I change the "respond to influx" condition, then it becomes synonymous with condition 1. 
+
+
+
+6) fluff the practical implications
+
+Find another or 2 more grant examples.
+
+
+7) how are you going to respond to Nick's point? But what I'm talking about isn't random?
+
+Nick's point:
+- your research is ignorable because it is random
+- my data aren't random so I'm good
+
+
+To counter this, add a "we don't check for randomness in our data" so we don't know. You can't tell me that we know X or Y isn't random because we don't check.
+
+Put this after the "growing literature on chance processes and random walks."
+
+
+
+# Defense overview
+
+Short overview
+Spend a lot of time talking about how you are responsive to their concerns

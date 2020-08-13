@@ -1,0 +1,173 @@
+# Outlets
+
+journal of applied psychology - 172
+organizational behavior human decision processes
+academy of management journal
+
+
+# Timeframe
+
+JAP:
+Started August 10th 2020
+Examined all prior issues of journal
+until...
+Feb 2019
+
+ACJ
+2020 - 3 issues
+2019 - issue 6, 5, 4, 3, 2
+
+OBHDP
+2020 - 4 volumes
+2019 - 6 volumes
+
+
+# directed longitudinal/waves/repeated measures search
+
+
+OBHDP - 2010 to 2020
+longitudinal;waves;repeated measures
+410 results
+0 when you include dickey-fuller
+1 when you include random walk
+
+AMJ - 2010 to 2020
+1000 results
+6 results when you include "dickey fuller"
+6 results when you include "random walk"
+
+JAP - 2010 to 2020
+1000 results
+1 result when you include "dickey fuller"
+1 result when you include "random walk"
+
+
+
+# research methods textbooks
+
+Psychology
+
+ 
+
+Bollen, K. A. & Curran, P. J. (2006). Latent Curve Models: A Structural Equation Perspective. John Wiley & Sons. Hoboken, New Jersey.
+
+Bolger, N. & Laurenceau, J. (2013). Intensive Longitudinal Methods: An Introduction to Diary and Experience Sampling Research. The Guilford Press: New York.
+
+Little, T. D. (2013). Longitudinal Structural Equation Modeling. The Guilford Press: New York. 
+
+Grimm, K. J., Ram, N., & Estabrook, R. (2017). Growth Modeling: Structural Equation and Multilevel Modeling Approaches. The Guilford Press: New York.
+
+Singer, J. D. & Willett, J. B. (2003). Applied Longitudinal Data Analysis. Oxford University Press: New York.
+
+Hoffman, L. (2015). Longitudinal Analysis. Taylor & Francis. New York: NY.
+
+Ferrer, E., & Boker, S. M., & Grimm, K. J. (2019). Longitudinal Multivariate Psychology. Taylor & Francis. New York: NY.
+
+
+
+
+
+
+Economics
+
+
+Wooldrige, J. M. (2013). Introductory Econometrics: A Modern Approach. Cengage Learning. Boston, MA.
+
+Vinod, H. (2011). Hands-On Intermediate Econometrics Using R. World Scientific Publishing. Singapore. 
+
+Racine, J. S. (2019). Reproducible Econometrics Using R. Oxford University Press. New York: NY.
+
+Croissant, Y. (2018). Panel Data Econometrics with R. John Wiley & Sons. Hoboken, NJ.
+
+
+
+
+# Dickey fuller search
+
+
+# Look at last few issues of american economic review
+
+
+160 results 2018 to 2020
+8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+######################### Results
+
+
+
+# Article Counts
+
+Journal of Applied Psychology
+Started August 10th 2020
+Examined all prior issues of journal
+until...
+Feb 2019
+180 articles
+
+Academy of Management Journal
+2020 - 3 issues
+2019 - issue 6, 5, 4, 3, 2
+96
+
+Organizational Behavior and Human Decision Processes
+2020 - 4 volumes
+2019 - 6 volumes
+87
+
+How many longitudinal data sets with more than two time points?
+93 (27 amj; 57 jap; 9 obhdp)
+
+What were the time points like?
+as many as 80 and as few as 3. Many with time points consistent with ESM studies: 2 surveys a day for 5 days = 10 time points. or for 10 workdays = 20 time points. 
+
+How many dickey fuller tests or assessment of random walks?
+0
+
+
+
+
+
+
+
+# Textbooks
+
+Every textbook has a chapter or two on random processes, dickey-fuller testing, probability theory and stochastic topics, unit root testing, and stationarity assessments. Psychology and organizational behavior textbooks on longitudinal modeling do not. Mostly growth.
+
+
+
+
+
+# Writing fluff to include
+
+Unit roots and random walks, why important?
+
+For a single trajectory, if it is consistent with a random walk then it moves randomly, stochastically. This means that it may do any of the following: rise with an increasing trend over time, decreasing with a downward trend over time, fluctuate around a stable level over time. These three movement patterns are all readily generated from a random walk. 
+
+For 2 or more trajectories (panel data), if one is consistent with a random walk then relationships detected among the different series are more likely than not spurious. The presence of a unit root or unit roots in panel data poses the problem of spurious regressions. In the presence of a unit root, a series presents a peculiar sort of trend that is not deterministic but stochastic, and the presence of such trends in two series containing unit roots may induce an artificial correlation between them.
+
+
+What are they?
+
+In a simple autoregressive (pure, meaning no concurrent exogenous variable influencing the system) processes, the movement is described by
+
+yt = pyt-1 + errort.
+
+If p is 1, then you have a unit root and the variance of y grows to infinity with t. 
+
+
