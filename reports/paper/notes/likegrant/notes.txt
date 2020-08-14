@@ -1,0 +1,144 @@
+
+# What am I trying to show?
+
+Person A lowered his or her help and so she is shitty. Person B raised his or her help and so she is great. 
+
+
+
+
+
+
+
+
+# Peter Singer - The Life You Can Save
+
+"Larry Ellison, the chief executive officer of the software company Oracle. Ellison is another extravagant billionaire who could be doing a lot more good with his money; he has been quoted as saying 'Money is just a method of keeping score.' ...According to slate, in 2007 he gave away $39 million. If that sounds generous, think of it this way: If Ellison never earned another dollar, he could give away $39 million every year for the next six hundred years and still have more than $1 billion as a cushion for his old age."
+
+p. 158
+
+best selling philanthropy book. 2010. Random House. New York: NY.
+
+
+
+So, Peter is demonstrating the "fakeness" of a one-time generosity donation by referncing what repeated giving would actually entail. 
+
+
+
+
+
+# Camilleri & Newell, 2019 "better calibration when predicting"
+
+You look at someone's performance and then predict how he will do next. If you "look" at a performance trajectory and then predict, you are biased. If you "experience" (observe sequentially) another's performance, then you predict subsequent performance in a less biased way.
+
+Over-precision bias: they tend to have excessive certainty about their accuracy. 
+
+Method
+- you are a manger
+- view performance of 2 workers for 10 time points each
+- one worker has low variance performance
+- one worker has high variance performance
+- both have same mean
+- predict future performance for each worker
+- create "bound-bars," or CI's around an average
+
+- some participants in "experience" group
+++ present worker performance sequentially
+- some participants in "description" group
+++ present worker performance all at once
+
+- those in experience group correctly predict "true average" for both workers
+- those in description group incorrectly predict "true average" for both workers
+
+
+Take away
+- high vs low variance doesn't really matter
+- when you experience the information, your predictions are better calibrated to the true mean
+- this happens because you have more opportunities to assess prediction errors
+
+
+What does it mean for my study?
+
+1) accurately tabulating who is better is hard
+
+As a manager, you may receive "descriptive," one-time info for one person, whereas you experience the information for another. Your understanding of each will differ. Your predictions about future performance will differ.
+
+
+2) managers in a better position to understand true mean if they experience or have sequential experiences
+
+End-of-year, 1-time information sessions will not be enough to accurately understand one's actual performance capabilities. 
+
+
+
+3) They implicitly assumed law of small numbers
+
+They created a "high" vs "low" variance group, but participants were asked to judge a worker's performance only over 10 trials. Streakiness is easy to come by when t = 10. They imputed "human beliefs" about streakiness. What they did not due is take a true random number simulator and calculate those trials. 
+
+In real life, streaks are gauranteed when you have t < 10. These workers are artificial. 
+
+low varinace:
+8, 8, 8, 8, 8, 9, 9, 9, 9, 9 (SD = 0.5)
+
+high variance:
+1, 9, 9, 9, 9, 9, 9, 10, 10, 10 (SD = 2.7)
+
+average for both: 8.5
+order presented to participants was random
+
+
+
+
+
+
+# Story about basing performance on trajectories
+
+Robert Nardelli became CEO of Home Depot in December 2000 after an exhaustive external search by the board of directors (Lublin, Murray, & Brooks, 2000). Nardelli dramatically overhauled the company and replaced its entrepreneurial culture of innovative product design with one focused on relentless cost-cutting. During Nardelli's seven-year te- nure, Home Depot stock remained stable while that of its competitor, Lowe’s, doubled (Ries, 2007). Subsequently, Condé Nast Portfolio named Nardelli as one of the “Worst American CEOs of All Time” (CNBC, 2009). After Nardelli resigned as CEO on January 3, 2007, the Home Depot board promoted Frank Blake, who had worked diligently at the company for 5 years. During Blake’s seven-year tenure as CEO, the company consistently outperformed Lowe’s with stock rising by more than 145% and customer satisfaction increasing steadily each year (Aluise, 2012).
+
+
+
+
+
+
+
+
+
+
+# Cornil, Hardisty, & Bart, 2019 "easy, breezy, risky"
+
+People make decisions about picking stocks based on past and believed future risk. The perceived "up and downness" of the trajectories -- their streakiness -- acts as a clue for future returns (from the perspective of lay investor's beliefs). 
+
+
+
+
+
+
+
+
+# Satterstrom, Polzer, Kwan, Hauser, Wiruchnipawan, & Burke, 2019 "Thin slices of workgroups"
+
+Video tape a group completing a "hidden profile" task...they have to discuss whether or not to hire job candidates, and each member has a unique piece of information. 6 correctly select the best candidate, 6 incorrectly select an inferior candidate. 
+
+Participants watch pairs of video clips (one ineffective and one effective group). Choose which group you think correctly chose the right candidate.
+
+With 60, 30, and 10 second video clips, perceivers were able to predict the effective vs noneffective groups with a greater likelihood than chance. 
+
+
+
+
+The implicit assumption here is that effectiveness somehow manifests in the viewed trial. The researchers did not tell the participants the following, but it's almost like they stated "and the video you are watching is a perfect representation of the actual team." If we were to watch another episode, would the "effective" team again have superior quality for the 60 or 30 or 10 second duration?
+
+The underlying theme in this study is deterministic. An effective team somehow conveys effectivness in the trial. But the world is stochastic...an effective team need not necessary "appear" more effective at every trial. 
+
+
+
+
+
+
+# Heilman, Manzi, & Caleo, 2019 "updating impressions: the differential effects"
+
+People naturally react to change. If you have a prior or standard for someone's performance and then it changes, you react and believe something happened. 
+
+You read about a college student in a computer science course. His or her project grade and exam score for unit 1 are revealed to you. (e.g., the student received an A and B). Then, his or her project grade and exam score for unit 2 are revealed to you (e.g., the student received a C and C). Rate your beliefs about his or her competence. Rate your beliefs about his or her effectivenss in course and cognitive ability. 
+
+Competence beliefs change depending on whether the student increases, decreases, or has equal scores across units 1 and 2. 
+
+
