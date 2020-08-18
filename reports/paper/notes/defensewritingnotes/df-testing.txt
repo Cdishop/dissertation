@@ -1,0 +1,230 @@
+
+Books to keep track of
+
+Mocenda & Cerny (2014). Elements of Time Series Econometrics: An Applied Approach.
+
+Levendis, J. D. (date). Time Series Econometrics: Learning Through Replication. 
+- this text is awesome
+
+Unit root tests in time series
+
+Patterson, K. (2014). A primer for unit root testing. 
+
+
+
+## DF test algebra
+
+
+
+The test for stationarity begins with a unit root process (i.e., random walk): Yt= pYt-1 + ut (ut is the white noise error term). Thus, the notion of the unit root test of stationarity is to regress Yt on its one period lagged value Yt-1 to see if the p is statistically equal to 1 (Gujarati, 2003; O’Brien, 1999; Watson and Teelucksingh, 2002). If the p is equal to 1, the Y series has a unit root and it is nonstationary (Gujarati, 2003). If the p is statistically different from 1, the Y series does not have a unit root and it is stationary (O’Brien, 2003). The Eviews 6 Student Version does not automatically
+tabulate values for the p coefficient for the formula above. However, it can be computed if the above equation is modified (Gujarati, 2003). That is, I subtract Yt-1 from both sides of the above equation: yt−yt-1= α + pyt-1- yt-1 + ut (i.e., this is also known as the first differenced series). If I solve the equation, I get ΔYt= (p-1)Yt-1 + ut. I can treat (p-1) as an estimated coefficient of Yt-1 and the equation becomes ΔYt= δYt-1 + ut. I can test to see if δ is equal to 0; if δ=0, then p=1 (Gujarati, 2003). Since δ = (p-1), for stationarity the value of p must be less than one; thus δ must have a negative value (Gujarati, 2003: 814). 
+
+Furthermore, it is essential to know which test to use in testing the estimated coefficient of Yt-1 to find out whether it is statistically zero or not. As Gujarati (2003) argues, the usual t test cannot be used here because under the null hypothesis that p=1
+(i.e., δ=0), the t value of the estimated coefficient of Yt-1 does not have an asymptotic normal distribution. Thus, I need to use critical values of the tau statistic (τ), which is also known as the Dickey-Fuller critical values. In addition, MacKinnon (1991) prepared a more extensive table for critical values and these values are programmed into the
+Eviews 6 Student Version package. These MacKinnon critical values are directly calculated and tabulated by Eviews to test the null hypothesis in unit root test.
+
+The Dickey-Fuller test can also be estimated in three different forms: Yt is a random walk (ΔYt= δYt-1 + ut); Yt is a random walk with drift (ΔYt= α + δYt-1 + ut); and Yt is random walk with drift and time trend (ΔYt= α + βt + δYt-1 + ut) (Gujarati, 2003; O’Brien, 1999; Watson and Teelucksingh, 2002). In this study, I use the second equation. In all of the cases, the null hypothesis is the same; that is, δ=0 (i.e., p=1). If the null hypothesis is rejected, Yt is stationary with a mean of zero in the first equation; Yt is stationary with a non-zero mean in the second equation; and Yt is stationary with a nonzero mean and time trend in the third case (Gujarati, 2003; Watson and Teelucksingh,
+2002). In each case, I use OLS regression to estimate these equations, and divide the estimated coefficient of Yt-1 by its standard error to find the tau statistic (τ) and refer to critical values reported by Eviews (Gujarati, 2003). If the computed tau statistic (τ) in
+absolute value (i.e., ADF test statistic in Eviews output) exceeds the MacKinnon critical tau values, I reject the hypothesis that δ=0 (i.e., p=1) with the conclusion that series is stationary (Gujarati, 2003). In contrast, if the computed tau statistic (τ) in absolute value is smaller than MacKinnon critical tau values, I accept the null hypothesis and conclude
+that series is nonstationary. 
+
+
+Gujarati, Damodar N. 2003. Basic econometrics. 4th ed. Boston: McGraw Hill
+
+Watson, Patrick K., and Sonja S. Teelucksingh. 2002. A practical introduction to econometric methods: Classical and modern. Kingston, Jamaica: University of
+West Indies Press.
+
+
+Said & Dickey (1984); it is possible to test the hypothesis difference = 0 without knowing p or q (p being row and q being the moving average coefficient). Arima (p, 1, q). 
+
+The value of d indicates the amount of differencing necessary to reduce the series to stationary. The number d also equals the number of unit roots in the characteristic equation for the time series.
+
+Dickey & Said (1981) discuss how to test for d = 1 when p and q are known.
+
+
+
+The Augmented Dickey-Fuller (ADF) test is used to determine if a variable has a unit root or is stationary. A variable has a unit root, if after a shock, it does not move back to a longrun trend. Dickey and Fuller (1979) showed that the null hypothesis of their test is that the series has a unit root and is non-stationary. The test gives you the choice of including a constant, a constant and a linear time trend, or none in the regression. Including the constant and trend is the most general specification, and was the choice for this study. Also, the test allows for the specification of the number of lagged differenced terms. A lag of one was chosen for this study since the data is of annual prices and quantities. Based on the results of the ADF, the null hypothesis of a unit root cannot be rejected for level data (Table 1).
+
+
+The ADF test is one way of testing the existence of a unit root in a time series process. It represents a more general test than the traditional Dickey-Fuller test because it takes into account the possibility of having a random walk process with serial correlation in the errors. That is, it takes into account that the possible time series representation for the process in question could be an autorregresive specification of order p with a unit root, commonly known in the time series jargon as ARIMA (1, 1, 0).
+
+
+
+Most real world data in non-stationary in nature, but you need stationary data for forecasting. Non-stationary time series can arise for many reasons: a non-constant mean, non-constant variance, or both. 
+
+The statistical basis for our estimation and forecasting depends on series being covariance stationary. 
+
+In deterministic trend series, the trajectory trends due to a "time" variable constant.
+
+In a stochastic trend series, the trajectory is a random walk and it happens to be trending up or down. 
+
+What is a random walk?
+- stock market
+- brownian motion
+
+Unit root test: whether phi is 1 or not. 
+
+When we have a stationary system, the effect of a shock will die out gradually.
+
+When we have a non-stationary system, the effect of a shock is permanent. 
+
+
+
+
+
+# unit root tests
+
+If a unit root exists, then typical regression-based analyses cannot be applied to the data structure to make inferences about the underlying process. 
+
+Consider an AR(1) process: yt = phi*yt-1 + errort
+
+We want to test whether phi is equal to 1. Subtracting yt-1 from both sides we can rewrite the AR(1) model as:
+
+delta(yt) = yt - yt-1 = (phi - 1)yt-1 + error t
+
+And now a test of phi = 1 is a simple t-test of whether the parameter on the "lagged level" of y is equal to zero. This is called a dickey-fuller test. 
+
+Dickey and Fuller computed the critical values using Monte Carlo techniques to test for the stationarity of the data.
+
+The DF is generalized to the augmented DF test to accomodate the general ARIMA and ARMA models.
+
+In all of the Dickey-Fuller and ADF tests below, the null hypothesis is that there is a unit root. Under the unit root hypothesis, the test statistics are not distributed as normal varialbes nor as t, but have a sampling distribution of their own. This distribution is now commonly called the Dickey-Fuller distribution. Dickey and Fuller (1979) estimated the distribution, and provided critical values for various sample sizes. MacKinon (1991, 2010) showed how to calculate its p-values for arbitrary sample sizes. 
+
+
+
+# DF vs augmented
+
+DF is to test for the presence of a unit root in time series. The augmented test was developed to accomodate more complex models with unknown orders.
+
+The DF test assumes that the error term is not serially correlated. This may not be a reasonable assumption. In fact, most of the times, it is not. Most of the times, there is a lot of autocorrelation in the residuals. To account for this autocorrelation, Said and Dickey (1984) introduced the Augmented Dickey-Fuller test. The ADF test adds k lagged-difference terms onto the standard DF estimation equations. Said and Dickey extended the arbirtrary AR(1) testing to any AR(p) processes. 
+
+
+# Problems with unit roots
+
+In multivariate frameworks, unit roots lead to spurious regression results.
+
+In univariate frameworks, unit roots cause OLS estimates of AR(1) coefficients to be biased. 
+
+
+
+
+## Random Walks
+
+# on graphs
+
+The classical one-dimensional random walk describes the discrete steps of a particle on a lattice (e.g. Z) and its position at the n th tim e step can be characterized by S n = X\ + ... 4- X n where Aj’s are independent and equal to 1 or -1 w ith probability 0.5. The d-dimensional lattice version similarly allows the particle to travel one unit in any direction along the lattice with equal probability. 
+
+
+
+
+
+
+
+
+## Unit roots and dickey fuller abstract ideas
+
+A stationary process has the following properties. A constant and finite long run mean. A constant and finite variance. A constant and finite covariance of yt with any lagged value. These covariances can vary with different lagged values but not with t. There are essentially an infinite number of ways for a series to be non-stationary (seasonal model, deterministic trend, changing variance, etc.). In a sense, of of all non-stationary processes a unit root process resembles a stationary process the most. 
+- which is one reason why there is so much focus on distinguishing the two
+
+Unlike the "orderly" behavior of a stationry time series, the behavior of time series containing a unit root is strikingly troublesome. A time series that contains a unit root does not exhibit mean reversion, even if it has a constant long run mean (as for example a random walk). Its variance goes to infinity as t goes to infinity. The expected time between crossing the value of y0 is infinity. Clearly, such properties imply that a non-stationary time series cannot be estimated using the Box-Jenkins methodology (three-step approach for estimating time-series models). In fact, except cointegration analysis, not much can be investigated with non-stationary time series. 
+
+Unit roots (non-stationary series) also look like other non-stationary series (like deterministic trends or stochastic trends). Knowing the source of the non-stationarity has real-world policy implications. For example, if the gross domestic product of the US is the result of a deterministic trend model, then any shocks to the system will dampen over time and become irrelevant. A random walk process, on the other hand, never gets over a shock. The shock lingers on, in full force, forever. Thus, the effects of a decades old bad economic policy, even if the policy was short-lived, would still be felt today. If GDP is a random walk with drift, we are doomed to suffer the full consequences of yesterday's mistakes; if it comes from a deterministic trend, then we will soon outgrow those mistakes. If a company's stock price is the result of a stochastic growth process, then temporary shocks -- mismanagement by the CEO, an unexpected energy crisis, a small recession -- will affect the stock price indefinitely into the future. If the stock price is determined by a deterministic trend model, then the stock will rebound; investors may profitably take a "this too will pass" attitude and invest countercyclically. 
+
+One of the key insights in distinguishing the behavior of a time series generated by a random walk is the nature of its evolution over time. Viewing the error as a sequence of "shocks," a particular sample path of yt is determined by the starting position and the cumulated shocks, each of which receives an equal weight -- in particular, there is no sense in which the past is forgotten, a feature that is sometimes referred to as infinite 'memory.' The non-stationarity in Y from a random walk processes is due to the implied accumulation of shocks. 
+
+If we know why the economy is growing (stochastic vs deterministic trend), then we can better understand business cycles (the deviations from the trend). In the mid-twentieth century, it was quite common to study the business-cycle component of GDP, for example, by regressing the series on time, or a time polynomial, calculating the residuals (which by construction are zero-mean) and studying the business cycle of this "detrended" time-series. Detrending in this way, however, is only appropriate if a deterministic trend was the source of the non-stationarity in the first place. If the growth was stochastic, then first-differencing the data would be the more appropriate approach. 
+
+Deterministic = multiply by time
+Stochastic = random walk with drift
+
+So, we need to know whether our series is stationary (and can therefore apply box-jenkins methodology) or non-stationary. If non-stationary, we need to identify the source of non-stationarity...random walk with drift...deterministic trend?
+
+The concept of a random walk has two roles of interest. First, it is prototypical model for the representation of the time series of many economic variables, including real variables such as output and employement and nominal or financial variables such as price levels, inflation rates and exchange rates. It is often taken as a 'default' or 'baseline' model from which other models are evaluated. Real variables of random walks with drift often arise in macroeconomic aggregates, including such phenomena as expenditure components of the GNP, employment and proce indices. Second, random walks, or their limiting forms, appear as partial sum processes, psp, in econometric estimators, especially in distribution theory for estimators and test statistics. In the limit, here interpreted as taking smaller and smaller steps in a given time interval, the random walk leads to Brownian motion. 
+
+As is now well known, the presence of a unit root implies a form of nonstationarity that is considered to be relevant for economic time series, so that a non-standard inferential and distributional framework is required.
+
+
+# nice description of stationary
+
+A key deistinction in econometrics and statistics is between processes that are stationary and those that are nonstationary. In a time series context, these are said to generate time series that are, respectively, stationary or nonstationary. Intuitively, stochastic processes that are stationary are unchanging in some key aspects, which give rise to several definitions of sttationary, differences between them depending on what is assumed to be unchanging. A strong form of stationary requires that the joint probability distribution of the random variable that comprise the stochastic process is unchangin; however, the most often used definition in econometrics relates to a weakly (or second-order) stationary process. 
+
+# difference between random walk and unit root
+
+Note that a stochastic process generating a random walk is a special case of a unit root process: it contains a unit root, but its increments, et, are assumed to be uncorrelated, whereas a unit root process may exhibit weak dependency.
+
+Unit root is when phi's (terms relating yt-n to yt) add to 1. You can have a single unit root (as in a random walk), or multiple unit roots. 
+
+One of the simplest processes that contains a unit root is the random walk, which generates random variables by recursion. While usually too simple to characterize economic time series, this process is a useful place to start because it captures most of the key features of more complex processes with a unit root. Two of these relate to the nonstationarity and 'mean aversion' of a random walk. For example, if et is white noise, with variance constant, and y0 a fixed number, then the variance increases linearly with t and so the process generating yt is not (weakly) stationary. The property of mean aversion, together with the increasing variance, gives the sample paths of random walks their typical pattern of rarely crossing mean(y), wandering one side or the other of mean(y). By 'mean reversion' is meant either a reflection (that is, to hit mean(y) and return to the same side) or a sign change relative to mean(y). Just how frequently a random wwalk mean-reverts depends on the distribution of et. For example, with Gaussian inputs, the mean number of reversions for a simple path of 1,000 realizations is just 20. The random walk is of interest because it seems to characterize some economic time series; for example, nominal, and perhaps real, exchange rates and asset prices more generally.
+
+A random walk is an example of a stochastic process, which is a collection of random variables with the particular feature that they are ordered in time, either discrete time or continuous time. Thus, whilst as far as history is concerned we only observe one sample path of a time series, that particular realization or sample path is simply one of a number of possible sample paths. 
+
+
+# popularity of DF and unit root testing
+
+The basic set-up for the DF unit root test is now familiar enough, being taught in most intermediate, if not introductory, courses in econometrics; however, the underlying distribution theory is somewhat more advanced, and the many complications that have arisen in practice has meant the development of a voluminous literature that, because of its extent, is difficult to comprehend, espcially for the non-specialist. Indeed, it is probably the case that a sample survey of the field of methods and applications is virtually infeasible; indeed the topic is so extensive that even some 20 years ago Diebold and Nerlove (1990) noted the scale of the literature on this topic (Patterson unit root tests in time series).
+
+The articles on unit root tests are amongst the most cited in economics and econometrics and have clearly influenced the direction of economic research as a much sider level than simply testing for a unit root. Present a table of citations for original unit root testing publications and they are on the order of several thousand (3-7 thousand cites each). 
+
+A section on 'unit root testing' is now close to compulsory in all but the most elementary of econometric courses and textbooks. 
+
+
+# Nelson & Plossner, 1982
+
+Many macroeconomic processes contain both a secular and transitory component. The secular component is growth and determined by factors such as capital accumulation, population growth, or technological change. The transitory component is stationary and determined by monetary and real factors. Many posit business cycle theory and employ a model in which the outcome is regressed on time. 
+
+These authors point out that growth need not be modeled by a deterministic trend. A random walk is perfectly capable of yielding what appears to be growth in one direction. 
+
+The cited literature, then, uses models that may be misspecified. 
+
+Moreover, theories and models that employ deterministic trends will underestimate long-run shocks. They assume that shocks do not persist. That determinants of fluctuations at each step dissipate over time and do not carry over into the future. Random walk models, conversely, assume that shocks carry forward into the future. 
+
+---The big picture key
+"stochastic variation is an essential element of any model of macroeconomic fluctuations"
+
+When you employ a deterministic trend model, what you are doing is trying to explain stationary fluctuations around a deterministic trend with various observed predictors. 
+
+These guys find evidence that many macroeconomic trajectories in the U.S., including X and Y, are more appropriately modeled as random walk processes. So, any study or theory focused on explaining variation in one of these trajectories will never reach its full potential if it is limited to explaining only fluctuations around a deterministic trend (and not explaining stochastic variation in random elements). 
+- industrial production
+- employment
+- unemployment rate
+- wages
+- bond yields
+- common stock prices
+
+
+
+# from unit root book, "are unit root processes of interest?"
+
+There have been a very large number of studies addressed to the issue of whether a particular series has been generated by a stochastic process with a unit root, and the question arises as to why there is such an (enduring) interest. This question is answered more fully in the next chapter, the present intention being to give an idea of some of the topics that have been studied. Nelson & Plossner (1982) considered 14 macroeconomic time series, such as GNP, industrial production, some price indices, and employment and bond yields. Subsequent research included a more detailed analysis of a number of these series, with particular interest focusing on aggregate measures of output, such as GDP or GNP, especially for industrialized countries. However, interested widened and many articles that involved the use of economic time series included a test of some form on the unit root hypothesis, in part because there was an underlying theoretical base for the distinction between unit root and non unit root processes from an economic perspective (that is, it was not just a matter of the econometric aspects of the application.). 
+
+
+Klein and Kosobud (1961) were interested in the constancy vs changing nature of 5 celebrated ratios in economics (e.g., savings-income ratio, capital-income ratio, etc.). Part of their theory involved non-constant ratios, and another part posited constant ratios. Keep in mind, all variables grow. The question is whether, among trended series, two series share the same ratio over time. Find the ratio and plot it over time. If the ratio contains a unit root, then the ratio is non-constant.
+
+Another application is the examination of the law of one price (LOOP) in microeconomics. The idea is that the price of a homogeneous good should be the same when converted to units of a common currency. The theory makes the prediction that the real exchange rate of a good should revert back to its mean given a chock. One way of testing this property is by way of a test for a unit root on the exchange rate, the prsence of which is not compatible with mean reversion. 
+
+In the literature on asset returns, there are many hypotheses about the movement and behavior of return series. One hypothesis is the random walk hypothesis (RWH) in which returns are serially random. Testing asset prices for a unit root has and continues to attract considerable interest in part because the rejection of the RWH implies the modeler can move to other hypotheses about what generates the trajectory. Evidence exists for both (MJ Kim, CR Nelson, R Startz, 1991)
+
+
+
+
+# Difference between a deterministic trend and stochastic trend has both statistical and substantive reasons
+
+- different substantive hypotheses
+- both seen as "this is the realization of a multitude of unknown forces" and we have to deal with the realization
+- you adjust the series to apply models to it. if you make the wrong inference about the dgp and employ the wrong adjustment method then you have a misspecified model
+
+There is a lot of interest in determining whether a series exhibits deterministic or stochastic trending behavior. The testing procedure is not meant to be taken as a structural explanation of the systematic movement in a series, but rather as a workable proxy for a large number of forces that could be reduced to a simple representation. The deterministic trend view is that deviations from trend are transitory: the series reverts back to the deterministic component over time. The stochastic trend view is that the series is a random walk. If the series is generated by a random walk, then removing what was erroneously thought to be trend would induce an artificial periodicity into the resulting detrended series. 
+
+The issue only becomes more challenging as models grow in complexity. In more complex models, the analysts' question becomes, "how big is the random walk?" In other words, there is a random walk element to the overall model and I need to determine the extent to which it covers a great portion of variance in my series. There is also the issue of distinguishing a 'near' unit root process from a unit root process in short time-span series. 
+
+A concern about the presence of a unit root lies in the detrending procedure that was common practice prior to the early 1980s. This practice viewed a time series of observations on economic variables, such as employment and output, as comprising a secular, or trend, component and a cyclical component. The former captured the long-run tendency of the series, adn the latter, deviations about the long run, which was viewed as being driven by capital accumulation and population growth, as suggested by simple growth theories of the time. On this basis, the changes due to cyclical components were not long-lasting but 'transitory', whilst the trend captured permanent and rather slow-moving changes. As a result, time series were often detrended by regressing them on a linear time trend, usually first taking the logarithm of the series, with the resulting residuals representing the relatively fast-moving cyclical component, which was then the subject of business cycle analysis. This process is appropriate for a trend stationary series; that is, a series that is stationary once it has been detrended, usually by a prior regression on deterministic components, such as determined by a lower-order polynomial trend. However, this deterministic/cycle decomposition could only at best be a sketch or stylization of the components of a time series. An alternative can be developed by allowing the long-term movement to be determined by stochastic inputs; for example, interventions, discoveries and human catastrophes, such as wars. The trend would then be determined by the accumulation of these stochastic inputs: it would be a stochastic rather than a deterministic trend. A particular example of a process that generates a stochastic trend is a unit root process that becomes stationary on differencing. To regress such a series on a time trend and then obtain the residuals, identifying these as the cycle, would be fundamentally incorrect inducing a damped sine wave seemingly indicating periodic behavior. 
+
+Shiller (1979) removed deterministic trends before subjecting stock price series to more complex models. Later, Durlauf and Phillips (1988) and Nelson and Kang (1981) showed that detrending a series generated by a random walk (which could happen for stock prices), leads to artificial pseudo-period behavior; thus, following such a procedure would lead to the conclusion that there are cycles in the time series, but these cycles are spurious being an artifact of the detrending procedure. 
+
+
+
+
+# Look next
+
+A Telcs, The Art of Random Walks, 2006
+A History of Probability and Statistics and Their Applications before 1750
