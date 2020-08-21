@@ -1,0 +1,185 @@
+Part 1 introduction all good. Especially 5 and 6
+
+# Big ideas
+
+(1) The notion of "searching" is generalizable
+
+One of the important questions in the random search problem can be stated as follows: what is the most efficient strategy for searching randomly located objectswhose exact locations are not knownapriori? The question is relevant because performing efficient searches is not trivial or straightforward.
+- if smart, you should be able to extract this statement to other contexts
+- searching for a research idea
+- searching for which email/request for help to respond to
+
+Biological foraging is actu-ally a special case of random search. It can also include, for instance, searches formisplaced keys, missing children, and international criminals. Similarly, enzymessometimes perform random searches for specific DNA sequences. In the context ofoperations research, Shlesinger [340] has noted the relevance of random searchesto the hunt for submarines in World War II. Indeed, the physics and mathematicsunderlying random searches are so general, and their applications so diverse, thatthey became a topic of an American TV drama.
+
+
+(2) Justify RWs and stochastics
+
+They justify the utility of studying animal movement.
+They also state that stochastics is necessary given the complexity of the world. 
+But can you justify the utililty of stochastic models?
+
+
+(3) How biologists actually study the walks:
+
+- weiner processes are random walks where the variance increases linearly with time
+- for many organisms, the variance does not increase linearly with time
+- So, they aren't studying the actual movement
+- They are studying the variance with respect to time
+
+(4) movement vs reactions
+
+Biological encounters involve a diffusion (movement) and an interaction (polination, mating, eating) component. You are allowed to separate the study of the two because movement should not depend (strongly) on whether an animal is mating or eating. Interactions are inherently nonlinear, diffusion is not. 
+
+(5) support for simon's complexity of environment determines behavior
+
+Locomotion and its detection go hand in hand, and therefore it has been hypothesized that the evolution of external bilateral sensory organs (e.g., eyes and ears) is partially due to the sudden increase in spatial complexity and patchiness of the marine odor landscape during the Ediacaran-Cambrian interval, about 542 million years ago.
+
+(6) things diffuse anomalously (which means consistent with levy walk)
+
+They close their intro by saying, "we hope to demonstrate that species diffuse anomalously." In my first reading of that sentence, I took it to mean "things don't behave like random walks." But in their "findings" section they give all sorts of evidence that species diffuse according to a levy walk. 
+
+They say, "X follows a levy walk -- or some other form of anomalous diffusion." So, by "anomalous" they mean random walk.
+
+Yup, this notion is correct. Normal diffusion means non random walk. Anomalous diffusion means levy walk.
+
+(7) They use levy and random walks as a theory
+
+Lots of evidence that movement is consistent with a random walk. Now build a theory where random walks are one element of how organisms move. 
+
+They ignore lots of details. "We describe a model that captures the most important statistical properties of the diffusion and presevers the main dynamical aspects of searchers, in a limited context in which predator-prey relationships can be ignored and learning minimized. 
+
+(8) generality of a theory
+
+Unlike Darwin’s theory of natural selection or the laws of thermodynamics,which are universally valid, we have no theoretical basis for expecting that allorganisms must have evolved adaptations for performing L ́evy flights. Drawing aparallel with eyesight as an adaptation, we know that vision optimizes the success ofencounters under specific circumstances, e.g., predation and mating in illuminatedenvironments. Hence, although we know that the ability to detect and transducephotons evolved at least once, we have no basis for assuming that vision is auniversal adaptation. Thus, when it is dark, eyes are useless and, similarly, whentargets are abundant, L ́evy flight foraging is useless. In Section10.2,weshowthat the advantages conferred by L ́evy flight foraging disappear almost completelyunder scenarios of high target density
+
+
+THIS IS SIMILAR TO VEHICLES SYNTHETIC PSYCH BOOK
+
+The preceding caveats indicate that we should not expect a single universal lawto apply in every situation because the concepts of reductionism and universality,although extremely powerful, suffer from inherent limitations. Invoking again theanalogy with vision, consider the general statement that humans do not possessthe ability to see images with their ears, i.e., echolocation. This is true for 99.99%of the human population, but it is not universally true. Blind people who havetaught themselves such echolocation skills have been documented since 1749. Forexample, Daniel Kish, who lost his eyesight as a child, can see images of his envi-ronment by making clicking sounds with his mouth [184]. Notwithstanding suchcounterexamples and special cases, nobody would seriously argue that humanspossess echolocation abilities. This example shows why physicists apply reduc-tionism to understand complexity: it is easier to start with general limiting models,later adding layers of specifics to address counterexamples, than to attempt thereverse.
+
+In Chapter2, we discussed “brainless” versus brained random walkers. Returningto that example, it makes much more sense to add, incrementally, the effects of abrain to a limiting “brainless” model than to start with a model of a fully brainedanimal and attempt the reverse. Indeed, it is much easier to add layers of complexityto a limiting model than to simplify a model with 10^2free parameters
+
+
+
+
+# Actual writing
+
+(1) Studying something follows a sequence. Classify. Movement. Causes.
+
+All of our OCB stuff is classify (or guess-work causes). I'm doing a movement study.
+
+As an illustrative example, Figure1.1 shows how spider monkeys move in the Yucatan Peninsula when theyare allowed to roam freely. What factors determine the shape and the statistical properties of such trajectories? If we know the answers to these questions, wecan venture beyond phenomenological descriptions and ask about causation: for aspecific species of organism, why do the organisms actually move as they do?Cuibono,1i.e., what advantage or benefit do they gain from such behavior? Moreover,how did the specific biological mechanisms involved in generating the behaviorevolve?
+
+(2) Things do move as random walks
+
+For example, Sparrevohnet al.[356]have found that thousands of fish released at a single point diffuse as randomwalkers once the movement of the water (i.e., advection) is taken into account. 
+
+Movement patterns of spider monkeys in the Yucatan Peninsula, stud-ied and reported by Ramos-Fern ́andezet al.[292]. Patterns generated by moving animals share features with random walks studied by physicists. Compare thetrajectory with those of humans, shown in Figure7.1.
+
+(3) coarse-graining statistical models
+
+Statistical models of foraging do not need to take into considerationthe “microscopic” details of the process – they are essentially irrelevant to theaverages. In this sense, it is important to recognize the limitations and applicabilityof such models. Despite this “coarse graining,” these models lead to statisticallyrobust results, precisely because they do not depend on the particular biologicalimplementation of the search mechanisms. There is a long tradition in statisticalphysics in which apparently simple models lead to remarkably good agreementwith experiment (e.g., the Ising model of ferromagnetic phase transitions).
+
+(4) use of stochastics
+
+For example, the search could be guided almost entirelyby external cues, either by the cognitive (memory) or detection (olfaction, vision,etc.) skills of the searcher, or the searches might not be oriented, thus effectivelybecoming stochastic processes. Even if the actual process is completely determin-istic, a statistical approach is useful, or perhaps even necessary, if the environmentis a disordered medium. Deterministic walks (e.g., the traveling salesman prob-lem and the traveling tourist problem [358]) in random environments can appearindistinguishable from (genuinely stochastic) random walks
+
+(5) there is inherent stochasticity in movement data
+
+Mathematical modeling of the movement and diffusion [265] of plant seeds andpollen, animals [378], micro-organisms [35], cells [230], organelles [160], and evengenetic material [158] has played an important role in biology, ecology, andmedicine [84].
+- these are actually "diffusion" cites, but it might work
+
+But the inherent stochasticity observed inmovement data makes it difficult to link movement complexity with dynamicalmodels of population processes [275], for example. Ecological theory traditionallyheld premises similar to those seen in the theory of equilibrium statistical mechanicsfor memory-free, scale-specific processes, normal diffusion, and Fickian transport[131]. Gautestad and Mysterud [131] have noted that animals from many taxagenerally express strategic homing, site fidelity (i.e., memory), and same-speciesor conspecific attraction (with possibly non-Fickian transport due to interactionamong diffusing individuals). Hence ecological systems and processes have morein common with complex systems far from equilibrium than was suspected earlier. Itis no surprise that studies of nonequilibrium statistical mechanics [179,198], scale-free L ́evy processes [209,342], fat-tailed or leptokurtic [417] dispersal kernels, andnon-Markovian chains with long-range memory have contributed to the advanceof theoretical ecology (Figure1.3).
+
+(6) the question of whether it is appropriate to use a stochastic model is a question of whether your framework is testable and adequately captures the statistical properties of the data
+
+Because the basic premises of equilibrium statistical physics do not necessarilyhold for biological and ecological systems, a data-centric scientific research pro-gram allows a quantitatively more correct and theoretically less biased approach.Such a program has two guiding principles that represent a break from the earlier approach: (1) to discard preconceived expectations relating to the central limittheorem, Gaussian statistics, and Brownian motion and, instead, to expect a richvariety of behaviors; and (2) to construct a theoretical framework that, while testable(i.e., falsifiable) and amenable to model comparison, nevertheless captures the mostimportant statistical properties of the data.
+
+Is there a discrepancy between model and data? And do such discrepancies exist across many experimental studies?
+
+
+(7) beautiful description of fitting curves and theorizing and data
+
+An important aspect of a data-centric approach to animal movement involves fittingtheoretical curves to empirical data and the consequent comparison of differentmodels. Typically, one asks questions such as which of two given models betterdescribes a particular set of data. Much more importantly, however, we recall thatmodels make assumptions and that these assumptions can lead to (sometimes new)theoretical predictions. Such considerations become especially important given thefact that human perception is based on limited scales of experience, such that oftenit is difficult to quantitatively describe dispersal and other ecological processesoccurring over long time periods and large areas [154].
+
+Beyond model comparison, an empirically motivated approach to the problemrequires us to revisit the theoretical underpinnings that we often take for granted.For example, several orders of magnitude separate the theoretical predictions ofthe time necessary for our human ancestors to have dispersed (i.e., diffused) out ofAfrica to populate remote and inaccessible parts of the planet. The idea that humanbeings dispersed like particles performing Brownian motion or the correlatedwalks associated with small-angle scattering does not agree with known facts (see Chapter7).
+
+Nevertheless, even this program of “following the data,” which lies at the heartof scientific methodology, should be undertaken with some care. When tryingto understand a complex process in nature, the empirical evidence is essential.Hypotheses must be compared with the actual data, but the empirical evidence itselfmay have limitations; that is, it may not be sufficiently large or accurate either toconfirm or rule out hypotheses, models, explanations, or assumptions, even whenthe most sophisticated analytical tools available are used. For movement patterns,this issue may be in some cases particularly delicate. A data set describing thelocomotion of an animal is, in some sense, a summary of all the activities in which the animal has been involved during data collection and these activities must betaken into account when analyzing and modeling actual field behavior.
+
+
+
+(8) A whole chapter of this book focuses on the challenge of distinguishing different kinds of stochastic processes. Whether or not it follows a random walk or a modified random walk, or a levy flight, or a correlated random walk.
+
+The basic problem is that many processes appear indistinguishable. Adaptive levy walks with a power law exponent u fluctuating between low values (less than 3) between patch s and large values (greater than 3) inside patches will appear indistinguishable from the composite brownian walks, the latter having no underlying levy process.
+
+Then there is the matter of whether it is possible to even observe the process. Even if they exist, actual singularities in elementary particles cannot be observed. 
+
+For similar reasons, we often canno directly observe a levy process. Nevertheless, the empirical observation of a truncated levy walk can imply an underlying levy process. 
+
+"In summary, there is an abundance of evidence for anomalous diffusion (random walks or levy walks). Whether this evidence arises from levy walks or some other mechanism is still an open question. The authors of this book strongly suspect that many biological organisms do in fact perform truncated levy walks."
+
+p. 73
+
+
+
+
+(9) the "stochastic implies randomness" thing is still unknown. Not for me to solve
+
+Quantum mechanics supplanted classical mechanicsand differs from it in important ways, perhaps the most important being the intro-duction of intrinsically probabilistic (i.e., stochastic) aspects.
+
+Can an open quantummechanical system with long-range memory process or “metabolize” random-ness such that its behavior is neither purely deterministic nor purely random butinstead exhibits a deterministic process subject to frequent stochastic perturba-tions?
+
+Neuroscience argues against free will
+
+Libet’s [210] seminal experiments stronglysuggest that volitional actions are mistakenly interpreted as having conscious moti-vation, making the subjective experience of free will a consequence of mistakenretrospection.
+
+But others use animal studies to argue for free will.
+
+Heisenberg’s operationallyconvenient definition states that free will is an action that is self-initiated or self-generated. Animals and organisms appear to undertake self-initiated action that isnot a response determined by the environment. Such self-initiated action appearsrandom, i.e., it is different each time an experiment is repeated. In contrast, a deter-mined response is the same every time, hence, predictable.
+
+
+
+
+# Baronchelli and colleauges
+
+(1) what computational models can do (from baronchelli et al. 'modeling the emergence')
+
+Generally speaking, a model can show whether its assumptions are internally coherent, whether they can produce the claimed effects, and above all, whether they are sufficient in principle to generate a given phenomenon. 
+
+## levy flights in human behavior and cognitions
+
+(2) ubiquotious concept
+
+Different studies have shown that human mobility can be described in terms of Levy flights, while fresh evidence indicates that the same pattern accounts for human mental searchers in online gambling sites. Thus, Levy flights emerge as a unifying concept with broad cross-disciplinary implications.
+
+Levy flights underlie many aspects of human dynaics and behavior, and have the potential to become a unifying concept for problems traditionally addressed by different disciplines, such as urban planning, social science and cognitive science.
+
+(3) where do we find levy flights?
+
+In movements of species such as marine predators, monkeys, and mussels. In large scale movement of individuals in industrialized countries. Also happens in cognitive processes. Memory retrieval can be explained with levy flights.
+
+Human mobility.
+
+Evidence for the existence of levy flights in human mobility comes from an analysis of online bill-tracking websites, which track the movement of individual banknotes in space and time. Brockman et al. analyzed approximately 10^6 reports of the bill-tracking website www.wheresgeorge.com and found that their spatial jumps followed a levy flight.
+
+Similarly, in an analysis of 10^5 individuals and their mobile phone traces, whose positions were recorded every time a mobile device was actively or passively engaged in a phone call or text message, Gonzalez and coworkers discovered that movement was consistent with levy flights.
+
+A further validation of the L´evy behavior was provided by Rhee and coworkers [18]. The analysis relies on the GPS signal of the mobile phones of 101 individuals, whose positionwas recorded every 10 seconds and with an accuracy of 3 meters in two University Campuses, on theme park, one metropolitan area and one state fair. The total signal amounts to ∼ 2 × 105 displacement events. The results indicate that both the flight distribution and the pausetime distribution exhibit heavy tail, compatible with a power-law behavior (1.16 < γ < 1.82, in the different experiments), but also with a Weibull or
+log-normal distributions. However, a nice corroboration of the L´evy flight hypothesis comes by a truncated L´evy flight model that accurately reproduces the experimental curves [18].
+- Overall, the unparalleled temporal and spatial resolution of this study allows us to conclude that Levy flights are genuinely intrinsic to human movements, and that, as the authors' stress, human intentions instead of geographical artifacts play a major role in producing such a behavior. 
+
+
+Memory retrieval
+
+Nine subjects were asked to recall as many names as possible in roughly 20 minutes, and their inter-retrieval interval was recorded. Rhodes and Turvey observed an exponential increase in the interval between retrievals interrupted by short bursts of shorter retrieval intervals. The authors propose an analogy between spatial foraging and memory retrieval, and suggest that "particular words are randomly and sparsely located in their respective spaces at sites that are not known a priori." 
+- but you can also think of it as a random walk on a semantic network
+
+
+
+500
+150
+750
+500
+
+2000
+
