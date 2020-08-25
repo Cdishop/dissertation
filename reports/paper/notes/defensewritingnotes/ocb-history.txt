@@ -1,0 +1,73 @@
+
+
+# OCBS are growing since first introduced
+
+Since the OCB concept was first developed and reported in two articles in the early 1980s (Bateman & Organ, 1983; Smith, Organ, & Near, 1983), the amount of interest paid to OCBs has dramatically increased. As indicated in Figure 1.1., of the over 4900 articles published in the literature on OCB and related constructs from 1983 to 2017, approximately 80% have been published within the past 10 years and over half (51%) have been published in just the past 5 years (Web of Knowledge, 2018). In addition, some of the most highly cited articles in the field of management and Industrial/Organizational psychology have focused on OCB. 
+
+# Look for notes on bateman
+
+# Katz and Kahn dimensions of workplace functioning
+
+Daniel Katz and Robert Kahn (1966) extended and more fully articulated the concept of organization as an open system. In particular, they specified the different classes of behaviors that such a system requires in order to attain effectiveness. The system must attract and hold people in the system; ensure that members reliably perform the tasks formally associated with the positions they hold; and encourage spontaneous behaviors beyond formal role prescriptions when such behaviors facilitate, directly or indirectly, the attainment of effectivneess in pursuit of formal goals. Katz and Kahn noted that the three classes of behavior are mainly driven by different motivational methods. Attracting and holding members are functions of "system rewards" that accrue to members as a function of membership in the system; "instrumental" or incentive rewards motivate task performance and productivity beyond the satisfactory level, whereas "spontaneous" cooperation (performing beyond formal role requirements) is motivated by a sense that one has full "citizenship" in the system.
+
+# blah
+
+Maybe don't include below. Idk what he's saying.
+
+Weber (1947); Odiorne, 1965; Barnard, 1938
+- any criterion not susceptible to reasonably precise measures should not factor into the reward system
+- this was management thinking at the time
+- believed that the informal notion of "spontaneous cooperation" posed by Katz and Kahn presented serious challenges to researchers and maanagers who would endeavor to elicit it as a form of contribution by individual members
+- 
+
+# Hawthorne produced the idea that satisfaction causes productivity
+
+Then Hawthorne studies ushered in the idea that satisfaction causes productivity, although Organ says that it might be a misreading.
+
+Roethlisberger and Dickson's (1939) account of the famed Hawthorne studies documented the extensive forms and effects of the "informal organization," which pervaded the formal system and gave rise to informal status hierarchies and various forms of "sentiment" in the workplace -- often, but certainly not invariably, providing the value-added contributions to efficiency and effectiveness. Because of the attention Roethlisberger and Dickson gave to sentiments -- which we would probably translate in today's terms as attitudes or job satisfaction -- and because their work is believed to have ushered in management's focus on "human relations," the work has come to be associated with the idea that "satisfaction causes productivity." But one looks in vain for such a statement in their volume. 
+
+Nonetheless, the satisfaction-leads-to-productivity hypothesis gained purchase among some later students and practitioners of management, particularly those with a "human relations" bias. However, when formal studies finally began to put this idea to empirical test, results showed little statistical relationship between the two variables (e.g., Viteles, 1953; Brayfield & Crockett, 1955). 
+
+The generally accepted view among academic and professional psychologists and management scholars became one of turning the causal arrow around. This was the approach of Lawler and Porter (1967), who thought it more plausible that job satisfaction was the result of the rewards that employees derived from the organization -- whether they be extrinsic rewards such as pay and benefits derived from membership in the system, the intrinsic rewards flowing from effort and accomplishment of the work, or the social rewards provided by the informal organization. As Porter and Lawler noted, quite often these various forms of reward would not necessarily bear a close correspondence with the work productivity of individuals. For example, pay might be more closely related to formal status, years of tenure, or labor market imperatives than determined by level of individual productivity. Therefore, if rewards create satisfaction, but rewards are only loosely connected to individual productivity, then we should not expect satisfaction and productivity to bear much in the way of a statistical association.
+
+Yet opinion polls of practicing managers, as well as union leaders, continued to express agreement with the notion that "a satisfied worker is a productive worker." Perhaps those groups endorse that proposition as a matter of faith rather than observation, or they hold to it because it provides a "rational" justification for them to do things that their people seem to appreciate.
+
+But another explanation could be that many managers include more in their concept of "productivity" or "performance" than measureable output. Maybe they add to it what Katz and Kahn defined as "spontaneous" contributions, especially those that go beyond the narrow definition of the task or job description, more than just the productivity that provides the direct connection to bonus pay for the individual.
+
+This was the musing that prompted Organ (1977) to suggest that what managers really mean when they say "a happy worker is a productive worker" is not about measurable physical or monetary results, but rather the more qualitative gestures that help sustain the "cooperative" system. Later, someone else -- and I'm honestly not sure who it was -- offered the term "organizational citizenship behavior" (OCB) to refer to these more qualitative contributions to the cooperative system. 
+
+
+# More concise in his review
+
+
+HIS INSIGHT FROM MANAGERS VS ACADEMICS
+
+By the early 1970s, the broad consensus among industrial and organizational psychologists was that job satisfaction, although worthy of empirical study for its own sake, had little to do as a determinant of the productivity of individuals or work groups. Empirical studies of satisfaction and productivity supported that view (demonstrating a small to mute association; Brayfield & Crockett, 1955; Cherrington et al., 1971; Lawler & Porter, 1967).
+
+However, Gannon and Noon's (1971) survey of beliefs taken by practicing managers and labor union officials found that both groups agreed that job satisfaction was a significant factor in the productivity of employees. The title of their work is "Management's Critical Deficiency," referring to the lack of awareness of empirical generalizations from rigorous research on management and organizational behavior. 
+
+The opposing views of academic researchers and managers and union officials presented me with a "raspberry seed in my wisdom tooth," to borrow a phrase from "The Music Man." On the one hand, I had respect for the scholars and researchers who could not find empirical support for the satisfaction-causes-productivity belief. On the other hand, I also have respect for managers and union officials whose experience in the factories and shops gives them some basis for inferences about possible links between job attitudes and contributions.
+
+I decided to think through various means by which the testimonies of scholars and practitioner views could be somewhat reconciled. I focused on the terms performance and productivity, wondering if one or the other might be usefully considered as multidimensional. Quantitative producitivity, such as sales volume, tonnage of physical output, and quality of craftsmanship, would certainly factor into what most observers would call performance. A different type of performance would, I suspected, represent more discretionary forms of contributions, such as stellar attendance, helping a colleague resolve a work problem, maintaining a neat and organized workplace, going the extra mile to help a customer, and providing encouragement to new hires. 
+
+Put the ideas into an AMR paper and sent it off. Tom Batemen, his graduate student developed measures of quantitative performance (productivity) and what he termed qualitative performance (which sought to capture much of what we have in mind as citizenship behavior). Clare Ann Smith followed with the development of an organizational citizenship behavior (OCB) measure that included the factor she referred to as altruism, which mainly included items pertaining to one-on-one support to coworkers, and a second factor -- generalized compliance -- including the more impersonal dimensions, such as punctuality, use of work time, adherence to rules about the use of organizational property, materials, and work breaks. 
+
+THE OVERLAP OF OCB WITH HISTORICAL CONCEPTS AND CP
+
+Some concepts similar to OCB can now be diserned in the thinking of theorists from the six decades or so preceding what we now refer to as OCB.
+
+Chester Barnard (1938), in The Functions of the Executive, referred to so-called informal modes of cooperation that are not part of the formal bureaucratic structure. Roethlisberger & Dickson's (1939) account of the Hawthorne studies referred to sentiments that arise within the informal organization and often -- although not invariably -- contribute to the functioning of the formal system. Katz and Kahn (1966), in their conception of organizations as open systems, referred to spontaneous contributions not explicit in job descriptions or managerial directives.
+
+For the past three decades, the concepts that have come into currency to represent the basic notions described above have been labeled OCB and contextual performance (CP). OCB represents the informal modes of cooperation and contributions that participants render as a function of job satisfaction and perceived fairness. CP refers to the spontaneous gestures that people offer toward sustaining a constructive interpersonal climate for group problem-solving and creativity. The concept, and much, if not most, of the research pertaining to it, took the path of demonstrating that CP, rather than productivity, was the dimension of performance in which personality had its effects.
+
+Both streams of research began with the acknowledgement from a substantial body of evidence that measures of neither job satisfaction nor personality bore strong relationships with formal, valid measures of in-role producitivity and effectiveness. Rather, satisfaction and personality found their expression and value in job behaviors that arose, and were sustained by, a sense of citizenship in the organization, or by personality traits and temperaments that facilitated efforts to shape a healthy and productive context in the work group. 
+
+He states that Prosocial behaviors, OCB, and CP are similar concepts but each comes from a different research tradition. Prosocial behaviors are very broad, OCBs are more narrow, CP is narrower still. But their main difference [in my opinion], is that researchers in CP focused on personality whereas researchers in OCB focused on satisfaction.
+
+
+BUT WHEN ORGAN STARTED WORKING WITH OCBS HE USED THE WORD OCB RATHER THAN THE CP CONCEPT THAT ALREADY EXISTED.
+
+OCBs originally came out because job sat didn't seem to relate to performance, but Organ figured performance was multidimensional and included things that we usually don't study, like helping a colleague, encouraging others, tidying up, having stellar attendence. Job sat probably relates to this other type of performance.
+
+CP researchers also cared about this "broader performance" DV but they were interested in relating it to personality rather than job satisfaction.
+
