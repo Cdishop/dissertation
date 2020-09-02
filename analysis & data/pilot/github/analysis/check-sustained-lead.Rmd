@@ -1,0 +1,165 @@
+---
+title: "unitroot"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F, include = F)
+```
+
+
+Do the github series exhibit sustained lead? If I look at github series A vs github series B, does github series A always stay on top?
+
+
+
+
+```{r}
+library(tidyverse)
+df <- read.csv("../data/for-analysis-ts/daily_issues.csv")
+```
+
+
+# Compare repo ID's 1 and 2
+
+Create a data set containing only repo's 1 and 2 of comparable length.
+
+```{r}
+
+df %>% filter(repoid == 1) %>% summarize(max = max(event_at_index)) # first series has 1238 days (counting 0). 
+df %>% filter(repoid == 2) %>% summarize(max = max(event_at_index)) # second series has 2187 days
+
+# so, use the first series as a filter. In other words, filter the 2nd series to just its first 1238 days
+shortseries <- df %>% filter(repoid == 1) %>% summarize(max = round(max(event_at_index))) %>% pull(max) %>% -1
+
+compare12 <- df %>% 
+  filter(repoid %in% c(1,2)) %>% 
+  filter(event_at_index %in% c(1:shortseries))
+
+nrow(compare12) / 2 # should result in 1238
+
+tail(compare12 %>% 
+       filter(repoid == 1) %>% 
+       select(event_at_index))
+
+tail(compare12 %>% 
+       filter(repoid == 2) %>% 
+       select(event_at_index))
+
+```
+
+Determine the extent to which one exhibits sustained lead. For how many steps is the series "repoid == 1" on top?
+
+```{r}
+
+repo1lead <- logical(shortseries)
+count <- 0
+
+for(i in seq_along(1:shortseries)){
+  count <- count + 1
+  
+  ontop <- FALSE
+  
+  use <- compare12 %>% 
+    filter(event_at_index == i)
+  
+  rep1val <- use %>% filter(repoid == 1) %>% pull(value)
+  rep2val <- use %>% filter(repoid == 2) %>% pull(value)
+  
+  if(rep1val > rep2val){ontop <- TRUE}
+  
+  repo1lead[count] <- ontop
+  
+}
+
+sum(repo1lead == T) / shortseries # indeed, 99% of the time, repo 1 is on top
+
+```
+
+Is there a tidy way to accomplish what I just did? A way without using a for loop?
+
+
+For each time point (event_at_index), rank the value column. If repo1 has a greater value, it gets a 1. If repo1 has a lower value, it gets a 2. Then, ask how many times repo1 was rank1.
+```{r}
+
+compare12 %>% 
+  select(X, event_at_index, value, repoid, repo) %>% 
+  group_by(event_at_index) %>% 
+  mutate(rk = rank(-value)) %>% 
+  filter(repoid == 1) %>% 
+  filter(rk == 1) %>% 
+  nrow() / shortseries # same number. cool
+
+
+```
+
+Plot it out
+
+```{r}
+
+library(ggplot2)
+
+ggplot(compare12, aes(x = event_at_index, y = value, group = repoid)) + 
+  geom_point() + 
+  geom_line(aes(color = as.factor(repoid))) + 
+  theme_bw() + 
+  labs(x = 'Time', y = "Number of Requests") + 
+  theme(legend.title = element_blank())
+
+
+```
+
+
+# Now do that for every possible pair of repos
+
+Only going to look at the first 530 days (roughly the length of the shortest series)
+
+```{r}
+allrepos <- df %>% distinct(repoid) %>% pull(repoid)
+allrepos1 <- data.frame(repo1 = c(allrepos))
+allrepos2 <- data.frame(repo2 = c(allrepos))
+crossrepos <- subset(merge(allrepos1, allrepos2, by = NULL), repo1 <= repo2)
+crossrepos <- crossrepos %>% 
+  filter(repo1 != repo2)
+
+series_n <- 530
+savepair <- numeric(nrow(crossrepos))
+
+for(j in 1:nrow(crossrepos)){
+  
+  pair <- crossrepos %>% 
+    slice(6)
+  
+  percent <- df %>% 
+  filter(repoid %in% c(pair$repo1, pair$repo2)) %>% 
+  filter(event_at_index %in% c(1:series_n)) %>% 
+  select(X, event_at_index, value, repoid, repo) %>% 
+  group_by(event_at_index) %>% 
+  mutate(rk = rank(-value)) %>% 
+  filter(repoid == pair$repo1) %>% 
+  filter(rk == 1) %>% 
+  nrow() / series_n 
+  
+  savepair[j] <- percent
+  
+}
+
+savepair
+
+
+```
+
+
+Percentages here indicate the number of periods (out of 530) that series x_i was on top. If the percent is 0.67, that means repo i spent 355/530 periods as the top request pool. 
+
+```{r}
+plotpair <- round(savepair, 1)
+ggplot() + geom_histogram(aes(plotpair)) + 
+  theme_bw() + 
+  labs(x = "Fraction Of Periods With Max Requests", y = "Count")
+```
+
+
+Percents are on the X-axis. X-axis is the fraction of periods (out of 530) that a repo i has the greatest number of requests. The Y-axis shows the number of times a given percentage appears in the data. 1 and 0 occurred a lot, meaning that out of any random pair of request pools, one was likely to remain on top for the entire period. 
