@@ -1,0 +1,70 @@
+
+
+
+Requests accumulate
+
+Requests do not accumulate
+
+
+## it depends
+
+(a) respond to many or few
+
++++++
+goes away if:
+- there is a direct 1 to 1 mapping of offered help and removing a request (which currently there is not)
+&&
+- offered help is a super function. When I offer help, I can remove 3, or 4 or 5 requests, whereas incoming requests typically arrive in batches no greater than 1.
+
+
++++++
+comes back under no accumulation if:
+OCBs have autoregression
+- A offers lots of help
+- B offers little help
+
+- OCBs persist, so A offers lots of help again
+- you would get extra milers if OCBs had autoregression and requests didn't accumulate
+
+
+
+(b) respond to influx or outflow
+
+
++++++
+I created all same levels of help. If influx signals "go" but level depends on some other function, then you could get differences. You could get good soldier emergence. 
+- this simulation assumes that all employees offer the same amount of help regardless of the size of the influx
+- it's a threshold effect
+- not a magnitude effect
+
+
+Even if it was a magnitude effect, the magnitudes are the same across employees. Not identical at each step, but have a high probability of being similar. If I have an step with arrivals of size 4, it's unlikely that I'll experience that again. 
+
+arriving or departing requests were not identical across employees?
+arriving requests had self-similarity. The number of new arrivals was connected to the number of new arrivals last time
+
+
++++++
+autoregression in OCB matters
+- extra milers emerge with autoregression
+- A offers lots of help
+- B offers little help
+++ pools don't persist, so B might offer help at large levels next. Unless A's help level has very high autoregression.
+
+
+
+
+(c) conformity
+
++++++
+I used a set-up in which each agent, if it conforms, offers help at the same level of its peers. 
+
+Any feature of organizational life that would dirty the chance that each employee selects the exact same value would make it more likely that extra milers emerge. Such features could include perceptual errors or biases, limited information, anchoring effects, clustering of similar others, 
+
++++++
+autoreggression in OCB matters
+- extra milers emerge with autoregression
+
+
+
+(d) what would happen if you mixed the agents?
