@@ -130,7 +130,7 @@ savepair <- numeric(nrow(crossrepos))
 for(j in 1:nrow(crossrepos)){
   
   pair <- crossrepos %>% 
-    slice(6)
+    slice(j)
   
   percent <- df %>% 
   filter(repoid %in% c(pair$repo1, pair$repo2)) %>% 
@@ -146,7 +146,6 @@ for(j in 1:nrow(crossrepos)){
   
 }
 
-savepair
 
 
 ```
@@ -163,3 +162,28 @@ ggplot() + geom_histogram(aes(plotpair)) +
 
 
 Percents are on the X-axis. X-axis is the fraction of periods (out of 530) that a repo i has the greatest number of requests. The Y-axis shows the number of times a given percentage appears in the data. 1 and 0 occurred a lot, meaning that out of any random pair of request pools, one was likely to remain on top for the entire period. 
+
+
+
+Change the image so it looks similar to the theoretical distribution.
+
+
+```{r}
+hm <- data.frame(
+  'freqs' = c(plotpair)
+)
+hm <- hm %>% 
+  count(freqs) %>% 
+  mutate(perc = n / 595)
+
+ggplot(hm, aes(x = freqs, y = perc)) + 
+  geom_bar(stat = "identity") + 
+  theme_bw() + 
+  labs(x = "Time", y = "Probability of Spending n Periods in the Lead") + 
+  theme(axis.text.x = element_blank()) + 
+  theme(axis.title.y = element_text(angle = 0))
+
+
+
+```
+
