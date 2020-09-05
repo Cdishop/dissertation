@@ -302,10 +302,11 @@ df %>%
 
 # Law of Long Leads
 
-The theoretical distribution. With two random walks, the greatest probabilities occur over $Time$ = max or $Time$ = min. A given walk has the greatest chance of spending all or no periods in the lead.
+The GitHub empirical data exhibited the long of law leads (also known as the arc-sine law). This law states that random walks infrequently change lead. When two move over time, the greatest probability is that one will spend most periods at a greater value than the other. The theoretical distribution is displayed below.
 
 ![x-axis = Time, y-axis = Probability of Spending n Periods in the Lead](llimage.png)
 
-The distribution of my empirical data from GitHub issues. As shown, for any bi-user comparison, a given request pool has the greatest chance of spending all or no periods in the lead. 
+Periods or time points are displayed on the $x$-axis, and the probability of spending $n$ periods in the lead is displayed on the $y$-axis. The greatest probabilities occur over $n$ = max/min. That is, a walk is most likely to spend all or no periods above (below) the other. The same distribution manifests in my GitHub data. After evaluating all bi-user comparisons, the probability of spending n periods in the lead is displayed below.
+
 
 ![](llempirical.png)
