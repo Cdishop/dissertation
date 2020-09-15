@@ -306,7 +306,7 @@ The GitHub empirical data exhibited the long of law leads (also known as the arc
 
 ![x-axis = Time, y-axis = Probability of Spending n Periods in the Lead](llimage.png)
 
-Periods or time points are displayed on the $x$-axis, and the probability of spending $n$ periods in the lead is displayed on the $y$-axis. The greatest probabilities occur over $n$ = max/min. That is, a walk is most likely to spend all or no periods above (below) the other. The same distribution manifests in my GitHub data. After evaluating all bi-user comparisons, the probability of spending n periods in the lead is displayed below.
+Periods or time points are displayed on the $x$-axis, and the probability of spending $n$ periods in the lead is displayed on the $y$-axis. The greatest probabilities occur over $n$ = max/min. That is, a walk is most likely to spend all or no periods above (below) the other. The same distribution manifests in my GitHub data. After evaluating all bi-user comparisons, the probability of spending $n$ periods in the lead is displayed below.
 
 
-![](llempirical.png)
+![Note for Christopher: Remember that the x-axis is technically the fraction of periods out of 530 spent on top](llempirical.png)
