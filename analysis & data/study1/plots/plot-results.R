@@ -39,8 +39,8 @@ p1df <- df %>%
     simulation == "sim2a" | simulation == "sim2b" ~ "Respond To Few"
   )) %>%
   mutate(situation = case_when(
-    simulation == "sim1a" | simulation == "sim2a" ~ "Random & Inertia",
-    simulation == "sim1b" | simulation == "sim2b" ~ "Random & No Inertia"
+    simulation == "sim1a" | simulation == "sim2a" ~ "Requests Accumulate",
+    simulation == "sim1b" | simulation == "sim2b" ~ "Requests Do Not Accumulate"
   )) 
 
 
@@ -69,8 +69,8 @@ p2df <- df %>%
     simulation == "sim4a" | simulation == "sim4b" ~ "Respond To Outflow"
   )) %>%
   mutate(situation = case_when(
-    simulation == "sim3a" | simulation == "sim4a" ~ "Random & Inertia",
-    simulation == "sim3b" | simulation == "sim4b" ~ "Random & No Inertia"
+    simulation == "sim3a" | simulation == "sim4a" ~ "Requests Accumulate",
+    simulation == "sim3b" | simulation == "sim4b" ~ "Requests Do Not Accumulate"
   )) 
 
 
@@ -90,8 +90,8 @@ keepers <- c("sim5a", "sim5b", "sim6a", "sim6b", "sim7a", "sim7b")
 conform <- df %>%
   filter(simulation %in% keepers) %>%
   mutate(situation = case_when(
-    simulation == "sim5a" | simulation == "sim6a" | simulation == "sim7a" ~ "Random & Inertia",
-    simulation == "sim5b" | simulation == "sim6b" | simulation == "sim7b" ~ "Random & No Inertia"
+    simulation == "sim5a" | simulation == "sim6a" | simulation == "sim7a" ~ "Requests Accumulate",
+    simulation == "sim5b" | simulation == "sim6b" | simulation == "sim7b" ~ "Requests Do Not Accumulate"
   )) %>%
   mutate(Conformity = case_when(
     simulation == "sim5a" | simulation == "sim5b" ~ "0.8 High",
