@@ -1,7 +1,6 @@
 diss to do
 
-
-change figures to accumulating vs not accumulating
+Check whether 80% of series contain a unit root is correct: figures, in text, website
 
 
 write up changes prior to sending to committee
