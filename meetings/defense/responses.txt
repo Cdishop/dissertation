@@ -7,6 +7,8 @@ randomness as a perspective. People are going to ignore you.
 
 (a) consistent / downstream
 
+downplay chance. uplay situation by person interaction.
+
 (b) we don't test for randomness. we don't know
 
 
@@ -32,6 +34,10 @@ The other aspect is it has to do with a comparison. In my mind, and perhaps I'm 
 In this research, I'm not talking about a comparison really. I'm saying that a mechanism on requests can yield a pattern. And if you view that pattern from the outside it could look a lot like someone's personal characteristics are driving the pattern. 
 
 My paper is about the driving force that creates a pattern, FAE is about the person on the outside who is viewing the pattern. But yes I suppose I could cite it and just mention it.
+
+
+
+In proposal, I did make it sound like manager's witnessing a trajectory was going to be part of my study. I don't study that. I study a mechanism, that then has implications for managers. But I didn't study attributions...I said that researchers are making an attribution error. Hopefully that's now more clear. 
 
 
 
@@ -64,7 +70,7 @@ Also keep in mind that it's possible that a social capital accumulation process 
 
 # Additional changes
 
-1) not looking at own emails. not looking at facebook data
+1) not looking at own emails. not looking at facebook data. 
 
 increased github issues
 
@@ -73,3 +79,12 @@ increased github issues
 
 
 3) title...cool with keeping it for dissertation signature?
+
+
+4) just adf rather than kpss
+
+5) removed some of the environment conditions
+
+accumulate vs not accumulate. less about tweaking the parameters of a random walk.
+
+more about tweaking person responses. 
