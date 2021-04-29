@@ -1,0 +1,26 @@
+url,id,node_id,number,title,description,creator_id,open_issues,closed_issues,state,created_at,updated_at,due_on,closed_at,html_url,labels_url
+https://api.github.com/repos/thautwarm/MLStyle.jl/milestones/3,4238425,MDk6TWlsZXN0b25lNDIzODQyNQ==,3,0.3.1,,22536460,1,5,closed,2019-04-17T17:28:35Z,2020-05-06T17:22:06Z,2019-07-15T07:00:00Z,2020-05-06T17:22:06Z,https://github.com/thautwarm/MLStyle.jl/milestone/3,https://api.github.com/repos/thautwarm/MLStyle.jl/milestones/3/labels
+https://api.github.com/repos/thautwarm/MLStyle.jl/milestones/4,4276991,MDk6TWlsZXN0b25lNDI3Njk5MQ==,4,0.3.2,Syntax extension system and better error reporting should be finished.  For patterns should be introduced after a few tests by practical usage.,22536460,1,0,closed,2019-05-01T13:26:37Z,2020-05-06T17:22:24Z,2019-08-14T07:00:00Z,2020-05-06T17:22:24Z,https://github.com/thautwarm/MLStyle.jl/milestone/4,https://api.github.com/repos/thautwarm/MLStyle.jl/milestones/4/labels
+https://api.github.com/repos/thautwarm/MLStyle.jl/milestones/1,3811336,MDk6TWlsZXN0b25lMzgxMTMzNg==,1,0.2,,22536460,0,11,closed,2018-11-11T03:45:03Z,2019-03-04T06:51:28Z,NA,2019-03-04T06:51:28Z,https://github.com/thautwarm/MLStyle.jl/milestone/1,https://api.github.com/repos/thautwarm/MLStyle.jl/milestones/1/labels
+https://api.github.com/repos/thautwarm/MLStyle.jl/milestones/5,4276997,MDk6TWlsZXN0b25lNDI3Njk5Nw==,5,0.4.0,"Performance issues should be solved totally. MLStyle.jl must be much faster than Match.jl in all situations.
+
+Some real world applications by MLStyle should be released, like parser generator framework and compiler services.",22536460,0,1,closed,2019-05-01T13:31:03Z,2021-03-13T00:23:07Z,2020-06-01T07:00:00Z,2021-03-13T00:23:07Z,https://github.com/thautwarm/MLStyle.jl/milestone/5,https://api.github.com/repos/thautwarm/MLStyle.jl/milestones/5/labels
+https://api.github.com/repos/thautwarm/MLStyle.jl/milestones/6,6541159,MDk6TWlsZXN0b25lNjU0MTE1OQ==,6,0.5,"#105: static case split for special cases
+#101: GlobalRef in patterns.
+#99: slurp Tuples
+",22536460,1,0,open,2021-03-13T00:22:45Z,2021-03-13T00:22:59Z,NA,NA,https://github.com/thautwarm/MLStyle.jl/milestone/6,https://api.github.com/repos/thautwarm/MLStyle.jl/milestones/6/labels
+https://api.github.com/repos/Tyriar/vscode-theme-generator/milestones/1,2417112,MDk6TWlsZXN0b25lMjQxNzExMg==,1,Open source,,2193314,0,4,closed,2017-03-28T16:16:07Z,2017-04-05T22:10:18Z,2017-04-05T07:00:00Z,2017-04-05T22:10:18Z,https://github.com/Tyriar/vscode-theme-generator/milestone/1,https://api.github.com/repos/Tyriar/vscode-theme-generator/milestones/1/labels
+https://api.github.com/repos/yatli/fvim/milestones/2,4476942,MDk6TWlsZXN0b25lNDQ3Njk0Mg==,2,version 0.2,"Version 0.1 has been my daily driver for a while, and when everything stabilize down, we can check-point, and move to the next wave of features.
+
+Tracking:
+
+- https://github.com/yatli/fvim/issues/31
+- https://github.com/yatli/fvim/issues/26
+- https://github.com/yatli/fvim/issues/25
+- https://github.com/yatli/fvim/issues/29
+- https://github.com/yatli/fvim/issues/16
+- https://github.com/yatli/fvim/issues/21
+- (optional) https://github.com/yatli/fvim/issues/34",20684720,0,8,closed,2019-07-09T11:01:33Z,2020-11-01T05:13:36Z,NA,2020-11-01T05:02:36Z,https://github.com/yatli/fvim/milestone/2,https://api.github.com/repos/yatli/fvim/milestones/2/labels
+https://api.github.com/repos/Yvand/AzureCP/milestones/3,5715291,MDk6TWlsZXN0b25lNTcxNTI5MQ==,3,Version 18,,8788631,0,1,closed,2020-07-30T12:04:38Z,2020-12-04T13:50:00Z,NA,2020-12-04T13:50:00Z,https://github.com/Yvand/AzureCP/milestone/3,https://api.github.com/repos/Yvand/AzureCP/milestones/3/labels
+https://api.github.com/repos/Yvand/AzureCP/milestones/2,5534522,MDk6TWlsZXN0b25lNTUzNDUyMg==,2,Version 17,Version 17,8788631,0,1,closed,2020-06-12T08:29:47Z,2020-07-30T12:04:24Z,NA,2020-07-30T12:04:24Z,https://github.com/Yvand/AzureCP/milestone/2,https://api.github.com/repos/Yvand/AzureCP/milestones/2/labels
+https://api.github.com/repos/Yvand/AzureCP/milestones/1,5081256,MDk6TWlsZXN0b25lNTA4MTI1Ng==,1,Version 16,,8788631,0,5,closed,2020-02-07T09:37:52Z,2020-08-08T10:47:06Z,NA,2020-06-12T08:29:19Z,https://github.com/Yvand/AzureCP/milestone/1,https://api.github.com/repos/Yvand/AzureCP/milestones/1/labels

@@ -1,0 +1,16 @@
+url,id,node_id,number,title,description,creator_id,open_issues,closed_issues,state,created_at,updated_at,due_on,closed_at,html_url,labels_url
+https://api.github.com/repos/tantaman/Strut/milestones/4,6441035,MDk6TWlsZXN0b25lNjQ0MTAzNQ==,4,v2,NA,1009003,1,0,open,2021-02-16T22:07:01Z,2021-02-16T22:07:01Z,NA,NA,https://github.com/tantaman/Strut/milestone/4,https://api.github.com/repos/tantaman/Strut/milestones/4/labels
+https://api.github.com/repos/tantaman/Strut/milestones/2,472174,MDk6TWlsZXN0b25lNDcyMTc0,2,v1.0,NA,1009003,6,0,open,2013-11-02T03:40:16Z,2013-11-10T00:35:48Z,NA,NA,https://github.com/tantaman/Strut/milestone/2,https://api.github.com/repos/tantaman/Strut/milestones/2/labels
+https://api.github.com/repos/tantaman/Strut/milestones/3,472189,MDk6TWlsZXN0b25lNDcyMTg5,3,1.1,NA,1009003,1,0,open,2013-11-02T03:44:25Z,2014-11-14T15:53:56Z,NA,NA,https://github.com/tantaman/Strut/milestone/3,https://api.github.com/repos/tantaman/Strut/milestones/3/labels
+https://api.github.com/repos/tantaman/Strut/milestones/1,219279,MDk6TWlsZXN0b25lMjE5Mjc5,1,v0.5.0,"partial re-write of Strut.
+
+Concrete goals:
+* Responsive design
+* Support Impress/Jimpress/Reveal/ other backends
+* Seamless integration of online and local storage
+* UI improvements and simplifications as outlined in issues: #64 #73 #69 #64 #57 #44 and others
+
+Purpose: 
+* Clean up the code base
+* Re-define the models as Strut has grown, and will continue to grow, to be more that initially intended
+* Move logic out of views that belong in models (this is a part of the above task)",1009003,1,5,closed,2012-11-27T02:13:14Z,2013-11-02T03:46:09Z,2013-01-15T08:00:00Z,2013-11-02T03:45:39Z,https://github.com/tantaman/Strut/milestone/1,https://api.github.com/repos/tantaman/Strut/milestones/1/labels

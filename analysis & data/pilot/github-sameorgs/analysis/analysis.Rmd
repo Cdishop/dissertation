@@ -1,0 +1,258 @@
+---
+title: "unitroot"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F, include = F)
+```
+
+
+Load info
+
+```{r}
+library(tidyverse)
+library(tseries)
+library(plm)
+df <- read.csv("../cleaning/merging-orgs/output/daily_issues.csv")
+```
+
+
+# Descriptives 
+
+Number of repo's assessed:
+
+```{r}
+df %>% 
+  distinct(repo) %>% nrow()
+```
+
+
+Number of time points per series
+
+```{r}
+
+df %>% 
+  group_by(repo) %>% 
+  summarize(
+    numdays = max(event_at_index))
+
+```
+
+Exclude repos with fewer than 1000 days
+
+```{r}
+df %>% 
+  group_by(repo) %>% 
+  summarize(
+    numdays = max(event_at_index)) %>% 
+  filter(numdays < 1001) %>% 
+  pull(repo) -> dontuse
+
+df <- df %>% 
+  filter(! repo %in% c(dontuse))
+
+```
+
+
+
+
+Start date for each repo
+
+```{r}
+
+repos <- df %>% 
+  distinct(repo) %>% pull()
+
+repids <- tibble(
+  'repo' = repos,
+  'uniqid' = c(1:length(repos))
+)
+
+df <- left_join(df, repids)
+
+df %>% 
+  filter(event_at_index == 0) %>% 
+  select(uniqid, event_at, org) %>% 
+  rename("Repo ID" = uniqid,
+         "Start Date" = event_at)
+  
+```
+
+
+
+
+Put both of those pieces of information into a table
+
+```{r}
+
+
+numdays <- df %>% 
+  group_by(repo) %>% 
+  summarize(
+    numdays = max(event_at_index))
+
+df <- left_join(df, numdays)
+
+df %>% 
+  filter(event_at_index == 0) %>% 
+  select(repoid, event_at, numdays, org) %>% 
+  rename("Repo ID" = repoid,
+         "Start Date" = event_at,
+         "Length of Time Series (Days)" = numdays,
+         "Organization" = org)
+```
+
+# Unit root tests
+
+Practice once
+
+```{r}
+
+df1 <- df %>% 
+  filter(repoid == 1)
+
+dfdickey <- plm.data(df1, index = c("repoid", "event_at_index"))
+
+# not significant = random walk
+adf.test(dfdickey[, "value"])["p.value"][[1]] # p value
+adf.test(dfdickey[, "value"])$statistic[[1]] # test statistic
+
+
+# significant = random walk
+kpss.test(dfdickey[, "value"], null = "Trend")["p.value"][[1]]
+
+
+```
+
+Loop over each time series
+
+```{r}
+
+runs <- nrow(repids)
+store_results <- data.frame(
+  "dickeyp" = numeric(runs),
+  "kpss" = numeric(runs),
+  "repoid" = numeric(runs),
+  "dickey" = numeric(runs)
+)
+
+for(i in 1:runs){
+  
+  dt <- df %>%
+    filter(uniqid == i)
+  
+  dtdickey <- plm.data(dt, index = c("repoid", "event_at_index"))
+
+  # not significant = random walk
+  dy <- adf.test(dtdickey[, "value"])["p.value"][[1]]
+  dt <- adf.test(dtdickey[, "value"])$statistic[[1]]
+
+  # significant = random walk
+  kp <- kpss.test(dtdickey[, "value"], null = "Trend")["p.value"][[1]]
+  
+  
+  store_results[[i, "dickeyp"]] <- dy
+  store_results[[i, "kpss"]] <- kp
+  store_results[[i, "repoid"]] <- i
+  store_results[[i, "dickey"]] <- dt
+  
+  
+}
+
+store_results %>% 
+  filter(dickeyp > 0.05) %>% 
+  count() / nrow(store_results)
+
+store_results %>% 
+  filter(kpss < 0.05) %>% 
+  count() / nrow(store_results)
+
+
+(store_results %>%
+  filter(dickeyp > 0.05, kpss < 0.05) %>%
+  count()) / nrow(store_results)
+```
+
+
+Place results into a table
+
+```{r, eval = F}
+
+df$nicedate <- gsub(df$event_at, pattern = "00:00:00", replacement = "")
+library(kableExtra)
+store_results <- store_results %>% 
+  mutate(DF = ifelse(dickeyp > 0.05, "Yes", "No")) %>% 
+  mutate(KP = ifelse(kpss < 0.05, "Yes", "No"))
+
+df <- left_join(df, store_results)
+
+df %>% 
+  filter(event_at_index == 0) %>% 
+  select(uniqid, nicedate, numdays, dickey, dickeyp, DF, org) %>% 
+  mutate(numdays_round = round(numdays, digits = 0)) %>% 
+  mutate(dickey = round(dickey, digits = 2)) %>% 
+  mutate(dickeyp = round(dickeyp, digits = 2)) %>% 
+  select(uniqid, org, nicedate, numdays_round, dickey, dickeyp, DF) %>% 
+  mutate(nicedate = as.character(nicedate)) %>% 
+  mutate(nicedate = str_trim(nicedate)) %>% 
+  mutate(numdays_round = as.character(numdays_round)) %>% 
+  mutate(numdays_round = str_trim(numdays_round)) %>% 
+  mutate(dickey = as.character(dickey)) %>% 
+  mutate(dickey = str_trim(dickey)) %>% 
+  mutate(dickeyp = as.character(dickeyp)) %>% 
+  mutate(dickeyp = str_trim(dickeyp)) %>% 
+  mutate(uniqid = as.character(uniqid)) %>% 
+  mutate(uniqid = str_trim(uniqid)) %>% 
+  mutate(org = as.character(org)) %>% 
+  mutate(org = str_trim(org)) %>% 
+  rename("Repo ID" = uniqid,
+         "Org" = org,
+         "Start" = nicedate,
+         "Length (Days)" = numdays_round,
+         "Dickey-Fuller" = dickey,
+         "P-Value" = dickeyp,
+         "Unit Root" = DF) %>% 
+  kable(tabe.attr = "style='width:60%;'") %>% 
+  kable_styling() #%>% 
+  #footnote("80% of series contain unit root")
+
+```
+
+
+```{r, include = T}
+library(flextable)
+df$nicedate <- gsub(df$event_at, pattern = "00:00:00", replacement = "")
+library(kableExtra)
+store_results <- store_results %>% 
+  mutate(DF = ifelse(dickeyp > 0.05, "Yes", "No")) %>% 
+  mutate(KP = ifelse(kpss < 0.05, "Yes", "No"))
+
+df <- left_join(df, store_results)
+
+fitdf <- df %>% 
+  filter(event_at_index == 0) %>% 
+  select(uniqid, org, nicedate, numdays, dickey, dickeyp, DF) %>% 
+  mutate(numdays_round = round(numdays, digits = 0)) %>% 
+  mutate(dickey = round(dickey, digits = 2)) %>% 
+  mutate(dickeyp = round(dickeyp, digits = 2)) %>% 
+  select(uniqid, org, nicedate, numdays_round, dickey, dickeyp, DF) %>% 
+  rename("Repo ID" = uniqid,
+         "Org" = org,
+         "Start Date" = nicedate,
+         "Length (Days)" = numdays_round,
+         "Dickey-Fuller" = dickey,
+         "P-Value" = dickeyp,
+         "Unit Root" = DF) 
+
+fitdf <- flextable(fitdf)
+fitdf <- autofit(fitdf)
+fitdf <- fontsize(fitdf, size = 9)
+fitdf
+
+
+
+```

@@ -1,0 +1,2 @@
+url,id,node_id,number,title,description,creator_id,open_issues,closed_issues,state,created_at,updated_at,due_on,closed_at,html_url,labels_url
+https://api.github.com/repos/letmaik/vscode-git-tree-compare/milestones/1,2670574,MDk6TWlsZXN0b25lMjY3MDU3NA==,1,1.0 - Inception,First release.,530988,0,3,closed,2017-07-31T07:56:21Z,2019-03-19T09:18:08Z,NA,2019-03-19T09:18:08Z,https://github.com/letmaik/vscode-git-tree-compare/milestone/1,https://api.github.com/repos/letmaik/vscode-git-tree-compare/milestones/1/labels

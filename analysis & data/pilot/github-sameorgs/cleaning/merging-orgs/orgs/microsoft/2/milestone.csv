@@ -1,0 +1,30 @@
+url,id,node_id,number,title,description,creator_id,open_issues,closed_issues,state,created_at,updated_at,due_on,closed_at,html_url,labels_url
+https://api.github.com/repos/davezuko/react-redux-starter-kit/milestones/2,1511077,MDk6TWlsZXN0b25lMTUxMTA3Nw==,2,v2.0.0,"Features and ETA TBD
+
+-------
+
+https://github.com/davezuko/react-redux-starter-kit/issues/465
+
+* [x] Replace Express with Koa
+* [ ] Refactor configuration overrides
+* [ ] Refactor webpack configuration
+* [ ] Compile webpack manifest separately from vendor bundle
+* [ ] Drop add-module-exports plugin
+* [ ] Replace `cheap-module-eval-source-map` in development
+  * needs investigation
+* [ ] Re-implement better-npm-run
+  * rationale: this will allow us to safely/always run tests w/ NODE_ENV=test, which opens up the door for improved configuration.
+  *  Also, I'm considering dropping support for the application to be compiled with `NODE_ENV` development since it would simplify babel configuration.
+* [ ] Enable automatic server restarts during local development (nodemon/piping/something else)
+* [ ] Upgrade react-router to `^2.0.0`
+* [x] Document compatible node engines in `package.json`
+* [ ] Document recommended npm version (`^3.5.0`) in README
+* [ ] Document example projects
+* [ ] Document useful utilities (reselect, redux-state-history).
+* [ ] Revisit https://github.com/davezuko/react-redux-starter-kit/issues/430
+* [ ] Enzyme
+
+More to come.
+
+Also, do we cave and finally implement isomorphic rendering? I just fear the bloat.",6439050,0,5,open,2016-01-17T16:03:51Z,2016-03-16T20:54:05Z,NA,NA,https://github.com/davezuko/react-redux-starter-kit/milestone/2,https://api.github.com/repos/davezuko/react-redux-starter-kit/milestones/2/labels
+https://api.github.com/repos/davezuko/react-redux-starter-kit/milestones/1,1445774,MDk6TWlsZXN0b25lMTQ0NTc3NA==,1,1.0.0 Stable,,6439050,0,1,closed,2015-12-05T20:02:43Z,2016-01-17T16:07:55Z,NA,2016-01-17T16:07:55Z,https://github.com/davezuko/react-redux-starter-kit/milestone/1,https://api.github.com/repos/davezuko/react-redux-starter-kit/milestones/1/labels

@@ -1,0 +1,3 @@
+url,id,node_id,number,title,description,creator_id,open_issues,closed_issues,state,created_at,updated_at,due_on,closed_at,html_url,labels_url
+https://api.github.com/repos/BinaryMuse/fluxxor/milestones/2,824048,MDk6TWlsZXN0b25lODI0MDQ4,2,v1.5.0,,189606,0,8,open,2014-10-13T15:03:06Z,2014-10-13T17:21:56Z,NA,NA,https://github.com/BinaryMuse/fluxxor/milestone/2,https://api.github.com/repos/BinaryMuse/fluxxor/milestones/2/labels
+https://api.github.com/repos/BinaryMuse/fluxxor/milestones/1,687699,MDk6TWlsZXN0b25lNjg3Njk5,1,2.0,Next major release; backwards-incompatible API changes,189606,1,1,open,2014-06-11T06:33:38Z,2014-06-30T03:46:55Z,NA,NA,https://github.com/BinaryMuse/fluxxor/milestone/1,https://api.github.com/repos/BinaryMuse/fluxxor/milestones/1/labels

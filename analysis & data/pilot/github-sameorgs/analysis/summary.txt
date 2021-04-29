@@ -1,0 +1,16 @@
+
+# random walks
+
+
+77% of all walks contain unit root.
+
+KPSS agrees with every dickey fuller test.
+
+
+# sustained lead
+
+Yup.
+
+The folder, "sustained lead shortest series per org" has extra code. There, I ran bi comparisons using series lengths of no longer than the shortest person in the org.
+
+In the base folder, the code assesses bi user comparisons with the shortest lengthened series of each pairwise comparison.
