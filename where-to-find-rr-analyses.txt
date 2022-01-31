@@ -1,0 +1,13 @@
+
+# simulation parameter sweeps
+
+analysis & data => study1 => simulations => z-RR
+
+the plots are in the "plots" folder
+
+
+# github new analyses
+
+analysis & data => pilot => github for initial analysis | github-sameorgs for analysis that the reviewers asked me for
+
+Sustained lead plot (facebook, microsoft, and google) is located within github-sameorgs

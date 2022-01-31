@@ -53,9 +53,18 @@ for(file in b_file_names[-1]){
 ggplot(df %>% filter(!b_val == 0), aes(x = k, y = probability, color = factor(b_val))) + 
   geom_point(alpha = 0.8) +
   geom_line(alpha = 0.8) + 
-  facet_grid(~simulation) + 
+  facet_wrap(~simulation, ncol = 1) + 
   theme_classic(base_size = 15) + 
   labs(x = "Time Spent", y = "Probability", color = "b") 
 
+
+g <-ggplot(df %>% filter(!b_val == 0), aes(x = k, y = probability, color = factor(b_val))) + 
+  geom_point(alpha = 0.8) +
+  geom_line(alpha = 0.8) + 
+  facet_wrap(~simulation, ncol = 1) + 
+  theme_classic(base_size = 15) + 
+  labs(x = "Time Spent", y = "Probability", color = "b") 
+
+ggsave('sweepb.pdf', g, width = 6, height = 5.5)
 
 

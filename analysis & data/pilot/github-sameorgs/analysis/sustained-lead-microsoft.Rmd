@@ -114,3 +114,26 @@ ggplot(hm, aes(x = freqs, y = perc)) +
 
 ```
 
+
+
+```{r}
+g <- ggplot(hm, aes(x = freqs, y = perc)) + 
+  geom_bar(stat = "identity") + 
+  theme_bw() + 
+  labs(x = "Time", y = "Probability of Spending n Periods in the Lead") + 
+  theme(axis.text.x = element_blank()) + 
+  ggtitle("Microsoft")
+
+ggsave('microsoft.pdf', g, width = 6, height = 4)
+
+```
+
+
+Save to combine with other orgs
+
+```{r}
+hm <- hm %>% 
+  mutate(org = "Microsoft")
+
+write.csv(hm, "microsoft.csv", row.names= F)
+```

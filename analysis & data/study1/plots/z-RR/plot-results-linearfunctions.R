@@ -50,8 +50,13 @@ ggplot(df, aes(x = k, y = probability)) +
 
 
 
+g <- ggplot(df, aes(x = k, y = probability)) + 
+  geom_bar(stat = "identity") + 
+  facet_grid(situation ~ response) + 
+  theme_classic(base_size = 15) + 
+  labs(x = "Time Spent", y = "Probability") 
 
-
+ggsave('sweeplinear.pdf', g, width = 9, height = 6.5)
 
 
 

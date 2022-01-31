@@ -42,6 +42,7 @@ crossrepos <- crossrepos %>%
 savepair <- numeric(nrow(crossrepos))
 
 for(j in 1:nrow(crossrepos)){
+ 
 
 pair <- crossrepos %>% 
     slice(j)
@@ -103,12 +104,36 @@ hm <- hm %>%
 ggplot(hm, aes(x = freqs, y = perc)) + 
   geom_bar(stat = "identity") + 
   theme_bw() + 
-  labs(x = "Time", y = "Probability of Spending n Periods in the Lead") + 
-  theme(axis.text.x = element_blank()) + 
+  labs(x = "Proportion of n Periods", y = "Probability of Spending n Periods in the Lead") + 
+  #theme(axis.text.x = element_blank()) + 
   theme(axis.title.y = element_text(angle = 0)) + 
   ggtitle("Facebook")
 
 
 
+```
+
+
+```{r}
+
+g <- ggplot(hm, aes(x = freqs, y = perc)) + 
+  geom_bar(stat = "identity") + 
+  theme_bw() + 
+  labs(x = "Time", y = "Probability of Spending n Periods in the Lead") + 
+  theme(axis.text.x = element_blank()) + 
+  ggtitle("Facebook")
+
+ggsave('fbook.pdf', g, width = 6, height = 4)
+
+```
+
+
+Save for combination with other orgs:
+
+```{r}
+hm <- hm %>% 
+  mutate(org = "Facebook")
+
+write.csv(hm, "fbook.csv", row.names= F)
 ```
 

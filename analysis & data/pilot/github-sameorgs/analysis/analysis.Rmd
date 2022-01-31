@@ -233,6 +233,7 @@ store_results <- store_results %>%
 
 df <- left_join(df, store_results)
 
+
 fitdf <- df %>% 
   filter(event_at_index == 0) %>% 
   select(uniqid, org, nicedate, numdays, dickey, dickeyp, DF) %>% 
@@ -256,3 +257,57 @@ fitdf
 
 
 ```
+
+
+
+
+
+Combine this chart with the chart from the original analysis
+
+
+
+```{r, include = T}
+
+
+df1 <- read.csv('../../github/analysis/initial-analysis-df.csv')
+numids <- length(unique(df1$repoid))
+idlist <- data.frame(
+  'repoid' = c(unique(df1$repoid)),
+  'uniqid' = c(seq(from = 204, to = (203+numids), by = 1))
+  
+)
+df1 <- left_join(df1, idlist)
+
+dfcombine <- bind_rows(df, df1)
+
+fitdf <- dfcombine %>% 
+  filter(event_at_index == 0) %>% 
+  select(uniqid, nicedate, numdays, dickey, dickeyp, DF) %>% 
+  mutate(numdays_round = round(numdays, digits = 0)) %>% 
+  mutate(dickey = round(dickey, digits = 2)) %>% 
+  mutate(dickeyp = round(dickeyp, digits = 2)) %>% 
+  select(uniqid, nicedate, numdays_round, dickey, dickeyp, DF) %>% 
+  rename("Repo ID" = uniqid,
+         "Start Date" = nicedate,
+         "Length (Days)" = numdays_round,
+         "Dickey-Fuller" = dickey,
+         "P-Value" = dickeyp,
+         "Unit Root" = DF) 
+
+
+sum(fitdf[, "Unit Root"] == 'Yes') / nrow(fitdf) # 81% of walks contain unit root
+
+fitdf <- flextable(fitdf)
+fitdf <- autofit(fitdf)
+fitdf <- fontsize(fitdf, size = 9)
+fitdf
+
+
+```
+
+
+
+
+
+
+

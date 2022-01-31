@@ -1,0 +1,44 @@
+---
+title: "unitroot"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F, include = F)
+```
+
+
+
+```{r}
+
+fbook <- read.csv("fbook.csv")
+google <- read.csv("google.csv")
+microsoft <- read.csv("microsoft.csv")
+
+library(tidyverse)
+library(dplyr)
+
+df <- bind_rows(fbook, google, microsoft)
+
+
+ggplot(df, aes(x = freqs, y = perc, fill = org)) + 
+  #geom_bar(stat = "identity", position = "dodge", alpha = 0.3) +
+  geom_density(stat = "identity", alpha = 0.5, color = NA) + 
+  theme_bw() + 
+  labs(x = "Proportion of n Periods", y = "Probability of Spending n Periods in the Lead",
+       fill = "") 
+
+
+g <- ggplot(df, aes(x = freqs, y = perc, fill = org)) + 
+  #geom_bar(stat = "identity", position = "dodge", alpha = 0.3) +
+  geom_density(stat = "identity", alpha = 0.5, color = NA) + 
+  theme_bw() + 
+  labs(x = "Proportion of n Periods", y = "Probability of Spending n Periods in the Lead",
+       fill = "") 
+
+ggsave('sustained_lead.pdf', g, width = 6, height = 4)
+
+```

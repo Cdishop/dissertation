@@ -227,6 +227,5 @@ fitdf <- autofit(fitdf)
 fitdf <- fontsize(fitdf, size = 9)
 fitdf
 
-
-
+write.csv(df, "initial-analysis-df.csv", row.names = F)
 ```
