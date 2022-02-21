@@ -49,10 +49,37 @@ plotissue <- function(rp){
         labs(x = "Day", y = "Number of Open Issues", title = rp) + 
         theme(axis.text.x = element_blank(),
               axis.ticks.x = element_blank(),
-              text = element_text(size = 40)) 
+              text = element_text(size = 15)) 
  
   return(zz)
 }
+
+```
+
+
+For reviewer: plot of RW against a plot of non-RW
+```{r}
+
+plotissue(allrepos[19]) + 
+  ggtitle("Trajectory consistent with random walk")
+
+plotissue(allrepos[33]) + 
+  ggtitle("Trajectory inconsistent with random walk") + 
+  ylim(0, 30)
+
+
+g1 <- plotissue(allrepos[19]) + 
+  ggtitle("Trajectory consistent with random walk")
+
+ggsave('consistent.pdf', g1, width = 6, height = 5.5)
+
+
+g2 <- plotissue(allrepos[33]) + 
+  ggtitle("Trajectory inconsistent with random walk") + 
+  ylim(0, 30)
+
+ggsave('inconsistent.pdf', g2, width = 6, height = 5.5)
+
 
 ```
 

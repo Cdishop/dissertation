@@ -1,0 +1,414 @@
+---
+title: "unitroot"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F, include = F)
+```
+
+
+Do the github series exhibit sustained lead? If I look at github series A vs github series B, does github series A always stay on top?
+
+
+
+
+```{r}
+library(tidyverse)
+df <- read.csv("../cleaning/merging-orgs/output/daily_issues.csv")
+
+# male or female codes
+
+mf <- read.csv("../repos/repos.csv") %>% 
+  select(owner, sex)
+
+df <- left_join(df, mf)
+
+# just females
+
+df <- df %>% 
+  filter(sex == "female")
+
+df %>% 
+  group_by(owner, org) %>% 
+  count() # only 5 females, 2 for github, 3 for microsoft
+
+
+githubdf <- df %>% 
+  filter(org == "github")
+
+microdf <- df %>% 
+  filter(org == "microsoft")
+
+```
+
+
+run sustained lead analysis on all 5 repos
+
+
+```{r}
+allrepos <- df %>% distinct(repoid) %>% pull(repoid)
+allrepos1 <- data.frame(repo1 = c(allrepos))
+allrepos2 <- data.frame(repo2 = c(allrepos))
+crossrepos <- subset(merge(allrepos1, allrepos2, by = NULL), repo1 <= repo2)
+crossrepos <- crossrepos %>% 
+  filter(repo1 != repo2)
+
+
+```
+
+
+
+```{r}
+
+savepair <- numeric(nrow(crossrepos))
+
+for(j in 1:nrow(crossrepos)){
+ 
+
+pair <- crossrepos %>% 
+    slice(j)
+
+pairdf <- df %>% 
+  filter(repoid %in% c(pair$repo1, pair$repo2))
+
+pairdf %>% 
+  group_by(repo) %>% 
+  summarize(
+    numdays = max(event_at_index)) %>% 
+  arrange(numdays) %>% 
+  slice(1) %>% pull(numdays) %>% floor() -> series_n
+
+percent <- pairdf %>% 
+  filter(event_at_index %in% c(1:series_n)) %>% 
+  select(X, event_at_index, value, repoid, repo) %>% 
+  group_by(event_at_index) %>% 
+  mutate(rk = rank(-value)) %>% 
+  filter(repoid == pair$repo1) %>% 
+  filter(rk == 1) %>% 
+  nrow() / series_n 
+
+  savepair[j] <- percent
+  
+}
+
+
+
+
+```
+
+
+Percentages here indicate the number of periods that series x_i was on top. 
+
+```{r}
+plotpair <- round(savepair, 1)
+ggplot() + geom_histogram(aes(plotpair)) + 
+  theme_bw() + 
+  labs(x = "Fraction Of Periods With Max Requests", y = "Count")
+
+
+```
+
+
+Percents are on the X-axis. X-axis is the fraction of periods that a repo i has the greatest number of requests. The Y-axis shows the number of times a given percentage appears in the data. 1 and 0 occurred a lot, meaning that out of any random pair of request pools, one was likely to remain on top for the entire period. 
+
+
+
+Change the image so it looks similar to the theoretical distribution.
+
+
+```{r}
+hm <- data.frame(table(plotpair))
+names(hm) <- c('x', 'counts')
+totaln <- sum(hm$counts)
+hm <- hm %>% 
+  mutate(perc = counts / totaln)
+
+
+hm <- hm %>% 
+  mutate(x = as.numeric(as.character(x)))
+
+ggplot(hm, aes(x = x, y = perc)) + 
+  geom_bar(stat = "identity", width = 0.1) + 
+  theme_bw() + 
+  labs(x = "Proportion of n Periods", y = "Probability of Spending n Periods in the Lead") + 
+  #theme(axis.text.x = element_blank()) + 
+  theme(axis.title.y = element_text(angle = 90)) + 
+  scale_x_continuous(breaks = c(0.0, 0.25, 0.50, 0.75, 1.0))
+
+
+
+```
+
+
+```{r}
+
+g <- ggplot(hm, aes(x = x, y = perc)) + 
+  geom_bar(stat = "identity", width = 0.1) + 
+  theme_bw() + 
+  labs(x = "Proportion of n Periods", y = "Probability of Spending n Periods in the Lead") + 
+  #theme(axis.text.x = element_blank()) + 
+  theme(axis.title.y = element_text(angle = 90)) + 
+  scale_x_continuous(breaks = c(0.0, 0.25, 0.50, 0.75, 1.0))
+
+ggsave('allfemale.pdf', g, width = 6, height = 4)
+
+```
+
+
+
+
+
+
+
+run analysis on github females
+
+
+
+
+
+```{r}
+allrepos <- githubdf %>% distinct(repoid) %>% pull(repoid)
+allrepos1 <- data.frame(repo1 = c(allrepos))
+allrepos2 <- data.frame(repo2 = c(allrepos))
+crossrepos <- subset(merge(allrepos1, allrepos2, by = NULL), repo1 <= repo2)
+crossrepos <- crossrepos %>% 
+  filter(repo1 != repo2)
+
+
+```
+
+
+
+```{r}
+
+savepair <- numeric(nrow(crossrepos))
+
+for(j in 1:nrow(crossrepos)){
+ 
+
+pair <- crossrepos %>% 
+    slice(j)
+
+pairdf <- df %>% 
+  filter(repoid %in% c(pair$repo1, pair$repo2))
+
+pairdf %>% 
+  group_by(repo) %>% 
+  summarize(
+    numdays = max(event_at_index)) %>% 
+  arrange(numdays) %>% 
+  slice(1) %>% pull(numdays) %>% floor() -> series_n
+
+percent <- pairdf %>% 
+  filter(event_at_index %in% c(1:series_n)) %>% 
+  select(X, event_at_index, value, repoid, repo) %>% 
+  group_by(event_at_index) %>% 
+  mutate(rk = rank(-value)) %>% 
+  filter(repoid == pair$repo1) %>% 
+  filter(rk == 1) %>% 
+  nrow() / series_n 
+
+  savepair[j] <- percent
+  
+}
+
+
+
+
+```
+
+
+Percentages here indicate the number of periods that series x_i was on top. 
+
+```{r}
+plotpair <- round(savepair, 1)
+ggplot() + geom_histogram(aes(plotpair)) + 
+  theme_bw() + 
+  labs(x = "Fraction Of Periods With Max Requests", y = "Count")
+
+
+```
+
+
+Percents are on the X-axis. X-axis is the fraction of periods that a repo i has the greatest number of requests. The Y-axis shows the number of times a given percentage appears in the data. 1 and 0 occurred a lot, meaning that out of any random pair of request pools, one was likely to remain on top for the entire period. 
+
+
+
+Change the image so it looks similar to the theoretical distribution.
+
+
+```{r}
+hm <- data.frame(table(plotpair))
+names(hm) <- c('x', 'counts')
+totaln <- sum(hm$counts)
+hm <- hm %>% 
+  mutate(perc = counts / totaln)
+
+
+hm <- hm %>% 
+  mutate(x = as.numeric(as.character(x)))
+
+ggplot(hm, aes(x = x, y = perc)) + 
+  geom_bar(stat = "identity", width = 0.1) + 
+  theme_bw() + 
+  labs(x = "Proportion of n Periods", y = "Probability of Spending n Periods in the Lead") + 
+  #theme(axis.text.x = element_blank()) + 
+  theme(axis.title.y = element_text(angle = 90)) + 
+  scale_x_continuous(breaks = c(0.0, 0.25, 0.50, 0.75, 1.0))
+
+
+
+```
+
+
+```{r}
+
+g <- ggplot(hm, aes(x = x, y = perc)) + 
+  geom_bar(stat = "identity", width = 0.1) + 
+  theme_bw() + 
+  labs(x = "Proportion of n Periods", y = "Probability of Spending n Periods in the Lead") + 
+  #theme(axis.text.x = element_blank()) + 
+  theme(axis.title.y = element_text(angle = 90)) + 
+  scale_x_continuous(breaks = c(0.0, 0.25, 0.50, 0.75, 1.0))
+
+ggsave('githubfemale.pdf', g, width = 6, height = 4)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+run analysis on microsoft females
+
+
+
+
+
+```{r}
+allrepos <- microdf %>% distinct(repoid) %>% pull(repoid)
+allrepos1 <- data.frame(repo1 = c(allrepos))
+allrepos2 <- data.frame(repo2 = c(allrepos))
+crossrepos <- subset(merge(allrepos1, allrepos2, by = NULL), repo1 <= repo2)
+crossrepos <- crossrepos %>% 
+  filter(repo1 != repo2)
+
+
+```
+
+
+
+```{r}
+
+savepair <- numeric(nrow(crossrepos))
+
+for(j in 1:nrow(crossrepos)){
+ 
+
+pair <- crossrepos %>% 
+    slice(j)
+
+pairdf <- df %>% 
+  filter(repoid %in% c(pair$repo1, pair$repo2))
+
+pairdf %>% 
+  group_by(repo) %>% 
+  summarize(
+    numdays = max(event_at_index)) %>% 
+  arrange(numdays) %>% 
+  slice(1) %>% pull(numdays) %>% floor() -> series_n
+
+percent <- pairdf %>% 
+  filter(event_at_index %in% c(1:series_n)) %>% 
+  select(X, event_at_index, value, repoid, repo) %>% 
+  group_by(event_at_index) %>% 
+  mutate(rk = rank(-value)) %>% 
+  filter(repoid == pair$repo1) %>% 
+  filter(rk == 1) %>% 
+  nrow() / series_n 
+
+  savepair[j] <- percent
+  
+}
+
+
+
+
+```
+
+
+Percentages here indicate the number of periods that series x_i was on top. 
+
+```{r}
+plotpair <- round(savepair, 1)
+ggplot() + geom_histogram(aes(plotpair)) + 
+  theme_bw() + 
+  labs(x = "Fraction Of Periods With Max Requests", y = "Count")
+
+
+```
+
+
+Percents are on the X-axis. X-axis is the fraction of periods that a repo i has the greatest number of requests. The Y-axis shows the number of times a given percentage appears in the data. 1 and 0 occurred a lot, meaning that out of any random pair of request pools, one was likely to remain on top for the entire period. 
+
+
+
+Change the image so it looks similar to the theoretical distribution.
+
+
+```{r}
+hm <- data.frame(table(plotpair))
+names(hm) <- c('x', 'counts')
+totaln <- sum(hm$counts)
+hm <- hm %>% 
+  mutate(perc = counts / totaln)
+
+
+hm <- hm %>% 
+  mutate(x = as.numeric(as.character(x)))
+
+ggplot(hm, aes(x = x, y = perc)) + 
+  geom_bar(stat = "identity", width = 0.1) + 
+  theme_bw() + 
+  labs(x = "Proportion of n Periods", y = "Probability of Spending n Periods in the Lead") + 
+  #theme(axis.text.x = element_blank()) + 
+  theme(axis.title.y = element_text(angle = 90)) + 
+  scale_x_continuous(breaks = c(0.0, 0.25, 0.50, 0.75, 1.0)) + 
+  xlim(-0.09, 1)
+
+
+
+```
+
+
+```{r}
+
+g <- ggplot(hm, aes(x = x, y = perc)) + 
+  geom_bar(stat = "identity", width = 0.1) + 
+  theme_bw() + 
+  labs(x = "Proportion of n Periods", y = "Probability of Spending n Periods in the Lead") + 
+  #theme(axis.text.x = element_blank()) + 
+  theme(axis.title.y = element_text(angle = 90)) + 
+  scale_x_continuous(breaks = c(0.0, 0.25, 0.50, 0.75, 1.0))+ 
+  xlim(-0.09, 1)
+
+ggsave('microsoftfemale.pdf', g, width = 6, height = 4)
+
+```

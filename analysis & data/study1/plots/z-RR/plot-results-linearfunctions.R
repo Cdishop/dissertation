@@ -37,10 +37,15 @@ df <- df %>%
     simulation == "sim4a-linear" | simulation == "sim4b-linear" ~ "Respond To Outflow"
   )) %>%
   mutate(situation = case_when(
-    simulation == "sim3a-linear" | simulation == "sim4a-linear" ~ "Requests Accumulate",
-    simulation == "sim3b-linear" | simulation == "sim4b-linear" ~ "Requests Do Not Accumulate"
+    simulation == "sim3a-linear" | simulation == "sim4a-linear" ~ "Sustained Lead",
+    simulation == "sim3b-linear" | simulation == "sim4b-linear" ~ "No Sustained Lead"
   )) 
 
+
+df <- df %>% 
+  mutate(situation = factor(situation,
+                            levels = c("Sustained Lead", 
+                                       "No Sustained Lead")))
 
 ggplot(df, aes(x = k, y = probability)) + 
   geom_bar(stat = "identity") + 
@@ -53,10 +58,10 @@ ggplot(df, aes(x = k, y = probability)) +
 g <- ggplot(df, aes(x = k, y = probability)) + 
   geom_bar(stat = "identity") + 
   facet_grid(situation ~ response) + 
-  theme_classic(base_size = 15) + 
+  theme_classic(base_size = 20) + 
   labs(x = "Time Spent", y = "Probability") 
 
-ggsave('sweeplinear.pdf', g, width = 9, height = 6.5)
+ggsave('sweeplinear.pdf', g, width = 10, height = 7)
 
 
 

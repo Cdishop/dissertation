@@ -11,7 +11,7 @@ a_file_names <- Sys.glob("../../simulations/z-RR/sweep-b/sim-results/1a-sweepb/*
 
 df <- read.csv(a_file_names[1])
 df <- df %>%
-    mutate(simulation = "Requests Accumulate")
+    mutate(simulation = "Sustained Lead")
 
 count <- 1
 for(file in a_file_names[-1]){
@@ -19,7 +19,7 @@ for(file in a_file_names[-1]){
   
   new_df <- read.csv(file)
   new_df <- new_df %>%
-    mutate(simulation = "Requests Accumulate")
+    mutate(simulation = "Sustained Lead")
   
   df <- bind_rows(df, new_df)
   
@@ -33,7 +33,7 @@ b_file_names <- Sys.glob("../../simulations/z-RR/sweep-b/sim-results/1b-sweepb/*
 
 blah <- read.csv(b_file_names[1])
 blah <- blah %>%
-  mutate(simulation = "Requests Do Not Accumulate")
+  mutate(simulation = "No Sustained Lead")
 
 df <- bind_rows(df, blah)
 
@@ -43,12 +43,17 @@ for(file in b_file_names[-1]){
   
   new_df <- read.csv(file)
   new_df <- new_df %>%
-    mutate(simulation = "Requests Do Not Accumulate")
+    mutate(simulation = "No Sustained Lead")
   
   df <- bind_rows(df, new_df)
   
 }
 
+
+df <- df %>% 
+  mutate(simulation = factor(simulation,
+                             levels = c("Sustained Lead",
+                                        "No Sustained Lead")))
 
 ggplot(df %>% filter(!b_val == 0), aes(x = k, y = probability, color = factor(b_val))) + 
   geom_point(alpha = 0.8) +

@@ -39,10 +39,15 @@ p1df <- df %>%
     simulation == "sim2a" | simulation == "sim2b" ~ "Respond To Few"
   )) %>%
   mutate(situation = case_when(
-    simulation == "sim1a" | simulation == "sim2a" ~ "Requests Accumulate",
-    simulation == "sim1b" | simulation == "sim2b" ~ "Requests Do Not Accumulate"
+    simulation == "sim1a" | simulation == "sim2a" ~ "Sustained Lead",
+    simulation == "sim1b" | simulation == "sim2b" ~ "No Sustained Lead"
   )) 
 
+
+p1df <- p1df %>% 
+  mutate(situation = factor(situation,
+                            levels = c("Sustained Lead", 
+                                       "No Sustained Lead")))
 
 ggplot(p1df, aes(x = k, y = probability)) + 
   geom_bar(stat = "identity") + 
@@ -51,8 +56,14 @@ ggplot(p1df, aes(x = k, y = probability)) +
   labs(x = "Time Spent", y = "Probability") 
 
 
+gs <- ggplot(p1df, aes(x = k, y = probability)) + 
+  geom_bar(stat = "identity") + 
+  facet_grid(situation ~ response) + 
+  theme_classic(base_size = 20) + 
+  labs(x = "Time Spent", y = "Probability") 
 
 
+ggsave('h.pdf', gs, width = 10, height = 7)
 
 
 
@@ -69,17 +80,29 @@ p2df <- df %>%
     simulation == "sim4a" | simulation == "sim4b" ~ "Respond To Outflow"
   )) %>%
   mutate(situation = case_when(
-    simulation == "sim3a" | simulation == "sim4a" ~ "Requests Accumulate",
-    simulation == "sim3b" | simulation == "sim4b" ~ "Requests Do Not Accumulate"
+    simulation == "sim3a" | simulation == "sim4a" ~ "Sustained Lead",
+    simulation == "sim3b" | simulation == "sim4b" ~ "No Sustained Lead"
   )) 
 
-
+p2df <- p2df %>% 
+  mutate(situation = factor(situation,
+                            levels = c("Sustained Lead", 
+                                       "No Sustained Lead")))
 ggplot(p2df, aes(x = k, y = probability)) + 
   geom_bar(stat = "identity") + 
   facet_grid(situation ~ response) + 
-  theme_classic(base_size = 15) + 
+  theme_classic(base_size = 20) + 
   labs(x = "Time Spent", y = "Probability")
 
+
+gf <- ggplot(p2df, aes(x = k, y = probability)) + 
+  geom_bar(stat = "identity") + 
+  facet_grid(situation ~ response) + 
+  theme_classic(base_size = 20) + 
+  labs(x = "Time Spent", y = "Probability")
+
+
+ggsave('hdf.pdf', gf, width = 10, height = 7)
 
 
 

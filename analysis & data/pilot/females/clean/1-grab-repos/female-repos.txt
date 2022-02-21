@@ -1,0 +1,147 @@
+FIND FEMALE REPOSITORIES
+
+https://gitstar-ranking.com/users?page=15
+
+It only goes up to 50 pages
+
+
+
+
+
+
+
+Brittany Chiang
+bchiang7
+repo: v4
+
+Emma Bostian
+emmabostian
+repo: developer-portfolios
+
+Andrea S
+Model-R
+repo: modleR
+LimaRAF
+repo: plantR
+
+hollyschinsky
+repo: PushNotificationSample
+
+cyanogen
+repo: uchroma
+
+lissy93
+repo: personal-security-checklist
+
+lissy93
+repo: dashy
+
+lissy93
+repo: twitter-sentiment-visualisation
+
+jpacsai
+repo: Memory_game
+
+k88hudson
+repo: git-flight-rules
+
+carpedm20
+repo: DCGAN-tensorflow
+repo: emoji
+
+sdras
+repo: night-owl-vscode-theme
+
+xtaci
+repo: kcp-go
+repo: kcptun
+repo: smux
+
+alyssaxuu
+repo: screenity
+repo: flowy
+
+jessfraz
+repo: dockerfiles
+
+audreyfeldroy
+repo: cookiecutter-pypackage
+
+jlord
+repo: git-it-electron
+repo: sheetsee.js
+
+notwaldorf
+repo: tiny-care-terminal
+
+una
+repo: CSSgram
+
+jart
+repo: cosmopolitan
+
+loiane
+repo: javascript-datastructures-algorithms
+
+audreyt
+repo: ethercalc
+repo: node-webworker-threads
+
+stubbornella
+repo: oocss
+
+lpereira
+repo: Iwan
+repo: hardinfo
+
+leahneukirchen
+repo: mblaze
+
+zkat
+repo: miette
+
+Armour
+repo: vue-typescript-admin-template
+
+fool2fish
+repo: dragon-book-exercise-answers
+
+olado
+repo: doT
+
+soruly
+repo: trace.moe
+
+jennybc
+repo: happy-git-with-r
+
+88250
+repo: lute
+repo: solo
+
+REMitchell
+repo: python-scraping
+
+nihui
+repo: waifu2x-ncnn-vulkan
+
+Junnplus
+repo: blog
+
+acgotaku
+repo: 115
+repo: BaiduExporter
+
+mxriverlynn
+repo: Albacore
+
+zythum
+repo: mama2
+
+cbfinn
+repo: maml
+repo: gps
+
+
+
+
